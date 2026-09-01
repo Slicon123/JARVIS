@@ -785,7 +785,7 @@
   function draw(skipClear) {
     drawBackground();
     for (const o of orbs) {
-      drawPolygon(o.x, o.y, o.r, 4, performance.now()/300, "#3dff8f", 0.4);
+      drawPolygon(o.x, o.y, o.r, 4, performance.now()/300, o.color, 0.45);
     }
     for (const p of particles) {
       ctx.globalAlpha = Math.max(0, p.life / 0.5);
