@@ -70,6 +70,26 @@
     gameover: () => { beep(300,0.3,"sawtooth",0.09); setTimeout(()=>beep(150,0.5,"sawtooth",0.09),200); }
   };
 
+  // ---------- Best-record history (localStorage) ----------
+  const RECORDS_KEY = "neonSurvivorRecords";
+  const MAX_RECORDS = 8;
+  function loadRecords() {
+    try {
+      const raw = localStorage.getItem(RECORDS_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  }
+  function saveRecord(rec) {
+    let records = loadRecords();
+    records.push(rec);
+    records.sort((a, b) => b.score - a.score);
+    records = records.slice(0, MAX_RECORDS);
+    try { localStorage.setItem(RECORDS_KEY, JSON.stringify(records)); } catch (e) {}
+    return records;
+  }
+  let records = loadRecords();
+  let lastRunWasBest = false;
+
   // ---------- Game state ----------
   let state = "title"; // title | playing | levelup | gameover
   let lastTime = 0;
