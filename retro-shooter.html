@@ -386,8 +386,13 @@
       if (en.hp <= 0) {
         spawnParticles(en.x, en.y, en.type.color, 12);
         sfx.death();
-        score += Math.floor(en.type.xp * 5);
-        orbs.push({ x: en.x, y: en.y, r: 5, xp: en.type.xp });
+        score += en.xpValue * 5;
+        orbs.push({
+          x: en.x, y: en.y,
+          r: orbRadiusForXp(en.xpValue),
+          xp: en.xpValue,
+          color: orbColorForXp(en.xpValue)
+        });
         enemies.splice(i, 1);
       }
     }
