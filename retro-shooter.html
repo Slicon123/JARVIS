@@ -165,9 +165,25 @@
       maxHp: type.hp * scale,
       speed: type.speed,
       dmg: type.dmg,
+      // XP reward scales with how tough this enemy actually is (type base * time scale),
+      // so late-game enemies of the same type are worth proportionally more —
+      // keeps level-up pace roughly matched to the rising xpNext threshold.
+      xpValue: Math.max(1, Math.round(type.xp * scale)),
       hitFlash: 0,
       coreSpin: 0
     });
+  }
+
+  // maps an xp reward to an orb radius so bigger rewards visibly read as bigger orbs
+  function orbRadiusForXp(xp) {
+    return Math.min(22, 4 + Math.sqrt(xp) * 2.6);
+  }
+  // low xp = small green orb, high xp = larger gold orb
+  function orbColorForXp(xp) {
+    if (xp >= 20) return "#ffe62d";
+    if (xp >= 10) return "#ff8c2d";
+    if (xp >= 5) return "#3dff8f";
+    return "#3dd6ff";
   }
 
   // ---------- Upgrades ----------
