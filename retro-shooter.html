@@ -417,6 +417,9 @@
   function gameOver() {
     state = "gameover";
     sfx.gameover();
+    const prevBest = records.length ? records[0].score : 0;
+    lastRunWasBest = score > prevBest;
+    records = saveRecord({ score, level: player.level, time: elapsed, date: Date.now() });
   }
 
   // ---------- Draw helpers ----------
