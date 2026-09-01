@@ -641,18 +641,51 @@
     }
   }
 
+  function fmtTime(t) {
+    const mm = Math.floor(t / 60), ss = Math.floor(t % 60);
+    return `${mm}:${ss.toString().padStart(2,"0")}`;
+  }
+  function fmtDate(ts) {
+    const d = new Date(ts);
+    return `${(d.getMonth()+1).toString().padStart(2,"0")}/${d.getDate().toString().padStart(2,"0")}`;
+  }
+
+  function drawRecordsPanel(x, y, w, title) {
+    ctx.textAlign = "left";
+    ctx.fillStyle = "#ffe62d"; glow("#ffe62d", 10);
+    ctx.font = "bold 16px monospace";
+    ctx.fillText(title, x, y);
+    noGlow();
+    if (!records.length) {
+      ctx.fillStyle = "#666"; ctx.font = "13px monospace";
+      ctx.fillText("No runs recorded yet", x, y + 26);
+      return;
+    }
+    ctx.font = "13px monospace";
+    records.forEach((r, i) => {
+      const ry = y + 26 + i * 20;
+      ctx.fillStyle = i === 0 ? "#ffe62d" : "#9fd";
+      ctx.fillText(`${(i+1).toString().padStart(2," ")}. ${r.score.toString().padStart(5," ")} pts`, x, ry);
+      ctx.fillStyle = "#678";
+      ctx.fillText(`LV${r.level}  ${fmtTime(r.time)}  ${fmtDate(r.date)}`, x + w*0.52, ry);
+    });
+  }
+
   function drawTitle() {
     drawBackground();
     ctx.textAlign = "center";
     ctx.fillStyle = "#4fe8ff"; glow("#4fe8ff", 20);
     ctx.font = "bold 64px monospace";
-    ctx.fillText("NEON SURVIVOR", W/2, H/2 - 40);
+    ctx.fillText("NEON SURVIVOR", W/2, H/2 - 130);
     noGlow();
     ctx.fillStyle = "#fff"; ctx.font = "18px monospace";
-    ctx.fillText("Press SPACE or click to start", W/2, H/2 + 10);
+    ctx.fillText("Press SPACE or click to start", W/2, H/2 - 80);
     ctx.fillStyle = "#888"; ctx.font = "13px monospace";
-    ctx.fillText("Move: WASD / Arrows   —   Weapons fire automatically", W/2, H/2 + 40);
+    ctx.fillText("Move: WASD / Arrows   —   Weapons fire automatically", W/2, H/2 - 52);
     ctx.textAlign = "left";
+
+    const panelW = 340;
+    drawRecordsPanel(W/2 - panelW/2, H/2 - 4, panelW, "BEST RUNS");
   }
 
   function drawGameOver() {
@@ -661,14 +694,22 @@
     ctx.textAlign = "center";
     ctx.fillStyle = "#ff2d6a"; glow("#ff2d6a", 20);
     ctx.font = "bold 56px monospace";
-    ctx.fillText("YOU DIED", W/2, H/2 - 30);
+    ctx.fillText("YOU DIED", W/2, H/2 - 150);
     noGlow();
     ctx.fillStyle = "#fff"; ctx.font = "18px monospace";
-    const mm = Math.floor(elapsed / 60), ss = Math.floor(elapsed % 60);
-    ctx.fillText(`Survived ${mm}:${ss.toString().padStart(2,"0")}   Level ${player.level}   Score ${score}`, W/2, H/2 + 10);
+    ctx.fillText(`Survived ${fmtTime(elapsed)}   Level ${player.level}   Score ${score}`, W/2, H/2 - 112);
+    if (lastRunWasBest) {
+      ctx.fillStyle = "#ffe62d"; glow("#ffe62d", 14);
+      ctx.font = "bold 16px monospace";
+      ctx.fillText("★ NEW BEST SCORE ★", W/2, H/2 - 84);
+      noGlow();
+    }
     ctx.fillStyle = "#888"; ctx.font = "14px monospace";
-    ctx.fillText("Press SPACE or click to try again", W/2, H/2 + 40);
+    ctx.fillText("Press SPACE or click to try again", W/2, H/2 - 56);
     ctx.textAlign = "left";
+
+    const panelW = 340;
+    drawRecordsPanel(W/2 - panelW/2, H/2 - 4, panelW, "BEST RUNS");
   }
 
   function drawLevelUp() {
