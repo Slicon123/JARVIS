@@ -316,6 +316,7 @@
       const d = Math.hypot(dx, dy) || 1;
       en.x += (dx / d) * en.speed * dt;
       en.y += (dy / d) * en.speed * dt;
+      en.coreSpin += dt;
       if (en.hitFlash > 0) en.hitFlash -= dt;
 
       // collide with player
