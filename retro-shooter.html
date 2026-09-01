@@ -450,15 +450,90 @@
     noGlow();
   }
 
+  // facing angle toward player for oriented enemy sprites
+  function angleToPlayer(en) { return Math.atan2(player.y - en.y, player.x - en.x); }
+
+  function strokePath(pts, color, close) {
+    ctx.beginPath();
+    pts.forEach((p, i) => i === 0 ? ctx.moveTo(p[0], p[1]) : ctx.lineTo(p[0], p[1]));
+    if (close) ctx.closePath();
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 2;
+    glow(color, 12);
+    ctx.stroke();
+    noGlow();
+  }
+  function fillPath(pts, color, alpha) {
+    ctx.beginPath();
+    pts.forEach((p, i) => i === 0 ? ctx.moveTo(p[0], p[1]) : ctx.lineTo(p[0], p[1]));
+    ctx.closePath();
+    ctx.globalAlpha = alpha;
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.globalAlpha = 1;
+  }
+
   function drawEnemy(en) {
     const c = en.hitFlash > 0 ? "#ffffff" : en.type.color;
-    switch (en.type.shape) {
-      case "tri": drawPolygon(en.x, en.y, en.r, 3, Math.PI / 2, c); break;
-      case "square": drawPolygon(en.x, en.y, en.r, 4, Math.PI / 4, c); break;
-      case "diamond": drawPolygon(en.x, en.y, en.r, 4, 0, c); break;
-      case "hex": drawPolygon(en.x, en.y, en.r, 6, 0, c); break;
-      default: drawPolygon(en.x, en.y, en.r, 5, 0, c);
+    const r = en.r;
+    ctx.save();
+    ctx.translate(en.x, en.y);
+    ctx.rotate(angleToPlayer(en));
+
+    switch (en.type.key) {
+      case "grunt": {
+        // stinger interceptor: barbed arrowhead with a hollow core
+        const pts = [[r*1.3,0],[-r*0.4,r*0.85],[-r*0.1,0],[-r*0.4,-r*0.85]];
+        fillPath(pts, c, 0.18);
+        strokePath(pts, c, true);
+        strokePath([[r*0.55,r*0.15],[-r*0.05,0],[r*0.55,-r*0.15]], c, false);
+        break;
+      }
+      case "sprite": {
+        // shard: slim elongated diamond with a trailing streak
+        const pts = [[r*1.6,0],[0,r*0.55],[-r*1.2,0],[0,-r*0.55]];
+        fillPath(pts, c, 0.22);
+        strokePath(pts, c, true);
+        ctx.globalAlpha = 0.5;
+        strokePath([[-r*1.2,0],[-r*2.4,0]], c, false);
+        ctx.globalAlpha = 1;
+        break;
+      }
+      case "brute": {
+        // armored square hull with four corner spikes
+        const half = r*0.75;
+        const body = [[-half,-half],[half,-half],[half,half],[-half,half]];
+        fillPath(body, c, 0.2);
+        strokePath(body, c, true);
+        const spikes = [[half,-half],[half+r*0.5,-half-r*0.15],[half,-half+r*0.2]];
+        [[1,-1],[1,1],[-1,1],[-1,-1]].forEach(([sx,sy]) => {
+          strokePath([
+            [half*sx, half*sy],
+            [(half+r*0.5)*sx, (half+r*0.15)*sy]
+          ], c, false);
+        });
+        strokePath([[-half*0.4,-half*0.4],[half*0.4,-half*0.4],[half*0.4,half*0.4],[-half*0.4,half*0.4]], c, true);
+        break;
+      }
+      case "tank": {
+        // heavy hex hull with rotating inner core rings
+        drawPolygon(0, 0, r, 6, en.coreSpin || 0, c, 0.15);
+        drawPolygon(0, 0, r*0.55, 6, -(en.coreSpin || 0)*1.6, c, 0.25);
+        drawPolygon(0, 0, r*0.22, 6, (en.coreSpin || 0)*2.2, c, 0.5);
+        for (let i = 0; i < 6; i++) {
+          const a = i * Math.PI / 3;
+          strokePath([
+            [Math.cos(a)*r, Math.sin(a)*r],
+            [Math.cos(a)*(r+r*0.35), Math.sin(a)*(r+r*0.35)]
+          ], c, false);
+        }
+        break;
+      }
+      default:
+        drawPolygon(0, 0, r, 5, 0, c);
     }
+    ctx.restore();
+
     // hp bar for tougher enemies
     if (en.maxHp > 30) {
       const w = en.r * 2;
@@ -470,34 +545,44 @@
   }
 
   function drawPlayer() {
+    const thrusting = !!(keys["w"]||keys["a"]||keys["s"]||keys["d"]||keys["arrowup"]||keys["arrowdown"]||keys["arrowleft"]||keys["arrowright"]);
     ctx.save();
     ctx.translate(player.x, player.y);
     ctx.rotate(player.angle);
-    ctx.beginPath();
-    ctx.moveTo(16, 0);
-    ctx.lineTo(-12, 10);
-    ctx.lineTo(-6, 0);
-    ctx.lineTo(-12, -10);
-    ctx.closePath();
-    ctx.strokeStyle = "#4fe8ff";
-    ctx.lineWidth = 2;
-    glow("#4fe8ff", 16);
-    ctx.stroke();
-    ctx.fillStyle = "#0af0ff";
-    ctx.globalAlpha = 0.25;
-    ctx.fill();
-    ctx.globalAlpha = 1;
-    noGlow();
+
+    // engine flame (animated, only while moving)
+    if (thrusting) {
+      const flick = 6 + Math.sin(performance.now()/40) * 3 + Math.random()*2;
+      const flame = [[-10,-4],[-10-flick,0],[-10,4]];
+      fillPath(flame, "#ffb32d", 0.85);
+      strokePath(flame, "#ffe62d", true);
+    }
+
+    // main hull
+    const hull = [[18,0],[-6,8],[-13,4],[-13,-4],[-6,-8]];
+    fillPath(hull, "#0af0ff", 0.22);
+    strokePath(hull, "#4fe8ff", true);
+
+    // swept wings
+    strokePath([[-2,4],[-16,16],[-9,7]], "#4fe8ff", true);
+    strokePath([[-2,-4],[-16,-16],[-9,-7]], "#4fe8ff", true);
+
+    // cockpit core
+    drawPolygon(4, 0, 3.5, 6, performance.now()/250, "#ffffff", 0.7);
+
     ctx.restore();
 
-    // orbiters
+    // orbiters: glowing blades trailing a faint arc
     if (player.orbiters > 0) {
       const orbitR = 55;
+      ctx.strokeStyle = "rgba(255,230,45,0.15)";
+      ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(player.x, player.y, orbitR, 0, Math.PI*2); ctx.stroke();
       for (let o = 0; o < player.orbiters; o++) {
         const ang = player.orbitAngle + (o * Math.PI * 2 / player.orbiters);
         const ox = player.x + Math.cos(ang) * orbitR;
         const oy = player.y + Math.sin(ang) * orbitR;
-        drawPolygon(ox, oy, 8, 3, ang, "#ffe62d", 0.3);
+        drawPolygon(ox, oy, 8, 3, ang, "#ffe62d", 0.35);
       }
     }
   }
