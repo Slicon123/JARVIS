@@ -1,33 +1,19 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
 
 ## What this repo is
 
-A tiny, dependency-free repo containing a single browser game: [retro-shooter.html](retro-shooter.html) — "NEON SURVIVOR", a Vampire-Survivors-style top-down auto-fire arena shooter. There is no package manager, build step, bundler, or external library — it's one self-contained HTML file with inline `<style>` and `<script>`.
+JARVIS — Bryan's personal Claude Code workspace. Its main purpose is the persistent
+memory store below, which syncs across his devices via git. There is no package
+manager, build step, or test tooling.
 
-## Running / testing the game
-
-There is no build, lint, or test tooling in this repo. To try a change, open `retro-shooter.html` directly in a browser (double-click, or a `file://` URL) and play it — that's the entire verification loop.
-
-## Architecture (all inside `retro-shooter.html`)
-
-The script is one big IIFE with no modules/classes — everything is plain functions and object-literal arrays operating on shared state:
-
-- **Game state machine**: a single `state` variable cycles through `"title" | "playing" | "levelup" | "gameover"`, driven by a `requestAnimationFrame` loop (`frame()`).
-- **Update/draw split**: `update(dt)` does all per-frame logic (movement, spawning, auto-aim/fire, collisions, XP pickup, level-up triggers) for the current state; a corresponding `draw*()` function renders each state (`drawTitle()`, `draw()` for gameplay, `drawGameOver()`, `drawLevelUp()`, `drawHUD()`, `drawEnemy()`, `drawPlayer()`).
-- **Entities**: `player` (object), plus `enemies[]`, `bullets[]`, `orbs[]`, `particles[]` — plain arrays of object literals, no entity classes. Enemy types are `grunt`, `brute`, `sprite`, `tank`.
-- **Combat**: auto-aim/auto-fire targets the nearest enemy; no manual weapon aiming.
-- **Progression**: killing enemies drops XP orbs; leveling up pauses gameplay (`state = "levelup"`) and shows an upgrade-card picker built from `UPGRADE_POOL` (8 upgrades) via `rollUpgrades()` / `triggerLevelUp()`.
-- **Audio**: procedural WebAudio sound effects via a `beep()` helper and an `sfx` object — no audio files.
-- **Persistence**: best runs are saved to `localStorage` under key `neonSurvivorRecords` (`RECORDS_KEY`), keeping the top 8 scores. No server, no networking.
-
-When adding features (new enemy types, upgrades, weapons), follow the existing pattern: add data to the relevant pool/array, then wire it into both `update()` and the matching `draw*()` function.
+`retro-shooter.html` is an unrelated self-contained browser game left over from an
+earlier session; open it in a browser to run it. It needs no documentation here.
 
 ## Persistent memory (synced across devices)
 
-This repo doubles as the store for Claude Code's persistent memory about Bryan. The
-files live in [memory/](memory/), indexed by [memory/MEMORY.md](memory/MEMORY.md) —
+Claude Code's persistent memory about Bryan lives here. The files live in [memory/](memory/), indexed by [memory/MEMORY.md](memory/MEMORY.md) —
 one fact per file, with `name` / `description` / `metadata.type` frontmatter
 (`user` | `feedback` | `project` | `reference`).
 
