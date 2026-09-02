@@ -27,6 +27,8 @@ dicatat pada 2 September 2026. Barang wajib dibawa pada hari kegiatan:
 
 **Why:** Bryan minta daftar ini diingat agar bisa dipakai lagi setiap kali dia bertanya soal FTI Days.
 
+**Expiry:** Ini memory sementara. Setelah technical meeting FTI Days ini selesai (event-nya sudah lewat, tidak ada TM/FTI Days lagi yang perlu dipersiapkan), hapus file ini dan hapus baris pointer-nya di MEMORY.md.
+
 **How to apply:** Kalau dia menyebut FTI Days / technical meeting-nya, tampilkan ulang sebagai checklist
 siap-centang, bukan paragraf. Jangan pernah menuliskan NIM aslinya di repo ini (repo publik) — cukup
 sebut "NIM". Jawab dalam Bahasa Indonesia.
