@@ -1,0 +1,13 @@
+- [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety engineer, design + finance background, UKSW Digital Business student
+- [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
+- [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
+- [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
+- [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule and ongoing university-life help
+- [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first
+- [Electronics course](project-electronics-course.md) — first-principles electronics in Bahasa Indonesia, currently on ground symbols
+- [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
+- [Investing approach](user-investing-approach.md) — global, fundamentals-driven, tiered portfolios with bear cases
+- [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
+- [Claude account context](user-claude-account-context.md) — Pro plan now, migrating to a reopened account ~October 2026
+- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
+- [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules

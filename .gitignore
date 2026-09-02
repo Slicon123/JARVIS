@@ -1,0 +1,4 @@
+# Memory files held back from this PUBLIC repo (third-party / client confidential).
+# They still live locally in memory/ and are still read by Claude on this device —
+# they just don't sync. Remove a line here if you want it public.
+memory/project-sinergi-proposal-teknis.md
