@@ -8,7 +8,12 @@ metadata:
   modified: 2026-09-03T08:21:15.989Z
 ---
 
-Researched on 2026-09-03: the precise, practical post-graduation target is **Business Development / Bid & Proposal Manager in electrical & fire safety systems / smart infrastructure**, not a generic digital-marketing Bisnis Digital role. Rationale: Bryan already does field engineering (ATS panels, FSS) and writes Proposal Teknis tender documents for PT Sinergi Sarana Solusi's PLN Icon Plus bids (see [[project-sinergi-proposal-teknis]], [[project-fss-ats-documentation]]) — a Digital Business degree on top makes him one of the few people who can own both the technical scope and the commercial/digitalization side of a bid.
+Researched on 2026-09-03: the precise, practical post-graduation target is **Business Development / Bid & Proposal Manager in electrical & fire safety systems / smart infrastructure**, not a generic digital-marketing Bisnis Digital role. Rationale: Bryan writes the reports, flowcharts, checklists and Proposal Teknis tender documents for PT Sinergi Sarana Solusi's PLN Icon Plus bids (see [[project-sinergi-proposal-teknis]], [[project-fss-ats-documentation]]) — a Digital Business degree on top makes him one of the few people who can own both the document/commercial side of a bid and the industry context it sits in.
+
+**Corrected 3 September 2026:** an earlier version of this memory claimed Bryan "already does field engineering (ATS panels, FSS)." He does not. He works on the documentation side only, has never done site work, and does not hold the deep technical knowledge (see [[user-bryan-profile]]). The target role still fits — bid and proposal management *is* documentation work, so his real experience maps onto it more directly than field work would — but two things below were reasoned from the wrong premise and need revisiting with him:
+
+- **Step 1 (SKTTK) is now questionable.** It certifies practising electrical technical personnel and assumes hands-on competence he does not have. Confirm the eligibility route before treating it as a goal; it may be the wrong certification entirely for a documentation/BD track.
+- **His technical depth is a real gap for this target, not a strength.** A Bid Manager in this segment must challenge and defend a technical scope, not just format it. Closing that gap deliberately — through the work itself, or study — belongs in this plan.
 
 **Target employers:** PT Sinergi Sarana Solusi (internal promotion — he already has the track record there), PLN Icon Plus's "Beyond kWh" non-electricity/digital business unit, fire/building-systems integrators (PT Servvo Fire Indonesia, Chubb Fire & Security Indonesia, Johnson Controls, Honeywell Building Technologies, Siemens Smart Infrastructure), Bureau Veritas Indonesia.
 

@@ -19,4 +19,6 @@ Bryan's recurring professional deliverables in fire suppression (FSS) and ATS pa
 
 **How to apply:** Write documents in Bahasa Indonesia. Use correct flowchart symbol semantics — terminators, decision diamonds, predefined process symbols, document shapes — not generic boxes. Verify NFPA clause references rather than recalling them ([[feedback-self-correct-and-verify]]).
 
+Bryan produces these documents but does not do the field work behind them and does not hold the deep technical knowledge (see [[user-bryan-profile]]). He is not a check on your accuracy — whatever you assert, he will likely submit. Look up every clause number, agent concentration, and panel spec, and flag explicitly where a real engineer needs to confirm a value before the document goes out.
+
 Related: [[user-bryan-profile]]
