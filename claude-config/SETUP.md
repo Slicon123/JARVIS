@@ -7,22 +7,24 @@ the repo so they reach Bryan's other devices; `~/.claude/` itself is not version
 | --- | --- |
 | `output-styles/JARVIS.md` | **The persona.** Appended to Claude's system prompt every request. Delete it and Claude reverts to its default voice. |
 | `commands/*.md` | `/diagnostics`, `/protocol`, `/briefing`. Manual-invoke only, so they cost no context until typed. |
+| `skills/*/SKILL.md` | Model-invoked skills. Only the name and description sit in context; the body loads when the skill fires. `chords/` prints guitar chord sheets in the terminal. |
 | `statusline.ps1` | The terminal HUD. Never enters the model's context. |
 
-On this machine `~/.claude/output-styles` and `~/.claude/commands` are **directory
-junctions** pointing here, the same trick [memory/](../memory/) uses — so edits land straight
+On this machine `~/.claude/output-styles`, `~/.claude/commands` and `~/.claude/skills` are
+**directory junctions** pointing here, the same trick [memory/](../memory/) uses — so edits land straight
 in git. `statusline.ps1` needs no link; `settings.json` points at it by absolute path.
 
 ## Setting up a new device
 
-Clone the repo, then link the two directories and set two values in `~/.claude/settings.json`.
-If `~/.claude/output-styles` or `~/.claude/commands` already exist with files you want,
-move them into `claude-config/` first — creating a junction requires the path to be free.
+Clone the repo, then link the three directories and set two values in `~/.claude/settings.json`.
+If `~/.claude/output-styles`, `~/.claude/commands` or `~/.claude/skills` already exist with
+files you want, move them into `claude-config/` first — creating a junction requires the path to be free.
 
 ```powershell
 $cc = "<repo-path>\claude-config"
 New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\output-styles" -Target "$cc\output-styles"
 New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\commands"      -Target "$cc\commands"
+New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills"        -Target "$cc\skills"
 ```
 
 Junctions need no admin rights. On macOS or Linux use `ln -s` and rewrite the status line in
