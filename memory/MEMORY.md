@@ -1,5 +1,6 @@
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety engineer, design + finance background, UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
+- [JARVIS persona](feedback-jarvis-persona.md) — be JARVIS, informal and friend-like; call him Bryan; config lives outside this repo
 - [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
 - [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
 - [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule and ongoing university-life help
