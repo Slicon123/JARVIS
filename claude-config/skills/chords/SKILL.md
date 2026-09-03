@@ -13,11 +13,43 @@ read while holding a guitar.
 
 Load `WebSearch` and `WebFetch` via ToolSearch first — they are deferred.
 
-Search `"<song> <artist> chords"`, and for Indonesian songs also `"kunci gitar <lagu>"`.
-Fetch the actual page rather than trusting a search snippet; snippets shred the alignment.
-Good sources: Ultimate Guitar, Chordify's text view, chordtela, kunci-gitar sites, the
-artist's own transcription. Cross-check the chorus against a second source when the first
-looks thin or the song is obscure — wrong chords cost him more time than a second fetch.
+**Budget: three web calls.** Two searches plus at most one fetch is the whole job. If you
+are on your fifth call, stop looking and write the sheet from what you have, flagged as
+partly your own reading. A sheet in thirty seconds with one uncertain verse beats a
+perfect one four minutes later.
+
+The method, in order:
+
+1. **Search `"<song>" "<artist>" chords`** — for Indonesian songs also `kunci gitar <lagu>`.
+   The search summary normally names the progression section by section: intro, verse,
+   chorus, bridge. That is frequently the entire harmonic content of the song.
+2. **Search a distinctive lyric fragment** — `"<song>" <artist> lyrics "<line you have>"`.
+   Search summaries quote lyrics freely; this is how you get verse 2 and the bridge.
+   Chain it: each fragment you learn seeds the next query.
+3. **Fetch only if the progression is still unclear**, and only from a site in the "works"
+   column below.
+
+You align the chords over the lyrics yourself. No fetch will ever hand you a ready-made
+chart — the fetch summariser flattens the alignment into prose even when the page has it.
+
+### Sites — measured, not assumed
+
+| Site | Verdict |
+|---|---|
+| `tabs.ultimate-guitar.com` | **Never fetch.** JS-rendered: returns the page title and nothing else. Useful as a search hit, worthless as a fetch. |
+| `cifraclub.com` | Works. The best single fetch for section-by-section progressions. |
+| `guitartabsexplorer.com` | Works. Good second source for cross-checking. |
+| `wechords.com` | 301s to cifraclub — go to cifraclub directly and save a round trip. |
+| `chordsbase.com`, `lyricsbox.com` | 403. |
+| `lyricsdepot.com` | Expired certificate. |
+| `readdork.com`, most lyrics sites | The fetch refuses to return full lyrics. Use search summaries instead. |
+
+Cross-check the chorus against a second source when the first looks thin or the song is
+obscure — wrong chords cost him more time than one extra search.
+
+**Ambiguous titles: search before you ask.** "The Last Night" is Skillet *and* Bon Jovi.
+One search surfaces the candidates, so either the artist is obvious and you proceed, or
+your question is a single line naming both — never an open "which one?".
 
 If the search genuinely turns up nothing usable, say so plainly and transcribe by ear from
 what you know of the song, labelled as your own reading, not as a found version.
