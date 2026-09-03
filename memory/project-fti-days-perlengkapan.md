@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6375ef56-5f95-4da4-9647-79bd9c692e45
-  modified: 2026-09-03T07:43:39.404Z
+  modified: 2026-09-03T08:03:26.029Z
 ---
 
 Bryan mengikuti **FTI Days** di UKSW; daftar barang di bawah diberikan saat *technical meeting* dan
@@ -37,7 +37,7 @@ dicatat pada 2 September 2026. Barang wajib dibawa pada hari kegiatan:
 - [x] Snack ringan biru
 - [x] Snack berat (bantal lumpur)
 - [x] Tissue kering pocket
-- [ ] Lagu FTI Days ditulis tangan di buku
+- [x] Lagu FTI Days ditulis tangan di buku
 - [ ] Label HP (5 huruf/NIM/nomor kelompok) + HP dimatikan saat acara
 - [ ] Label tumbler (5 huruf/NIM/nama kelompok)
 - [ ] Hand sanitizer
