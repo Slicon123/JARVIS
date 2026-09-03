@@ -1,9 +1,11 @@
 ---
 name: project-fti-days-perlengkapan
-description: "Daftar perlengkapan wajib yang harus Bryan bawa untuk technical meeting / FTI Days UKSW"
-metadata:
+description: Daftar perlengkapan wajib yang harus Bryan bawa untuk technical meeting / FTI Days UKSW
+metadata: 
   node_type: memory
   type: project
+  originSessionId: 6375ef56-5f95-4da4-9647-79bd9c692e45
+  modified: 2026-09-03T07:42:17.947Z
 ---
 
 Bryan mengikuti **FTI Days** di UKSW; daftar barang di bawah diberikan saat *technical meeting* dan
@@ -25,12 +27,28 @@ dicatat pada 2 September 2026. Barang wajib dibawa pada hari kegiatan:
 9. **Jas hujan plastik sekali pakai warna biru — 1 buah.**
 10. **Kardus ukuran A4 — 1 buah.**
 
+**Progress checklist (per 3 September 2026):**
+- [x] Dompet — identitas pribadi + uang
+- [x] Kwitansi pembayaran
+- [x] Buku A5 + bolpoin Standard biru
+- [x] Kardus A4
+- [x] Tissue basah 10 lembar
+- [x] Jas hujan plastik biru
+- [ ] Lagu FTI Days ditulis tangan di buku
+- [ ] Label HP (5 huruf/NIM/nomor kelompok) + HP dimatikan saat acara
+- [ ] Label tumbler (5 huruf/NIM/nama kelompok)
+- [ ] Snack ringan biru
+- [ ] Snack berat (bantal lumpur)
+- [ ] Tissue kering pocket
+- [ ] Hand sanitizer
+
 **Why:** Bryan minta daftar ini diingat agar bisa dipakai lagi setiap kali dia bertanya soal FTI Days.
 
 **Expiry:** Ini memory sementara. Setelah technical meeting FTI Days ini selesai (event-nya sudah lewat, tidak ada TM/FTI Days lagi yang perlu dipersiapkan), hapus file ini dan hapus baris pointer-nya di MEMORY.md.
 
 **How to apply:** Kalau dia menyebut FTI Days / technical meeting-nya, tampilkan ulang sebagai checklist
-siap-centang, bukan paragraf. Jangan pernah menuliskan NIM aslinya di repo ini (repo publik) — cukup
+siap-centang dengan status centang terbaru (lihat "Progress checklist" di atas), bukan paragraf. Update
+status centang di file ini setiap kali Bryan bilang sudah cek/siapkan item baru. Jangan pernah menuliskan NIM aslinya di repo ini (repo publik) — cukup
 sebut "NIM". Jawab dalam Bahasa Indonesia.
 
 Related: [[project-uksw-digital-business]], [[user-bryan-profile]]
