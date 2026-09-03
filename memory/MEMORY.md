@@ -14,3 +14,4 @@
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapter content covered so far and outstanding tugas
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
+- [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
