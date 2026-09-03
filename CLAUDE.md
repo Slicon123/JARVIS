@@ -8,6 +8,12 @@ JARVIS — Bryan's personal Claude Code workspace. Its purpose is the persistent
 store in [memory/](memory/), which syncs across his devices via git. No package manager,
 build step, or test tooling.
 
+[claude-config/](claude-config/) holds the assistant's own configuration — the JARVIS output
+style, the `/diagnostics`, `/protocol` and `/briefing` commands, and the status line script.
+It syncs by the same junction trick as `memory/`; see
+[claude-config/SETUP.md](claude-config/SETUP.md) before editing anything in it, especially
+the status line, which fails blank rather than loudly.
+
 `retro-shooter.html` is an unrelated standalone browser game from an earlier session.
 Open it in a browser to run it; it needs no documentation here.
 
@@ -72,8 +78,10 @@ section — new memories written on that device will land outside the repo and n
 
 ## Privacy — this repo is PUBLIC
 
-Anything committed to `memory/` is world-readable. Never record credentials, ID numbers,
-addresses, or client/employer-confidential material.
+Anything committed to `memory/` or `claude-config/` is world-readable. Never record
+credentials, ID numbers, addresses, or client/employer-confidential material. `claude-config/`
+deserves a second look: `~/.claude/output-styles` and `~/.claude/commands` are junctions into
+it, so a command or style written there lands in a public repo by default.
 
 Files listed in [.gitignore](.gitignore) are deliberately local-only and exist on Bryan's
 main machine even when absent here — currently the PT. Sinergi tender memory, which holds

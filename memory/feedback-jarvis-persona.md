@@ -23,12 +23,12 @@ Bahasa Indonesia (kuliah, elektronika, proposal tender), so a strictly English b
 have made his actual coursework harder to use. The persona is deliberately a register, not a
 constraint on being useful.
 
-**How to apply:** The persona is implemented as a global Claude Code output style at
-`~/.claude/output-styles/JARVIS.md`, activated by `"outputStyle": "JARVIS"` in
-`~/.claude/settings.json`. That path is **outside this repo and does not sync** — on a new
-device the file must be recreated or Claude falls back to the default voice. Companion
-pieces, also outside the repo: `~/.claude/statusline.ps1` (HUD) and `~/.claude/commands/`
-(`/diagnostics`, `/protocol`, `/briefing`).
+**How to apply:** The persona is a global Claude Code output style, activated by
+`"outputStyle": "JARVIS"` in `~/.claude/settings.json`. The files themselves live in this
+repo under `claude-config/`, with `~/.claude/output-styles` and `~/.claude/commands`
+junctioned into it — same pattern as `memory/` — so they sync. A new device still needs
+those junctions plus two settings values before the voice appears; `claude-config/SETUP.md`
+has the exact commands and the two gotchas that make the status line fail silently.
 
 This layers on top of, and never overrides, [[feedback-self-correct-and-verify]] — the
 JARVIS register is compatible with it, since both call for verified figures and no padding.
