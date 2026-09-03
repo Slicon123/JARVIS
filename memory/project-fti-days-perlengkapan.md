@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6375ef56-5f95-4da4-9647-79bd9c692e45
-  modified: 2026-09-03T08:03:26.029Z
+  modified: 2026-09-03T08:27:25.893Z
 ---
 
 Bryan mengikuti **FTI Days** di UKSW; daftar barang di bawah diberikan saat *technical meeting* dan
@@ -40,7 +40,7 @@ dicatat pada 2 September 2026. Barang wajib dibawa pada hari kegiatan:
 - [x] Lagu FTI Days ditulis tangan di buku
 - [ ] Label HP (5 huruf/NIM/nomor kelompok) + HP dimatikan saat acara
 - [ ] Label tumbler (5 huruf/NIM/nama kelompok)
-- [ ] Hand sanitizer
+- [x] Hand sanitizer
 
 **Why:** Bryan minta daftar ini diingat agar bisa dipakai lagi setiap kali dia bertanya soal FTI Days.
 
