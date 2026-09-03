@@ -10,7 +10,7 @@
 - [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
 - [Investing approach](user-investing-approach.md) — global, fundamentals-driven, tiered portfolios with bear cases
 - [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
-- [Claude account context](user-claude-account-context.md) — Pro plan now, migrating to a reopened account ~October 2026
+- [Claude account context](user-claude-account-context.md) — Pro plan; uses VS Code extension not terminal (no status line); phone can't run Claude Code
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapter content covered so far and outstanding tugas
