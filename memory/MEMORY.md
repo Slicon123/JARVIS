@@ -12,4 +12,5 @@
 - [Claude account context](user-claude-account-context.md) — Pro plan now, migrating to a reopened account ~October 2026
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapter content covered so far and outstanding tugas
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
