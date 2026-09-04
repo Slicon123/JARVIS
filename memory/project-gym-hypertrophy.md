@@ -16,4 +16,7 @@ Program: 4-day Upper/Lower split — Mon/Tue/Thu/Fri, roughly 60 minutes per ses
 
 **How to apply:** Keep sessions to ~60 min and respect the Mon/Tue/Thu/Fri days; check [[project-uksw-digital-business]] before proposing any schedule change. Program for a returning lifter, not a novice or an advanced one.
 
+Eating side of the same goal, including his calorie targets and kost catering constraint:
+[[project-gym-nutrition-bulking]].
+
 Related: [[user-bryan-profile]]

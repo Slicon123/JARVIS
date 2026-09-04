@@ -10,6 +10,8 @@
 - [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
 - [Investing approach](user-investing-approach.md) — global, fundamentals-driven, tiered portfolios with bear cases
 - [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
+- [Gym — bulking nutrition](project-gym-nutrition-bulking.md) — 54 kg at 172 cm; 2,800 kcal target, kost catering, which steps he committed to
+- [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
 - [Claude account context](user-claude-account-context.md) — Pro plan; uses VS Code extension not terminal (no status line); phone can't run Claude Code
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
