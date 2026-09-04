@@ -27,7 +27,7 @@ dicatat pada 2 September 2026. Barang wajib dibawa pada hari kegiatan:
 9. **Jas hujan plastik sekali pakai warna biru — 1 buah.**
 10. **Kardus ukuran A4 — 1 buah.**
 
-**Progress checklist (per 3 September 2026):**
+**Progress checklist (per 4 September 2026): semua sudah siap.**
 - [x] Dompet — identitas pribadi + uang
 - [x] Kwitansi pembayaran
 - [x] Buku A5 + bolpoin Standard biru
@@ -38,8 +38,8 @@ dicatat pada 2 September 2026. Barang wajib dibawa pada hari kegiatan:
 - [x] Snack berat (bantal lumpur)
 - [x] Tissue kering pocket
 - [x] Lagu FTI Days ditulis tangan di buku
-- [ ] Label HP (5 huruf/NIM/nomor kelompok) + HP dimatikan saat acara
-- [ ] Label tumbler (5 huruf/NIM/nama kelompok)
+- [x] Label HP (5 huruf/NIM/nomor kelompok) + HP dimatikan saat acara
+- [x] Label tumbler (5 huruf/NIM/nama kelompok)
 - [x] Hand sanitizer
 
 **Why:** Bryan minta daftar ini diingat agar bisa dipakai lagi setiap kali dia bertanya soal FTI Days.
