@@ -4,7 +4,7 @@
 - [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
 - [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
 - [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule and ongoing university-life help
-- [FTI Days — perlengkapan](project-fti-days-perlengkapan.md) — daftar barang wajib technical meeting FTI Days UKSW (hapus setelah FTI Days lewat)
+- [FTI Days — perlengkapan](project-fti-days-perlengkapan.md) — perlengkapan & atribut 3 hari FTI Days, kelompok 36 (hapus setelah lewat)
 - [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first
 - [Electronics course](project-electronics-course.md) — first-principles electronics in Bahasa Indonesia, currently on ground symbols
 - [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
