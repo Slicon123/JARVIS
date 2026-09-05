@@ -1,6 +1,6 @@
 ---
 name: project-fti-days-perlengkapan
-description: Daftar perlengkapan wajib dan atribut pribadi untuk 3 hari FTI Days UKSW (kelompok 36)
+description: Perlengkapan, atribut, tugas kelompok/individu, dan talent show untuk 3 hari FTI Days UKSW (kelompok 36)
 metadata:
   node_type: memory
   type: project
@@ -66,6 +66,31 @@ Bryan mengikuti **FTI Days UKSW**, kelompok **36**. Rincian lengkap di bawah dic
 - Tissue basah 10 lembar + tissue kering pocket. Hand sanitizer 18 ml.
 - Snack ringan & berat — clue belum ada.
 - Boleh bawa barang fashion show.
+
+## Tugas kelompok — video perkenalan Instagram
+- Wajib semua anggota kelompok tampil. Minimal **4 lokasi**: titik tata usaha, sarana
+  prasarana, cafe, BK 3, laboran, workspace (pilih min. 4 dari daftar ini).
+- Tiap anggota disebut: nama lengkap, NIM, prodi, asal domisili, nama peran (di video/caption).
+- Format: portrait, sekreatif mungkin, sesuai nama kelompok, durasi **3-5 menit**,
+  pakaian bebas sopan rapi.
+- Wajib dipost oleh **semua** anggota kelompok (bukan cuma satu akun).
+- Batas waktu: **5-15 September 2026**.
+- Caption tema FTI Days 2026: "Terhubung dalam jiwa ..." (potongan tema, Bryan lupa
+  kelanjutannya — cek ulang ke panitia/grup) + tag #darahbiru #ftidays26 #ftiuksw
+  #ukswsalatiga #uksw #anakgunung.
+
+## Tugas individu — buku resume
+- Catat **seluruh kegiatan** FTI Days selama acara berlangsung di buku resume (buku
+  bersampul biru FTI, lihat spesifikasi label di atas).
+- Kalau ada pemaparan materi: wajib catat nama materi, nama pembicara, dan ringkasan
+  minimal **1 paragraf / 5 baris**.
+- Semua tugas yang diberikan selama acara dicatat & dikerjakan di buku resume ini,
+  ditulis jelas — buku ini dikumpulkan di Day 3.
+
+## Talent show & fashion show — Day 3
+- Kelompok 36 kebagian slot **band kelompok** untuk talent show.
+- Fashion show digabung dengan **kelompok 35** (jadi pasangan 35-36): masing-masing
+  kelompok mengutus 1 pria + 1 wanita.
 
 ## Catatan perubahan dari technical meeting sebelumnya
 Beberapa detail di sini berbeda dari catatan TM tanggal 2 September:
