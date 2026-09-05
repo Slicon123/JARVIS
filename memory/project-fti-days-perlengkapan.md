@@ -79,9 +79,6 @@ Barang yang sudah disiapkan sebelumnya (dompet, kardus, tissue, jas hujan biru, 
 handsanitizer) kemungkinan besar masih terpakai untuk Day 1, tapi cek ulang label/clue di atas
 karena beberapa spesifikasi berubah.
 
-Bagian **"Peraturan"** yang Bryan mulai ketik di pesan terakhir terpotong — belum ada isinya,
-perlu ditanyakan/dilengkapi lagi.
-
 **Why:** Bryan minta daftar ini diingat untuk dipakai lagi setiap kali dia menyiapkan barang FTI Days.
 
 **Expiry:** Ini memory sementara. Setelah FTI Days selesai (3 hari acara sudah lewat), hapus file ini
