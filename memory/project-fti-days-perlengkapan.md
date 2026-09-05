@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6375ef56-5f95-4da4-9647-79bd9c692e45
-  modified: 2026-09-05
+  modified: 2026-09-05T10:36:04.295Z
 ---
 
 **FTI Days UKSW · kelompok 36.** Rincian di bawah dicatat 5 September 2026 dari briefing
@@ -23,7 +23,7 @@ Status centang: `[x]` = sudah disiapkan, `[ ]` = belum / perlu dicek ulang.
 | Video perkenalan IG | Deadline **15 September 2026** |
 | Tema caption | "Terhubung dalam jiwa ..." — kelanjutannya belum diketahui, tanya panitia |
 | Clue snack Day 2 & Day 3 | Belum diberikan panitia |
-| Nama kelompok 36 | Belum dicatat |
+| Nama kelompok 36 | **Ben & Jody** |
 
 ---
 
