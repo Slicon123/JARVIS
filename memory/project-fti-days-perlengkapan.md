@@ -117,7 +117,8 @@ Status centang: `[x]` = sudah disiapkan, `[ ]` = belum / perlu dicek ulang.
 
 - [ ] Kardus **utuh** (tidak dipotong/dibuka) — dipakai khusus untuk mengambil totebag
       panitia + kaos FTI Days, bukan barang yang dibawa harian
-- Waktu pengambilan: **belum diketahui**, tunggu info panitia
+- Waktu pengambilan: **sebelum hari-H FTI Days** (tanggal pastinya belum diketahui, tunggu
+  info panitia)
 
 ---
 
