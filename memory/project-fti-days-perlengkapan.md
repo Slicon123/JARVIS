@@ -91,7 +91,6 @@ Status centang: `[x]` = sudah disiapkan, `[ ]` = belum / perlu dicek ulang.
 - [ ] Bendera kelompok (sama Day 1)
 - [ ] Trash bag besar
 - [ ] Totebag tambahan wajib per kelompok — nametag: baris 1 nama kelompok, baris 2 **36**
-- [ ] Kardus **utuh** (tidak dipotong/dibuka)
 
 ---
 
@@ -111,6 +110,14 @@ Status centang: `[x]` = sudah disiapkan, `[ ]` = belum / perlu dicek ulang.
 - [ ] Hand sanitizer 18 ml
 - [ ] Snack ringan + snack berat — *clue belum ada*
 - [ ] Barang fashion show (opsional/boleh dibawa)
+
+---
+
+## Pengambilan totebag & kaos FTI (kardus)
+
+- [ ] Kardus **utuh** (tidak dipotong/dibuka) — dipakai khusus untuk mengambil totebag
+      panitia + kaos FTI Days, bukan barang yang dibawa harian
+- Waktu pengambilan: **belum diketahui**, tunggu info panitia
 
 ---
 
