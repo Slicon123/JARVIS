@@ -1,4 +1,4 @@
-# Script Ngajar — Badan Usaha di Indonesia (95 menit)
+# Script Ngajar — Badan Usaha di Indonesia (60 menit)
 
 Cara baca file ini:
 
@@ -10,15 +10,24 @@ Cara baca file ini:
 Baca [PANDUAN-NGAJAR.md](PANDUAN-NGAJAR.md) dulu sebelum file ini.
 Materi lengkapnya di [MATERI.md](MATERI.md).
 
+**Sesi ini nggak pakai alat apa pun.** Nggak ada kartu, nggak ada kertas plano,
+nggak ada Kahoot, nggak ada kerja kelompok. Semua interaksi berbentuk **tanya
+pendapat ke kelas** dan **angkat tangan / angkat jari**. Yang perlu dibawa cuma
+laptop dan slide.
+
 ---
 
 ## Pembagian tugas
 
-| | Peran | Total bicara | Kenapa |
+| | Peran | Materi | Total di panggung |
 | --- | --- | --- | --- |
-| **Bryan** | **Host & Fasilitator** + materi Koperasi, BUMN, BUMD | ±25 menit, terpecah jadi potongan pendek | Peran ini paling banyak "panggung" tapi paling sedikit hafalan. Instruksi aktivitas itu kalimat pendek yang gampang dikunci, dan pas aktivitas jalan, yang kerja kelasnya — bukan lu. Buat orang yang jarang ngajar, ini posisi paling aman sekaligus paling kelihatan memimpin. |
-| **Anggota 2** | Materi 1: Pengertian, beda badan usaha vs perusahaan, klasifikasi | ±16 menit | Blok konsep. Paling butuh kesabaran menjelaskan pelan. |
-| **Anggota 3** | Materi 2: Perseorangan, Firma, CV, PT, PT Perorangan + pimpin kuis | ±27 menit | Blok terberat dan paling banyak detail. Kasih ke yang paling nyaman ngomong lama. |
+| **Bryan** | Host + materi | Koperasi, BUMN, BUMD, Yayasan, cara memilih, studi kasus | ±27 menit (15' materi, sisanya membuka, memandu, menutup) |
+| **Anggota 2** | Materi 1 | Pengertian, badan usaha vs perusahaan, klasifikasi | ±15 menit |
+| **Anggota 3** | Materi 2 | Perseorangan, Firma, CV, PT, PT Perorangan + 3 pertanyaan penutup | ±16 menit |
+
+Porsi **materinya** rata bertiga — masing-masing 15–16 menit. Bryan kelihatan
+lebih lama di depan karena dia juga yang membuka, memandu tanya-jawab, dan
+menutup, bukan karena materinya lebih banyak.
 
 **Kalian bertiga berdiri di depan sepanjang sesi.** Yang tidak sedang bicara
 berdiri di samping — bukan duduk. Gunanya: bantu jawab pertanyaan, dan kelas
@@ -30,23 +39,26 @@ melihat ini kerja tim, bukan tiga presentasi terpisah.
 
 | Menit | Durasi | Segmen | Pemegang |
 | --- | --- | --- | --- |
-| 00–04 | 4' | Pembuka + Aktivitas 1: "Punya Siapa Ini?" | Bryan |
-| 04–08 | 4' | Bongkar jawaban + peta materi | Bryan |
-| 08–24 | 16' | **Materi 1** — Pengertian & klasifikasi | Anggota 2 |
-| 24–35 | 11' | **Aktivitas 2**: Kartu Sortir | Bryan pimpin, semua keliling |
-| 35–39 | 4' | Bahas hasil kartu sortir | Anggota 2 |
-| 39–57 | 18' | **Materi 2** — Perseorangan, Firma, CV, PT, PT Perorangan | Anggota 3 |
-| 57–60 | 3' | Jeda Think-Pair-Share | Anggota 3 |
-| 60–70 | 10' | **Materi 3** — Koperasi, BUMN, BUMD, Yayasan | Bryan |
-| 70–86 | 16' | **Aktivitas 3**: Studi Kasus "Bangun Usaha" | Bryan pimpin, semua jadi juri |
-| 86–92 | 6' | **Kuis** 12 soal | Anggota 3 |
-| 92–95 | 3' | Rangkuman + penutup | Bryan |
+| 00–03 | 3' | Pembuka + tanya pembuka "Punya Siapa Ini?" | Bryan |
+| 03–05 | 2' | Bongkar jawaban + peta materi | Bryan |
+| 05–17 | 12' | **Materi 1** — Pengertian & beda dari perusahaan | Anggota 2 |
+| 17–20 | 3' | Klasifikasi + **cek cepat** angkat tangan | Anggota 2 |
+| 20–34 | 14' | **Materi 2** — Perseorangan, Firma, CV, PT, PT Perorangan | Anggota 3 |
+| 34–36 | 2' | **Tanya pendapat** — kenapa masih banyak orang bikin CV | Anggota 3 |
+| 36–48 | 12' | **Materi 3** — Koperasi, BUMN, BUMD, Yayasan | Bryan |
+| 48–51 | 3' | **Materi 4** — Cara memilih + tabel rangkuman | Bryan |
+| 51–56 | 5' | **Studi kasus lisan** — 3 kasus, dijawab kelas | Bryan pimpin |
+| 56–58 | 2' | **3 pertanyaan cepat** — angkat jari | Anggota 3 |
+| 58–60 | 2' | Penutup | Bryan |
+
+**Titik interaksi ada enam**, tersebar rata: menit 0, 15, 19, 35, 51–56, dan 58.
+Blok bicara terpanjang cuma 12 menit dan tiap blok dipotong satu pertanyaan.
 
 ---
 
-# BAGIAN A — PEMBUKA (00–08) · Bryan
+# BAGIAN A — PEMBUKA (00–05) · Bryan
 
-## A1. Aktivitas 1 — "Punya Siapa Ini?" (00–04)
+## A1. Tanya pembuka — "Punya Siapa Ini?" (00–03)
 
 `[AKSI] Jangan perkenalan dulu. Langsung tampilkan Slide 2 yang isinya 6 nama:`
 `Indomaret · PT KAI · Gojek · Warung nasi depan kampus · Kopma UKSW · Perumda Air Minum`
@@ -79,7 +91,7 @@ rumah pribadinya** buat bayar utang tadi.
 
 `[TUNGGU 5] — biarkan canggung. Ini memang bikin bingung, dan itu tujuannya.`
 
-## A2. Bongkar + peta materi (04–08)
+## A2. Bongkar + peta materi (03–05)
 
 Jawabannya: buat sebagian dari usaha di layar itu **bisa**, buat sebagian lagi
 **nggak bisa sama sekali** — meskipun sama-sama usaha, sama-sama cari untung,
@@ -90,7 +102,7 @@ dia. Yang menentukan cuma satu: **bentuk badan usahanya.**
 
 `[AKSI] Jeda 2 detik. Ini kalimat kunci, biarin nyangkut.`
 
-Dan itu yang mau kita bahas 90 menit ke depan. Bukan buat hafalan ujian — tapi
+Dan itu yang mau kita bahas satu jam ke depan. Bukan buat hafalan ujian — tapi
 karena kalau nanti kalian bikin usaha sendiri, salah pilih di awal itu bisa
 berarti harta pribadi kalian ikut jadi jaminan tanpa kalian sadari.
 
@@ -100,10 +112,11 @@ Kita bakal lewat tiga bagian:
 
 Satu, **apa itu badan usaha** — dan kenapa badan usaha itu beda dari perusahaan.
 Dua, **bentuk-bentuknya** — dari warung sampai PT sampai BUMN.
-Tiga, **cara milihnya** — dan itu bagian di mana kalian yang kerja, bukan kami.
+Tiga, **cara milihnya** — dan di bagian itu kami bakal kasih kalian beberapa
+kasus buat dijawab bareng-bareng.
 
-Ada tiga aktivitas. Yang terakhir kalian bakal mendirikan usaha sendiri di atas
-kertas dan mempertahankannya di depan kelas.
+Satu hal biar kalian siap: **kami bakal sering berhenti dan nanya pendapat
+kalian.** Nggak ada jawaban yang salah, kami cuma pengen dengar alasannya.
 
 Perkenalan singkat: gw [nama], ini [Anggota 2] dan [Anggota 3].
 [Anggota 2], silakan.
@@ -112,10 +125,10 @@ Perkenalan singkat: gw [nama], ini [Anggota 2] dan [Anggota 3].
 
 ---
 
-# BAGIAN B — MATERI 1 (08–24) · Anggota 2
+# BAGIAN B — MATERI 1 (05–20) · Anggota 2
 ## Pengertian dan Klasifikasi
 
-### B1. Definisi (08–12)
+### B1. Definisi (05–08)
 
 `[AKSI] Slide 4.`
 
@@ -136,7 +149,7 @@ daya buat menghasilkan sesuatu yang bernilai.
 
 **"Faktor produksi"** itu empat: alam, tenaga kerja, modal, dan keahlian.
 
-### B2. Badan usaha ≠ perusahaan (12–17)
+### B2. Badan usaha ≠ perusahaan (08–13)
 
 `[AKSI] Slide 5.`
 
@@ -166,17 +179,20 @@ bayar pajak tetap cuma satu: badan usahanya.
 
 `[AKSI] Cek paham — jangan tanya "paham ya?"`
 
-Coba gw tes. Warung nasi depan kampus. Yang mana badan usahanya, yang mana
-perusahaannya? Diskusi 20 detik sama sebelah kalian.
+Coba gw tes. **Warung nasi depan kampus.** Yang mana badan usahanya, yang mana
+perusahaannya?
 
-`[AKSI] Hitung 20 detik beneran. Terus tunjuk satu kelompok kecil, bukan individu.`
+`[TUNGGU 5]` `[AKSI] Beneran hitung sampai lima. Jangan dijawab sendiri.`
 
-`[TUNGGU 5]`
+`[AKSI] Kalau masih sunyi, turunkan levelnya: "Oke gw bantu — kompornya itu badan`
+`usaha atau perusahaan?" Itu hampir selalu langsung dijawab.`
+
+`[AKSI] Terima jawaban dari 1–2 orang, akui dulu apa pun jawabannya, baru luruskan:`
 
 Ya — **bangunan warungnya, kompor, meja, etalase** itu perusahaannya.
 **Usaha atas nama Bu Sri yang punya izin dan bayar pajak** itu badan usahanya.
 
-### B3. Kenapa ini penting (17–19)
+### B3. Kenapa ini penting (13–15)
 
 `[AKSI] Slide 7.`
 
@@ -195,11 +211,11 @@ Tiga — **berapa mahal dan ribet mendirikannya.**
 Empat — **bisa ikut proyek besar atau nggak.** Banyak tender dan kerja sama
 perusahaan besar mensyaratkan berbadan hukum.
 
-### B4. Klasifikasi (19–24)
+### B4. Klasifikasi (15–17)
 
 `[AKSI] Slide 8.`
 
-Badan usaha bisa dikelompokkan dari beberapa sudut. Gw kasih tiga yang umum,
+Badan usaha bisa dikelompokkan dari beberapa sudut. Gw kasih dua yang umum,
 terus satu yang paling penting.
 
 **Pertama, menurut lapangan usahanya.** Ada lima:
@@ -244,99 +260,41 @@ yang bangkrut kalian.**
 
 Itu jawaban dari pertanyaan di awal tadi soal rumah pribadi yang bisa hilang.
 
-Sekarang kita tes ini langsung. [Bryan], silakan.
+### B5. Cek cepat — angkat tangan (17–20)
 
----
+`[AKSI] Slide 11 — delapan nama usaha, TANPA jawaban.`
 
-# BAGIAN C — AKTIVITAS 2: KARTU SORTIR (24–35) · Bryan
+Sekarang gw tes langsung. Gw sebut delapan usaha satu per satu. **Angkat tangan
+kalau menurut kalian yang gw sebut itu berbadan hukum.** Nggak usah takut salah
+— beberapa di antaranya memang menjebak.
 
-## C1. Instruksi (24–27)
+`[AKSI] Sebut satu-satu, kasih jeda 3 detik tiap nama, hitung kasar tangan yang naik.`
+`Jangan dikoreksi dulu — komentar aja singkat: "oke, separuh kelas." Yang penting`
+`mereka berkomitmen ke satu jawaban sebelum lihat kuncinya.`
 
-`[AKSI] Sebelum ngomong, tulis di papan tulis, besar-besar:`
-```
-KELOMPOK 4 ORANG   ·   8 MENIT   ·   2 KOLOM TERISI
-```
-`[AKSI] Selalu bilang hasilnya dulu, baru caranya.`
+PT Pertamina (Persero). `[TUNGGU 3]`
+Perum BULOG. `[TUNGGU 3]`
+Bank Jateng. `[TUNGGU 3]`
+Gojek. `[TUNGGU 3]`
+Kopma UKSW. `[TUNGGU 3]`
+Warung Nasi Bu Sri. `[TUNGGU 3]`
+CV Maju Jaya. `[TUNGGU 3]`
+Firma Santoso & Rekan. `[TUNGGU 3]`
 
-Oke. Yang bakal kalian punya di akhir aktivitas ini adalah **selembar kertas
-dengan dua kolom yang terisi**. Itu targetnya.
+Sebelum gw kasih kuncinya — **yang mana yang paling bikin kalian ragu?**
 
-Caranya begini.
+`[TUNGGU 5]` `[AKSI] Kalau sunyi: "Baris depan sebelah kiri — yang mana yang paling`
+`bikin bingung?" Panggil area, bukan orang.`
 
-**Bentuk kelompok berempat** dengan yang duduk paling dekat. Nggak usah pindah
-jauh-jauh, muter kursi aja.
+`[AKSI] Yang hampir selalu disebut: CV dan Kopma. Akui dulu, baru tampilkan Slide 12.`
 
-`[AKSI] Tunggu sampai mereka beneran duduk berkelompok. Jangan lanjut sambil ribut.`
-`[AKSI] Anggota 2 & 3 bagikan: 1 set kartu + 1 lembar kertas + 1 spidol per kelompok.`
-
-Tiap kelompok dapat **sepuluh kartu**. Isinya nama-nama usaha yang kalian kenal.
-
-Tugasnya dua tahap.
-
-**Tahap satu** — bagi sepuluh kartu itu ke tiga tumpukan: **Milik Negara**,
-**Milik Daerah**, **Milik Swasta**. Tulis hasilnya di kertas.
-
-**Tahap dua** — dan ini yang susah — **kumpulin lagi semua kartunya**, terus bagi
-ulang jadi dua tumpukan saja: **Berbadan Hukum** dan **Bukan Badan Hukum**.
-
-Waktunya **8 menit** buat dua-duanya.
-
-Satu aturan tambahan: kalau kelompok kalian nggak sepakat soal satu kartu,
-**taruh kartu itu di tengah** dan lanjut. Nanti yang di tengah itu justru yang
-kita bahas bareng.
-
-`[AKSI] Cek paham. Kelas jawab bareng, jangan diskip.`
-
-Berapa orang per kelompok? `[TUNGGU]`
-Berapa menit? `[TUNGGU]`
-Yang harus jadi apa? `[TUNGGU]`
-
-Oke — mulai.
-
-## C2. Saat mereka kerja (27–35)
-
-`[AKSI] KALIAN BERTIGA KELILING. Jangan berdiri di depan.`
-`[AKSI] Datangi kelompok yang diam duluan — biasanya mereka nggak ngerti instruksi,`
-`bukan males.`
-
-Kalimat yang dipakai keliling — **jangan kasih jawaban**, kasih pertanyaan:
-
-- "Yang ini kenapa masuk situ?"
-- "Kalau usaha ini rugi besar, siapa yang bayar?"
-- "Ada yang nggak sepakat? Kenapa?"
-
-`[AKSI] Kode waktu dari yang pegang stopwatch:`
-`menit ke-4 → "sisa 4 menit, mulai tahap dua ya"`
-`menit ke-7 → angkat 1 jari`
-`menit ke-8 → "stop, pegang kartunya, tetep di kelompok"`
-
----
-
-# BAGIAN D — BAHAS HASIL SORTIR (35–39) · Anggota 2
-
-`[AKSI] Slide 11 — kunci jawaban, tapi JANGAN ditampilkan dulu. Tanya dulu.`
-
-Sebelum gw kasih kuncinya — kartu mana yang paling bikin kelompok kalian
-berantem?
-
-`[TUNGGU 5]` `[AKSI] Kalau sunyi: "Kelompok yang di pojok, kartu mana yang di tengah?"`
-
-`[AKSI] Yang hampir selalu jadi masalah: CV, Firma, dan Kopma. Bahas yang disebut`
-`kelas dulu, baru tampilkan Slide 11.`
+`[AKSI] Slide 12 — kunci jawaban.`
 
 Ini kuncinya.
 
-**Milik negara**: PT Pertamina, PT KAI, Perum BULOG.
-**Milik daerah**: Perumda Air Minum, Bank Jateng.
-**Milik swasta**: Indomaret, Gojek, warung nasi, CV Maju Jaya, Kopma UKSW.
-
-`[AKSI] Slide 12 — sortir kedua.`
-
-Yang kedua ini yang penting.
-
-**Berbadan hukum**: PT Pertamina, PT KAI, Perum BULOG, Perumda Air Minum, Bank
-Jateng, PT Gojek, Kopma UKSW.
-**Bukan badan hukum**: warung nasi, CV Maju Jaya, dan Firma-nya.
+**Berbadan hukum**: PT Pertamina, Perum BULOG, Bank Jateng, Gojek, dan Kopma
+UKSW.
+**Bukan badan hukum**: warung nasi, CV Maju Jaya, dan Firma Santoso & Rekan.
 
 Dua yang paling sering salah:
 
@@ -351,7 +309,7 @@ Sekarang [Anggota 3] bakal bahas satu-satu bentuknya.
 
 ---
 
-# BAGIAN E — MATERI 2 (39–57) · Anggota 3
+# BAGIAN C — MATERI 2 (20–36) · Anggota 3
 ## Bentuk Badan Usaha Swasta
 
 `[AKSI] Slide 13. Urutan yang dipakai: dari yang paling sederhana ke paling rumit.`
@@ -361,7 +319,7 @@ Gw bakal bahas lima bentuk, urut dari yang paling gampang bikinnya sampai yang
 paling ribet. Dan di tiap bentuk, gw selalu jawab satu pertanyaan yang sama:
 **kalau rugi, siapa yang nanggung.**
 
-### E1. Perusahaan Perseorangan (39–42)
+### C1. Perusahaan Perseorangan (20–22)
 
 `[AKSI] Slide 14.`
 
@@ -382,7 +340,7 @@ tabungan.
 Selain itu modalnya terbatas kemampuan satu orang, dan umur usahanya bergantung
 pada pemiliknya. Pemiliknya berhenti, usahanya berhenti.
 
-### E2. Firma (42–46)
+### C2. Firma (22–25)
 
 `[AKSI] Slide 15.`
 
@@ -409,7 +367,7 @@ Makanya firma cuma jalan kalau semua sekutunya benar-benar saling percaya.
 Biasanya dipakai kantor akuntan, kantor hukum, kantor konsultan — di mana
 orang-orangnya sudah lama saling kenal.
 
-### E3. CV (46–50)
+### C3. CV (25–28)
 
 `[AKSI] Slide 16.`
 
@@ -444,7 +402,7 @@ orang yang mau kerja tapi kurang modal.
 **Tapi ingat — CV tetap bukan badan hukum.** Sekutu aktifnya tetap menanggung
 penuh.
 
-### E4. Perseroan Terbatas (50–55)
+### C4. Perseroan Terbatas (28–32)
 
 `[AKSI] Slide 18.`
 
@@ -493,7 +451,7 @@ Ruginya PT: paling mahal dan paling rumit didirikan, kewajiban laporannya banyak
 dan pajaknya berlapis — PT-nya kena pajak, terus dividen ke pemegang saham kena
 pajak lagi.
 
-### E5. PT Perorangan (55–57)
+### C5. PT Perorangan (32–34)
 
 `[AKSI] Slide 21. Kasih penekanan — ini bagian paling relevan buat mereka.`
 
@@ -522,24 +480,26 @@ atau omzet dua sampai lima belas miliar.
 Artinya buat kalian: **kalau nanti mau buka usaha sendiri, sekarang bisa langsung
 punya badan hukum tanpa partner dan tanpa notaris.**
 
----
-
-# BAGIAN F — JEDA THINK-PAIR-SHARE (57–60) · Anggota 3
+### C6. Tanya pendapat — kenapa masih banyak CV? (34–36)
 
 `[AKSI] Slide 22 — satu pertanyaan besar di tengah layar.`
 
-Sebelum lanjut, satu pertanyaan.
+Sebelum lanjut, satu pertanyaan buat kalian.
 
 Kalau PT itu jelas lebih aman — harta pribadi terlindungi — **kenapa masih banyak
-banget orang bikin CV?**
+banget orang yang bikin CV?**
 
-Diskusi **30 detik** sama sebelah kalian. Bukan mikir sendiri — ngomong.
+`[TUNGGU 5]` `[AKSI] Diam. Hitung beneran sampai lima. Ini pertanyaan yang gampang`
+`dijawab, jadi biasanya ada yang angkat tangan di detik ketiga atau keempat.`
 
-`[AKSI] Hitung 30 detik. Terus tunjuk DUA kelompok, jangan cuma satu.`
+`[AKSI] Kalau tetap sunyi, turunkan jadi pilihan: "Gw bantu — menurut kalian karena`
+`CV lebih murah, atau karena CV lebih cepat ngurusnya?" Setelah ada satu orang`
+`ngomong, biasanya yang lain nyusul.`
 
-`[AKSI] Jawaban yang diharapkan — akui yang mereka sebut dulu sebelum nambahin:`
+`[AKSI] Ambil 2–3 jawaban. Akui tiap jawaban sebelum nambahin — "nah itu satu",`
+`bukan "salah". Baru simpulkan:`
 
-Yang benar semua. Alasannya:
+Yang kalian sebut tadi benar semua. Alasannya kira-kira tiga:
 
 **Biaya dan waktu** — CV lebih murah dan lebih cepat.
 **Kebiasaan** — banyak pengurusan izin di daerah masih lebih familiar sama CV.
@@ -547,16 +507,16 @@ Yang benar semua. Alasannya:
 belum sepadan sama biayanya.
 
 Jadi jawabannya bukan "PT selalu lebih baik". Jawabannya **tergantung risiko dan
-ukuran usahanya** — dan itu persis yang bakal kalian latih di aktivitas terakhir.
+ukuran usahanya** — dan itu persis yang bakal kita pakai di bagian terakhir nanti.
 
 [Bryan], lanjut.
 
 ---
 
-# BAGIAN G — MATERI 3 (60–70) · Bryan
+# BAGIAN D — MATERI 3 (36–48) · Bryan
 ## Koperasi, BUMN, BUMD, Yayasan
 
-### G1. Koperasi (60–65)
+### D1. Koperasi (36–41)
 
 `[AKSI] Slide 23.`
 
@@ -610,7 +570,7 @@ semua anggota — **simpanan wajib** yang rutin, dan **simpanan sukarela**.
 Contoh yang paling dekat: **Kopma UKSW.** Anggotanya mahasiswa, yang belanja di
 situ mahasiswa juga, dan SHU-nya balik ke mahasiswa.
 
-### G2. BUMN (65–68)
+### D2. BUMN (41–44)
 
 `[AKSI] Slide 27.`
 
@@ -641,7 +601,7 @@ itu, Presiden mendelegasikan sebagian kewenangan pengelolaan BUMN ke Danantara.
 Jadi kalau kalian baca buku pengantar bisnis terbitan lama soal BUMN, struktur
 pengelolaannya sekarang sudah berubah.
 
-### G3. BUMD dan Yayasan (68–70)
+### D3. BUMD dan Yayasan (44–48)
 
 `[AKSI] Slide 29.`
 
@@ -657,6 +617,15 @@ kenal PDAM.
 **Perseroda** — Perusahaan Perseroan Daerah. Bentuknya PT, modal terbagi saham,
 **minimal 51% milik daerah**. Sejajar dengan Persero. Contoh: Bank Jateng.
 
+`[AKSI] Cek cepat, jangan diskip — ini gratis dan bikin kelas melek lagi.`
+
+Coba **angkat tangan** — menurut kalian Perumda Air Minum di kota kalian itu
+tujuan utamanya cari untung sebesar-besarnya, atau melayani warga?
+
+`[TUNGGU 5]`
+
+Betul, melayani. Itu sebabnya bentuknya Perumda, bukan Perseroda.
+
 `[AKSI] Slide 30.`
 
 Terakhir, **Yayasan.** UU Nomor 16 Tahun 2001 jo. UU Nomor 28 Tahun 2004.
@@ -670,100 +639,160 @@ yayasannya, nggak boleh dibagi ke pengurus.
 
 Contoh paling dekat: yayasan yang menaungi kampus ini.
 
-`[AKSI] Slide 31 — tabel perbandingan besar. Biarkan tetap di layar selama Aktivitas 3.`
+---
 
-Ini rangkuman semuanya dalam satu tabel. Slide ini gw biarin nyala, karena
-sebentar lagi kalian butuh.
+# BAGIAN E — MATERI 4: CARA MEMILIH (48–51) · Bryan
+
+`[AKSI] Slide 31 — tabel perbandingan besar. Jangan dibaca satu-satu, kelas nggak`
+`akan ngikutin. Tunjuk SATU baris aja.`
+
+Ini rangkuman semuanya dalam satu tabel. Gw nggak akan bacain semuanya — gw cuma
+mau kalian lihat **satu baris**: baris "tanggung jawab".
+
+`[AKSI] Tunjuk baris "Tanggung jawab".`
+
+Perseorangan, Firma, CV — tidak terbatas. PT, PT Perorangan, Koperasi — terbatas.
+Itu garis pemisah yang paling menentukan, dan semua yang lain ngikutin dari situ.
+
+`[AKSI] Slide 32 — alur memilih. Ini yang mereka pakai sebentar lagi.`
+
+Sekarang, gimana cara milihnya. Ternyata cuma **empat pertanyaan**.
+
+**Satu — sendiri atau bareng orang?** Kalau sendiri dan mau harta pribadi aman:
+**PT Perorangan**. Kalau sendiri dan mau yang paling simpel dan murah:
+**perusahaan perseorangan**.
+
+**Dua — ada yang cuma mau taruh uang tanpa ikut mengurus?** Kalau ada:
+**CV**. Kalau semua ikut kerja, lanjut ke pertanyaan tiga.
+
+**Tiga — butuh modal besar, mau tarik investor, atau mau ikut tender besar?**
+Kalau ya: **PT**. Kalau nggak: **Firma**.
+
+**Empat, kasus khusus.** Kalau untungnya mau balik ke anggota sendiri:
+**Koperasi**. Kalau tujuannya sosial, bukan laba: **Yayasan**. Kalau dimodali
+negara atau daerah: **BUMN** atau **BUMD**.
+
+`[AKSI] Jeda 2 detik.`
+
+Dan di setiap cabang, pertanyaan penentunya selalu sama: **siapa yang menanggung
+kalau rugi, dan siapa yang menikmati kalau untung.**
+
+Sekarang kita coba pakai.
 
 ---
 
-# BAGIAN H — AKTIVITAS 3: STUDI KASUS (70–86) · Bryan
+# BAGIAN F — STUDI KASUS LISAN (51–56) · Bryan
 
-## H1. Instruksi (70–72)
+`[AKSI] Nggak ada kelompok, nggak ada kertas. Lu bacain kasusnya, kelas jawab lisan.`
+`Alokasi tiap kasus sekitar 100 detik: baca 20 detik, tunggu 10, ambil 2 jawaban,`
+`kunci 30 detik. Pegang stopwatch — ini bagian yang paling gampang kelewat waktu.`
 
-`[AKSI] Tulis di papan, hapus tulisan sebelumnya:`
-```
-KELOMPOK SAMA   ·   8 MENIT DISKUSI   ·   PITCH 60 DETIK
-JAWAB: bentuk apa + KENAPA
-```
+Gw punya tiga situasi. Buat tiap situasi, gw mau kalian jawab dua hal:
+**bentuk apa yang paling cocok, dan kenapa.**
 
-Sekarang giliran kalian yang kerja.
+Satu aturan: **alasannya minimal dua**, dan minimal satu alasan harus soal
+**siapa yang menanggung kalau rugi**. Jangan cuma nyebut nama bentuknya.
 
-Yang bakal kalian punya di akhir: **satu kalimat keputusan yang kalian pertahankan
-di depan kelas.** Itu targetnya.
+## F1. Kasus 1 — usaha desain sendirian (51–53)
 
-Kembali ke kelompok yang tadi. Tiap kelompok bakal dapat **satu kartu berisi satu
-situasi usaha**. Tugas kalian: **tentukan bentuk badan usaha yang paling cocok,
-dan siapkan alasannya.**
+`[AKSI] Slide 33. Baca keras-keras, jangan cuma nyuruh mereka baca layar.`
 
-`[AKSI] Anggota 2 & 3 bagikan kartu studi kasus — 1 kartu per kelompok.`
+> Bryan mau buka jasa desain grafis sendirian. Modalnya lima juta dari tabungan.
+> Dia mau bisa ikut tender kecil dari instansi pemerintah, dan dia nggak mau
+> rumah orang tuanya ikut kena kalau usahanya rugi.
 
-Aturannya tiga:
+Bentuk apa yang paling cocok? Dan kenapa?
 
-Satu — **jawabannya harus satu bentuk saja.** Nggak boleh "PT atau CV". Pilih.
+`[TUNGGU 5]` `[AKSI] Ambil 2 jawaban. Akui dulu, jangan langsung dikoreksi.`
 
-Dua — **alasannya minimal dua.** Dan minimal satu alasan harus soal **siapa yang
-menanggung kalau rugi**.
+`[AKSI] KUNCI — PT Perorangan.` Sendirian tapi tetap badan hukum, jadi tanggung
+jawabnya terbatas dan rumah orang tuanya aman. Nggak perlu notaris, dan modal
+lima juta jelas masuk kriteria usaha mikro.
 
-Tiga — **nanti kalian maju dan cuma punya 60 detik.** Jadi susun jawabannya
-pendek: "Kami pilih X, karena satu… karena dua…"
+`[AKSI] Kalau ada yang jawab UD — jangan bilang salah:` "Betul soal murahnya, tapi
+UD itu tanggung jawabnya tidak terbatas. Jadi syarat 'rumah orang tua aman'-nya
+nggak kepenuhi."
 
-Diskusi **8 menit**. Tabel di layar boleh dipakai. Mulai.
+## F2. Kasus 2 — startup berlima (53–54.5)
 
-## H2. Saat mereka kerja (72–80)
+`[AKSI] Slide 34.`
 
-`[AKSI] Bertiga keliling lagi. Pertanyaan pancingan yang dipakai:`
+> Lima orang mau bangun startup teknologi. Tiga orang bakal kerja penuh di
+> startup-nya. Dua orang cuma mau menanam uang dan nggak mau ikut ngurus sama
+> sekali. Ke depan mereka mau cari pendanaan dari investor luar.
 
-- "Kalau usaha ini rugi besar, siapa yang bayar?"
-- "Ada orang di kasus ini yang cuma mau taruh uang doang?"
-- "Usaha ini butuh modal dari luar nggak?"
-- "Kalau salah satu keluar, usahanya harus bubar nggak?"
+`[TUNGGU 5]` `[AKSI] Ini kasus yang jawabannya suka kebelah dua — bagus, manfaatkan.`
+`Kalau ada yang jawab CV dan ada yang jawab PT, adu dua-duanya: "Kelompok yang`
+`jawab CV, gimana tanggapan kalian soal investor?"`
 
-`[AKSI] Kode waktu: menit 5 → 3 jari · menit 7 → 1 jari · menit 8 → stop.`
+`[AKSI] KUNCI — PT.` Kata kuncinya "**cari pendanaan dari investor luar**".
+Investor butuh saham, dan saham cuma ada di PT.
 
-## H3. Pitch (80–86)
+`[AKSI] Kalau ada yang jawab CV, puji dulu:` "Alasannya kuat — memang ada dua orang
+yang cuma mau taruh uang, dan itu persis sekutu pasif. Yang bikin CV kurang cocok
+di sini cuma satu: CV nggak punya saham, jadi susah buat pendanaan berikutnya."
 
-`[AKSI] Kalian bertiga jadi juri, berdiri di depan. Satu orang pegang stopwatch`
-`60 detik dan tegas motong.`
+## F3. Kasus 3 — dua puluh lima petani (54.5–56)
 
-Oke, waktu habis. Sekarang tiap kelompok maju **60 detik**. Gw potong tepat di
-60 detik, jadi langsung ke jawabannya, jangan pakai pembukaan.
+`[AKSI] Slide 35.`
 
-`[AKSI] Panggil kelompok, jangan nunggu sukarelawan. "Kelompok satu, silakan."`
+> Dua puluh lima petani di satu desa selama ini jual hasil panen ke tengkulak
+> dengan harga rendah. Mereka mau bikin usaha bersama supaya bisa jual langsung,
+> dan mereka mau keuntungannya balik ke petani yang paling banyak menyetor hasil
+> panen.
 
-`[AKSI] Setelah tiap pitch, kasih SATU kalimat tanggapan — jangan ceramah:`
+`[TUNGGU 5]`
 
-- Kalau **benar**: *"Betul, dan alasan yang paling kuat tadi yang soal tanggung
-  jawabnya."*
-- Kalau **kurang tepat**: *"Masuk akal, tapi coba pikirin lagi — di jawaban
-  kalian, siapa yang harus jual rumah kalau usahanya rugi?"* Terus lanjut ke
-  kelompok berikutnya, jangan digantung lama.
-- Kalau **beda tapi tetap bisa dibela**: *"Ini sebenarnya bisa dua-duanya. Yang
-  bikin kalian benar itu alasannya, bukan pilihannya."*
+`[AKSI] KUNCI — Koperasi`, jenis produsen atau pemasaran. Kata kuncinya
+"**untungnya balik ke yang paling banyak menyetor**" — itu persis definisi SHU:
+dibagi menurut jasa anggota, bukan menurut modal. Jumlahnya juga sudah lewat
+minimal sembilan orang.
 
-`[AKSI] Kunci jawaban tiap kasus ada di Lampiran B.`
-
----
-
-# BAGIAN I — KUIS (86–92) · Anggota 3
-
-`[AKSI] Kahoot kalau sinyal aman. Kalau nggak, pakai jari — baca soal, kelas`
-`angkat 1–4 jari. Soalnya sama persis, ada di Lampiran C.`
-
-Terakhir, kuis cepat. Dua belas soal, masing-masing sepuluh detik.
-
-`[AKSI] Jangan bahas semua soal — makan waktu. Bahas cuma yang salahnya paling`
-`banyak, maksimal tiga soal. Kahoot nunjukin persentasenya langsung.`
+`[AKSI] Kalau waktunya tinggal sedikit, kasus 3 boleh dipendekin jadi: baca, tunggu`
+`5 detik, ambil SATU jawaban, langsung kunci.`
 
 ---
 
-# BAGIAN J — PENUTUP (92–95) · Bryan
+# BAGIAN G — TIGA PERTANYAAN CEPAT (56–58) · Anggota 3
 
-`[AKSI] Slide 32 — tiga poin saja.`
+`[AKSI] Slide 36. Nggak pakai Kahoot, nggak pakai HP. Kelas angkat jari 1–4 sesuai`
+`nomor jawaban. Baca soal, tunggu jarinya naik, sebut jawabannya, lanjut.`
+`Satu kalimat komentar per soal — jangan diceramahin.`
+
+Terakhir, tiga pertanyaan cepat. Jawabnya **angkat jari** — satu, dua, tiga, atau
+empat, sesuai nomor jawaban yang kalian pilih. Nggak usah malu salah, tiga soal
+ini memang yang paling sering keliru.
+
+**Soal satu. Yang berikut ini BUKAN badan hukum:**
+satu, Koperasi · dua, PT Perorangan · tiga, CV · empat, Yayasan.
+
+`[TUNGGU 5]` → **Jawabannya tiga, CV.** Punya akta notaris, punya NPWP, tapi tetap
+bukan badan hukum.
+
+**Soal dua. Setelah UU Cipta Kerja, modal dasar PT:**
+satu, tetap minimal Rp50 juta · dua, minimal Rp25 juta · tiga, nggak ada batas
+minimum · empat, nggak perlu modal sama sekali.
+
+`[TUNGGU 5]` → **Jawabannya tiga.** Nggak ada batas minimum, ditentukan
+kesepakatan pendiri. Yang masih wajib itu 25%-nya disetor penuh.
+
+**Soal tiga. Minimal pendiri koperasi primer sekarang:**
+satu, 3 orang · dua, 9 orang · tiga, 20 orang · empat, 25 orang.
+
+`[TUNGGU 5]` → **Jawabannya dua, sembilan orang.** Turun dari 20, diubah UU Cipta
+Kerja.
+
+[Bryan], tutup.
+
+---
+
+# BAGIAN H — PENUTUP (58–60) · Bryan
+
+`[AKSI] Slide 37 — tiga poin saja.`
 
 Oke, kita tutup.
 
-Kalau dari 90 menit tadi kalian cuma bawa pulang tiga hal, gw mau tiga ini:
+Kalau dari satu jam tadi kalian cuma bawa pulang tiga hal, gw mau tiga ini:
 
 **Satu. Badan usaha itu "siapa"-nya, perusahaan itu "di mana dan pakai apa"-nya.**
 
@@ -773,15 +802,19 @@ nentuin harta pribadi kalian ikut kena atau nggak.**
 **Tiga. Nggak ada bentuk yang paling bagus. Yang ada bentuk yang paling cocok
 sama risiko dan ukuran usaha kalian.**
 
-`[AKSI] Slide 33 — exit ticket. Kalau pakai Mentimeter word cloud, tampilkan`
-`kodenya. Kalau nggak, minta mereka tulis di kertas dan kumpulkan di depan.`
+`[AKSI] Slide 38 — pertanyaan penutup. Dijawab lisan, nggak usah ditulis.`
 
-Satu hal terakhir sebelum bubar. Tulis **satu kalimat** buat lengkapin ini:
+Satu hal terakhir sebelum bubar. Gw mau dengar dua atau tiga orang ngelengkapin
+kalimat ini:
 
 > *"Kalau gw buka usaha sendiri tahun depan, gw bakal pilih ______ karena ______."*
 
-`[AKSI] Kasih 60 detik. Kalau pakai Mentimeter, baca 2–3 jawaban yang muncul`
-`dengan suara keras. Ini penutup yang paling nempel.`
+`[TUNGGU 5]` `[AKSI] Kalau sunyi, lu yang mulai: "Gw duluan — gw bakal pilih PT`
+`Perorangan karena gw mau usaha sendirian tapi nggak mau harta pribadi kena."`
+`Setelah satu contoh keluar, biasanya langsung ada yang nyusul.`
+
+`[AKSI] Ambil 2–3 jawaban. Tanggapi tiap jawaban satu kalimat, jangan dikoreksi`
+`panjang — ini penutup, bukan ujian.`
 
 Makasih. Kalau ada yang mau nanya lebih lanjut, kami bertiga masih di sini.
 
@@ -792,159 +825,62 @@ Makasih. Kalau ada yang mau nanya lebih lanjut, kami bertiga masih di sini.
 
 # Versi mepet — kalau waktu dipotong
 
-Buang **dari bawah ke atas**, urutannya begini. Jangan ngebut, jangan buang
-aktivitas duluan — aktivitas itu yang bikin materinya nempel.
+Buang **dari bawah ke atas**. Jangan ngebut — ngebut bikin semuanya nggak nyampe.
 
 | Kalau cuma punya | Buang |
 | --- | --- |
-| **75 menit** | Kuis (Bagian I). Ganti jadi 3 pertanyaan lisan cepat. |
-| **60 menit** | Kuis + potong Aktivitas 3 jadi 5 menit diskusi & 3 kelompok pitch aja. |
-| **45 menit** | Kuis + Aktivitas 2 (kartu sortir). Sisakan Aktivitas 1 dan 3. Yayasan diskip, Firma dipersingkat. |
-| **30 menit** | Aktivitas 1 (4') + Materi 1 dipersingkat (8') + Materi 2 hanya tabel perbandingan (10') + Aktivitas 3 versi kilat (8'). |
+| **50 menit** | Kasus 3 (petani) dan pertanyaan penutup di Slide 38. Tutup langsung di tiga poin. |
+| **45 menit** | Di atas, plus 3 pertanyaan cepat (Bagian G) dan Yayasan (Slide 30). |
+| **35 menit** | Sisakan: tanya pembuka (3'), Materi 1 dipersingkat sampai Slide 10 (8'), Materi 2 hanya sampai tabel di Slide 17 dan Slide 20 (10'), Koperasi + BUMN (7'), alur memilih (3'), kasus 1 saja (2'), penutup (2'). |
 
 Yang **jangan pernah dibuang**, berapa pun waktunya:
-- Aktivitas 1 di pembuka — ini yang bikin kelas mau dengerin
-- Konsep badan hukum vs bukan badan hukum
-- Tabel perbandingan
-- Aktivitas 3 dalam bentuk apa pun
+- Tanya pembuka di Slide 2 — ini yang bikin kelas mau dengerin
+- Konsep badan hukum vs bukan badan hukum (Slide 10)
+- Cek cepat angkat tangan (Slide 11–12) — ini pengganti aktivitas, dan yang
+  bikin konsep tadi nempel
+- Tabel perbandingan dan alur memilih (Slide 31–32)
+- Minimal satu studi kasus
 
 ---
 
-# LAMPIRAN A — Kartu Sortir
+# Lampiran — cadangan kalau waktunya lebih
 
-Print **6 set**, gunting jadi kartu terpisah. Satu set = 10 kartu.
-Kertas HVS biasa cukup, nggak usah tebal.
+Nggak perlu diprint, nggak perlu disiapkan. Ini cuma buat jaga-jaga kalau
+ternyata sesinya lancar dan masih sisa waktu, atau kalau kelasnya ternyata aktif
+banget dan mau lebih banyak kasus.
 
-```
-┌─────────────────────┐  ┌─────────────────────┐
-│   PT PERTAMINA      │  │      GOJEK          │
-│     (Persero)       │  │  (PT GoTo Gojek     │
-│                     │  │   Tokopedia Tbk)    │
-└─────────────────────┘  └─────────────────────┘
+## Kasus cadangan
 
-┌─────────────────────┐  ┌─────────────────────┐
-│   PT KAI (Persero)  │  │  WARUNG NASI        │
-│                     │  │  BU SRI             │
-└─────────────────────┘  └─────────────────────┘
-
-┌─────────────────────┐  ┌─────────────────────┐
-│   PERUM BULOG       │  │  CV MAJU JAYA       │
-│                     │  │  (jasa konstruksi)  │
-└─────────────────────┘  └─────────────────────┘
-
-┌─────────────────────┐  ┌─────────────────────┐
-│  PERUMDA AIR MINUM  │  │  FIRMA HUKUM        │
-│  (dulu PDAM)        │  │  SANTOSO & REKAN    │
-└─────────────────────┘  └─────────────────────┘
-
-┌─────────────────────┐  ┌─────────────────────┐
-│  BANK JATENG        │  │  KOPMA UKSW         │
-│  (Perseroda)        │  │                     │
-└─────────────────────┘  └─────────────────────┘
-```
-
-**Kunci jawaban:**
-
-| Kartu | Kepemilikan | Badan hukum? |
-| --- | --- | --- |
-| PT Pertamina (Persero) | Negara | **Ya** |
-| PT KAI (Persero) | Negara | **Ya** |
-| Perum BULOG | Negara | **Ya** |
-| Perumda Air Minum | Daerah | **Ya** |
-| Bank Jateng (Perseroda) | Daerah | **Ya** |
-| Gojek | Swasta | **Ya** (PT) |
-| Kopma UKSW | Swasta (anggota) | **Ya** (koperasi) |
-| Warung Nasi Bu Sri | Swasta | **Bukan** |
-| CV Maju Jaya | Swasta | **Bukan** |
-| Firma Hukum Santoso & Rekan | Swasta | **Bukan** |
-
-Yang paling sering salah: **CV dan Firma dikira badan hukum** (karena ada akta
-notarisnya), dan **Kopma dikira bukan** (karena kelihatan kecil).
-
----
-
-# LAMPIRAN B — Kartu Studi Kasus
-
-Print 6 kartu, satu per kelompok. Kalau kelompoknya lebih dari 6, kasus boleh
-dobel — justru bagus, jadi kelihatan dua kelompok bisa beda jawaban.
-
-### Kasus 1
+**Kasus A — katering berdua**
 > Dua sahabat baru lulus kuliah kuliner. Mereka mau buka usaha katering bareng,
 > patungan modal Rp30 juta. Dua-duanya mau ikut masak dan ikut ngurus. Mereka
 > belum mau keluar biaya besar buat legalitas.
->
-> **Bentuk apa yang paling cocok? Kenapa?**
 
-*Kunci: **Firma** (dua-duanya aktif, satu nama bersama, murah). Bisa juga
-**perusahaan perseorangan** atas satu nama kalau mau paling murah — tapi itu
-nggak adil buat yang satunya. Yang harus mereka sadari: **tanggung renteng**,
-utang satu ditanggung berdua sampai harta pribadi.*
+*Kunci: **Firma** — dua-duanya aktif, satu nama bersama, murah. Yang harus mereka
+sadari: tanggung renteng, utang satu ditanggung berdua sampai harta pribadi.*
 
-### Kasus 2
-> Bryan mau buka jasa desain grafis sendirian. Modalnya Rp5 juta dari tabungan.
-> Dia mau bisa ikut tender kecil dari instansi pemerintah, dan dia nggak mau
-> rumah orang tuanya kena kalau usahanya rugi.
->
-> **Bentuk apa yang paling cocok? Kenapa?**
-
-*Kunci: **PT Perorangan.** Sendirian tapi tetap badan hukum, tanggung jawab
-terbatas, nggak perlu notaris, dan masuk kriteria usaha mikro. Kalau jawabannya
-UD — betul soal murahnya, tapi tanggung jawabnya tidak terbatas, jadi syarat
-"rumah orang tua aman" nggak terpenuhi.*
-
-### Kasus 3
-> Lima orang mau bangun startup teknologi. Tiga orang bakal kerja penuh di
-> startup-nya. Dua orang cuma mau menanam uang dan nggak mau ikut ngurus sama
-> sekali. Ke depan mereka mau cari pendanaan dari investor luar.
->
-> **Bentuk apa yang paling cocok? Kenapa?**
-
-*Kunci: **PT.** Kata kuncinya "**cari pendanaan dari investor luar**" — investor
-butuh saham, dan saham cuma ada di PT. **CV** juga masuk akal karena ada sekutu
-pasif, dan itu jawaban yang layak dibela — tapi CV nggak punya saham, jadi susah
-buat pendanaan berikutnya.*
-
-### Kasus 4
-> Dua puluh lima petani di satu desa selama ini jual hasil panen ke tengkulak
-> dengan harga rendah. Mereka mau bikin usaha bersama supaya bisa jual langsung,
-> dan mereka mau keuntungannya balik ke petani yang paling banyak menyetor hasil
-> panen.
->
-> **Bentuk apa yang paling cocok? Kenapa?**
-
-*Kunci: **Koperasi** (produsen/pemasaran). Kata kuncinya "**untungnya balik ke
-yang paling banyak menyetor**" — itu persis definisi SHU dibagi menurut jasa
-anggota. Jumlahnya juga sudah lewat minimal 9 orang.*
-
-### Kasus 5
+**Kasus B — air bersih kota**
 > Pemerintah Kota Salatiga mau mengelola penyediaan air bersih untuk warga.
 > Modalnya seluruhnya dari APBD kota, nggak mau ada pemodal swasta masuk, dan
 > tujuan utamanya melayani warga — bukan cari untung sebesar-besarnya.
->
-> **Bentuk apa yang paling cocok? Kenapa?**
 
 *Kunci: **Perumda** (BUMD). Modal seluruhnya milik satu daerah, nggak terbagi
-saham, tujuan utamanya kemanfaatan umum. Kalau jawabannya **Perseroda** — itu
-salah di bagian "nggak mau pemodal swasta masuk", karena Perseroda modalnya
-terbagi saham.*
+saham, tujuan utamanya kemanfaatan umum. Kalau jawabannya Perseroda — itu salah
+di bagian "nggak mau pemodal swasta masuk", karena Perseroda modalnya terbagi
+saham.*
 
-### Kasus 6
+**Kasus C — perusahaan keluarga mau go public**
 > Perusahaan keluarga yang sudah 30 tahun jalan mau ekspansi besar-besaran.
 > Mereka butuh modal ratusan miliar yang nggak mungkin ditutup keluarga sendiri,
 > dan mereka siap membuka kepemilikan ke masyarakat umum.
->
-> **Bentuk apa yang paling cocok? Kenapa?**
 
-*Kunci: **PT Terbuka (Tbk)** — go public lewat bursa. Kata kuncinya "**membuka
-kepemilikan ke masyarakat umum**". Konsekuensinya: laporan keuangan jadi
-terbuka dan pengendalian keluarga bisa berkurang.*
+*Kunci: **PT Terbuka (Tbk)** — go public lewat bursa. Kata kuncinya "membuka
+kepemilikan ke masyarakat umum". Konsekuensinya: laporan keuangan jadi terbuka
+dan pengendalian keluarga bisa berkurang.*
 
----
+## Soal cadangan
 
-# LAMPIRAN C — Soal Kuis (12 soal)
-
-Format pilihan 4 jawaban, cocok buat Kahoot maupun angkat jari 1–4.
-**Jawaban benar ditandai ✅.**
+Format sama — angkat jari 1–4. **Jawaban benar ditandai ✅.**
 
 **1. Badan usaha berbeda dari perusahaan karena badan usaha adalah…**
 1. kesatuan teknis produksi
@@ -958,65 +894,44 @@ Format pilihan 4 jawaban, cocok buat Kahoot maupun angkat jari 1–4.
 3. ✅ ekstraktif
 4. perdagangan
 
-**3. Berikut ini yang BUKAN badan hukum adalah…**
-1. Koperasi
-2. PT Perorangan
-3. ✅ CV
-4. Yayasan
-
-**4. Arti "terbatas" dalam Perseroan Terbatas adalah…**
+**3. Arti "terbatas" dalam Perseroan Terbatas adalah…**
 1. jumlah pemegang sahamnya dibatasi
 2. ✅ tanggung jawab pemegang saham terbatas sebesar sahamnya
 3. jenis usahanya dibatasi undang-undang
 4. modalnya dibatasi maksimal Rp50 juta
 
-**5. Di CV, sekutu yang hanya menyetor modal dan tidak boleh ikut mengurus disebut…**
+**4. Di CV, sekutu yang hanya menyetor modal dan tidak boleh ikut mengurus disebut…**
 1. sekutu komplementer
 2. ✅ sekutu komanditer
 3. sekutu aktif
 4. sekutu pengurus
 
-**6. Ciri khas Firma yang membedakannya dari CV adalah…**
+**5. Ciri khas Firma yang membedakannya dari CV adalah…**
 1. berbadan hukum
 2. modalnya terbagi atas saham
 3. ✅ semua sekutu aktif dan tanggung jawabnya renteng
 4. boleh didirikan satu orang
 
-**7. Setelah UU Cipta Kerja, modal dasar PT…**
-1. tetap minimal Rp50 juta
-2. minimal Rp25 juta
-3. ✅ tidak ada batas minimum, ditentukan kesepakatan pendiri
-4. dihapus sama sekali, tidak perlu modal
-
-**8. Perseroan Perorangan boleh didirikan oleh…**
+**6. Perseroan Perorangan boleh didirikan oleh…**
 1. minimal 2 orang WNI
 2. ✅ 1 orang WNI berusia minimal 17 tahun dan cakap hukum
 3. minimal 9 orang
 4. warga negara mana pun
 
-**9. Jumlah minimal pendiri koperasi primer saat ini adalah…**
-1. 3 orang
-2. ✅ 9 orang
-3. 20 orang
-4. 25 orang
-
-**10. Pembagian SHU koperasi didasarkan pada…**
+**7. Pembagian SHU koperasi didasarkan pada…**
 1. besarnya modal yang disetor
 2. lama menjadi anggota
 3. ✅ jasa atau transaksi anggota terhadap koperasi
 4. jabatan dalam kepengurusan
 
-**11. BUMN yang seluruh modalnya milik negara dan tidak terbagi atas saham disebut…**
+**8. BUMN yang seluruh modalnya milik negara dan tidak terbagi atas saham disebut…**
 1. Persero
 2. ✅ Perum
 3. Perseroda
 4. Perumda
 
-**12. Bentuk BUMD yang berbentuk PT dengan saham minimal 51% milik daerah adalah…**
+**9. Bentuk BUMD yang berbentuk PT dengan saham minimal 51% milik daerah adalah…**
 1. Perumda
 2. ✅ Perseroda
 3. Perum
 4. Persero
-
-**Soal yang biasanya paling banyak salah: nomor 3, 7, dan 9.** Bahas tiga itu
-kalau waktunya cuma cukup buat sedikit.

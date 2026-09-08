@@ -9,11 +9,16 @@ Baca ini **H-1**, bukan pas hari-H. Isinya bukan materi, tapi cara bawainnya.
 > **Jangan pernah ngomong lebih dari 10 menit tanpa kelas ikut ngapa-ngapain.**
 
 Perhatian orang habis di menit ke-10. Setelah itu mereka masih lihat ke depan,
-tapi otaknya udah pindah ke HP. Semua desain 90 menit di
+tapi otaknya udah pindah ke HP. Semua desain 60 menit di
 [SCRIPT-NGAJAR.md](SCRIPT-NGAJAR.md) dibangun dari aturan ini — blok bicara
-terpanjang cuma 18 menit dan itu pun dipotong satu interaksi di tengah.
+terpanjang cuma 12 menit dan tiap blok dipotong satu pertanyaan.
 
 Kalau lu cuma inget satu hal dari file ini, inget yang ini.
+
+**Catatan buat sesi ini:** nggak ada kerja kelompok, nggak ada kartu, nggak ada
+Kahoot. Satu-satunya alat interaksi yang lu punya adalah **pertanyaan** — jadi
+bab 2, 3, dan 11 di bawah bukan lagi tips tambahan, itu yang bikin sesi ini
+jalan atau mati.
 
 ---
 
@@ -30,12 +35,20 @@ Ganti dengan pertanyaan yang **spesifik dan gampang dijawab**:
 | "Ada pertanyaan?" | "Coba, bedanya CV sama PT tadi di bagian mana?" |
 | "Paham ya?" | "Angkat tangan yang masih bingung soal 'badan hukum'." |
 | "Siapa yang mau jawab?" | "Baris depan sebelah kiri — menurut kalian Indomaret itu apa?" |
-| "Ada yang mau nambahin?" | "Coba diskusi 30 detik sama sebelah kalian, terus gw tanya." |
+| "Ada yang mau nambahin?" | "Yang tadi jawab CV — kenapa CV?" |
 
-Yang terakhir itu namanya **think-pair-share** dan itu senjata paling ampuh buat
-kelas yang pasif. Orang takut salah di depan 30 orang, tapi nggak takut salah di
-depan 1 orang sebelahnya. Setelah ngomong ke sebelahnya, mereka jauh lebih berani
-ngomong ke kelas.
+Dua senjata utama lu di sesi ini, karena dua-duanya nggak butuh alat apa pun:
+
+**Angkat tangan.** Ini yang paling murah dan paling ampuh buat kelas pasif.
+Ngangkat tangan itu nggak perlu keberanian — nggak ada yang bisa nilai lu salah
+karena ngangkat tangan. Dipakai di Slide 2, Slide 11, dan waktu bahas Perumda.
+
+**Bikin mereka berkomitmen dulu, baru kasih jawabannya.** Ini yang bikin Slide 11
+kerja. Kalau orang udah "memilih" satu jawaban — walaupun cuma di kepalanya —
+dia jadi penasaran sama kuncinya. Kalau lu kasih kunci duluan, dia cuma nyatet.
+
+Makanya urutannya **selalu**: tanya → tunggu → mereka jawab → baru buka kunci.
+Jangan pernah kebalik.
 
 ---
 
@@ -54,8 +67,14 @@ Setelah itu nggak akan ada yang jawab seharian.
 Kalau 5 detik lewat dan tetap sunyi, jangan jawab sendiri — **turunkan levelnya**:
 
 1. "Oke, gw bantu. Ini pilihan ganda: A atau B?"
-2. "Diskusi 30 detik sama sebelah kalian dulu."
-3. Baru kalau tetap mentok, lu jawab.
+2. "Yang setuju A angkat tangan. Yang B?" — ini nggak butuh keberanian sama
+   sekali, jadi hampir selalu berhasil.
+3. "Gw jawab duluan biar nggak canggung: menurut gw ___. Ada yang beda?"
+4. Baru kalau tetap mentok, lu jawab.
+
+Nomor 3 itu yang paling sering nyelametin sesi tanpa aktivitas. Yang bikin kelas
+diem biasanya bukan nggak tahu — mereka nggak mau jadi orang pertama. Jadilah
+orang pertama itu sendiri.
 
 ---
 
@@ -113,28 +132,35 @@ tiga kali, sebelum maju. Ini nurunin detak jantung beneran, bukan sugesti.
 
 ---
 
-## 7. Cara ngasih instruksi aktivitas biar nggak kacau
+## 7. Cara mimpin studi kasus lisan (Bagian F)
 
-Aktivitas kelompok berantakan hampir selalu gara-gara instruksinya kacau, bukan
-gara-gara aktivitasnya jelek. Pakai urutan ini, selalu:
+Ini bagian yang paling gampang melar, karena nggak ada timer kelompok yang
+otomatis motong. Lu sendiri yang harus motong. Polanya sama buat tiap kasus:
 
-1. **Bilang hasilnya dulu, baru caranya.**
-   "Nanti tiap kelompok punya 3 kolom yang keisi. Caranya begini…"
-2. **Angka dulu, baru tugas.** "Kelompok 4 orang. Waktu 8 menit. Yang dikerjain:…"
-3. **Tulis di papan**: jumlah orang, waktu, dan yang harus jadi. Tiga angka itu aja.
-4. **Cek paham sebelum mulai** — "Berapa menit? Berapa orang? Apa yang harus jadi?"
-   Kelas jawab bareng. Ini 10 detik dan nyelametin 5 menit kebingungan.
-5. **Baru bilang "mulai"** — jangan orang udah gerak duluan pas lu masih ngomong.
+1. **Bacain kasusnya keras-keras**, jangan cuma nyuruh mereka baca layar. Orang
+   yang baca sendiri bakal setengah baca.
+2. **Ulangi pertanyaannya** — "bentuk apa, dan kenapa." Selalu dua-duanya.
+3. **Tunggu 5 detik.** Beneran.
+4. **Ambil dua jawaban, jangan satu.** Dua jawaban yang beda itu bahan diskusi;
+   satu jawaban bikin kelas ngerasa udah selesai.
+5. **Akui dulu, baru luruskan.** Format yang dipakai: *"Alasannya kuat — [ulangi
+   alasannya]. Yang bikin kurang cocok cuma satu: [koreksi]."* Jangan pernah
+   mulai dengan "salah".
+6. **Kunci jawabannya dalam 30 detik, terus lanjut.** Jangan ngegantung.
 
-Pas mereka kerja, **kalian bertiga keliling**, jangan berdiri di depan. Datangi
-kelompok yang diam — biasanya mereka nggak ngerti instruksinya, bukan males.
+Jatah per kasus **sekitar 100 detik**. Kalau kasus pertama makan 3 menit, kasus
+ketiga bakal ilang.
+
+Jawaban yang "salah tapi bisa dibela" itu justru bahan paling bagus — bilang
+terus terang: *"Ini sebenarnya bisa dua-duanya. Yang bikin kalian benar itu
+alasannya, bukan pilihannya."*
 
 ---
 
 ## 8. Ngatur waktu
 
 Satu orang pegang HP dengan stopwatch, taruh di meja depan, dan **kasih kode
-tangan**, bukan ngomong:
+tangan** ke yang lagi ngomong, bukan ngomong:
 
 - 5 jari terbuka = sisa 5 menit
 - 1 jari = sisa 1 menit
@@ -143,30 +169,34 @@ tangan**, bukan ngomong:
 Sepakati kode ini sebelum masuk kelas. Yang paling sering bikin presentasi
 kelompok kacau itu orang pertama makan waktu orang ketiga.
 
+**Di sesi 60 menit ini ada dua titik yang paling rawan melar:** tanya pendapat di
+Slide 22, dan studi kasus di Bagian F. Dua-duanya nggak punya batas alami — kalau
+kelasnya aktif, mereka bakal terus ngomong. Itu masalah yang menyenangkan, tapi
+tetap masalah. Potong di jatah waktunya.
+
 **Kalau ternyata waktunya dipotong dosen**, jangan panik dan jangan ngebut.
 Ngebut bikin semuanya nggak nyampe. Buang dari bawah, urutannya ada di bagian
 "Versi mepet" di [SCRIPT-NGAJAR.md](SCRIPT-NGAJAR.md).
 
 ---
 
-## 9. Latihan sebelum hari-H
+## 9. Sebelum hari-H
 
-Minimal ini, jangan kurang:
+Nggak ada latihan wajib bertiga. Yang perlu disepakati cuma **tiga hal**, dan itu
+bisa lewat chat:
 
-| Kapan | Ngapain | Berapa lama |
-| --- | --- | --- |
-| H-3 | Baca script sendirian, **keras**, bukan dalam hati | 30 menit |
-| H-2 | Baca lagi keras, sambil klik slide | 30 menit |
-| H-1 | Latihan bertiga, pakai stopwatch, dari awal sampai akhir tanpa berhenti | 100 menit |
-| H-1 | Siapin barang (lihat checklist di bawah) | 20 menit |
-| Hari-H | Datang 15 menit lebih awal, tes proyektor & Kahoot | 15 menit |
+1. **Siapa pegang apa** — lihat tabel pembagian tugas di
+   [SCRIPT-NGAJAR.md](SCRIPT-NGAJAR.md).
+2. **Kalimat serahan antar orang** — lihat bab 10 di bawah. Jangan diimprovisasi,
+   ini bagian paling canggung dari presentasi kelompok.
+3. **Kode tangan buat waktu** — bab 8 di atas.
 
-Latihan **keras** itu wajib, bukan opsional. Baca dalam hati bikin lu ngerasa
-udah siap padahal mulut lu belum pernah ngucapin kalimatnya. Kalimat yang belum
-pernah keluar dari mulut selalu tersendat pas pertama kali.
+Yang tetap gw saranin walaupun nggak wajib: **baca bagian lu sendiri, keras-keras,
+satu kali.** Bukan dalam hati. Kalimat yang belum pernah keluar dari mulut selalu
+tersendat pas pertama kali, dan sekali baca keras udah cukup buat ngilangin itu.
+Bagian lu cuma 15 menit — jadi ini modal 15 menit, bukan lebih.
 
-Yang H-1 bertiga itu yang paling penting — di situ ketahuan siapa kelebihan waktu
-dan di mana transisi antar orang kerasa canggung.
+Hari-H: datang 10 menit lebih awal, colok laptop, tes proyektor.
 
 ---
 
@@ -183,23 +213,37 @@ kalimat serahannya, jangan diimprovisasi:
 Yang menyerahkan **jangan langsung duduk**. Berdiri di samping, jadi cadangan
 kalau ada pertanyaan.
 
+Serahannya ada lima: Bryan → A2 (menit 5), A2 → A3 (menit 20), A3 → Bryan
+(menit 36), Bryan → A3 buat tiga pertanyaan (menit 56), A3 → Bryan buat penutup
+(menit 58). Dua yang terakhir cuma beda dua menit — sepakati itu di depan biar
+nggak tabrakan.
+
 ---
 
 ## 11. Kalau kelasnya diem banget
 
-Ini hal paling ditakutin, dan ada solusinya:
+Ini hal paling ditakutin. Dan di sesi ini taruhannya lebih tinggi dari biasa,
+karena **nggak ada aktivitas yang bisa nyelametin lu** — kalau tanya-jawabnya
+mati, sesinya jadi ceramah 60 menit. Jadi baca yang ini serius.
 
 1. **Jangan panik dan jangan ngisi kesunyian dengan ngomong lebih banyak.**
    Makin lu ngomong, makin mereka pasif.
 2. **Turunkan biaya sosialnya.** Ganti dari "siapa mau jawab" jadi hal yang
-   nggak perlu keberanian: angkat tangan, tunjuk jari 1–4, ngomong ke sebelah.
-3. **Panggil kelompok, bukan orang.** "Kelompok yang di pojok, jawaban kalian
-   apa?" — jauh lebih aman buat mereka daripada ditunjuk sendirian.
-4. **Kasih mereka kerjaan fisik.** Nyortir kartu, nulis di kertas, berdiri
-   pindah tempat. Badan gerak bikin otak nyala.
+   nggak perlu keberanian: **angkat tangan** atau **tunjuk jari 1–4**. Nggak ada
+   yang bisa mempermalukan lu karena ngangkat tangan.
+3. **Panggil area, bukan orang.** "Baris depan sebelah kiri — menurut kalian?"
+   Jauh lebih aman buat mereka daripada ditunjuk sendirian, tapi tetap lebih
+   ngikat daripada nanya ke udara.
+4. **Jawab duluan sendiri, terus minta yang beda.** "Menurut gw karena CV lebih
+   murah. Ada yang punya alasan lain?" Nyambung ke jawaban orang itu jauh lebih
+   gampang daripada mulai dari nol.
+5. **Pertanyaan yang nggak ada salahnya.** Perhatiin bahwa semua pertanyaan
+   pendapat di script ini — kenapa orang bikin CV, mau pilih bentuk apa tahun
+   depan — nggak punya jawaban salah. Itu disengaja. Kalau lu nambah pertanyaan
+   sendiri, bikin yang sama sifatnya.
 
-Semua aktivitas di script ini dirancang begitu — ada yang dipegang, ada yang
-ditulis, ada yang dipindah.
+Kalau **satu** pertanyaan gagal total, jangan diulang di pertanyaan berikutnya —
+turunin levelnya langsung ke angkat tangan sampai kelasnya mencair.
 
 ---
 
@@ -207,23 +251,22 @@ ditulis, ada yang dipindah.
 
 | Yang gagal | Cadangannya |
 | --- | --- |
-| Proyektor mati | Kartu sortir dan studi kasus tetap jalan (offline). Materi gambar tabel di papan. |
-| Kahoot / sinyal mati | Kuis pakai jari: baca soal, kelas angkat 1–4 jari. Soalnya sama, ada di script. |
+| Proyektor mati | Semuanya masih bisa jalan lisan — tapi gambar tabel badan hukum vs bukan (Slide 10) dan tabel perbandingan (Slide 31) di papan. Kasus studi tinggal dibacain. |
+| Laptop nggak konek | Kirim file .pptx ke WhatsApp bertiga pagi itu, plus simpan di flashdisk. |
 | Waktu dipotong | Buang dari bawah — urutannya di bagian "Versi mepet". |
-| Ada yang sakit / nggak dateng | Tiap orang harus tahu garis besar bagian temannya. Ini alasan lain kenapa latihan bertiga H-1 wajib. |
-| Laptop nggak konek | Kirim file .pptx ke WhatsApp masing-masing pagi itu, plus simpan di flashdisk. |
+| Ada yang sakit / nggak dateng | Tiap orang minimal baca sekilas bagian temannya, supaya kalau ada yang absen bagiannya bisa dibacain dari script — bukan diskip. |
+| Kelas total diem | Turunin semua pertanyaan jadi angkat tangan. Lihat bab 11. |
 
 ---
 
 ## Checklist barang H-1
 
+Pendek, karena sesinya nggak pakai alat:
+
 - [ ] Laptop + charger
 - [ ] Flashdisk isi `badan-usaha.pptx`
 - [ ] File .pptx juga udah dikirim ke WA ketiganya
-- [ ] Kartu sortir udah diprint & digunting (6 set, lampiran A di script)
-- [ ] Kartu studi kasus udah diprint (6 kartu, lampiran B)
-- [ ] Kertas plano / HVS 6 lembar + spidol buat kelompok
-- [ ] Kuis Kahoot udah dibuat & sekali dites
-- [ ] Kode PIN Kahoot dicatat di kertas (jangan cuma di layar)
-- [ ] Spidol papan tulis (bawa sendiri, jangan percaya spidol kelas)
+- [ ] Spidol papan tulis (bawa sendiri, jangan percaya spidol kelas) — buat
+      gambar tabel kalau proyektornya mati
 - [ ] Stopwatch di HP satu orang, mode pesawat biar nggak ada notif nongol
+- [ ] Kertas catatan kecil isi poin bagian lu, buat dipegang kalau lupa

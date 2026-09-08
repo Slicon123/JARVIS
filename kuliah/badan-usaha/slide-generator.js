@@ -124,10 +124,10 @@ function footNote(s, text) {
 }
 
 // =====================================================================
-// 2 — AKTIVITAS 1: PUNYA SIAPA INI?
+// 2 — TANYA PEMBUKA: PUNYA SIAPA INI?
 // =====================================================================
 {
-  const s = lightSlide("Punya siapa usaha-usaha ini?", "Aktivitas 1. Tanya dua kali: (1) mana yang milik negara, (2) mana yang pemiliknya bisa kehilangan rumah pribadi. Jangan dijawab.", "Aktivitas 1 · angkat tangan");
+  const s = lightSlide("Punya siapa usaha-usaha ini?", "Tanya pembuka. Tanya dua kali: (1) mana yang milik negara, (2) mana yang pemiliknya bisa kehilangan rumah pribadi. Jangan dijawab.", "Tanya pembuka · angkat tangan");
   const names = ["Indomaret", "PT KAI", "Gojek", "Warung nasi\ndepan kampus", "Kopma UKSW", "Perumda\nAir Minum"];
   const cw = 3.72, ch = 1.55, gx = 0.38, gy = 0.36;
   names.forEach((n, i) => {
@@ -149,11 +149,11 @@ function footNote(s, text) {
 // 3 — PETA MATERI
 // =====================================================================
 {
-  const s = lightSlide("Yang kita bahas hari ini", "Tunjuk tiap kotak sambil ngomong. Sebutkan ada 3 aktivitas.", "Peta materi");
+  const s = lightSlide("Yang kita bahas hari ini", "Tunjuk tiap kotak sambil ngomong. Bilang di depan bahwa kelas bakal sering ditanya pendapatnya.", "Peta materi");
   const items = [
     { n: "1", h: "Apa itu badan usaha", b: "Definisi, unsur, dan kenapa badan usaha berbeda dari perusahaan" },
     { n: "2", h: "Bentuk-bentuknya", b: "Dari warung, CV, PT, koperasi, sampai BUMN dan BUMD" },
-    { n: "3", h: "Cara memilihnya", b: "Studi kasus — bagian ini kalian yang kerja, bukan kami" },
+    { n: "3", h: "Cara memilihnya", b: "Alur memilih, lalu studi kasus yang kita bahas bareng-bareng" },
   ];
   const cw = 3.72, gx = 0.38;
   items.forEach((it, i) => {
@@ -169,7 +169,7 @@ function footNote(s, text) {
       fontFace: BFONT, fontSize: 13.5, color: MUT, lineSpacing: 18,
     });
   });
-  s.addText("3 aktivitas  ·  95 menit  ·  di aktivitas terakhir kalian mendirikan usaha di atas kertas", {
+  s.addText("60 menit  ·  3 bagian  ·  kami bakal sering berhenti dan menanyakan pendapat kalian", {
     x: M, y: 5.4, w: CW, h: 0.4, isTextBox: true, margin: 0,
     fontFace: BFONT, fontSize: 14, bold: true, color: AMBERD,
   });
@@ -251,7 +251,7 @@ function footNote(s, text) {
 // 6 — CONTOH UNILEVER
 // =====================================================================
 {
-  const s = lightSlide("Satu badan usaha, banyak perusahaan", "Contoh konkret. Setelah ini cek paham lewat warung nasi — think-pair-share 20 detik.", "Materi 1 · Contoh");
+  const s = lightSlide("Satu badan usaha, banyak perusahaan", "Contoh konkret. Setelah ini cek paham: tanya langsung ke kelas soal warung nasi, tunjuk satu orang, tunggu 5 detik.", "Materi 1 · Contoh");
   card(s, M + 3.4, 1.7, 5.1, 1.1, INK);
   s.addText("PT Unilever Indonesia Tbk", {
     x: M + 3.4, y: 1.7, w: 5.1, h: 1.1, isTextBox: true, margin: 0, align: "center", valign: "middle",
@@ -401,38 +401,39 @@ function footNote(s, text) {
 }
 
 // =====================================================================
-// 11 — KUNCI SORTIR 1
+// 11 — CEK CEPAT: BADAN HUKUM ATAU BUKAN?
 // =====================================================================
 {
-  const s = lightSlide("Kunci sortir — kepemilikan", "Tanya dulu kartu mana yang bikin kelompok berantem, baru tampilkan ini.", "Aktivitas 2 · tahap 1");
-  const cols = [
-    { t: "Milik Negara", c: INK, items: ["PT Pertamina (Persero)", "PT KAI (Persero)", "Perum BULOG"] },
-    { t: "Milik Daerah", c: BLUE, items: ["Perumda Air Minum", "Bank Jateng (Perseroda)"] },
-    { t: "Milik Swasta", c: AMBERD, items: ["Indomaret", "Gojek", "Warung Nasi Bu Sri", "CV Maju Jaya", "Firma Santoso & Rekan", "Kopma UKSW"] },
+  const s = lightSlide("Cek cepat — mana yang badan hukum?", "Anggota 2. Sebut satu per satu, kelas angkat tangan kalau menurut mereka itu badan hukum. Hitung kasar saja, jangan dikoreksi dulu — jawabannya di slide berikutnya.", "Cek cepat · angkat tangan");
+  const names = [
+    "PT Pertamina\n(Persero)", "Perum BULOG", "Bank Jateng\n(Perseroda)", "Gojek",
+    "Kopma UKSW", "Warung Nasi\nBu Sri", "CV Maju Jaya", "Firma Santoso\n& Rekan",
   ];
-  const cw = (CW - 2 * 0.4) / 3;
-  cols.forEach((col, i) => {
-    const x = M + i * (cw + 0.4);
-    card(s, x, 1.85, cw, 4.3);
-    statusPill(s, x + 0.35, 2.15, cw - 0.7, col.t.toUpperCase(), col.c);
-    col.items.forEach((it, j) => {
-      s.addText(it, {
-        x: x + 0.35, y: 2.75 + j * 0.5, w: cw - 0.7, h: 0.42, isTextBox: true, margin: 0,
-        fontFace: BFONT, fontSize: 13.5, color: TXT,
-      });
+  const cw = 2.75, ch = 1.5, gx = 0.31, gy = 0.34;
+  names.forEach((n, i) => {
+    const col = i % 4, row = Math.floor(i / 4);
+    const x = M + col * (cw + gx), y = 2.05 + row * (ch + gy);
+    card(s, x, y, cw, ch);
+    s.addText(n, {
+      x: x + 0.15, y, w: cw - 0.3, h: ch, isTextBox: true, margin: 0,
+      align: "center", valign: "middle", fontFace: HFONT, fontSize: 16.5, bold: true, color: INK,
     });
   });
-  footNote(s, "Kopma UKSW milik anggotanya — mahasiswa. Jadi masuk swasta, bukan milik negara atau kampus.");
+  card(s, M, 5.7, CW, 1.0, INK);
+  s.addText("Angkat tangan kalau menurut kalian yang saya sebut ini BERBADAN HUKUM.", {
+    x: M + 0.45, y: 5.7, w: CW - 0.9, h: 1.0, isTextBox: true, margin: 0, valign: "middle",
+    fontFace: BFONT, fontSize: 16, bold: true, color: WHITE,
+  });
 }
 
 // =====================================================================
-// 12 — KUNCI SORTIR 2
+// 12 — JAWABAN CEK CEPAT
 // =====================================================================
 {
-  const s = lightSlide("Kunci sortir — badan hukum", "Fokus ke dua kesalahan yang paling sering: CV dikira badan hukum, Kopma dikira bukan.", "Aktivitas 2 · tahap 2");
+  const s = lightSlide("Jawabannya", "Sebelum buka slide ini, tanya dulu: \"yang mana yang paling bikin kalian ragu?\" Tunggu 5 detik. Fokus ke dua kesalahan yang paling sering: CV dikira badan hukum, Kopma dikira bukan.", "Cek cepat · jawaban");
   const cw = (CW - 0.45) / 2;
   const cols = [
-    { t: "BERBADAN HUKUM", c: GREEN, items: ["PT Pertamina (Persero)", "PT KAI (Persero)", "Perum BULOG", "Perumda Air Minum", "Bank Jateng (Perseroda)", "Gojek (PT)", "Kopma UKSW"] },
+    { t: "BERBADAN HUKUM", c: GREEN, items: ["PT Pertamina (Persero)", "Perum BULOG", "Bank Jateng (Perseroda)", "Gojek (PT)", "Kopma UKSW"] },
     { t: "BUKAN BADAN HUKUM", c: RED, items: ["Warung Nasi Bu Sri", "CV Maju Jaya", "Firma Santoso & Rekan"] },
   ];
   cols.forEach((col, i) => {
@@ -750,12 +751,12 @@ bentukSlide({
 }
 
 // =====================================================================
-// 22 — THINK-PAIR-SHARE
+// 22 — TANYA PENDAPAT: KENAPA MASIH BANYAK CV?
 // =====================================================================
 {
-  const s = darkSlide("Anggota 3. Kasih 30 detik diskusi berpasangan. Tunjuk DUA kelompok, jangan cuma satu.");
+  const s = darkSlide("Anggota 3. Lempar ke kelas, TUNGGU 5 DETIK, jangan dijawab sendiri. Kalau sunyi, turunkan jadi pilihan: \"karena lebih murah, atau karena lebih cepat?\" Ambil 2-3 jawaban sebelum menyimpulkan.");
   s.addShape(pres.ShapeType.ellipse, { x: -1.4, y: 5.0, w: 4.2, h: 4.2, fill: { color: INK2 }, line: { width: 0 } });
-  s.addText("DISKUSI 30 DETIK DENGAN SEBELAHMU", {
+  s.addText("MENURUT KALIAN?", {
     x: M, y: 1.75, w: CW, h: 0.35, isTextBox: true, margin: 0,
     fontFace: BFONT, fontSize: 13, bold: true, charSpacing: 2.2, color: AMBER,
   });
@@ -763,7 +764,7 @@ bentukSlide({
     x: M, y: 2.4, w: CW - 0.5, h: 2.7, isTextBox: true, margin: 0,
     fontFace: HFONT, fontSize: 36, bold: true, color: WHITE, lineSpacing: 50,
   });
-  s.addText("Bukan mikir sendiri — ngomong ke orang di sebelahmu.", {
+  s.addText("Tidak ada jawaban yang salah di sini — kami mau dengar alasannya dulu.", {
     x: M, y: 5.5, w: CW, h: 0.4, isTextBox: true, margin: 0,
     fontFace: BFONT, fontSize: 16, italic: true, color: "B9C4D6",
   });
@@ -1050,7 +1051,7 @@ bentukSlide({
 // 31 — TABEL PERBANDINGAN BESAR
 // =====================================================================
 {
-  const s = lightSlide("Rangkuman: enam bentuk berdampingan", "Slide ini dibiarkan nyala selama Aktivitas 3 — kelompok butuh referensinya.", "Rangkuman");
+  const s = lightSlide("Rangkuman: enam bentuk berdampingan", "Bryan. Jangan dibaca satu-satu — tunjuk baris \"Tanggung jawab\" saja, itu barisnya yang paling penting. Slide ini dibiarkan nyala selama studi kasus.", "Rangkuman");
   const hdr = ["", "Perseorangan", "Firma", "CV", "PT", "PT Perorangan", "Koperasi"];
   const body = [
     ["Badan hukum?", "Bukan", "Bukan", "Bukan", "Ya", "Ya", "Ya"],
@@ -1088,7 +1089,135 @@ bentukSlide({
 }
 
 // =====================================================================
-// 32 — PENUTUP 3 POIN
+// 32 — ALUR MEMILIH BENTUK BADAN USAHA
+// =====================================================================
+{
+  const s = lightSlide("Cara memilihnya — empat pertanyaan", "Bryan. Ini jembatan ke studi kasus. Tekankan kalimat penutupnya: pertanyaannya selalu siapa yang menanggung kalau rugi.", "Materi 4 · Cara memilih");
+  const qs = [
+    {
+      n: "1", q: "Sendiri atau bareng orang?",
+      br: [["Sendiri, mau harta pribadi aman", "PT PERORANGAN", GREEN],
+           ["Sendiri, mau paling simpel & murah", "PERUSAHAAN PERSEORANGAN", RED]],
+    },
+    {
+      n: "2", q: "Ada yang cuma mau taruh uang tanpa ikut mengurus?",
+      br: [["Ya, ada pemodal pasif", "CV", RED],
+           ["Tidak, semua ikut kerja", "lanjut ke pertanyaan 3", MUT]],
+    },
+    {
+      n: "3", q: "Butuh modal besar, investor, atau tender besar?",
+      br: [["Ya", "PT", GREEN],
+           ["Tidak", "FIRMA", RED]],
+    },
+    {
+      n: "4", q: "Kasus khusus",
+      br: [["Untung balik ke anggota sendiri", "KOPERASI", GREEN],
+           ["Tujuannya sosial, bukan laba", "YAYASAN", GREEN],
+           ["Dimodali negara / daerah", "BUMN / BUMD", GREEN]],
+    },
+  ];
+  const cw = (CW - 0.4) / 2, ch = 2.15;
+  qs.forEach((it, i) => {
+    const x = M + (i % 2) * (cw + 0.4), y = 1.7 + Math.floor(i / 2) * (ch + 0.32);
+    card(s, x, y, cw, ch);
+    badge(s, it.n, x + 0.35, y + 0.3, 0.42, INK);
+    s.addText(it.q, {
+      x: x + 0.92, y: y + 0.28, w: cw - 1.3, h: 0.5, isTextBox: true, margin: 0,
+      fontFace: HFONT, fontSize: 16.5, bold: true, color: INK, lineSpacing: 20,
+    });
+    it.br.forEach((b, j) => {
+      const by = y + 0.92 + j * 0.42;
+      s.addText(b[0] + "  →", {
+        x: x + 0.42, y: by, w: cw * 0.55, h: 0.36, isTextBox: true, margin: 0,
+        fontFace: BFONT, fontSize: 12, color: MUT,
+      });
+      s.addText(b[1], {
+        x: x + cw * 0.57, y: by, w: cw * 0.4, h: 0.36, isTextBox: true, margin: 0,
+        fontFace: BFONT, fontSize: 12.5, bold: true, color: b[2],
+      });
+    });
+  });
+  card(s, M, 6.35, CW, 0.72, "FBF1E3");
+  s.addText("Di setiap cabang, pertanyaan penentunya sama: siapa yang menanggung kalau rugi, dan siapa yang menikmati kalau untung.", {
+    x: M + 0.45, y: 6.35, w: CW - 0.9, h: 0.72, isTextBox: true, margin: 0, valign: "middle",
+    fontFace: BFONT, fontSize: 14, bold: true, color: AMBERD,
+  });
+}
+
+// =====================================================================
+// helper: slide studi kasus (dibacakan, dijawab lisan)
+// =====================================================================
+function studiKasus(no, judul, teks, notes) {
+  const s = lightSlide(judul, notes, "Studi kasus " + no + " dari 3 · jawab lisan");
+  card(s, M, 1.75, CW, 2.9, INK);
+  s.addText(teks, {
+    x: M + 0.6, y: 1.75, w: CW - 1.2, h: 2.9, isTextBox: true, margin: 0, valign: "middle",
+    fontFace: HFONT, fontSize: 19, color: WHITE, lineSpacing: 31,
+  });
+  s.addText("Bentuk apa yang paling cocok? Dan kenapa?", {
+    x: M, y: 4.95, w: CW, h: 0.55, isTextBox: true, margin: 0, align: "center",
+    fontFace: HFONT, fontSize: 26, bold: true, color: INK,
+  });
+  card(s, M, 5.8, CW, 0.95, "FBF1E3");
+  s.addText("Alasannya minimal dua — dan satu di antaranya harus soal siapa yang menanggung kalau rugi.", {
+    x: M + 0.45, y: 5.8, w: CW - 0.9, h: 0.95, isTextBox: true, margin: 0, valign: "middle",
+    fontFace: BFONT, fontSize: 14.5, bold: true, color: AMBERD,
+  });
+  return s;
+}
+
+// =====================================================================
+// 33 — STUDI KASUS 1
+// =====================================================================
+studiKasus(1, "Usaha desain sendirian",
+  "Bryan mau buka jasa desain grafis sendirian. Modalnya Rp5 juta dari tabungan. Dia mau bisa ikut tender kecil dari instansi pemerintah, dan dia tidak mau rumah orang tuanya ikut kena kalau usahanya rugi.",
+  "Kunci: PT PERORANGAN — sendirian tapi tetap badan hukum, tanggung jawab terbatas, tanpa notaris, masuk kriteria usaha mikro. Kalau ada yang jawab UD: benar soal murahnya, tapi tanggung jawabnya tidak terbatas, jadi syarat \"rumah orang tua aman\" tidak terpenuhi. Ambil 2 jawaban dulu sebelum mengunci.");
+
+// =====================================================================
+// 34 — STUDI KASUS 2
+// =====================================================================
+studiKasus(2, "Startup berlima",
+  "Lima orang mau bangun startup teknologi. Tiga orang akan kerja penuh di startup-nya. Dua orang hanya mau menanam uang dan tidak mau ikut mengurus sama sekali. Ke depan mereka mau cari pendanaan dari investor luar.",
+  "Kunci: PT — kata kuncinya \"cari pendanaan dari investor luar\": investor butuh saham, dan saham hanya ada di PT. CV juga masuk akal karena ada sekutu pasif, dan itu jawaban yang layak dibela — tapi CV tidak punya saham, jadi susah untuk pendanaan berikutnya. Kalau ada yang jawab CV, puji alasannya dulu, baru tambahkan soal saham.");
+
+// =====================================================================
+// 35 — STUDI KASUS 3
+// =====================================================================
+studiKasus(3, "Dua puluh lima petani",
+  "Dua puluh lima petani di satu desa selama ini menjual hasil panen ke tengkulak dengan harga rendah. Mereka mau bikin usaha bersama supaya bisa menjual langsung, dan mereka mau keuntungannya kembali ke petani yang paling banyak menyetor hasil panen.",
+  "Kunci: KOPERASI (produsen/pemasaran) — kata kuncinya \"untungnya kembali ke yang paling banyak menyetor\", itu persis definisi SHU dibagi menurut jasa anggota, bukan menurut modal. Jumlahnya juga sudah lewat minimal 9 orang. Ini kasus yang menutup blok Bryan.");
+
+// =====================================================================
+// 36 — TIGA PERTANYAAN CEPAT
+// =====================================================================
+{
+  const s = lightSlide("Tiga pertanyaan sebelum kita tutup", "Anggota 3. JAWABAN: 1 = CV (nomor 3) · 2 = tidak ada batas minimum (nomor 3) · 3 = 9 orang (nomor 2). Baca satu per satu, kelas mengangkat jari 1-4, tunggu jarinya naik, baru sebut jawabannya. Jangan dibahas panjang — satu kalimat per soal, ini tiga soal yang paling sering salah.", "Cek terakhir · angkat jari 1-4");
+  const qs = [
+    { n: "1", q: "Yang berikut ini BUKAN badan hukum:", o: ["Koperasi", "PT Perorangan", "CV", "Yayasan"] },
+    { n: "2", q: "Setelah UU Cipta Kerja, modal dasar PT:", o: ["Tetap minimal Rp50 juta", "Minimal Rp25 juta", "Tidak ada batas minimum", "Tidak perlu modal sama sekali"] },
+    { n: "3", q: "Minimal pendiri koperasi primer sekarang:", o: ["3 orang", "9 orang", "20 orang", "25 orang"] },
+  ];
+  const cw = (CW - 2 * 0.35) / 3;
+  qs.forEach((it, i) => {
+    const x = M + i * (cw + 0.35);
+    card(s, x, 1.8, cw, 4.4);
+    badge(s, it.n, x + 0.35, 2.1, 0.44, INK);
+    s.addText(it.q, {
+      x: x + 0.35, y: 2.75, w: cw - 0.7, h: 0.95, isTextBox: true, margin: 0,
+      fontFace: HFONT, fontSize: 16, bold: true, color: INK, lineSpacing: 21,
+    });
+    it.o.forEach((o, j) => {
+      s.addText((j + 1) + ".  " + o, {
+        x: x + 0.35, y: 3.85 + j * 0.55, w: cw - 0.7, h: 0.5, isTextBox: true, margin: 0,
+        fontFace: BFONT, fontSize: 13, color: TXT, lineSpacing: 16,
+      });
+    });
+  });
+  footNote(s, "Angkat jari 1-4 sesuai nomor jawaban. Kuncinya ada di catatan pembicara, bukan di layar.");
+}
+
+// =====================================================================
+// 37 — PENUTUP 3 POIN
 // =====================================================================
 {
   const s = darkSlide("Bryan. Tiga poin saja. Jangan tambah poin keempat.");
@@ -1113,10 +1242,10 @@ bentukSlide({
 }
 
 // =====================================================================
-// 33 — EXIT TICKET
+// 38 — PERTANYAAN PENUTUP
 // =====================================================================
 {
-  const s = darkSlide("Kasih 60 detik. Kalau pakai Mentimeter, baca 2-3 jawaban keras-keras. Jangan langsung duduk setelah ini.");
+  const s = darkSlide("Bryan. Lempar ke kelas, minta 2-3 orang menjawab dengan suara keras — tidak perlu ditulis, tidak perlu alat apa pun. Tunggu 5 detik sebelum menunjuk. Jangan langsung duduk setelah ini.");
   s.addShape(pres.ShapeType.ellipse, { x: -1.6, y: -1.6, w: 4.6, h: 4.6, fill: { color: INK2 }, line: { width: 0 } });
   s.addText("SATU KALIMAT SEBELUM BUBAR", {
     x: M, y: 1.5, w: CW, h: 0.35, isTextBox: true, margin: 0,
