@@ -16,6 +16,7 @@
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapter content covered so far and outstanding tugas
+- [Badan usaha — bahan ngajar](project-badan-usaha-teaching.md) — tugas mengajar kelompok Pengantar Manajemen dan Bisnis; ada di branch terpisah, bukan main
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
 - [ATS/fire simulator idea](project-ats-fire-simulator-idea.md) — proposed browser project to close his ATS/FSS technical gap; remind 2026-09-05
