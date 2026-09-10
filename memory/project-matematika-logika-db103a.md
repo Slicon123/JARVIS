@@ -1,8 +1,11 @@
 ---
 name: project-matematika-logika-db103a
 description: "Syllabus essentials for Bryan's Matematika Logika (DB103A) class — topic order, grading weights, attendance rules, textbooks"
-metadata:
+metadata: 
+  node_type: memory
   type: project
+  originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
+  modified: 2026-09-10T03:18:19.478Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -20,3 +23,5 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 **Why:** So questions like "what's next week's topic" or "what's on the TTS" can be answered without re-uploading slides.
 
 **How to apply:** Match the week to the pertemuan number to know the current topic. Default to Bahasa Indonesia and Munir's terminology when explaining. Class time is in [[project-uksw-digital-business]].
+
+**Materials received (as of 2026-09-10):** Full slide decks for Pertemuan 1 (course intro/RPS/grading/rules — same content as syllabus above) and Pertemuan 2 (himpunan, fungsi, baris & deret, kardinalitas, matriks) uploaded by Bryan. Pertemuan 2 detail: himpunan notation/operations (union, irisan, selisih, komplemen, kartesian, hukum de Morgan); fungsi injektif/surjektif/bijektif with e-commerce-style examples; barisan & deret aritmatika (Un = a+(n-1)b, Sn = n/2(2a+(n-1)b)) with word problems; kardinalitas (|A|, himpunan hingga/tak hingga, relasi 1:1/1:N/N:N); matriks (ordo, jenis, transpose, determinan via Sarrus/minor-kofaktor, invers, penjumlahan/pengurangan/perkalian skalar/perkalian antar matriks). Pertemuan 3+ not yet supplied — still due once that class happens.
