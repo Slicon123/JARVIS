@@ -32,34 +32,34 @@ Status centang: `[x]` = sudah disiapkan, `[ ]` = belum / perlu dicek ulang.
 **Pakaian & penampilan**
 - [ ] Kemeja putih + celana gelap panjang
 - [ ] Sepatu bebas
-- [ ] Rambut french crop — atas maks 5 cm, samping gradasi 1-2-3
+- [x] Rambut french crop — atas maks 5 cm, samping gradasi 1-2-3
 
 **Atribut bertanda**
 - [ ] Totebag panitia + name tag: baris 1 nama (5 huruf), baris 2 nama kelompok.
       Spidol biru, dikaitkan kabel tis, dilaminating.
-- [ ] Nametag kalung (depan + belakang): kertas buffalo A4 kuning, tali rafia biru dikepang.
+- [x] Nametag kalung (depan + belakang): kertas buffalo A4 kuning, tali rafia biru dikepang.
       Baris 1 nama (5 huruf), baris 2 nama kelompok. Spidol biru, outline hitam.
 - [ ] Cocard dari panitia + pas foto formal 4x6 background putih, nama lengkap + NIM.
       Warna tulisan seragam satu kelompok.
 
 **Barang bawaan individu**
-- [ ] Snack ringan — clue: **inti gandum + bom kelereng**
-- [ ] Snack berat — clue: **pipa berisi**
+- [x] Snack ringan — clue: **inti gandum + bom kelereng**
+- [x] Snack berat — clue: **pipa berisi**
 - [x] Tissue basah 10 lembar
 - [x] Tissue kering pocket
-- [ ] Hand sanitizer **18 ml** (punya lama perlu dicek ukurannya)
-- [ ] Tumbler + label 3 baris: nama (5 huruf) / NIM / **36**
+- [x] Hand sanitizer **18 ml**
+- [x] Tumbler + label 3 baris: nama (5 huruf) / NIM / **36**
 - [x] Bolpoin standard biru
 - [x] Dompet
 - [ ] Buku sampul biru FTI + label 13x5 cm: nama lengkap / NIM / nomor+nama kelompok,
       ditulis bolpoin biru
 - [x] Jas hujan plastik biru
-- [ ] Gadget + label 3 baris: nama (5 huruf) / NIM / **36**
+- [x] Gadget + label 3 baris: nama (5 huruf) / NIM / **36**
 - [x] Kardus A4 (1 buah)
 
 **Barang kelompok**
-- [ ] Bendera A4 — desain digital, dua sisi, dilaminating, diikat kabel tis ke stick kayu 30-40 cm
-- [ ] Trash bag besar
+- [x] Bendera A4 — desain digital, dua sisi, dilaminating, diikat kabel tis ke stick kayu 30-40 cm
+- [x] Trash bag besar
 
 ---
 
@@ -173,8 +173,17 @@ baris pointer-nya di MEMORY.md.
 
 **How to apply:** Kalau Bryan minta ditampilkan, keluarkan sebagai checklist per hari
 persis struktur di atas — heading per hari, checkbox, deadline dan hal menggantung di
-paling atas. Jangan diringkas jadi paragraf. Update centang `[ ]` → `[x]` setiap Bryan
-bilang sudah siap, lalu commit. Jangan pernah menulis NIM asli atau nama lengkap Bryan di
+paling atas. Jangan diringkas jadi paragraf.
+
+**Sumber centang = artifact, bukan file ini.** Sejak 14 September 2026 Bryan mencentang
+langsung di artifact "Ben & Jody — FTI Days"
+(https://claude.ai/code/artifact/3aed62d9-5547-40c8-82ef-5b72daf612c3), yang menyimpan
+centang di database server-nya (collection `checklist`, doc `fti36`, field `checked`
+berisi map id item → true/false, id seperti `d1-i5`) dan sinkron lintas device. Sebelum
+menjawab soal progress, baca doc itu dengan `read_db`, lalu samakan `[x]` di file ini dan
+commit. Kalau Bryan bilang lewat chat bahwa item sudah siap, tulis ke db dengan
+`write_db` update (merge, jangan set) supaya centangnya tidak tertimpa. Ubah daftar item
+atau clue = edit HTML artifact lalu republish ke URL yang sama. Jangan pernah menulis NIM asli atau nama lengkap Bryan di
 repo ini (repo publik) — cukup sebut "NIM". Jawab dalam Bahasa Indonesia.
 
 Related: [[project-uksw-digital-business]], [[user-bryan-profile]]
