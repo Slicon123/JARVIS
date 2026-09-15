@@ -118,9 +118,9 @@ U₄ = 550 (April)
 n = 12 bulan
 
 Ditanya:
-a) Beda (b)
-b) Produksi bulan ke-12
-c) Total produksi satu tahun
+a) Penambahan produksi kemeja setiap bulan (beda, b)
+b) Produksi pada bulan kedua belas (Desember)
+c) Total produksi selama satu tahun pertama
 
 Jawab:
 
@@ -138,7 +138,7 @@ U₁₂ = 400 + 11(50)
 U₁₂ = 400 + 550
 U₁₂ = 950
 
-Jadi produksi bulan ke-12 = 950 kemeja.
+Jadi produksi bulan kedua belas (Desember) = 950 kemeja.
 
 c) Rumus: Sₙ = n/2 (a + Uₙ)
 
