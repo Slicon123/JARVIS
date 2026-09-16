@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
-  modified: 2026-09-10T03:18:19.478Z
+  modified: 2026-09-16T00:00:00.000Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -24,4 +24,19 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 
 **How to apply:** Match the week to the pertemuan number to know the current topic. Default to Bahasa Indonesia and Munir's terminology when explaining. Class time is in [[project-uksw-digital-business]].
 
-**Materials received (as of 2026-09-10):** Full slide decks for Pertemuan 1 (course intro/RPS/grading/rules — same content as syllabus above) and Pertemuan 2 (himpunan, fungsi, baris & deret, kardinalitas, matriks) uploaded by Bryan. Pertemuan 2 detail: himpunan notation/operations (union, irisan, selisih, komplemen, kartesian, hukum de Morgan); fungsi injektif/surjektif/bijektif with e-commerce-style examples; barisan & deret aritmatika (Un = a+(n-1)b, Sn = n/2(2a+(n-1)b)) with word problems; kardinalitas (|A|, himpunan hingga/tak hingga, relasi 1:1/1:N/N:N); matriks (ordo, jenis, transpose, determinan via Sarrus/minor-kofaktor, invers, penjumlahan/pengurangan/perkalian skalar/perkalian antar matriks). Pertemuan 3+ not yet supplied — still due once that class happens.
+**Materials received (as of 2026-09-10):** Full slide decks for Pertemuan 1 (course intro/RPS/grading/rules — same content as syllabus above) and Pertemuan 2 (himpunan, fungsi, baris & deret, kardinalitas, matriks) uploaded by Bryan. Pertemuan 2 detail: himpunan notation/operations (union, irisan, selisih, komplemen, kartesian, hukum de Morgan); fungsi injektif/surjektif/bijektif with e-commerce-style examples; barisan & deret aritmatika (Un = a+(n-1)b, Sn = n/2(2a+(n-1)b)) with word problems; kardinalitas (|A|, himpunan hingga/tak hingga, relasi 1:1/1:N/N:N); matriks (ordo, jenis, transpose, determinan via Sarrus/minor-kofaktor, invers, penjumlahan/pengurangan/perkalian skalar/perkalian antar matriks).
+
+**Pertemuan 3 & 4 (received 2026-09-16):** Pernyataan/proposisi, penghubung, tautologi/kontradiksi/kontingensi, ekivalen — covers RPS topics 2–3.
+- **Pernyataan vs proposisi:** pernyataan = kalimat benar/salah, penggunaan lebih universal; proposisi = kalimat deklaratif benar-atau-salah (tidak dua-duanya), nilai kebenarannya disebut nilai kebenaran.
+- **Penghubung dasar:** konjungsi p∧q (dan), disjungsi p∨q (atau), ingkaran/negasi ~p (tidak). Biner vs uner. Proposisi atomic vs majemuk.
+- **Disjungsi eksklusif (XOR):** p⊕q — benar hanya jika salah satu benar, bukan keduanya.
+- **Implikasi p→q:** p = anteseden, q = konsekuen. p→q salah hanya ketika p=T, q=F.
+- **Variasi bersyarat:** konvers q→p, invers ~p→~q, kontraposisi ~q→~p. Implikasi ≡ kontraposisi; konvers ≡ invers (bukan implikasi asli).
+- **Bikondisional p↔q:** benar ketika p,q sama-sama T atau sama-sama F.
+- **Tautologi** = proposisi majemuk selalu benar (mis. p∨~p); **kontradiksi** = selalu salah (p∧~p); **kontingensi** = bukan keduanya.
+- **Prioritas operator** (tinggi→rendah): ~ , ∧ , ∨ , → , ↔. Jadi p→q∨r berarti p→(q∨r).
+- **Ekivalensi logis (P⇔Q / P≡Q):** tabel kebenaran identik. Hukum De Morgan: ~(p∧q) ⇔ ~p∨~q, dan ~(p∨q) ⇔ ~p∧~q. Slide juga berisi tabel hukum lengkap (identity, domination, idempotent, double negation, commutative, associative, distributive, absorption, negation) plus hukum ekivalensi khusus implikasi (p→q ≡ ~p∨q, dst.) dan bikondisional.
+- **Contoh pembuktian ekivalen langkah-demi-langkah** ada di slide: p→q ≡ ~p∨q (setara kondisional-disjungsi); dan ~(p→q) ≡ p∧~q (via ubah ke ~p∨q → De Morgan → negasi ganda).
+- **Aplikasi:** pencarian Boolean (Google search operators AND/OR/NOT/tanda kutip) dicontohkan lewat kasus UMKM/studi kasus/media sosial — memetakan kebutuhan pencarian jadi proposisi p,q,r,s lalu ekspresi (p∧q∧r)∧~s.
+- Dosen: Johannes R. Siahainenia, johannes.siahainenia@uksw.edu.
+- Ada tugas terkait materi ini — belum jelas bentuk/deadline-nya, tanyakan Bryan kalau relevan.
