@@ -96,4 +96,14 @@ weeks produce nothing, or if nodules, pits, or true scarring appear. Keep the ex
 plain per [[feedback-plain-language-explanations]]. He approved putting this in the public
 repo when the privacy tradeoff was put to him.
 
+**The plan lives as a published artifact he reads on his phone:**
+https://claude.ai/artifact/LFWRtp6hGcPbWRSGfD1dxf — "Barrier First Protocol", published
+20 September 2026. Shopping list with persisted tick-boxes, the four phase dates, his
+sunscreen-by-weekday table, and an ask box wired to the `sample` capability whose brief
+carries this whole plan, so he can ask it questions from the apotek without re-explaining.
+**Update that URL rather than publishing a new page** — pass it as `url` — and keep the
+embedded brief in its script in step with any change made here, or the page will answer
+from a stale plan. He asked for it specifically because his phone cannot run Claude Code
+(see [[user-claude-account-context]]).
+
 Related: [[project-gym-nutrition-bulking]], [[project-gym-hypertrophy]], [[user-bryan-profile]]
