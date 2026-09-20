@@ -26,6 +26,18 @@ active goes on. Do not let him skip Phase 0 or ramp faster than the schedule.
 **Constraints he set:** OTC only, cheapest viable option, no dermatologist visit. Salatiga,
 lives in a kost. Products priced in rupiah and checked for Indonesian availability.
 
+**Correction logged 20 September 2026 — his cleanser was not the cause.** He was using
+Makarizo Barber Daily Acne Care Oil-Control Face Wash. An initial guess that a harsh
+cleanser had stripped his barrier was wrong: the base is sodium cocoyl isethionate with
+cocamidopropyl betaine and sodium lauroyl sarcosinate, no soap and no SLS, i.e. mild. The
+real cause is that **nothing went on after washing** — no moisturizer, no sunscreen, for
+months. That makes the moisturizer and sunscreen the load-bearing parts of Phase 0, not
+supporting cast. The tube's genuine faults for him are secondary: menthol (last on the
+list, a sensitizer that stings compromised barriers and does nothing for acne), a
+non-trivial parfum level, and a salicylic acid that would have become a third exfoliating
+active once benzoyl peroxide and adapalene start. Repurposed to a body wash for back and
+chest, where thicker skin tolerates it and gym sweat makes it useful.
+
 Phase schedule as given:
 
 - **Weeks 1–2 (from 20 Sep 2026) — repair only, no acne treatment.** Hada Labo Gokujyun
