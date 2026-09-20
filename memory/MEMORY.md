@@ -20,3 +20,4 @@
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
 - [ATS/fire simulator idea](project-ats-fire-simulator-idea.md) — proposed browser project to close his ATS/FSS technical gap; remind 2026-09-05
+- [Skincare — acne plan](project-skincare-acne-plan.md) — barrier-first OTC protocol, phase dates, judge at 13 Dec 2026
