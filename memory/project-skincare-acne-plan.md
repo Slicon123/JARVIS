@@ -26,6 +26,18 @@ active goes on. Do not let him skip Phase 0 or ramp faster than the schedule.
 **Constraints he set:** OTC only, cheapest viable option, no dermatologist visit. Salatiga,
 lives in a kost. Products priced in rupiah and checked for Indonesian availability.
 
+**He reacts to fragrance — check the INCI list of every product before recommending it.**
+Told 20 September 2026: perfume makes his skin itch about 30 minutes after contact. He does
+not know the specific trigger. Thirty minutes is fast for true allergic contact dermatitis,
+which usually peaks at 24–72 hours, so this may be immediate-type sensitivity, plain
+irritation, or a reaction to the alcohol perfume is mostly made of rather than the fragrance
+itself. Untestable without patch testing at a dermatologist, and it does not change the
+rule: **no parfum/fragrance in anything for his face, rinse-off included**, and treat
+botanical extracts as a lesser but real risk. He patch tests new products on the inner
+forearm twice daily for 5–7 days before they go near his face. This also rules out Azarine
+Hydrasoothe sunscreen — it contains both Fragrance and Propolis — which had been
+recommended before the allergy was known.
+
 **Correction logged 20 September 2026 — his cleanser was not the cause.** He was using
 Makarizo Barber Daily Acne Care Oil-Control Face Wash. An initial guess that a harsh
 cleanser had stripped his barrier was wrong: the base is sodium cocoyl isethionate with
@@ -40,10 +52,14 @@ chest, where thicker skin tolerates it and gym sweat makes it useful.
 
 Phase schedule as given:
 
-- **Weeks 1–2 (from 20 Sep 2026) — repair only, no acne treatment.** Hada Labo Gokujyun
-  face wash (~Rp 30k), Wardah Cica Complex + Panthenol Ceramide moisturizer (~Rp 30–50k),
-  Azarine Hydrasoothe Sunscreen Gel SPF 45 (~Rp 35–75k). Morning = water rinse only. Max
-  twice-daily washing, no scrubs, nothing that tingles.
+- **Weeks 1–2 (from 20 Sep 2026) — repair only, no acne treatment.** All three verified
+  fragrance-free on 20 September 2026: Hada Labo Gokujyun Ultimate face wash (~Rp 30k,
+  sodium cocoyl glycinate base), Wardah Cica Complex + Panthenol Ceramide gel moisturizer
+  (~Rp 30–50k, Ceramide NP + cholesterol + panthenol, a genuinely good barrier formula for
+  the price), and **Wardah UV Shield Physical Sunscreen Serum SPF 50+ PA++++** (~Rp 50–90k,
+  zinc oxide, which also blocks some visible light — relevant to his PIH). Watch for white
+  cast from the zinc on his skin tone; if he won't wear it, find another rather than let him
+  go without. Morning = water rinse only. Max twice-daily washing, nothing that tingles.
 - **From ~4 Oct 2026 — benzoyl peroxide.** Benzolac 2.5% (~Rp 23–31k), *short contact*:
   5 minutes then rinse, every other night, building to leave-on by week 5. Bleaches fabric.
 - **From ~1 Nov 2026 — adapalene**, only if his skin has been calm for 2 straight weeks.
