@@ -31,8 +31,12 @@ Final plan as of 4 September 2026, with his own status on each item:
   cheapest protein and the cheapest no-cook calories available to him.
 - **Sunday morning weigh-in. Committed**, and he was asked to start before the creatine
   arrives so the 1–2 kg water jump doesn't contaminate his baseline.
-- Susu full cream — **deferred; he'll say when.** If he revisits it, susu bubuk full cream in
-  a large sachet is far cheaper per glass than UHT cartons.
+- Susu full cream — **no longer deferred. He started it at some point after 4 September 2026
+  and it ran out around 6–13 September 2026**, leaving a calorie hole open since. Told him on
+  20 September 2026 to refill it, susu bubuk full cream in a large sachet being far cheaper
+  per glass than UHT cartons. Explicitly told *not* to restrict dairy for his skin: the acne
+  evidence is weak, and any dairy signal is now unreadable anyway because the whole protocol
+  in [[project-skincare-acne-plan]] starts the same week. Ask whether he actually refilled.
 - Creatine monohydrate 5 g/day — **ordered but not delivered; he'll say when it arrives.**
 - Ruled out on cost: roti tawar + selai kacang (peanuts are the same food, cheaper), and
   UHT milk cartons.
@@ -46,7 +50,9 @@ trials); the food is worth several times that.
 the binding constraint on every food suggestion, so price anything new in rupiah per calorie
 before recommending it, and say plainly that the figures are rough and worth checking locally.
 
-**How to apply:** Ask for the Sunday weight once a couple of weeks have passed. If it is
+**How to apply:** Ask for the Sunday weight once a couple of weeks have passed — outstanding
+as of 20 September 2026, and now worth chasing, since two weeks without the milk should show
+up in it. If it is
 flat, add food — do not change the training. Don't nag about the deferred items; he said he
 would update, and he was told the objection once already. Keep the explanations plain, per
 [[feedback-plain-language-explanations]].
