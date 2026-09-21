@@ -23,6 +23,16 @@ r : Kiko bisa berbahasa Perancis
 Ditanya:
 Terjemahkan kalimat majemuk a–e ke dalam notasi simbolik
 
+Rumus:
+"tetapi"                = konjungsi (∧)
+"atau"                  = disjungsi (∨)
+"tidak"                 = negasi (~)
+"tidak benar bahwa X"   = ~(X), negasi atas seluruh X
+"tidak X maupun Y"      = ~X ∧ ~Y
+Hukum De Morgan         : ~(a ∨ b) ≡ ~a ∧ ~b
+                          ~(a ∧ b) ≡ ~a ∨ ~b
+Negasi ganda            : ~(~a) ≡ a
+
 Jawab:
 
 a) "tetapi" = konjungsi (∧), "tidak Perancis" = ~r
@@ -63,6 +73,9 @@ e) "tidak Inggris, Perancis, maupun Jerman" = ~p ∧ ~r ∧ ~q,
 Diketahui:
 Empat implikasi dalam bentuk kalimat.
 
+Ditanya:
+Ingkaran, konvers, dan kontraposisi dari tiap implikasi
+
 Rumus:
 Bentuk implikasi   : p → q
 Ingkaran           : ~(p → q) ≡ p ∧ ~q
@@ -70,9 +83,6 @@ Konvers            : q → p
 Kontraposisi       : ~q → ~p
 Penerjemahan       : "A bilamana B" ≡ "A jika B" ≡ B → A
                      "A hanya jika B" ≡ A → B
-
-Ditanya:
-Ingkaran, konvers, dan kontraposisi dari tiap implikasi
 
 Jawab:
 
@@ -140,13 +150,13 @@ d) Misal: b = program itu bagus, s = waktu eksekusinya singkat,
 Diketahui:
 Empat proposisi majemuk (a–d)
 
+Ditanya:
+Tabel kebenaran untuk setiap proposisi
+
 Rumus:
 Tabel kebenaran dasar ~, ∧, ∨, →
 Prioritas operator: ~ , ∧ , ∨ , → , ↔
 Banyak baris = 2ⁿ, n = jumlah variabel proposisional
-
-Ditanya:
-Tabel kebenaran untuk setiap proposisi
 
 Jawab:
 
@@ -213,12 +223,12 @@ d) (~q → p) → (p → q)     n = 2, jadi 4 baris
 Diketahui:
 Empat implikasi (a–d)
 
+Ditanya:
+Tunjukkan dengan tabel kebenaran bahwa tiap implikasi adalah tautologi
+
 Rumus:
 Sebuah proposisi majemuk disebut TAUTOLOGI bila kolom terakhir tabel
 kebenarannya bernilai T untuk semua kombinasi nilai kebenaran.
-
-Ditanya:
-Tunjukkan dengan tabel kebenaran bahwa tiap implikasi adalah tautologi
 
 Jawab:
 
@@ -282,6 +292,10 @@ Diketahui:
 (i)  (p ∧ q) → (p ∨ q)
 (ii) (p ∧ (p → q)) → q
 
+Ditanya:
+Tunjukkan (i) dan (ii) keduanya tautologi menggunakan hukum-hukum ekivalen logis
+(bukan dengan tabel kebenaran)
+
 Rumus (hukum ekivalen logis yang dipakai):
 Ekivalensi implikasi : a → b ≡ ~a ∨ b
 Hukum De Morgan      : ~(a ∧ b) ≡ ~a ∨ ~b
@@ -290,9 +304,6 @@ Hukum distributif    : a ∧ (b ∨ c) ≡ (a ∧ b) ∨ (a ∧ c)
 Hukum identitas      : F ∨ a ≡ a
 Hukum dominasi       : a ∨ T ≡ T
 Hukum komutatif & asosiatif untuk ∨
-
-Ditanya:
-Tunjukkan (i) dan (ii) keduanya tautologi menggunakan hukum-hukum ekivalen logis
 
 Jawab:
 
