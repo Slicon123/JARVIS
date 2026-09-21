@@ -96,6 +96,16 @@ weeks produce nothing, or if nodules, pits, or true scarring appear. Keep the ex
 plain per [[feedback-plain-language-explanations]]. He approved putting this in the public
 repo when the privacy tradeoff was put to him.
 
+**Where to buy, near his kost/UKSW (checked 21 Sep 2026 by web search, not visited in person):**
+Apotek K-24 Kartini, Jl. Kartini No. 6 — near UKSW; apotek chains carry the Wardah skincare
+line and, from October, sell Benzolac/Evalen without a resep. Kimia Farma Apotek 182, Jl.
+Brigjen Sudiarto No. 30, Mangunsari (0298-325350) — Kimia Farma's own Tokopedia store lists
+Hada Labo Gokujyun, call ahead to check the shelf. Sami Laris Swalayan runs its own
+Wardah/Emina promos, a reasonable one-stop for moisturizer + sunscreen. Fallback for any
+SKU not on a shelf: the brand's official Shopee/Tokopedia store, not a substitute variant —
+the "Physical" vs chemical UV Shield split and Benzolac vs Benzolac CL matter more than the
+brand.
+
 **The plan lives as a published artifact he reads on his phone:**
 https://claude.ai/artifact/LFWRtp6hGcPbWRSGfD1dxf — "Barrier First Protocol", published
 20 September 2026. Shopping list with persisted tick-boxes, the four phase dates, his
