@@ -47,6 +47,69 @@ pengadilan PT Unilever Indonesia Tbk, bukan "pabrik Rungkut".
 Catatan: bagian ini porsinya Anggota 2, bukan Bryan. Berguna buat Bryan sebagai
 host kalau ada yang nanya balik pas sesi tanya-jawab atau studi kasus.
 
+## Terkait Slide 7 & 12 — "Kalau warung nasi daftar OSS, jadi badan hukum dong?"
+
+**Jawabannya: tidak.** Ini kemungkinan besar muncul beneran di kelas, karena
+persis miskonsepsi yang kuis slide 12 dirancang buat memancing.
+
+NIB dan status badan hukum itu dua hal berbeda, diurus dua lembaga berbeda:
+
+| | Siapa yang keluarkan | Menjawab pertanyaan apa |
+|---|---|---|
+| **NIB (lewat OSS)** | Kementerian Investasi/BKPM | *"Boleh nggak kamu berjualan?"* |
+| **Status badan hukum** | Kemenkumham lewat AHU | *"Kalau usahamu punya utang, yang ditagih siapa?"* |
+
+NIB itu **izin berusaha** — bikin warungnya legal, bukan bikin warungnya jadi
+"orang" yang terpisah dari pemiliknya. Dasar hukumnya **PP 28/2025** tentang
+Perizinan Berusaha Berbasis Risiko, berlaku 5 Juni 2025, menggantikan PP 5/2021.
+
+**Bukti paling telak buat kelas: CV.** CV punya akta notaris, terdaftar resmi di
+Kemenkumham lewat SABU, dan punya NIB juga — terdaftar di mana-mana, tapi **tetap
+bukan badan hukum**. Jadi *terdaftar* ≠ *badan hukum*. Kalau pendaftaran saja bisa
+bikin badan hukum, CV sudah jadi badan hukum dari dulu.
+
+**Yang berubah setelah warung punya NIB:** usahanya resmi, bisa buka rekening atas
+nama usaha, bisa ajukan KUR, bisa ikut program pemerintah dan jadi supplier
+korporat. **Yang tidak berubah:** kalau warungnya bangkrut dan punya utang, motor
+dan rumah pemiliknya tetap bisa disita. Itu inti "bukan badan hukum", dan NIB
+tidak menyentuhnya sama sekali.
+
+**Cara warung nasi jadi badan hukum:** bukan dengan mendaftar, tapi dengan
+**mengganti bentuknya** — mendirikan **PT Perorangan**, Rp50.000 di AHU Online,
+tanpa notaris, cukup 1 orang, syaratnya masuk kriteria Usaha Mikro dan Kecil.
+Setelah itu tetap ambil NIB, karena izin usaha tetap wajib. Urutannya: **badan
+hukum dulu di AHU, izin usaha kemudian di OSS** — bukan sebaliknya.
+
+Satu kalimat siap pakai kalau ada yang nanya:
+> *"NIB itu izin buka toko. Badan hukum itu tembok antara dompet usahamu dan
+> dompet pribadimu. Punya izin bukan berarti punya tembok."*
+
+### Jangan tertukar: "badan usaha" vs "badan hukum"
+
+Warung nasi **sudah** badan usaha; yang belum itu badan **hukum**. Badan usaha =
+kategori besarnya, semua bentuk masuk. Badan hukum = sebagian kecil dari badan
+usaha, yaitu yang punya kepribadian hukum sendiri dan harta terpisah.
+
+```
+BADAN USAHA
+├── Bukan badan hukum  →  Usaha perseorangan, Firma, CV
+└── Badan hukum        →  PT, PT Perorangan, Koperasi,
+                          Yayasan, BUMN/BUMD (Persero, Perum, Perseroda)
+```
+
+Semua badan hukum adalah badan usaha, tapi tidak semua badan usaha adalah badan
+hukum.
+
+**Usul perbaikan kalimat poin 3 di slide 7** (belum dikerjakan per 23 September
+2026). Yang sekarang: *"Dari gratis lewat OSS sampai akta notaris dan modal
+disetor"* — menyebut **caranya** tapi tidak menyebut **bentuknya**, jadi bisa
+salah tangkap seolah OSS itu cara mendirikan badan usaha. Ganti jadi:
+
+> Usaha perseorangan gratis, cukup NIB di OSS. PT butuh akta notaris dan modal
+> disetor.
+
+Sekarang yang disandingkan bentuk dengan bentuk, bukan sistem dengan dokumen.
+
 ## Terkait Slide 10 — "Campuran" = BUMN yang sudah go public, contoh konkretnya
 
 | Perusahaan | Kode | Negara | Publik |
