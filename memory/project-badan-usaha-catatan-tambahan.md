@@ -47,10 +47,10 @@ pengadilan PT Unilever Indonesia Tbk, bukan "pabrik Rungkut".
 Catatan: bagian ini porsinya Anggota 2, bukan Bryan. Berguna buat Bryan sebagai
 host kalau ada yang nanya balik pas sesi tanya-jawab atau studi kasus.
 
-## Terkait Slide 7 & 12 — "Kalau warung nasi daftar OSS, jadi badan hukum dong?"
+## Terkait Slide 7, 11 & 12 — "Kalau warung nasi daftar OSS, jadi badan hukum dong?"
 
 **Jawabannya: tidak.** Ini kemungkinan besar muncul beneran di kelas, karena
-persis miskonsepsi yang kuis slide 12 dirancang buat memancing.
+persis miskonsepsi yang kuis slide 11–12 dirancang buat memancing.
 
 NIB dan status badan hukum itu dua hal berbeda, diurus dua lembaga berbeda:
 
@@ -110,7 +110,7 @@ salah tangkap seolah OSS itu cara mendirikan badan usaha. Ganti jadi:
 
 Sekarang yang disandingkan bentuk dengan bentuk, bukan sistem dengan dokumen.
 
-## Terkait Slide 10 — "Campuran" = BUMN yang sudah go public, contoh konkretnya
+## Terkait Slide 9 — "Campuran" = BUMN yang sudah go public, contoh konkretnya
 
 | Perusahaan | Kode | Negara | Publik |
 |---|---|---|---|
@@ -135,7 +135,7 @@ dasar. Jadi meski saham biasa negara turun, kendali tetap di tangan negara lewat
 satu lembar itu. Itu juga yang bikin BUMN Tbk tetap disebut BUMN, bukan swasta.
 
 **Dua koreksi yang belum dikerjakan (per 23 September 2026):**
-1. Di slide, kolom BUMN contohnya ditulis "Pertamina, PLN, KAI, BRI" — **BRI
+1. Di slide 9, kolom BUMN contohnya ditulis "Pertamina, PLN, KAI, BRI" — **BRI
    justru contoh Campuran**, bukan BUMN murni. Pertamina, PLN, dan KAI 100%
    negara dan tidak melantai di bursa. Ganti BRI dengan **Bulog** atau
    **Pegadaian**.
@@ -215,7 +215,7 @@ boleh masuk ke ruangan tempat keputusan diambil.* Di PT Tbk pintunya terbuka bua
 siapa saja yang punya satu lot. Di CV atau usaha perseorangan, ruangan itu tidak
 ada — keputusan diambil di kepala pemiliknya.
 
-## Terkait Slide 24 — Koperasi dibanding PT
+## Terkait Slide 25 — Koperasi dibanding PT
 
 **Poin lisan — klarifikasi "pemilik = pengguna" di koperasi (kalau ada yang
 nyeletuk "kan yang beli di Kopma bisa aja bukan anggota"):**
@@ -228,5 +228,9 @@ buat melayani kebutuhan anggotanya sendiri, dan keuntungan dari pemakaian jasa
 itu balik ke anggota yang makai — bukan berarti orang luar dilarang beli. Beda
 sama PT yang dari awal memang menyasar konsumen umum, dan pemegang sahamnya
 belum tentu pernah beli produknya sendiri.
+
+Kunci jawaban untuk semua pertanyaan yang dilempar ke kelas (slide 2, 11–12, 22,
+33–35, 36, 38) ada di `kuliah/badan-usaha/JAWABAN-PERTANYAAN.md` — itu file yang
+dibaca bertiga, sedangkan catatan ini khusus bahan lisan Bryan.
 
 Related: [[project-badan-usaha-teaching]]

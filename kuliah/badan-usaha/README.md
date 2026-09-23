@@ -15,7 +15,8 @@ jadi nggak ada yang perlu diprint atau disiapkan di luar slide.
 | 1 | [MATERI.md](MATERI.md) | Bertiga | Paling awal. Ini isinya — kuasai dulu sebelum lihat script. |
 | 2 | [PANDUAN-NGAJAR.md](PANDUAN-NGAJAR.md) | Bryan terutama | Cara membawakan kelas, bukan isi materi. Bab 11 wajib dibaca — tanpa aktivitas, tanya-jawabnya yang jadi tulang punggung sesi. |
 | 3 | [SCRIPT-NGAJAR.md](SCRIPT-NGAJAR.md) | Bertiga | Script kata-per-kata + pembagian tugas + susunan waktu. |
-| 4 | `badan-usaha.pptx` | Yang pegang laptop | 38 slide, nomornya sama persis dengan yang disebut di script. |
+| 4 | [JAWABAN-PERTANYAAN.md](JAWABAN-PERTANYAAN.md) | Bertiga | Kunci setiap pertanyaan yang dilempar ke kelas, jawaban salah yang sering muncul, plus pertanyaan susulan yang mungkin ditanya. Baca sehari sebelum tampil. |
+| 5 | `badan-usaha.pptx` | Yang pegang laptop | 38 slide, nomornya sama persis dengan yang disebut di script. |
 
 ## Pembagian materi
 
@@ -49,8 +50,7 @@ npm install pptxgenjs
 node slide-generator.js badan-usaha.pptx
 ```
 
-> **`badan-usaha.pptx` di repo ini masih versi lama (33 slide, format 95 menit).**
-> `slide-generator.js` sudah versi 60 menit (38 slide), tapi belum dijalankan
-> karena Node.js belum terpasang di mesin tempat perubahan ini dibuat.
-> **Jalankan dua perintah di atas dulu sebelum presentasi** — kalau tidak,
-> nomor slide di script nggak akan cocok sama deck-nya.
+`badan-usaha.pptx` sudah diregenerasi 22 September 2026 dan isinya 38 slide,
+cocok dengan `slide-generator.js` dan dengan nomor slide di
+[SCRIPT-NGAJAR.md](SCRIPT-NGAJAR.md) serta
+[JAWABAN-PERTANYAAN.md](JAWABAN-PERTANYAAN.md).
