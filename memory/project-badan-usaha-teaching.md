@@ -1,9 +1,11 @@
 ---
 name: project-badan-usaha-teaching
-description: "Bahan mengajar kelompok Bryan tentang badan usaha di Indonesia untuk Pengantar Manajemen dan Bisnis — di mana filenya dan apa isinya"
-metadata:
+description: Bahan mengajar kelompok Bryan tentang badan usaha di Indonesia untuk Pengantar Manajemen dan Bisnis — di mana filenya dan apa isinya
+metadata: 
   node_type: memory
   type: project
+  originSessionId: 978ff916-8a41-4ed0-9311-b5ab7db74e14
+  modified: 2026-09-22T11:39:06.990Z
 ---
 
 Bryan dapat tugas kelompok (3 orang) untuk **mengajar** kelas Pengantar Manajemen
@@ -41,11 +43,12 @@ Danantara. Daftar lengkapnya ada di bagian paling atas `MATERI.md`.
 atas, jangan bikin ulang materinya. Kalau dia minta perubahan slide, edit
 `slide-generator.js` lalu regenerasi — jangan edit `.pptx`-nya lewat kode.
 
-**Yang masih tertunggak:** `badan-usaha.pptx` di repo masih deck lama (33 slide,
-format 95 menit). `slide-generator.js` sudah versi 60 menit (38 slide) tapi belum
-dijalankan karena **Node.js belum terpasang di mesin Bryan**. Sebelum presentasi
-dia harus `npm install pptxgenjs` lalu `node slide-generator.js badan-usaha.pptx`
-— kalau tidak, nomor slide di script tidak cocok dengan deck-nya. File memory ini
-boleh dihapus setelah presentasinya lewat.
+**Beres 22 September 2026:** Node.js LTS v24 sudah terpasang di mesin Bryan lewat
+winget, dan `badan-usaha.pptx` sudah diregenerasi — sekarang 38 slide, cocok
+dengan `slide-generator.js` dan nomor slide di `SCRIPT-NGAJAR.md`. `pptxgenjs`
+sengaja tidak diinstal di dalam repo (biar `node_modules` tidak ikut ter-commit);
+kalau perlu regenerasi lagi, install ke folder sementara lalu jalankan dengan
+`NODE_PATH` menunjuk ke situ. File memory ini boleh dihapus setelah presentasinya
+lewat.
 
 Related: [[project-uksw-digital-business]], [[user-bryan-profile]]
