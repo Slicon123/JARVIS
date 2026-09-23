@@ -47,6 +47,40 @@ pengadilan PT Unilever Indonesia Tbk, bukan "pabrik Rungkut".
 Catatan: bagian ini porsinya Anggota 2, bukan Bryan. Berguna buat Bryan sebagai
 host kalau ada yang nanya balik pas sesi tanya-jawab atau studi kasus.
 
+## Terkait Slide 10 — "Campuran" = BUMN yang sudah go public, contoh konkretnya
+
+| Perusahaan | Kode | Negara | Publik |
+|---|---|---|---|
+| Bank BRI | BBRI | 53,19% | ±46,3% |
+| Telkom Indonesia | TLKM | 52,09% | 47,91% |
+| Bank Mandiri | BMRI | ±52% | ±48% |
+| Bank BNI | BBNI | ±60% | ±40% |
+| Jasa Marga | JSMR | mayoritas | sisanya publik |
+| Semen Indonesia | SMGR | mayoritas | sisanya publik |
+| Garuda Indonesia | GIAA | mayoritas | sisanya publik |
+
+Angka BBRI dan TLKM diverifikasi 23 September 2026; sisanya perkiraan, cek ulang
+kalau mau disebut persis. Yang paling enak dibawa ke kelas: **BRI dan Telkom** —
+dipakai mahasiswa sehari-hari dan angkanya bulat, sekitar separuh-separuh.
+Kalimat penutup yang biasanya bikin kelas melek: *"Kalau kalian beli satu lot
+saham BBRI, kalian ikut jadi pemilik BRI. Beneran, bukan kiasan."*
+
+**Kalau ada yang nanya "kalau publik beli terus, negara bisa kalah suara dong?"**
+Negara punya satu lembar khusus, **Saham Seri A Dwiwarna**. Cuma satu lembar,
+tapi punya hak veto — menentukan direksi, komisaris, dan perubahan anggaran
+dasar. Jadi meski saham biasa negara turun, kendali tetap di tangan negara lewat
+satu lembar itu. Itu juga yang bikin BUMN Tbk tetap disebut BUMN, bukan swasta.
+
+**Dua koreksi yang belum dikerjakan (per 23 September 2026):**
+1. Di slide, kolom BUMN contohnya ditulis "Pertamina, PLN, KAI, BRI" — **BRI
+   justru contoh Campuran**, bukan BUMN murni. Pertamina, PLN, dan KAI 100%
+   negara dan tidak melantai di bursa. Ganti BRI dengan **Bulog** atau
+   **Pegadaian**.
+2. `MATERI.md` menulis UU BUMN terakhir diubah **UU No. 1 Tahun 2025**. Yang
+   terbaru **UU No. 16 Tahun 2025**, berlaku 6 Oktober 2025, perubahan *keempat*
+   atas UU 19/2003 — memisahkan fungsi negara sebagai regulator dan sebagai
+   pemilik usaha, dan menegaskan hak khusus Saham Seri A Dwiwarna.
+
 ## Terkait Slide 12 — Jawaban Cek Cepat (badan hukum vs bukan)
 
 **Tabel perbandingan PT vs CV:**
@@ -82,6 +116,41 @@ pemegang saham lewat RUPS. Kalau PT itu sudah Go Public (Tbk), laporan
 keuangannya bahkan wajib diunggah ke internet dan bisa dibaca bebas oleh
 masyarakat umum maupun kompetitor bisnis. Beda dengan CV atau usaha perorangan
 yang keuangannya tertutup rapat, cuma diketahui pemiliknya sendiri.
+
+## Terkait Slide 18 — "Apakah mahasiswa yang beli saham bisa ikut RUPS?"
+
+Jawabannya **ya, beneran bisa** — bukan teori. Syaratnya cuma punya minimal
+**1 lot (100 lembar)** dan masih memegangnya sampai *recording date*. Tidak ada
+syarat minimal persentase.
+
+Alurnya: beli sahamnya (Ajaib, Stockbit, sekuritas apa pun) dan tahan sampai
+lewat *cum date* → dapat email undangan RUPS dari `e-Proxy@ksei.co.id` → **minta
+KTUR** (Konfirmasi Tertulis Untuk RUPS) ke sekuritasnya, di Ajaib cukup chat
+lewat aplikasi, sekitar seminggu sebelum jadwal → hadir **online** lewat
+**eASY.KSEI** (daftar dulu di situs KSEI) atau **offline** bawa KTP + KTUR.
+Dasar hukumnya POJK 15/2020 Pasal 17 (yang berhak hadir = tercatat di daftar
+pemegang saham 1 hari kerja sebelum pemanggilan RUPS) dan POJK 16/2020 untuk
+RUPS elektronik. Fakta yang sering bikin kaget: setelah recording date lewat,
+sahamnya boleh dijual dan hak ikut RUPS-nya tetap sah.
+
+**Yang penting diluruskan ke kelas** — kalimat "berapapun persentasenya tetap
+punya hak suara" benar, tapi gampang disalahpahami. Pisahkan dua hal:
+
+- **Hak untuk bersuara: ada, dan setara.** Dengan 1 lot kamu boleh masuk, angkat
+  tangan, dan bertanya langsung ke direksi, sama seperti pemegang saham manapun.
+- **Bobot suaranya: proporsional, bukan sama rata.** 1 lembar = 1 suara. 100
+  lembar dari sekitar 151 miliar lembar BBRI ≈ 0,00000007%. Secara matematis
+  voting-mu tidak akan pernah mengubah hasil apa pun.
+
+Jadi kalau ada yang nanya *"berarti aku bisa menolak keputusan direksi dong?"* —
+tidak. Yang didapat itu **hak hadir dan hak bertanya**, bukan pengaruh. Dan
+justru hak bertanya itu yang nyata nilainya: kamu bisa berdiri di RUPS BRI,
+bertanya ke direktur utamanya, dan dia wajib menjawab.
+
+Penutup yang bagus buat bagian ini: *bentuk badan usaha menentukan siapa yang
+boleh masuk ke ruangan tempat keputusan diambil.* Di PT Tbk pintunya terbuka buat
+siapa saja yang punya satu lot. Di CV atau usaha perseorangan, ruangan itu tidak
+ada — keputusan diambil di kepala pemiliknya.
 
 ## Terkait Slide 24 — Koperasi dibanding PT
 
