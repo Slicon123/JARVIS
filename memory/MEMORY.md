@@ -15,7 +15,7 @@
 - [Claude account context](user-claude-account-context.md) — Pro plan; uses VS Code extension not terminal (no status line); phone can't run Claude Code
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
-- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapter content covered so far and outstanding tugas
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 (Hardware) covered so far, and outstanding tugas
 - [Badan usaha — bahan ngajar](project-badan-usaha-teaching.md) — tugas mengajar kelompok Pengantar Manajemen dan Bisnis; sesi 60 menit interaksi lisan; pptx sudah diregenerasi
 - [Badan usaha — catatan tambahan](project-badan-usaha-catatan-tambahan.md) — catatan lisan tambahan buat presentasi (bukan slide), tanya kalau Bryan minta "catatan kecil"
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
