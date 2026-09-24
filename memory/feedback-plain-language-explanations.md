@@ -27,5 +27,12 @@ before the arithmetic. This does not mean shorter or less rigorous — the resea
 real figures still go in, they just get said plainly. It also does not apply to his
 professional documents in Bahasa Indonesia, where the technical register is the deliverable.
 
+**Coursework too (24 September 2026):** after I gave him a presentable PTI Hardware answer
+using monitor TFT, hard disk SATA, and inkjet printing without explaining them, he said he
+couldn't understand the material if he didn't know what the answer's words meant. For class
+answers, explain each technical term in plain words, with an everyday comparison, alongside
+the answer. That applies even when the answer itself stays in the lecturer's vocabulary. An
+answer he can present but can't explain is no use to him.
+
 Related: [[feedback-jarvis-persona]], [[feedback-self-correct-and-verify]],
 [[project-gym-nutrition-bulking]]
