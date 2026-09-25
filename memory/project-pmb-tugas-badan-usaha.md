@@ -63,7 +63,11 @@ KUHPerdata). T2 "PT Studio Gim Merbabu", KBLI 62110, 58211 ditunda. T3 "CV Dana
 Tani Nusantara" → PT, VC Rp10 M memimpin putaran Rp25 M, kapitalisasi agio. T4
 "Koperasi Jasa Roda Bersama"/RodaKita. Spasi T1 1,15 (batas 3–4 halaman), yang
 lain 1,5. Skrip generatornya ada di scratchpad sesi, tidak di repo.
-**Belum:** laporan Tugas 5. Bryan mewawancarai UMKM (saran: Utan Coffee Roastery
+**Update 25 Sep 2026:** dosen mengubah aturan — cukup pilih **3 dari 5 tugas**. Bryan
+minta Tugas 5 dieliminasi; rekomendasi JARVIS: kumpulkan **Tugas 2, 3, 4** (tiga
+bentuk badan usaha berbeda, masing-masing punya temuan baru), Tugas 1 jadi cadangan.
+File Tugas 1 dan kit Tugas 5 tetap di folder, tidak dihapus.
+**(Tidak lagi relevan kecuali Bryan berubah pikiran):** laporan Tugas 5. Bryan mewawancarai UMKM (saran: Utan Coffee Roastery
 di Gedung F UKSW, STC thrift, Kang Sablon) lalu mengirim catatan untuk disusun jadi
 laporan 5 halaman.
 
