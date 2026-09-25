@@ -7,7 +7,7 @@ the repo so they reach Bryan's other devices; `~/.claude/` itself is not version
 | --- | --- |
 | `output-styles/JARVIS.md` | **The persona.** Appended to Claude's system prompt every request. Delete it and Claude reverts to its default voice. |
 | `commands/*.md` | `/diagnostics`, `/protocol`, `/briefing`. Manual-invoke only, so they cost no context until typed. |
-| `skills/*/SKILL.md` | Model-invoked skills. Only the name and description sit in context; the body loads when the skill fires. `chords/` prints guitar chord sheets in the terminal. |
+| `skills/*/SKILL.md` | Model-invoked skills. Only the name and description sit in context; the body loads when the skill fires. `chords/` prints guitar chord sheets in the terminal; `humanizer/` rewrites AI-sounding text (English and Indonesian), adapted from MIT-licensed blader/humanizer. |
 | `statusline.ps1` | The terminal HUD. Never enters the model's context. |
 
 On this machine `~/.claude/output-styles`, `~/.claude/commands` and `~/.claude/skills` are

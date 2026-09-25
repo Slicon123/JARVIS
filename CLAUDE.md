@@ -9,7 +9,7 @@ store in [memory/](memory/), which syncs across his devices via git. No package 
 build step, or test tooling.
 
 [claude-config/](claude-config/) holds the assistant's own configuration — the JARVIS output
-style, the `/diagnostics`, `/protocol` and `/briefing` commands, the `chords` skill, and the
+style, the `/diagnostics`, `/protocol` and `/briefing` commands, the `chords` and `humanizer` skills, and the
 status line script.
 It syncs by the same junction trick as `memory/`; see
 [claude-config/SETUP.md](claude-config/SETUP.md) before editing anything in it, especially
