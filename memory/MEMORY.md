@@ -18,7 +18,7 @@
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 (Hardware) covered so far, and outstanding tugas
 - [Badan usaha — bahan ngajar](project-badan-usaha-teaching.md) — tugas mengajar kelompok Pengantar Manajemen dan Bisnis; sesi 60 menit interaksi lisan; pptx sudah diregenerasi
 - [Badan usaha — catatan tambahan](project-badan-usaha-catatan-tambahan.md) — catatan lisan tambahan buat presentasi (bukan slide), tanya kalau Bryan minta "catatan kecil"
-- [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — handout dosen + 5 tugas tertulis; diskusi dulu sebelum bikin .docx; kesalahan pasal/KBLI di handout
+- [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — handout dosen + 5 tugas; T1–4 selesai di kuliah/pmb-tugas-badan-usaha/, T5 tunggu hasil wawancara; deadline 27 Sep 2026
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
 - [ATS/fire simulator idea](project-ats-fire-simulator-idea.md) — proposed browser project to close his ATS/FSS technical gap; remind 2026-09-05

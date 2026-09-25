@@ -56,9 +56,23 @@ koperasi ojol, BMC harus menarik. Tugas 5: siapkan kit wawancara + saran UMKM
 dekat UKSW. Temuan tambahan: POJK 40/2024 mewajibkan fintech lending berbentuk PT
 atau koperasi dengan modal disetor minimal Rp25 M, jadi VC Rp10 M saja belum cukup.
 
+**Status 25 Sep 2026:** Tugas 1–4 selesai dan Tugas 5 baru berupa kit wawancara, semuanya di
+`kuliah/pmb-tugas-badan-usaha/` (5 .docx + 1 .pptx untuk Tugas 3). Isi pokok:
+T1 "Belanjain.id", kekurangan Rp1,5 M, poin kunci jaminan pribadi (Pasal 1820
+KUHPerdata). T2 "PT Studio Gim Merbabu", KBLI 62110, 58211 ditunda. T3 "CV Dana
+Tani Nusantara" → PT, VC Rp10 M memimpin putaran Rp25 M, kapitalisasi agio. T4
+"Koperasi Jasa Roda Bersama"/RodaKita. Spasi T1 1,15 (batas 3–4 halaman), yang
+lain 1,5. Skrip generatornya ada di scratchpad sesi, tidak di repo.
+**Belum:** laporan Tugas 5. Bryan mewawancarai UMKM (saran: Utan Coffee Roastery
+di Gedung F UKSW, STC thrift, Kang Sablon) lalu mengirim catatan untuk disusun jadi
+laporan 5 halaman.
+
+**Fakta baru yang sudah dicek:** batas potongan aplikasi ojol **maksimal 8% sejak
+1 Juli 2026** (Perpres 27/2026, sebelumnya 15–20%). RAT daring sah menurut PP 7/2021
+Pasal 8 ayat (1). Pasal 16 PP 8/2021 hanya mengatur saat mulai berlaku.
+
 **How to apply:** Jangan langsung generate .docx — sepakati dulu pilihan per tugas
-dengan Bryan. Tugas 5 butuh wawancara sungguhan; jangan karang data narasumber,
-bantu dengan pedoman wawancara dan kerangka laporan. Simpan hasilnya di
-`kuliah/` (folder baru, pisah dari `kuliah/badan-usaha/`).
+dengan Bryan. Tugas 5 butuh wawancara sungguhan; jangan karang data narasumber.
+Kalau dia minta revisi, edit file di folder di atas, jangan bikin ulang dari nol.
 
 Related: [[project-uksw-digital-business]], [[feedback-self-correct-and-verify]], [[feedback-plain-language-explanations]]
