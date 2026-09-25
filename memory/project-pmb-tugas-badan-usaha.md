@@ -47,6 +47,15 @@ di Kementerian Hukum.
 sebelum dibuat** supaya kalau ada salah tidak boros token, dan jawabannya harus
 sesuai aturan di handout.
 
+**Keputusan Bryan (25 Sep 2026):** kelima tugas dikerjakan semua, **deadline 27 Sep
+2026**, dosen tidak punya format sendiri. Jawaban ikut kerangka handout tapi pakai
+aturan yang benar, dengan catatan kaki sopan kalau handout keliru. Tiap komponen
+analisis di handout wajib jadi bagian sendiri di jawabannya. Tugas 1 angka boleh
+dikarang. Tugas 2 pilihanku (studio gim), nama rekaan. Tugas 3 Word + PPT. Tugas 4
+koperasi ojol, BMC harus menarik. Tugas 5: siapkan kit wawancara + saran UMKM
+dekat UKSW. Temuan tambahan: POJK 40/2024 mewajibkan fintech lending berbentuk PT
+atau koperasi dengan modal disetor minimal Rp25 M, jadi VC Rp10 M saja belum cukup.
+
 **How to apply:** Jangan langsung generate .docx — sepakati dulu pilihan per tugas
 dengan Bryan. Tugas 5 butuh wawancara sungguhan; jangan karang data narasumber,
 bantu dengan pedoman wawancara dan kerangka laporan. Simpan hasilnya di
