@@ -49,7 +49,10 @@ sesuai aturan di handout.
 
 **Keputusan Bryan (25 Sep 2026):** kelima tugas dikerjakan semua, **deadline 27 Sep
 2026**, dosen tidak punya format sendiri. Jawaban ikut kerangka handout tapi pakai
-aturan yang benar, dengan catatan kaki sopan kalau handout keliru. Tiap komponen
+aturan yang benar. Awalnya ada catatan kaki sopan tiap kali handout keliru, tapi Bryan
+**membuang semua catatan kaki** pada 25 Sep 2026 (T2, T3, dan kotak koreksi di slide 6
+PPT T3). Aturan yang benar tetap di teks utama tanpa penjelasan; jangan tambahkan catatan
+kaki lagi kecuali dia minta. Tiap komponen
 analisis di handout wajib jadi bagian sendiri di jawabannya. Tugas 1 angka boleh
 dikarang. Tugas 2 pilihanku (studio gim), nama rekaan. Tugas 3 Word + PPT. Tugas 4
 koperasi ojol, BMC harus menarik. Tugas 5: siapkan kit wawancara + saran UMKM
@@ -67,6 +70,8 @@ lain 1,5. Skrip generatornya ada di scratchpad sesi, tidak di repo.
 minta Tugas 5 dieliminasi; rekomendasi JARVIS: kumpulkan **Tugas 2, 3, 4** (tiga
 bentuk badan usaha berbeda, masing-masing punya temuan baru), Tugas 1 jadi cadangan.
 File Tugas 1 dan kit Tugas 5 tetap di folder, tidak dihapus.
+T2 juga punya versi humanized (`tugas-2-...-humanized.docx`, 25 Sep 2026) di samping
+aslinya; kalau T2 direvisi, tanyakan versi mana yang akan dikumpulkan.
 **(Tidak lagi relevan kecuali Bryan berubah pikiran):** laporan Tugas 5. Bryan mewawancarai UMKM (saran: Utan Coffee Roastery
 di Gedung F UKSW, STC thrift, Kang Sablon) lalu mengirim catatan untuk disusun jadi
 laporan 5 halaman.
