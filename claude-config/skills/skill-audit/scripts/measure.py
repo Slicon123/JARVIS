@@ -46,7 +46,7 @@ def main():
     if len(sys.argv) != 2:
         sys.exit(__doc__)
     sys.stdout.reconfigure(encoding="utf-8")
-    target = Path(sys.argv[1])
+    target = Path(sys.argv[1]).resolve()
     md = target / "SKILL.md" if target.is_dir() else target
     if not md.exists():
         sys.exit(f"not found: {md}")
@@ -110,10 +110,11 @@ def main():
             refs.add(p)
     others = [f for f in root.rglob("*") if f.is_file() and f != md
               and "__pycache__" not in f.parts] if is_skill else []
+    docs = "".join(f.read_text(encoding="utf-8", errors="ignore") for f in others if f.suffix == ".md")
     for f in others:
         rel = f.relative_to(root).as_posix()
-        used = rel in full or f.name in full
-        print(f"{rel}: {f.stat().st_size} bytes{'' if used else '   <- never referenced in SKILL.md'}")
+        used = rel in full or f.name in full or f.name in docs
+        print(f"{rel}: {f.stat().st_size} bytes{'' if used else '   <- never referenced by any .md in the skill'}")
     for r in sorted(refs) if is_skill else []:
         if "/" in r or r.endswith(".md"):
             if not (root / r).exists() and not any(f.name == Path(r).name for f in others):

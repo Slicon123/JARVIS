@@ -1,20 +1,12 @@
 ---
 name: humanizer
-description: Rewrite AI-sounding text so it reads like a person wrote it, without changing what it says. Works in English and Bahasa Indonesia, on pasted text or a Word file (.docx) such as a makalah, keeping its formatting and matching each section's style. Use when Bryan asks to humanize text, make something sound less like AI or less like ChatGPT/Claude, "hilangkan kesan AI", "biar gak kayak AI", "bikin lebih natural", or asks whether a text sounds AI-written. Catches not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, chatbot wrappers, Claude's own habits, and Indonesian AI phrasing.
+description: Rewrite AI-sounding text so it reads like a person wrote it, without changing what it says. Works in English and Bahasa Indonesia, on pasted text or a Word file (.docx) such as a makalah, keeping its formatting and matching each section's style. Use when Bryan asks to humanize text, make something sound less like AI or less like ChatGPT/Claude, "hilangkan kesan AI", "biar gak kayak AI", "bikin lebih natural", wants it to get past Turnitin or an AI detector ("lolos Turnitin"), or asks whether a text sounds AI-written.
 license: MIT (patterns §1–§25 from blader/humanizer v3.0.0; see LICENSE-blader-humanizer)
 ---
 
 # Humanizer: remove AI writing patterns
 
 Rewrite AI-sounding text so it reads like the writer, not a chatbot. Keep what it says. Do not make anything up.
-
-**Where this comes from.** §1 to §25 are [blader/humanizer](https://github.com/blader/humanizer)
-v3.0.0 (MIT, about 52k GitHub stars as of 25 Sep 2026), which is built on Wikipedia's
-["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), the
-field guide WikiProject AI Cleanup editors wrote from reviewing real AI-generated articles.
-Those are the tested part. §26 to §31 (Claude's own habits) and §32 to §37 (Bahasa Indonesia)
-were added for Bryan. They come from observation, not from a published study, so treat them
-as *weak alone* unless a pattern says otherwise.
 
 **What this does not promise.** It makes text read like a person. It does not guarantee a
 pass on an AI detector (Turnitin, GPTZero, Pangram). Pangram tested every Claude writing
@@ -23,15 +15,7 @@ tell him that plainly, once, then do the rewrite.
 
 ## Why AI text sounds the way it does
 
-A language model writes whatever is most likely to come next, so by default it makes the choice that fits the widest range of readers and subjects. A human writer chooses for one reader and one subject, so their choices are uneven and specific. Every pattern below is one form of the default choice:
-
-- **Staging.** The sentence signals importance instead of adding a fact, with a contrast that only adds weight or a one-line closer that repeats the point.
-- **Rhythm by rule.** Triads and dashes applied everywhere, whether or not the meaning asks for them.
-- **Inflation.** Ordinary facts dressed as pivotal or expert-backed.
-- **Formatting by rule.** Bold and title case applied to every item.
-- **Leftovers.** Chat wrappers and drafting moves that were never meant for the reader.
-
-Word habits change with every model release. The structural habits above persist, so they lead the list below.
+A language model writes whatever is most likely to come next, so by default it makes the choice that fits the widest range of readers and subjects. A human writer chooses for one reader and one subject, so their choices are uneven and specific. Every pattern below is one form of the default choice. Word habits change with every model release; the structural habits persist, so they lead the list.
 
 Two rules follow from this. Every sentence you keep must add something the reader did not already have. A tell counts in proportion to how rarely a careful writer would make it on purpose. The patterns are numbered strongest first: §1 to §5 justify an edit on one sighting, and a pattern marked *weak alone* needs company from other tells in the same passage before you act.
 
@@ -53,7 +37,7 @@ Without a sample, take the voice from the kind of text. Blog posts, essays, opin
 ### Language
 
 Rewrite in the language of the text, not the language of the request. Bryan may ask in
-English about an Indonesian text, or mix both. Indonesian text gets §32 to §37 on top of the
+English about an Indonesian text, or mix both. Indonesian text gets §31 to §36 on top of the
 structural patterns, which apply in every language.
 
 Keep the register the text needs. A makalah, laporan, or tender document stays in formal
@@ -72,56 +56,17 @@ personal post can go casual. Never make a formal document casual to make it soun
 
 If he asks to see the draft or the full list of tells, show them.
 
+**Assessment only.** When he asks whether a text sounds AI-written, do not rewrite it. List
+the tells you found, strongest first, each with the phrase quoted, and give a verdict weighed
+by **When not to act**: a few weak tells mean little, several strong ones together are a real
+sign. Say plainly that no reader or detector can be certain. Offer the rewrite in one line.
+
 **File mode.** When the user names a text or Markdown file, run the full process but write only the final text to the file. Change prose only. Keep code blocks, inline code, commands, paths, YAML metadata, data, and link targets unchanged. Then give the user a short summary. A Word file (.docx) follows **Word files** below instead.
 
-## Word files (.docx): makalah, laporan, tugas
+## Word files (.docx)
 
-Bryan's usual case is a makalah or tugas in Word. The rewrite must come back as a Word file
-that looks exactly like his: same styles, headings, numbering, spacing, fonts, italics on
-foreign terms, tables, and page layout. Only the wording changes. The helper script
-`scripts/docx_humanize.py` in this skill's folder does the file handling
-(`~/.claude/skills/humanizer/scripts/docx_humanize.py` on a linked device). It needs
-`pip install python-docx` once per device.
-
-1. **Never overwrite the original.** Write `<name>-humanized.docx` next to it. An old `.doc`
-   file: ask Bryan to Save As `.docx` in Word first. A Google Doc: download it as `.docx`.
-   If a `~$<name>.docx` lock file sits next to it, the file is open in Word. Tell him to
-   close it first, or his next save will overwrite your changes.
-2. **Extract.** `python docx_humanize.py extract <file> <scratchpad>/paragraphs.json`. Each
-   paragraph comes with its index, Word style, the heading it sits under, and its text,
-   with italic as `*x*` and bold as `**x**`. Read the whole thing before editing anything.
-3. **Work out the style (next section).** Name the document type, give each section its
-   register, and find the writer's own voice. The paragraphs with the fewest tells are the
-   writing sample; §Voice applies to them. Note the pronoun he uses for himself (*penulis*,
-   *kami*, or *saya*) and his term choices (*startup* or *perusahaan rintisan*), then keep
-   both the same across the whole file.
-4. **Choose what to leave alone.** Headings, cover page (nama, NIM, dosen), daftar isi,
-   daftar tabel and gambar, captions ("Gambar 2.1 ..."), daftar pustaka, direct quotes, text
-   of laws (Pasal, Ayat), data tables, and every paragraph with no real tells. Rewriting
-   twenty paragraphs well beats touching two hundred.
-5. **Write `edits.json`** with only the paragraphs you change: `{"12": "teks baru"}`. One
-   paragraph in, one paragraph out, because merging or splitting would break Word's
-   numbering and list styles. `null` deletes a paragraph that should go entirely, such as a
-   "Semoga penjelasan di atas dapat membantu!" left at the end of a Pembahasan. Keep the `*italic*` marks on
-   foreign terms, and italicise any new foreign term you introduce; that is the makalah
-   convention (istilah asing dicetak miring).
-6. **Apply.** `python docx_humanize.py apply <file> edits.json <name>-humanized.docx`.
-   Then deal with every line it prints:
-   - `check:` a number, year, citation, acronym, or name from the old text is gone. Put it
-     back, or be sure a pattern required cutting it. Never ignore one.
-   - `skipped: complex (mixed fonts ...)`: usually invisible leftovers from copy-paste.
-     Look at the paragraph. If nothing about it is meant to look different, rerun with
-     `--flatten`. If part of it is deliberately coloured, underlined, or sized, leave it.
-   - `skipped: complex (footnote / field / hyperlink / image ...)`: the script will not touch
-     these, because a Mendeley or Zotero citation, a footnote number, or a link would break.
-     List them for Bryan (section plus first few words) with a suggested rewrite he can type
-     into Word himself. Hand-edit their XML only if he asks, and then use the docx skill.
-   - The word count. Lecturers often set a minimum length. If the document shrinks by more
-     than about 10%, tell Bryan the before and after numbers so he can decide.
-7. **Check the result.** Run `extract` on the new file and read the changed paragraphs in
-   their surroundings, or read it flat with `pandoc <new>.docx -t plain`. Then reply with the
-   new file's path, how many paragraphs changed in each section, three to six lines on what
-   changed, the manual-edit list, and any fact you needed but did not have.
+Before touching a .docx, read `${CLAUDE_SKILL_DIR}/docx.md` (`docx.md` next to this file).
+It has the helper script, what to leave alone, and how to check the result.
 
 ## Match the style of each text
 
@@ -133,11 +78,11 @@ then once for each section.
 
 | Text | Register | Watch most for |
 | --- | --- | --- |
-| Makalah, paper kuliah | Formal Bahasa Indonesia baku (EYD). Mostly impersonal: *penulis* or passive where natural. Sentences of moderate length, mixed. No slang, no *kamu*. | §33 era-and-landscape openers, §35 connector chains, §36 inflated words, §13 |
+| Makalah, paper kuliah | Formal Bahasa Indonesia baku (EYD). Mostly impersonal: *penulis* or passive where natural. Sentences of moderate length, mixed. No slang, no *kamu*. | §32 era-and-landscape openers, §34 connector chains, §35 inflated words, §13 |
 | Laporan praktikum, observasi | Formal and concrete: what was done, seen, and measured. *Kami* or passive. | §13, §17 vague sources, §23 guesses |
-| Esai, opini, refleksi | Semi-formal. *Saya* is fine, and so are opinions, doubts, and a personal example the writer gave. | §1, §2, §30 fence-sitting |
-| Proposal teknis, tender, dokumen kerja | Formal and technical. Keep terms, standards, and numbering exactly. No selling. | §16 sales language, §17, §29 |
-| Email or surat resmi | Formal. The salutation and closing stay; they are not chatbot residue. | §32, §26 |
+| Esai, opini, refleksi | Semi-formal. *Saya* is fine, and so are opinions, doubts, and a personal example the writer gave. | §1, §2, §29 fence-sitting |
+| Proposal teknis, tender, dokumen kerja | Formal and technical. Keep terms, standards, and numbering exactly. No selling. | §16 sales language, §17, §28 |
+| Email or surat resmi | Formal. The salutation and closing stay; they are not chatbot residue. | §31, §22 |
 | Caption, chat, postingan | Casual: *aku/kamu* or the writer's own slang, short sentences. | everything in E and G |
 
 English texts follow the same idea: an academic essay stays academic, a LinkedIn post
@@ -430,8 +375,8 @@ Remove these outright. Nothing here needs rewriting.
 
 ### 22. Chatbot residue
 
-**Watch for:** I hope this helps, Of course!, Certainly!, Great question!, You're absolutely right, Would you like..., Want me to...?, Should I continue?, let me know, here is a...
-**Problem:** A chatbot's greeting, praise, offer, or closing remains in text that should stand on its own. It is the most certain tell in this list and the easiest to miss when it wraps real content. Remove the wrapper and keep the content.
+**Watch for:** I hope this helps, Of course!, Certainly!, Great question!, You're absolutely right, That's a great point, Good catch, I'd be happy to help, Happy to help, I love this idea, Would you like..., Want me to...?, Should I continue?, let me know, here is a...
+**Problem:** A chatbot's greeting, praise, offer, or closing remains in text that should stand on its own. Claude's version opens by agreeing or praising before it says anything. It is the most certain tell in this list and the easiest to miss when it wraps real content. Remove the wrapper and keep the content.
 **Before:**
 > Great question! Here is an overview of the French Revolution. It began in 1789 when a financial crisis and food shortages led to widespread unrest. I hope this helps! Let me know if you'd like me to expand on any section.
 **After:**
@@ -476,18 +421,9 @@ Remove these outright. Nothing here needs rewriting.
 
 Wikipedia's word lists track ChatGPT, Gemini, and Grok most closely. Claude's text shows the
 structural tells above too, plus the habits below. These come from reading a lot of Claude
-output, not from a measured study, so each one is *weak alone* except §26.
+output, not from a measured study, so each one is *weak alone*.
 
-### 26. Agreement and praise wrappers
-
-**Watch for:** You're absolutely right, Great question, That's a great point, Good catch, I'd be happy to help, Happy to help, I love this idea, What a thoughtful question
-**Problem:** The same as §22, in Claude's wording. Claude opens by agreeing or praising before it says anything. Remove the wrapper outright. This one is strong on a single sighting.
-**Before:**
-> You're absolutely right, and that's a great point! The meeting should move to Thursday.
-**After:**
-> The meeting should move to Thursday.
-
-### 27. Sincerity words as intensifiers
+### 26. Sincerity words as intensifiers
 
 **Watch for:** genuinely, truly, honestly, really, deeply, I want to be direct, I'll be transparent, to be candid
 **Problem:** The word promises sincerity instead of adding meaning. "This is genuinely useful" says no more than "This is useful." Cut the word. Keep it only when it contrasts with something false ("it looked broken but genuinely worked").
@@ -496,7 +432,7 @@ output, not from a measured study, so each one is *weak alone* except §26.
 **After:**
 > This approach could change how you study.
 
-### 28. Signposts before the point
+### 27. Signposts before the point
 
 **Watch for:** It's worth noting that, Notably, Importantly, Worth flagging, The key insight is, The short answer is, Short answer:, Bottom line:, The upshot is, In short, TL;DR (in text under 300 words), Here's the breakdown, Here's why:, The catch?
 **Problem:** Like §4, but in the middle of the text. The phrase tells the reader a point is coming or matters. Start with the point. A question answered straight away ("The result? Faster loads.") is the same move; write the sentence.
@@ -505,12 +441,12 @@ output, not from a measured study, so each one is *weak alone* except §26.
 **After:**
 > The deadline moved, so we have two extra days.
 
-### 29. Structure for its own sake
+### 28. Structure for its own sake
 
 **Watch for:** headings on a text under about 300 words; every paragraph turned into bullets; nested bullets two levels deep; a table for two or three facts; a closing "Summary" or "Key takeaways" that repeats the body; a bolded one-line verdict at the top and again at the bottom
 **Problem:** Claude formats a short answer like a report. §19 and §20 cover the decoration; this is the skeleton. Short text becomes paragraphs. Keep a list only when the items are parallel and the reader will scan or follow them in order, like steps.
 
-### 30. Balance on every claim
+### 29. Balance on every claim
 
 **Watch for:** That said, However it's important to consider, On the other hand (with no real other hand), ultimately it depends on your specific needs/situation/goals, there's no one-size-fits-all, both have their merits
 **Problem:** Every point gets a counterweight, so the text never commits. Where the source takes a side, take it. Keep one real caveat that changes what the reader would do; cut the reflexive ones. This overlaps with §9 but works at paragraph scale.
@@ -519,7 +455,7 @@ output, not from a measured study, so each one is *weak alone* except §26.
 **After:**
 > Start with Python. Switch to JavaScript if you mainly want to build websites.
 
-### 31. Claude's word list
+### 30. Claude's word list
 
 **Watch for:** nuanced, straightforward, comprehensive, seamless/seamlessly, leverage (verb), navigate (figurative), unpack, lean into, sit with, resonate, load-bearing (figurative), surface (verb, "surface an issue"), elevate, empower, ensure (in every paragraph), a range of, various, essentially, fundamentally
 **Problem:** Same as §12, for words Claude reaches for more than people do. One is fine. Several in a paragraph are a tell. Swap each for the plain word: *use* for leverage, *handle* or *get through* for navigate, *explain* for unpack, *simple* for straightforward.
@@ -528,9 +464,9 @@ output, not from a measured study, so each one is *weak alone* except §26.
 
 The structural tells (§1 to §11, §19 to §24) look the same in Indonesian. These are the
 Indonesian forms and the habits that come from translating English phrasing. They are drawn
-from common Indonesian AI output, not from a published list, so each is *weak alone* except §32.
+from common Indonesian AI output, not from a published list, so each is *weak alone* except §31.
 
-### 32. Pembuka dan penutup chatbot
+### 31. Pembuka dan penutup chatbot
 
 **Watch for:** Tentu!, Tentu saja!, Baik, berikut adalah..., Berikut ini adalah..., Pertanyaan yang bagus!, Mari kita bahas, Semoga membantu!, Semoga bermanfaat!, Jika ada pertanyaan lain, jangan ragu untuk bertanya, Apakah Anda ingin saya...
 **Problem:** Sama dengan §22. Hapus pembungkusnya, sisakan isinya. Strong on one sighting. Exception: the closing lines of a makalah's Kata Pengantar ("semoga makalah ini bermanfaat bagi pembaca") are academic convention; keep them.
@@ -539,7 +475,7 @@ from common Indonesian AI output, not from a published list, so each is *weak al
 **After:**
 > CV adalah badan usaha yang tidak berbadan hukum.
 
-### 33. Pembuka zaman dan lanskap
+### 32. Pembuka zaman dan lanskap
 
 **Watch for:** Di era digital ini, Di era yang serba cepat ini, Seiring dengan perkembangan zaman/teknologi, Dalam lanskap yang terus berkembang, Di tengah persaingan yang semakin ketat, Tidak dapat dipungkiri bahwa, Sebagaimana kita ketahui
 **Problem:** Kalimat pembuka yang terdengar dalam tapi tidak memberi fakta. Sama dengan §3 dan §13. Mulai langsung dari poinnya.
@@ -549,12 +485,12 @@ from common Indonesian AI output, not from a published list, so each is *weak al
 > UMKM penting bagi perekonomian Indonesia.
 (If the paragraph needs more weight, ask Bryan for a figure, such as UMKM's share of jobs. Do not supply one from memory.)
 
-### 34. Tidak hanya... tetapi juga
+### 33. Tidak hanya... tetapi juga
 
 **Watch for:** tidak hanya X, tetapi juga Y; bukan sekadar X, melainkan Y; bukan hanya... namun juga; X, bukan Y
 **Problem:** Sama dengan §1. Sebutkan poinnya langsung. Keep it when both halves carry information.
 
-### 35. Kata penghubung di setiap kalimat
+### 34. Kata penghubung di setiap kalimat
 
 **Watch for:** Selain itu, Oleh karena itu, Dengan demikian, Lebih lanjut, Di sisi lain, Pada akhirnya, Kesimpulannya, Secara keseluruhan, Hal ini menunjukkan bahwa, Hal tersebut
 **Problem:** Hampir setiap kalimat dibuka dengan penghubung, dan "hal ini / hal tersebut" diulang terus. Penulis manusia lebih sering langsung menyambung kalimat. Buang penghubung yang tidak mengubah makna, ganti "hal ini" dengan kata bendanya.
@@ -563,12 +499,12 @@ from common Indonesian AI output, not from a published list, so each is *weak al
 **After:**
 > Tanggung jawab di PT terbatas, jadi PT lebih aman bagi pemiliknya. Itu alasan banyak orang memilih PT.
 
-### 36. Kata yang dibesarkan
+### 35. Kata yang dibesarkan
 
 **Watch for:** memainkan peran penting/krusial, sangat krusial, signifikan (untuk hal biasa), menjadi bukti nyata, tonggak sejarah, fondasi yang kokoh, komprehensif, holistik, optimal, sinergi, inovatif, memberdayakan, mengoptimalkan, menyelami (dari "delve"), lanskap (abstrak), memanfaatkan (untuk "leverage", di setiap paragraf)
 **Problem:** Sama dengan §12 dan §13. Banyak di antaranya terjemahan kata AI bahasa Inggris. Pakai kata biasa: *penting* atau langsung sebut perannya, *lengkap*, *terbaik*, *pakai*.
 
-### 37. Register yang kaku
+### 36. Register yang kaku
 
 **Watch for:** Anda dan saya di teks yang seharusnya santai; kalimat pasif "di-" berturut-turut ("dilakukan", "diberikan", "dijelaskan"); ejaan dan struktur baku sempurna di caption atau chat; nada yang sama persis dari awal sampai akhir
 **Problem:** Teks santai yang ditulis seperti surat resmi. Untuk caption, chat, atau postingan pribadi, pakai aku/kamu (atau gue/lu kalau itu gaya penulisnya) dan kalimat aktif. For formal documents this is not a tell; leave the baku register alone (see Language, above). Do not add slang the writer would not use.
@@ -585,11 +521,8 @@ Keep the details that carry the writer's voice unless they hurt the meaning:
 - A first-person choice the writer can explain.
 - A genuine aside, parenthetical, or self-correction: "(I keep wanting to say 'almost' here, but it really was certain.)"
 
-
 ## Sources
 
-- [blader/humanizer](https://github.com/blader/humanizer) v3.0.0, MIT, by Siqi Chen: §1 to §25, the workflow, and "When not to act". License text in `LICENSE-blader-humanizer`.
-- [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup): the evidence behind §1 to §25.
-- Russell, Karpinska and Iyyer, ["People who frequently use ChatGPT for writing tasks are accurate and robust detectors of AI-generated text"](https://aclanthology.org/2025.acl-long.267/) (ACL 2025): five experienced readers, voting together, misjudged 1 of 300 articles from GPT-4o, Claude and o1. They used AI vocabulary and also formality, originality, and clarity. That is why this skill works on structure and not only on word lists.
-- [Pangram: Can AI detection catch Claude writing styles?](https://www.pangram.com/blog/claude-writing-styles): Claude's built-in and custom styles were still detected, which is the reason for the detector warning at the top.
-- §26 to §37 are JARVIS additions from observation, 25 Sep 2026. Not measured; *weak alone* unless marked.
+§1 to §25, the workflow, and "When not to act" come from
+[blader/humanizer](https://github.com/blader/humanizer) v3.0.0 (MIT, see
+`LICENSE-blader-humanizer`). Full sources and the evidence behind them: `SOURCES.md`.
