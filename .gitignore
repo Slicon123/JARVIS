@@ -2,3 +2,7 @@
 # They still live locally in memory/ and are still read by Claude on this device —
 # they just don't sync. Remove a line here if you want it public.
 memory/project-sinergi-proposal-teknis.md
+
+# Anthropic-synced skills land here through the ~/.claude/skills junction.
+# They are not ours, are overwritten on every sync, and must not go public.
+claude-config/skills/synced/
