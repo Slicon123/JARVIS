@@ -70,8 +70,9 @@ lain 1,5. Skrip generatornya ada di scratchpad sesi, tidak di repo.
 minta Tugas 5 dieliminasi; rekomendasi JARVIS: kumpulkan **Tugas 2, 3, 4** (tiga
 bentuk badan usaha berbeda, masing-masing punya temuan baru), Tugas 1 jadi cadangan.
 File Tugas 1 dan kit Tugas 5 tetap di folder, tidak dihapus.
-T2 juga punya versi humanized (`tugas-2-...-humanized.docx`, 25 Sep 2026) di samping
-aslinya; kalau T2 direvisi, tanyakan versi mana yang akan dikumpulkan.
+T2, T3 (Word saja, bukan PPT), dan T4 punya versi humanized di subfolder `humanized/`
+(25 Sep 2026); aslinya tetap di folder utama. Kalau ada revisi, tanyakan versi mana yang
+akan dikumpulkan, dan ubah keduanya supaya tidak beda isi.
 **(Tidak lagi relevan kecuali Bryan berubah pikiran):** laporan Tugas 5. Bryan mewawancarai UMKM (saran: Utan Coffee Roastery
 di Gedung F UKSW, STC thrift, Kang Sablon) lalu mengirim catatan untuk disusun jadi
 laporan 5 halaman.
