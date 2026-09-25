@@ -1,6 +1,6 @@
 ---
 name: humanizer
-description: Rewrite AI-sounding text so it reads like a person wrote it, without changing what it says. Works in English and Bahasa Indonesia. Use when Bryan asks to humanize text, make something sound less like AI or less like ChatGPT/Claude, "hilangkan kesan AI", "biar gak kayak AI", "bikin lebih natural", or asks whether a text sounds AI-written. Catches not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, chatbot wrappers, Claude's own habits, and Indonesian AI phrasing.
+description: Rewrite AI-sounding text so it reads like a person wrote it, without changing what it says. Works in English and Bahasa Indonesia, on pasted text or a Word file (.docx) such as a makalah, keeping its formatting and matching each section's style. Use when Bryan asks to humanize text, make something sound less like AI or less like ChatGPT/Claude, "hilangkan kesan AI", "biar gak kayak AI", "bikin lebih natural", or asks whether a text sounds AI-written. Catches not-X-but-Y contrasts, one-line closers, staged openers, forced triads, dashes everywhere, inflated claims, sales language, stock AI words, bold labels, chatbot wrappers, Claude's own habits, and Indonesian AI phrasing.
 license: MIT (patterns §1–§25 from blader/humanizer v3.0.0; see LICENSE-blader-humanizer)
 ---
 
@@ -72,7 +72,97 @@ personal post can go casual. Never make a formal document casual to make it soun
 
 If he asks to see the draft or the full list of tells, show them.
 
-**File mode.** When the user names a file, run the full process but write only the final text to the file. Change prose only. Keep code blocks, inline code, commands, paths, YAML metadata, data, and link targets unchanged. Then give the user a short summary.
+**File mode.** When the user names a text or Markdown file, run the full process but write only the final text to the file. Change prose only. Keep code blocks, inline code, commands, paths, YAML metadata, data, and link targets unchanged. Then give the user a short summary. A Word file (.docx) follows **Word files** below instead.
+
+## Word files (.docx): makalah, laporan, tugas
+
+Bryan's usual case is a makalah or tugas in Word. The rewrite must come back as a Word file
+that looks exactly like his: same styles, headings, numbering, spacing, fonts, italics on
+foreign terms, tables, and page layout. Only the wording changes. The helper script
+`scripts/docx_humanize.py` in this skill's folder does the file handling
+(`~/.claude/skills/humanizer/scripts/docx_humanize.py` on a linked device). It needs
+`pip install python-docx` once per device.
+
+1. **Never overwrite the original.** Write `<name>-humanized.docx` next to it. An old `.doc`
+   file: ask Bryan to Save As `.docx` in Word first. A Google Doc: download it as `.docx`.
+   If a `~$<name>.docx` lock file sits next to it, the file is open in Word. Tell him to
+   close it first, or his next save will overwrite your changes.
+2. **Extract.** `python docx_humanize.py extract <file> <scratchpad>/paragraphs.json`. Each
+   paragraph comes with its index, Word style, the heading it sits under, and its text,
+   with italic as `*x*` and bold as `**x**`. Read the whole thing before editing anything.
+3. **Work out the style (next section).** Name the document type, give each section its
+   register, and find the writer's own voice. The paragraphs with the fewest tells are the
+   writing sample; §Voice applies to them. Note the pronoun he uses for himself (*penulis*,
+   *kami*, or *saya*) and his term choices (*startup* or *perusahaan rintisan*), then keep
+   both the same across the whole file.
+4. **Choose what to leave alone.** Headings, cover page (nama, NIM, dosen), daftar isi,
+   daftar tabel and gambar, captions ("Gambar 2.1 ..."), daftar pustaka, direct quotes, text
+   of laws (Pasal, Ayat), data tables, and every paragraph with no real tells. Rewriting
+   twenty paragraphs well beats touching two hundred.
+5. **Write `edits.json`** with only the paragraphs you change: `{"12": "teks baru"}`. One
+   paragraph in, one paragraph out, because merging or splitting would break Word's
+   numbering and list styles. `null` deletes a paragraph that should go entirely, such as a
+   "Semoga penjelasan di atas dapat membantu!" left at the end of a Pembahasan. Keep the `*italic*` marks on
+   foreign terms, and italicise any new foreign term you introduce; that is the makalah
+   convention (istilah asing dicetak miring).
+6. **Apply.** `python docx_humanize.py apply <file> edits.json <name>-humanized.docx`.
+   Then deal with every line it prints:
+   - `check:` a number, year, citation, acronym, or name from the old text is gone. Put it
+     back, or be sure a pattern required cutting it. Never ignore one.
+   - `skipped: complex (mixed fonts ...)`: usually invisible leftovers from copy-paste.
+     Look at the paragraph. If nothing about it is meant to look different, rerun with
+     `--flatten`. If part of it is deliberately coloured, underlined, or sized, leave it.
+   - `skipped: complex (footnote / field / hyperlink / image ...)`: the script will not touch
+     these, because a Mendeley or Zotero citation, a footnote number, or a link would break.
+     List them for Bryan (section plus first few words) with a suggested rewrite he can type
+     into Word himself. Hand-edit their XML only if he asks, and then use the docx skill.
+   - The word count. Lecturers often set a minimum length. If the document shrinks by more
+     than about 10%, tell Bryan the before and after numbers so he can decide.
+7. **Check the result.** Run `extract` on the new file and read the changed paragraphs in
+   their surroundings, or read it flat with `pandoc <new>.docx -t plain`. Then reply with the
+   new file's path, how many paragraphs changed in each section, three to six lines on what
+   changed, the manual-edit list, and any fact you needed but did not have.
+
+## Match the style of each text
+
+A humanized text has to sound like the right kind of text. Removing tells from a makalah
+must leave a makalah, not a blog post. Decide the style twice: once for the whole document,
+then once for each section.
+
+**By document type:**
+
+| Text | Register | Watch most for |
+| --- | --- | --- |
+| Makalah, paper kuliah | Formal Bahasa Indonesia baku (EYD). Mostly impersonal: *penulis* or passive where natural. Sentences of moderate length, mixed. No slang, no *kamu*. | §33 era-and-landscape openers, §35 connector chains, §36 inflated words, §13 |
+| Laporan praktikum, observasi | Formal and concrete: what was done, seen, and measured. *Kami* or passive. | §13, §17 vague sources, §23 guesses |
+| Esai, opini, refleksi | Semi-formal. *Saya* is fine, and so are opinions, doubts, and a personal example the writer gave. | §1, §2, §30 fence-sitting |
+| Proposal teknis, tender, dokumen kerja | Formal and technical. Keep terms, standards, and numbering exactly. No selling. | §16 sales language, §17, §29 |
+| Email or surat resmi | Formal. The salutation and closing stay; they are not chatbot residue. | §32, §26 |
+| Caption, chat, postingan | Casual: *aku/kamu* or the writer's own slang, short sentences. | everything in E and G |
+
+English texts follow the same idea: an academic essay stays academic, a LinkedIn post
+stays a post.
+
+**By section of a makalah:**
+
+- **Kata Pengantar.** Its fixed phrases are Indonesian academic convention, not AI tells:
+  *puji syukur ... ke hadirat Tuhan Yang Maha Esa*, the thank-you list, *penulis menyadari
+  makalah ini masih jauh dari sempurna*, *kritik dan saran yang membangun*, *semoga makalah ini bermanfaat bagi pembaca*. Keep them. Only
+  cut chatbot lines and inflated claims about what the makalah achieves.
+- **Abstrak.** One dense paragraph: problem, method, result. No rhetoric at all.
+- **Latar Belakang.** AI tells cluster here more than anywhere else: *di era digital*,
+  *tidak dapat dipungkiri*, *memainkan peran krusial*. Open with the concrete problem. Keep
+  every data point and citation.
+- **Rumusan Masalah, Tujuan, Manfaat.** Numbered questions and aims. Keep the numbering
+  and the question form; fix wording only.
+- **Tinjauan Pustaka, Pembahasan.** Explanatory. Define each term once, cite, and move on.
+  Cut *Selain itu / Oleh karena itu / Dengan demikian* at the start of every sentence. Keep
+  bullet lists that Word formats as lists; in Word mode, fix the wording inside each item
+  and do not merge items into prose.
+- **Kesimpulan.** Answer each rumusan masalah directly, in the same order. Do not summarise
+  the pembahasan again, and end without a send-off (§13).
+- **Saran.** Concrete: who should do what. Not "diharapkan semua pihak dapat ...".
+- **Daftar Pustaka.** Never touch.
 
 **Embedded mode.** When another task uses this skill for a pull request, commit message, or document, return only the final text.
 
@@ -443,7 +533,7 @@ from common Indonesian AI output, not from a published list, so each is *weak al
 ### 32. Pembuka dan penutup chatbot
 
 **Watch for:** Tentu!, Tentu saja!, Baik, berikut adalah..., Berikut ini adalah..., Pertanyaan yang bagus!, Mari kita bahas, Semoga membantu!, Semoga bermanfaat!, Jika ada pertanyaan lain, jangan ragu untuk bertanya, Apakah Anda ingin saya...
-**Problem:** Sama dengan §22. Hapus pembungkusnya, sisakan isinya. Strong on one sighting.
+**Problem:** Sama dengan §22. Hapus pembungkusnya, sisakan isinya. Strong on one sighting. Exception: the closing lines of a makalah's Kata Pengantar ("semoga makalah ini bermanfaat bagi pembaca") are academic convention; keep them.
 **Before:**
 > Tentu! Berikut adalah penjelasan tentang CV. CV adalah badan usaha yang tidak berbadan hukum. Semoga membantu!
 **After:**
