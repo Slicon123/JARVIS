@@ -1,88 +1,61 @@
 ---
 name: project-pmb-tugas-badan-usaha
-description: Handout dosen PMB "Analisis Komprehensif Bentuk-Bentuk Badan Usaha" dan 5 tugasnya — aturan handout, kesalahan di dalamnya, dan status pengerjaan
+description: Handout dosen PMB "Analisis Komprehensif Bentuk-Bentuk Badan Usaha" dan tugasnya — aturan handout, fakta yang sudah dicek, dan status final T2–T4 (deadline 30 Sep 2026 08.00)
 metadata:
   type: project
 ---
 
-Bryan kirim handout Pengantar Manajemen dan Bisnis pada 25 September 2026:
-*Analisis Komprehensif Bentuk-Bentuk Badan Usaha di Indonesia: Kerangka Teoretis
-Ismail Solihin dan Relevansinya bagi Transformasi Bisnis Digital* (12 halaman,
-PDF, 21 sumber). Ini beda dari tugas mengajar di [[project-badan-usaha-teaching]]
-— yang ini tugas tertulis.
+Bryan kirim handout Pengantar Manajemen dan Bisnis pada 25 September 2026
+(PDF-nya di `Downloads/Materi Badan Usaha Indonesia.pdf`): *Analisis Komprehensif
+Bentuk-Bentuk Badan Usaha di Indonesia: Kerangka Teoretis Ismail Solihin dan Relevansinya
+bagi Transformasi Bisnis Digital*. Dosen: di handout "Dr. Nobita Triwijayanti, M.Pd.",
+di KST "NOBITA TRI WIJAYANTI" — sampul memakai **Dr. Nobita Tri Wijayanti, M.Pd.**
+Beda dari tugas mengajar di [[project-badan-usaha-teaching]] — ini tugas tertulis.
 
-**Isi handout (yang harus diikuti jawaban):** badan usaha = lembaga hukum-ekonomi,
-perusahaan = unit teknis. Bentuk: Perusahaan Perorangan (tak terbatas), Firma
-(tanggung renteng, KUHD), CV (aktif tak terbatas / pasif terbatas sebatas setoran),
-PT Biasa (min 2 pendiri, RUPS–Direksi–Dekom, modal disetor min 25% modal dasar,
-tanpa modal minimum), PT Perorangan (1 WNI, UMK, modal usaha ≤ Rp1 M mikro /
-≤ Rp5 M kecil, tanpa Dekom, daftar mandiri via SABH AHU tanpa akta notaris),
-Koperasi (one man one vote, min 9 orang, Simpanan Pokok/Wajib/Sukarela, SHU),
-BUMN Persero (negara min 51%) dan Perum. Studi kasus: "SaaSify" PT Perorangan →
-PT Biasa setelah seed USD 300.000 untuk 15% (85/15, saham preferen dengan
-anti-dilution dan liquidation preference); Pertamina + koperasi digital (e-voting RAT).
+**Tugas di handout:** 1 skenario utang Rp2 M (Perorangan/CV/PT); 2 simulasi PT Perorangan
+bisnis digital UMK (nama, domisili, KBLI 5 angka, draf Pernyataan Pendirian, alur AHU →
+sertifikat → NIB OSS, lembar KBLI); 3 roadmap CV → PT Biasa fintech lending, VC Rp10 M,
+siap presentasi investor; 4 platform cooperative (simpanan via e-wallet, RAT digital,
+algoritma SHU, BMC versi koperasi); 5 mini-audit UMKM.
 
-**5 tugas dan luarannya:**
-1. Skenario utang Rp2 M e-commerce gagal: Perorangan vs CV (aktif vs pasif) vs PT
-   Biasa — 3–4 halaman, pemetaan eksekusi aset pribadi, kutip pasal KUHD & UU PT.
-2. Simulasi PT Perorangan bisnis digital UMK (game studio / agensi digital) —
-   nama, domisili, KBLI 5 angka, draf Pernyataan Pendirian (modal ≤ Rp1 M), alur
-   AHU → Sertifikat → NIB via OSS; plus lembar analisis KBLI.
-3. Roadmap CV → PT Biasa untuk fintech lending, VC Rp10 M — kenapa CV tak bisa
-   terima VC, tahapan, konversi modal sekutu ke saham, organ PT; siap presentasi ke investor.
-4. Model bisnis Platform Cooperative (kreator konten atau ojol) — simpanan via
-   e-wallet, RAT digital, algoritma SHU, Business Model Canvas versi koperasi.
-5. Mini-audit 1 UMKM digital nyata — wawancara, legalitas vs omzet, pemisahan
-   rekening, pajak & NIB, rekomendasi 3 tahun — 5 halaman + bukti wawancara.
+**Keputusan:** dosen minta 3 dari 5. Bryan mengumpulkan **Tugas 2, 3 (Word + PPT), 4**,
+versi humanized. **Deadline 30 Sep 2026 pukul 08.00** (mundur dari 27 Sep). Tidak ada
+format dari dosen. Jawaban ikut kerangka handout tapi pakai aturan yang benar, **tanpa
+catatan kaki** soal kesalahan handout. Isi utama: T2 "PT Studio Gim Merbabu" KBLI 62110
+(58211 ditunda); T3 "CV Dana Tani Nusantara" → PT, VC Rp10 M memimpin putaran Rp25 M;
+T4 "Koperasi Jasa Roda Bersama"/RodaKita untuk ojol.
 
-**Kesalahan/ketinggalan di handout (sudah dicek 25 Sep 2026):** kewajiban ubah PT
-Perorangan → PT itu **Pasal 9** PP 8/2021, bukan Pasal 16 seperti tertulis. OSS
-memakai **KBLI 2025** (Peraturan BPS 7/2025) untuk pendaftaran baru sejak 16 Juni
-2026, jadi kode KBLI 2020 seperti 62011 perlu dicek konversinya. CV didaftarkan
-lewat SABU (Permenkumham 17/2018), bukan Pengadilan Negeri. Koperasi 9 orang itu
-UU 25/1992 *sebagaimana diubah* UU Cipta Kerja. Kemenkumham sudah dipecah; AHU kini
-di Kementerian Hukum.
+**Aturan unggah flearn (assignment ini): maksimal 2 file, masing-masing ≤ 32 MB.**
+**Final (29 Sep 2026)** di `C:\Bryan SMA X-XII\Tugas Kuliah\Pengantar Manajemen dan Bisnis\`:
+yang diunggah `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).docx` (T2+T3+T4 digabung lewat Word
+InsertFile, section break per tugas, nomor halaman mulai 1 lagi di tiap tugas, 30 halaman)
+dan `Tugas 3 (Presentasi Investor).pptx`. Tiga .docx terpisah disimpan di subfolder
+`File terpisah (tidak diunggah)`. Author diisi nama Bryan, jejak PptxGenJS dihapus. Kalau
+satu tugas direvisi, gabungannya harus dibuat ulang. Salinan kerja (isi sama) di
+`kuliah/pmb-tugas-badan-usaha/` (humanized/ + PPT), folder itu **di-.gitignore** karena memuat
+NIM dan tanggal lahirnya. Versi non-humanized di folder utama sudah usang, jangan dipakai.
+Revisi 29 Sep: pajak T2 ikut PP 20/2026; urutan AHU dibetulkan (diagram digambar ulang,
+huruf 9 pt seperti tabel); tahap T3 bernomor 1–9 di Word dan PPT; agio dikapitalisasi
+seluruhnya Rp24 M → modal disetor Rp27 M (Rp25 M tunai); Solihin (2014) dikutip di T2/T3.
 
-**Why:** Bryan minta tiap tugas jadi file Word terpisah, tapi **didiskusikan dulu
-sebelum dibuat** supaya kalau ada salah tidak boros token, dan jawabannya harus
-sesuai aturan di handout.
+**Fakta yang sudah dicek (29 Sep 2026):**
+- **PP 20/2026** (ubah PP 55/2022): PPh Final 0,5% hanya untuk orang pribadi, PT Perorangan
+  1 pendiri, dan koperasi; PT Perorangan **tanpa batas waktu** selama omzet ≤ Rp4,8 M;
+  bebas Rp500 juta hanya orang pribadi; CV/PT Biasa tidak lagi dapat.
+- **POJK 40/2024** Pasal 7: penyelenggara LPBBTI boleh PT atau koperasi; modal disetor saat
+  pendirian ≥ Rp25 M, **tunai dan penuh**, dalam deposito berjangka. Ekuitas ≥ Rp12,5 M.
+- **Alur AHU PT Perorangan:** voucher PNBP Rp50.000 dibeli di Simpadhu dan dimasukkan
+  bersama pemesanan nama, baru formulir diisi; konfirmasi ≤ 7 hari; hasilnya
+  "Surat Pernyataan Pendirian" + "Sertifikat Pendirian".
+- Kesalahan handout: kewajiban PT Perorangan → PT Biasa itu **Pasal 9** PP 8/2021 (bukan 16);
+  OSS pakai KBLI 2025 sejak 16 Juni 2026; CV lewat SABU (Permenkumham 17/2018), bukan PN;
+  AHU kini di Kementerian Hukum.
+- RUU Perkoperasian baru belum disahkan (target 2026), jadi UU 25/1992 jo. UU Cipta Kerja
+  masih berlaku. Potongan ojol maks. 8% sejak 1 Juli 2026 (Perpres 27/2026). RAT daring sah
+  (PP 7/2021 Pasal 8 ayat (1)).
 
-**Keputusan Bryan (25 Sep 2026):** kelima tugas dikerjakan semua, **deadline 27 Sep
-2026**, dosen tidak punya format sendiri. Jawaban ikut kerangka handout tapi pakai
-aturan yang benar. Awalnya ada catatan kaki sopan tiap kali handout keliru, tapi Bryan
-**membuang semua catatan kaki** pada 25 Sep 2026 (T2, T3, dan kotak koreksi di slide 6
-PPT T3). Aturan yang benar tetap di teks utama tanpa penjelasan; jangan tambahkan catatan
-kaki lagi kecuali dia minta. Tiap komponen
-analisis di handout wajib jadi bagian sendiri di jawabannya. Tugas 1 angka boleh
-dikarang. Tugas 2 pilihanku (studio gim), nama rekaan. Tugas 3 Word + PPT. Tugas 4
-koperasi ojol, BMC harus menarik. Tugas 5: siapkan kit wawancara + saran UMKM
-dekat UKSW. Temuan tambahan: POJK 40/2024 mewajibkan fintech lending berbentuk PT
-atau koperasi dengan modal disetor minimal Rp25 M, jadi VC Rp10 M saja belum cukup.
+**How to apply:** Kalau Bryan minta revisi lagi, edit salinan kerja lalu salin ulang ke
+folder final dengan nama yang sama; jangan bikin ulang dari nol dan jangan tambah catatan
+kaki. Tugas 1 dan kit Tugas 5 tetap di folder kerja sebagai cadangan.
 
-**Status 25 Sep 2026:** Tugas 1–4 selesai dan Tugas 5 baru berupa kit wawancara, semuanya di
-`kuliah/pmb-tugas-badan-usaha/` (5 .docx + 1 .pptx untuk Tugas 3). Isi pokok:
-T1 "Belanjain.id", kekurangan Rp1,5 M, poin kunci jaminan pribadi (Pasal 1820
-KUHPerdata). T2 "PT Studio Gim Merbabu", KBLI 62110, 58211 ditunda. T3 "CV Dana
-Tani Nusantara" → PT, VC Rp10 M memimpin putaran Rp25 M, kapitalisasi agio. T4
-"Koperasi Jasa Roda Bersama"/RodaKita. Spasi T1 1,15 (batas 3–4 halaman), yang
-lain 1,5. Skrip generatornya ada di scratchpad sesi, tidak di repo.
-**Update 25 Sep 2026:** dosen mengubah aturan — cukup pilih **3 dari 5 tugas**. Bryan
-minta Tugas 5 dieliminasi; rekomendasi JARVIS: kumpulkan **Tugas 2, 3, 4** (tiga
-bentuk badan usaha berbeda, masing-masing punya temuan baru), Tugas 1 jadi cadangan.
-File Tugas 1 dan kit Tugas 5 tetap di folder, tidak dihapus.
-T2, T3 (Word saja, bukan PPT), dan T4 punya versi humanized di subfolder `humanized/`
-(25 Sep 2026); aslinya tetap di folder utama. Kalau ada revisi, tanyakan versi mana yang
-akan dikumpulkan, dan ubah keduanya supaya tidak beda isi.
-**(Tidak lagi relevan kecuali Bryan berubah pikiran):** laporan Tugas 5. Bryan mewawancarai UMKM (saran: Utan Coffee Roastery
-di Gedung F UKSW, STC thrift, Kang Sablon) lalu mengirim catatan untuk disusun jadi
-laporan 5 halaman.
-
-**Fakta baru yang sudah dicek:** batas potongan aplikasi ojol **maksimal 8% sejak
-1 Juli 2026** (Perpres 27/2026, sebelumnya 15–20%). RAT daring sah menurut PP 7/2021
-Pasal 8 ayat (1). Pasal 16 PP 8/2021 hanya mengatur saat mulai berlaku.
-
-**How to apply:** Jangan langsung generate .docx — sepakati dulu pilihan per tugas
-dengan Bryan. Tugas 5 butuh wawancara sungguhan; jangan karang data narasumber.
-Kalau dia minta revisi, edit file di folder di atas, jangan bikin ulang dari nol.
-
-Related: [[project-uksw-digital-business]], [[feedback-self-correct-and-verify]], [[feedback-plain-language-explanations]]
+Related: [[project-uksw-digital-business]], [[feedback-self-correct-and-verify]], [[feedback-pptx-edit-checklist]]

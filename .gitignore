@@ -6,3 +6,6 @@ memory/project-sinergi-proposal-teknis.md
 # Anthropic-synced skills land here through the ~/.claude/skills junction.
 # They are not ours, are overwritten on every sync, and must not go public.
 claude-config/skills/synced/
+
+# PMB coursework: contains Bryan's NIM and date of birth. Local only.
+kuliah/pmb-tugas-badan-usaha/
