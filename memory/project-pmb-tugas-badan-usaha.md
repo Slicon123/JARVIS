@@ -1,6 +1,6 @@
 ---
 name: project-pmb-tugas-badan-usaha
-description: Handout dosen PMB "Analisis Komprehensif Bentuk-Bentuk Badan Usaha" dan tugasnya — aturan handout, fakta yang sudah dicek, dan status final T2–T4 (deadline 30 Sep 2026 08.00)
+description: Handout dosen PMB "Analisis Komprehensif Bentuk-Bentuk Badan Usaha" dan tugasnya — aturan handout, fakta yang sudah dicek, dan T2–T4 yang sudah dikumpulkan 29 Sep 2026
 metadata:
   type: project
 ---
@@ -19,7 +19,8 @@ siap presentasi investor; 4 platform cooperative (simpanan via e-wallet, RAT dig
 algoritma SHU, BMC versi koperasi); 5 mini-audit UMKM.
 
 **Keputusan:** dosen minta 3 dari 5. Bryan mengumpulkan **Tugas 2, 3 (Word + PPT), 4**,
-versi humanized. **Deadline 30 Sep 2026 pukul 08.00** (mundur dari 27 Sep). Tidak ada
+versi humanized. Deadline 30 Sep 2026 pukul 08.00 (mundur dari 27 Sep). **Sudah dikumpulkan
+di flearn 29 Sep 2026** (PDF gabungan + PPTX revisi kedua); tinggal menunggu nilai/masukan dosen. Tidak ada
 format dari dosen. Jawaban ikut kerangka handout tapi pakai aturan yang benar, **tanpa
 catatan kaki** soal kesalahan handout. Isi utama: T2 "PT Studio Gim Merbabu" KBLI 62110
 (58211 ditunda); T3 "CV Dana Tani Nusantara" → PT, VC Rp10 M memimpin putaran Rp25 M;
