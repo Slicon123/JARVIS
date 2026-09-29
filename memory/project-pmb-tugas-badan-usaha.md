@@ -10,7 +10,7 @@ Bryan kirim handout Pengantar Manajemen dan Bisnis pada 25 September 2026
 Bentuk-Bentuk Badan Usaha di Indonesia: Kerangka Teoretis Ismail Solihin dan Relevansinya
 bagi Transformasi Bisnis Digital*. Dosen: di handout "Dr. Nobita Triwijayanti, M.Pd.",
 di KST "NOBITA TRI WIJAYANTI" — sampul memakai **Dr. Nobita Tri Wijayanti, M.Pd.**
-Beda dari tugas mengajar di [[project-badan-usaha-teaching]] — ini tugas tertulis.
+Beda dari tugas mengajar badan usaha (presentasi kelompok, sudah tampil per 29 Sep 2026; bahannya di `kuliah/badan-usaha/`) — ini tugas tertulis.
 
 **Tugas di handout:** 1 skenario utang Rp2 M (Perorangan/CV/PT); 2 simulasi PT Perorangan
 bisnis digital UMK (nama, domisili, KBLI 5 angka, draf Pernyataan Pendirian, alur AHU →

@@ -4,7 +4,6 @@
 - [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
 - [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
 - [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule and ongoing university-life help
-- [FTI Days — perlengkapan](project-fti-days-perlengkapan.md) — perlengkapan, tugas, talent show 3 hari FTI Days, kelompok 36 (hapus setelah lewat)
 - [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first
 - [Electronics course](project-electronics-course.md) — first-principles electronics in Bahasa Indonesia, currently on ground symbols
 - [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
@@ -13,12 +12,11 @@
 - [Gym — bulking nutrition](project-gym-nutrition-bulking.md) — 54 kg at 172 cm; 2,800 kcal target, kost catering, which steps he committed to
 - [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
 - [Claude account context](user-claude-account-context.md) — Pro plan; uses VS Code extension not terminal (no status line); phone can't run Claude Code
-- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading weights, attendance rules, textbooks
-- [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, assessment weights, flearn attendance scoring, class rules
-- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 (Hardware) covered so far, and outstanding tugas
-- [Badan usaha — bahan ngajar](project-badan-usaha-teaching.md) — tugas mengajar kelompok Pengantar Manajemen dan Bisnis; sesi 60 menit interaksi lisan; pptx sudah diregenerasi
-- [Badan usaha — catatan tambahan](project-badan-usaha-catatan-tambahan.md) — catatan lisan tambahan buat presentasi (bukan slide), tanya kalau Bryan minta "catatan kecil"
+- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, materials stop at pertemuan 3–4
+- [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered, all tugas so far done; chapter 2 not uploaded yet
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT) dari Tugas Kuliah\Pengantar Manajemen dan Bisnis; tunggu nilai dosen
+- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah bagian 2.1 in kuliah/pak-makalah/, unfinished as of 29 Sep 2026
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
 - [ATS/fire simulator idea](project-ats-fire-simulator-idea.md) — proposed browser project to close his ATS/FSS technical gap; remind 2026-09-05

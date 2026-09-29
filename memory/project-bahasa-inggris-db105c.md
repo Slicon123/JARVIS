@@ -20,3 +20,5 @@ Bahasa Inggris (DB105C), 2 SKS, dosen Brigitta Putri Atika Tyagita — Rabu 13�
 **Why:** So questions about this class's schedule, weighting, or "what do I need on the TAS" can be answered without re-uploading slides.
 
 **How to apply:** Match the week to the meeting number. Remember meeting 14 has no class and meeting 15 is the graded presentation. Class time is in [[project-uksw-digital-business]]; the sibling course syllabus is [[project-matematika-logika-db103a]].
+
+**Status (dikonfirmasi Bryan 29 September 2026):** Reading Test, kuis, dan tugas kelas ini dikerjakan di **flearn**, dan semuanya sudah beres sampai tanggal itu. Jadi wajar kalau tidak ada file tugas Bahasa Inggris di repo — bukan berarti ada yang terlewat.

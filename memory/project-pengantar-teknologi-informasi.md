@@ -38,6 +38,6 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 - Slide 13 swaps two terms: it says seek time finds the sector and latency finds the track. Standard definition is the reverse — seek time moves the head to the right track, rotational latency waits for the sector to spin under it. Flagged to Bryan 24 September 2026.
 - In-class questions: why QWERTY? which connector is SATA vs ATA? Group activity: choose input/process/output hardware for a startup doing content design, customer-data processing, online meetings, and document printing, with the business reason.
 
-**How to apply:** When Bryan asks about PTI, assume this baseline and answer in Bahasa Indonesia unless he switches. Chapter 1 tugas and Tugas Pertama are both done as of 3 September 2026. No tugas recorded yet for Chapter 3 — ask if one was given.
+**How to apply:** When Bryan asks about PTI, assume this baseline and answer in Bahasa Indonesia unless he switches. As of 29 September 2026 every PTI tugas is done: Chapter 1 tugas, Tugas Pertama, and the Chapter 3 class activity (answer in `kuliah/pengantar-teknologi-informasi/`, submitted). Bryan said he may upload Chapter 2 later — until then, still don't guess its content.
 
 Related: [[project-uksw-digital-business]], [[feedback-remind-materials-after-class]]
