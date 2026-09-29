@@ -27,9 +27,11 @@ T4 "Koperasi Jasa Roda Bersama"/RodaKita untuk ojol.
 
 **Aturan unggah flearn (assignment ini): maksimal 2 file, masing-masing ≤ 32 MB.**
 **Final (29 Sep 2026)** di `C:\Bryan SMA X-XII\Tugas Kuliah\Pengantar Manajemen dan Bisnis\`:
-yang diunggah `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).docx` (T2+T3+T4 digabung lewat Word
-InsertFile, section break per tugas, nomor halaman mulai 1 lagi di tiap tugas, 30 halaman)
-dan `Tugas 3 (Presentasi Investor).pptx`. Tiga .docx terpisah disimpan di subfolder
+yang diunggah `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).pdf` + `Tugas 3 (Presentasi Investor).pptx`
+(Bryan pilih: Word jadi PDF supaya tampilan terkunci, PPT tetap .pptx demi catatan pembicara).
+PDF diekspor Word dari `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).docx`, yang tetap disimpan di
+sebelahnya (T2+T3+T4 digabung lewat Word InsertFile, section break per tugas, nomor halaman
+mulai 1 lagi di tiap tugas, 30 halaman). Tiga .docx terpisah disimpan di subfolder
 `File terpisah (tidak diunggah)`. Author diisi nama Bryan, jejak PptxGenJS dihapus. Kalau
 satu tugas direvisi, gabungannya harus dibuat ulang. Salinan kerja (isi sama) di
 `kuliah/pmb-tugas-badan-usaha/` (humanized/ + PPT), folder itu **di-.gitignore** karena memuat
