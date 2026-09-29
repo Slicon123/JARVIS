@@ -42,3 +42,5 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 - Tugas 2 (materi pertemuan 3–4) dikerjakan di `kuliah/matematika-logika/tugas-2-*.md`.
 
 **Status tugas (dikonfirmasi Bryan 29 September 2026):** Tugas 1 (pertemuan 2) dan Tugas 2 (pertemuan 3–4) sudah dikumpulkan, disalin tangan di HVS. Materi yang pernah diupload berhenti di pertemuan 3–4 (16 Sep); pertemuan 23 Sep dan sesudahnya belum ada — tanya kalau ada tugas baru.
+
+**Timeline correction (29 September 2026):** the deck is titled "Pertemuan 3 & 4" — one deck spanning two meetings (16 and 23 Sep), so 23 Sep was most likely still this material, not kuantor. Mapping is pertemuan N ≈ RPS topic N−1: **30 Sep = pertemuan 5, kuantor** · 7 Okt penarikan kesimpulan · 14 Okt fungsi Boole & gerbang logika · 21 Okt DNF/CNF · TTS after that. Estimate from RPS order, not an official schedule. Slide 16 mistranslates Rosen's airline example: "maskapai menaikkan kelas Anda" should be the airline *bumping* you (kicked off an overbooked flight) — an upgrade still lets you board, so it doesn't illustrate p=F, q=T.
