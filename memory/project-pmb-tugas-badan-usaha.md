@@ -39,6 +39,14 @@ NIM dan tanggal lahirnya. Versi non-humanized di folder utama sudah usang, janga
 Revisi 29 Sep: pajak T2 ikut PP 20/2026; urutan AHU dibetulkan (diagram digambar ulang,
 huruf 9 pt seperti tabel); tahap T3 bernomor 1–9 di Word dan PPT; agio dikapitalisasi
 seluruhnya Rp24 M → modal disetor Rp27 M (Rp25 M tunai); Solihin (2014) dikutip di T2/T3.
+Revisi kedua 29 Sep (hasil cek ulang, PPT tidak berubah): nama sertifikat dikembalikan ke
+"Sertifikat Pendaftaran Pendirian"; tambah setoran modal dicatat lewat perubahan Pernyataan
+Pendirian (Pasal 8); catatan ESOP di T3; T4: judul Perpres, klaim pendapatan pengemudi
+dinetralkan, sumber Drivers Coop diganti, PP 7/2021 Pasal 8 ayat (1) dan (2).
+**Tata letak:** halaman terakhir T4 sudah penuh (jarak antar-entri pustaka dirapatkan
+6 → 5 pt), jadi tambahan teks di bagian 6–8 T4 menambah halaman. Gabungan harus 10 + 9 + 11 =
+30 halaman. Paragraf kosong yang ditinggalkan Word InsertFile di ujung file sempat jadi
+halaman kosong; paragraf itu harus dihapus setiap kali gabungan dibuat ulang.
 
 **Fakta yang sudah dicek (29 Sep 2026):**
 - **PP 20/2026** (ubah PP 55/2022): PPh Final 0,5% hanya untuk orang pribadi, PT Perorangan
@@ -48,13 +56,26 @@ seluruhnya Rp24 M → modal disetor Rp27 M (Rp25 M tunai); Solihin (2014) dikuti
   pendirian ≥ Rp25 M, **tunai dan penuh**, dalam deposito berjangka. Ekuitas ≥ Rp12,5 M.
 - **Alur AHU PT Perorangan:** voucher PNBP Rp50.000 dibeli di Simpadhu dan dimasukkan
   bersama pemesanan nama, baru formulir diisi; konfirmasi ≤ 7 hari; hasilnya
-  "Surat Pernyataan Pendirian" + "Sertifikat Pendirian".
+  "Surat Pernyataan Pendirian" + **"Sertifikat Pendaftaran Pendirian Perseroan Perorangan"**
+  (PP 8/2021 Pasal 6 ayat (3) "sertifikat pendaftaran"; label tombol AHU yang lebih pendek
+  bukan nama resminya).
+- PP 8/2021 Pasal 8 ayat (4) huruf d: perubahan modal dasar/ditempatkan/disetor PT Perorangan
+  lewat format isian perubahan Pernyataan Pendirian.
 - Kesalahan handout: kewajiban PT Perorangan → PT Biasa itu **Pasal 9** PP 8/2021 (bukan 16);
   OSS pakai KBLI 2025 sejak 16 Juni 2026; CV lewat SABU (Permenkumham 17/2018), bukan PN;
   AHU kini di Kementerian Hukum.
-- RUU Perkoperasian baru belum disahkan (target 2026), jadi UU 25/1992 jo. UU Cipta Kerja
-  masih berlaku. Potongan ojol maks. 8% sejak 1 Juli 2026 (Perpres 27/2026). RAT daring sah
-  (PP 7/2021 Pasal 8 ayat (1)).
+- RUU Perkoperasian baru belum disahkan (target 2026), jadi UU 25/1992 masih berlaku. UU ini
+  diubah UU 4/2023 (P2SK) dan terakhir UU 6/2023 (Cipta Kerja). RAT daring sah (PP 7/2021
+  Pasal 8 ayat (1)); hasilnya wajib dilaporkan lewat sistem elektronik (ayat (2)).
+- Potongan ojol maks. 8% sejak 1 Juli 2026 (Perpres 27/2026, diumumkan 1 Mei 2026). Naskah
+  resminya belum ada di JDIH per 21 Juni 2026. Judul yang dipakai mayoritas sumber, termasuk
+  Kompas: "tentang **Perlindungan Pekerja Transportasi Online**". Satu artikel hukumonline
+  menulis "Perlindungan Pengemudi Transportasi Daring"; itu yang minoritas. Kolom
+  Kompas.com (7 Juli 2026) berpendapat penghasilan bersih pengemudi tetap, yang untung
+  konsumen. Jadi jangan klaim 8% menaikkan pendapatan pengemudi.
+- The Drivers Cooperative (NYC): Wikipedia = berdiri 2020, komisi 15%; Tortorici (2026),
+  *Internet Policy Review* 15(1), doi 10.14763/2026.1.2063 = peluncuran Mei 2021, lalu krisis
+  dan bertahan dari order paratransit MTA. Halaman drivers.coop tidak memuat fakta ini.
 
 **How to apply:** Kalau Bryan minta revisi lagi, edit salinan kerja lalu salin ulang ke
 folder final dengan nama yang sama; jangan bikin ulang dari nol dan jangan tambah catatan
