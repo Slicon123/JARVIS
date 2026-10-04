@@ -15,7 +15,7 @@ The concrete project: a fully automated video clipping pipeline for YouTube Shor
 - Planned stack: Claude Code, YouTube Data API, Whisper, ffmpeg, Claude API.
 - Starting niche: business/finance podcast clips, Indonesian market first. Source channels: *Diary Rintisan* by Finfolk, *The Overpost* by Leon Hartono. Expanding to English-language shows later.
 
-**Why:** He wants to combine his design sensibility and finance background into something that earns without ongoing manual work.
+**Why:** He wants something that earns without ongoing manual work.
 
 **How to apply:** When building here, favor unattended/scheduled operation over interactive tooling, and keep the Indonesian-first source selection in mind for transcription and caption choices.
 

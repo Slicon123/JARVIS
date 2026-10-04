@@ -1,6 +1,6 @@
 ---
 name: user-bryan-profile
-description: "Who Bryan is — electrical/fire-safety engineering work, design and finance background, incoming Digital Business student"
+description: "Who Bryan is — electrical/fire-safety engineering documentation work, no design or finance background,  Digital Business student"
 metadata: 
   node_type: memory
   type: user
@@ -14,7 +14,7 @@ He says plainly that he **does not know the deep technical material** behind tho
 
 **How to apply:** This is the single most important thing to remember when helping him with work. He cannot catch a technical error in what you hand him, so a confidently wrong NFPA clause, model number, or figure goes straight into a client-facing document under his name. Verify every specification, code reference, and number rather than recalling it, and say when you are unsure ([[feedback-self-correct-and-verify]]). Explain the underlying technical concept rather than assuming he already holds it — he will not ask.
 
-Background in design/creative work and business/finance — he likes to leverage both (see [[project-content-clipping-automation]] and [[user-investing-approach]]).
+He does **not** have a background in design or finance — corrected by him on 4 October 2026, after an earlier note wrongly claimed one. Don't attribute either to him; his finance interest shows up only as personal investing ([[user-investing-approach]]) and the clipping project ([[project-content-clipping-automation]]).
 
 Incoming Digital Business student at Universitas Kristen Satya Wacana (UKSW); semester 1 started 31 August 2026 — see [[project-uksw-digital-business]].
 
