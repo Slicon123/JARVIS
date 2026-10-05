@@ -19,7 +19,7 @@ corrected an earlier note that said he *cannot* cook on 4 September 2026 — he 
 won't, because the catering already covers his meals and buying twice over is wasteful. So
 the constraint is budget and duplication, not a missing kitchen. Check whether the catering
 service sells a 3-meals-per-day package before proposing anything he'd have to buy
-separately.
+separately. Price and the tracker for it: [[reference-catering-tracker]].
 
 Final plan as of 4 September 2026, with his own status on each item:
 
