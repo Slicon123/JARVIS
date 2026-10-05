@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
-  modified: 2026-09-16T00:00:00.000Z
+  modified: 2026-10-05T00:00:00.000Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -44,3 +44,5 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 **Status tugas (dikonfirmasi Bryan 29 September 2026):** Tugas 1 (pertemuan 2) dan Tugas 2 (pertemuan 3–4) sudah dikumpulkan, disalin tangan di HVS. Materi yang pernah diupload berhenti di pertemuan 3–4 (16 Sep); pertemuan 23 Sep dan sesudahnya belum ada — tanya kalau ada tugas baru.
 
 **Timeline correction (29 September 2026):** the deck is titled "Pertemuan 3 & 4" — one deck spanning two meetings (16 and 23 Sep), so 23 Sep was most likely still this material, not kuantor. Mapping is pertemuan N ≈ RPS topic N−1: **30 Sep = pertemuan 5, kuantor** · 7 Okt penarikan kesimpulan · 14 Okt fungsi Boole & gerbang logika · 21 Okt DNF/CNF · TTS after that. Estimate from RPS order, not an official schedule. Slide 16 mistranslates Rosen's airline example: "maskapai menaikkan kelas Anda" should be the airline *bumping* you (kicked off an overbooked flight) — an upgrade still lets you board, so it doesn't illustrate p=F, q=T.
+
+**TTS confirmed (Bryan, 5 October 2026): Rabu 14 Oktober 2026, during the usual 09–12 slot** — earlier than the RPS-based estimate above, so 14 Okt is the test, not fungsi Boole, and the 21 Okt DNF/CNF meeting may not happen before the TTS. Still covers materi 1–7 per RPS unless the dosen says otherwise. It's in his Google Calendar with reminders 1 day and 1 hour before.
