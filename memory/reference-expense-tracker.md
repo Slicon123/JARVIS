@@ -11,7 +11,7 @@ home-screen shortcut. Files: `index.html` (page + CSS), `core.js` (pure logic), 
 To edit, `Artifact` read the URL and rebuild from those files.
 
 Data lives in the artifact's `db`, readable with `ArtifactData`:
-- `meta/wallets|categories|budgets|recurring|goals|debts` → `{list: {id: {...}}}`; `meta/settings` → `{lastBackup}`.
+- `meta/wallets|categories|budgets|recurring|goals|debts` → `{list: {id: {...}}}`; `meta/settings` → `{lastBackup, lang: id|en}` (the app switches between Indonesian and English, under Lainnya; default categories show English names while their stored name is the Indonesian default).
 - `months/{YYYY-MM}` → `{tx: {id: {date, type: out|in|transfer, amount, wallet, toWallet, category, fee, note, debt, debtRole, recurring, adjust, createdAt, deleted}}}`.
 - Amounts are whole rupiah. `deleted: true` is a tombstone (ignore it). Wallet balance = `initial` + in − out −
   transfer out − fee + transfer in, across all months.
