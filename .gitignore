@@ -9,3 +9,7 @@ claude-config/skills/synced/
 
 # PMB coursework: contains Bryan's NIM and date of birth. Local only.
 kuliah/pmb-tugas-badan-usaha/
+
+# Installed dev tools for apps/*; reinstall with npm install.
+node_modules/
+package-lock.json

@@ -1,0 +1,11 @@
+{
+  "name": "dompet-bryan",
+  "private": true,
+  "description": "Source and tests for the Dompet Bryan expense tracker artifact",
+  "scripts": {
+    "test": "node test/core.test.js && node test/e2e.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "24.1.3"
+  }
+}

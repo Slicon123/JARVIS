@@ -7,8 +7,8 @@ metadata:
 
 App: https://claude.ai/artifact/6xN8zfA4fNfVA1LVdsJR1D ("Dompet Bryan", private, built
 5 October 2026 to the `ui-ux` skill). He uses it on his Android phone via a Chrome
-home-screen shortcut. Files: `index.html` (page + CSS), `core.js` (pure logic), `app.js` (UI).
-To edit, `Artifact` read the URL and rebuild from those files.
+home-screen shortcut. Source and tests live in `apps/dompet-bryan/` in this repo: edit there, run
+`npm test`, then publish with `url` set to the link above (see its README).
 
 Data lives in the artifact's `db`, readable with `ArtifactData`:
 - `meta/wallets|categories|budgets|recurring|goals|debts` → `{list: {id: {...}}}`. A recurring item is either

@@ -15,6 +15,9 @@ It syncs by the same junction trick as `memory/`; see
 [claude-config/SETUP.md](claude-config/SETUP.md) before editing anything in it, especially
 the status line, which fails blank rather than loudly.
 
+[apps/dompet-bryan/](apps/dompet-bryan/) is the source and tests of Bryan's expense-tracker artifact; its
+README says how to test and republish it. His financial records live in the artifact, never in this repo.
+
 `retro-shooter.html` is an unrelated standalone browser game from an earlier session.
 Open it in a browser to run it; it needs no documentation here.
 
