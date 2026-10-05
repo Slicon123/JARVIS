@@ -67,6 +67,10 @@ const today = C.todayKey();
   assert.strictEqual($$('.keypad .key').length, 16, 'number pad');
   const fcat = $('#f-cat'), fwal = $('#t-wallet-l').closest('.field');
   assert.ok(fcat.compareDocumentPosition(fwal) & w.Node.DOCUMENT_POSITION_FOLLOWING, 'category comes before wallet');
+  // jsdom ignores !important, so check the attribute plus the rule that makes browsers honour it
+  assert.ok(/\[hidden\]\s*\{\s*display:\s*none\s*!important/.test(html), '[hidden] beats display rules');
+  assert.ok($('#f-to').hidden && $('#sheet [data-cats="in"]').hidden && !$('#sheet [data-cats="out"]').hidden, 'expense hides To wallet and income categories');
+  assert.ok($$('.key.op').every(k => k.querySelector('svg')), 'operators are icons');
   click($('[data-act="sheet-close"]'));
   assert.ok(!$('#sheet').hasAttribute('open'));
   assert.ok(!$('.fab').classList.contains('spin') && d.activeElement !== $('.fab'), 'no stuck state on +');

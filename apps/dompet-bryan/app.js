@@ -1144,7 +1144,13 @@
   // ---- transaction sheet
   // The amount uses an in-page number pad: the phone keyboard would cover the categories and the Save button.
   var KEYS = ['7', '8', '9', '÷', '4', '5', '6', '×', '1', '2', '3', '−', '000', '0', '⌫', '+'];
-  var OPKEYS = { '÷': 1, '×': 1, '−': 1, '+': 1 };
+  // Operators are drawn as icons: the font sets ÷ × − + on its math axis, below the key's centre.
+  var OPKEYS = {
+    '÷': '<path d="M5 12h14"/><circle cx="12" cy="6.5" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="17.5" r="1.6" fill="currentColor" stroke="none"/>',
+    '×': '<path d="m6.5 6.5 11 11"/><path d="m17.5 6.5-11 11"/>',
+    '−': '<path d="M5 12h14"/>',
+    '+': ICONS.plus
+  };
   function keyLabel(k) {
     return {
       '÷': L('bagi', 'divide'), '×': L('kali', 'times'), '−': L('kurang', 'minus'), '+': L('tambah', 'plus'),
@@ -1190,7 +1196,7 @@
       '<div class="field"><label for="t-note">' + L('Keterangan', 'Note') + optional() + '</label><input id="t-note" name="note" class="input" maxlength="120" autocomplete="off" value="' + esc(base.note || '') + '" placeholder="' + L('Misal: nasi padang + es teh', 'For example: lunch with friends') + '"></div>' +
       (ed ? '<div class="stack" style="border-top:1px solid var(--line);padding-top:16px;margin-top:6px"><button type="button" class="btn danger" data-act="tx-del">' + icon('x', 'sm') + L('Hapus transaksi ini', 'Delete this transaction') + '</button></div>' : '');
     var keypad = '<div class="keypad" role="group" aria-label="' + L('Papan angka', 'Number pad') + '">' + KEYS.map(function (k) {
-      return '<button type="button" class="key' + (OPKEYS[k] ? ' op' : k === '⌫' ? ' del' : '') + '" data-act="kp" data-v="' + k + '" aria-label="' + keyLabel(k) + '">' + (k === '⌫' ? icon('backspace') : k) + '</button>';
+      return '<button type="button" class="key' + (OPKEYS[k] ? ' op' : k === '⌫' ? ' del' : '') + '" data-act="kp" data-v="' + k + '" aria-label="' + keyLabel(k) + '">' + (k === '⌫' ? icon('backspace') : OPKEYS[k] ? '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">' + OPKEYS[k] + '</svg>' : k) + '</button>';
     }).join('') + '</div>';
     var foot = keypad + '<button class="btn primary" type="submit">' + icon('check') + (ed ? L('Simpan perubahan', 'Save changes') : L('Simpan', 'Save')) + '</button>';
     openSheet(o.title || (ed ? L('Ubah transaksi', 'Edit transaction') : L('Catat transaksi', 'Add transaction')), body, foot,
