@@ -11,6 +11,7 @@
 - [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
 - [Gym — bulking nutrition](project-gym-nutrition-bulking.md) — 54 kg at 172 cm; 2,800 kcal target, kost catering, which steps he committed to
 - [Catering tracker](reference-catering-tracker.md) — Rp 450.000 = 48 menu, Minggu libur; claude.ai page counting menus per payment, data in its db
+- [Dompet Bryan](reference-expense-tracker.md) — his expense-tracker artifact: wallets, tx per month in its db; how to read spending
 - [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
 - [Claude account context](user-claude-account-context.md) — Pro plan; uses VS Code extension not terminal (no status line); phone can't run Claude Code
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, materials stop at pertemuan 3–4
