@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
-  modified: 2026-09-16T00:00:00.000Z
+  modified: 2026-10-06T00:00:00.000Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -41,6 +41,12 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 - Dosen: Johannes R. Siahainenia, johannes.siahainenia@uksw.edu.
 - Tugas 2 (materi pertemuan 3–4) dikerjakan di `kuliah/matematika-logika/tugas-2-*.md`.
 
-**Status tugas (dikonfirmasi Bryan 29 September 2026):** Tugas 1 (pertemuan 2) dan Tugas 2 (pertemuan 3–4) sudah dikumpulkan, disalin tangan di HVS. Materi yang pernah diupload berhenti di pertemuan 3–4 (16 Sep); pertemuan 23 Sep dan sesudahnya belum ada — tanya kalau ada tugas baru.
+**Status tugas (dikonfirmasi Bryan 29 September 2026):** Tugas 1 (pertemuan 2) dan Tugas 2 (pertemuan 3–4) sudah dikumpulkan, disalin tangan di HVS. Tanya kalau ada tugas baru.
 
-**Timeline correction (29 September 2026):** the deck is titled "Pertemuan 3 & 4" — one deck spanning two meetings (16 and 23 Sep), so 23 Sep was most likely still this material, not kuantor. Mapping is pertemuan N ≈ RPS topic N−1: **30 Sep = pertemuan 5, kuantor** · 7 Okt penarikan kesimpulan · 14 Okt fungsi Boole & gerbang logika · 21 Okt DNF/CNF · TTS after that. Estimate from RPS order, not an official schedule. Slide 16 mistranslates Rosen's airline example: "maskapai menaikkan kelas Anda" should be the airline *bumping* you (kicked off an overbooked flight) — an upgrade still lets you board, so it doesn't illustrate p=F, q=T.
+**Pertemuan 3 & 4 slide error:** slide 16 mistranslates Rosen's airline example: "maskapai menaikkan kelas Anda" should be the airline *bumping* you (kicked off an overbooked flight) — an upgrade still lets you board, so it doesn't illustrate p=F, q=T.
+
+**Pertemuan 5 (received 2026-10-06) — kuantor, RPS topic 4:** predikat p(x); ∀ (semua/setiap) benar iff p(x) benar untuk semua x, satu contoh penyangkal bikin salah; ∃ (ada/beberapa/terdapat) benar iff minimal satu x. Kuantor bersarang: sejenis boleh ditukar, beda jenis tidak (p(x,y): x+y=0 → ∀x∃y benar, ∃y∀x salah; contoh mahasiswa–dosen pembimbing). Ingkaran: ~∀x p(x) ≡ ∃x ~p(x), ~∃x q(x) ≡ ∀x ~q(x) (contoh bus, dinosaurus, "tidak ada ahli matematika yang malas"). Slide 8 is an unanswered exercise over bilangan bulat: a ∀x x²−2≥0 salah (x=0) · b ∃x x²−10x+21=0 benar (x=3,7) · c ∀x same equation salah · d ∃x x²−3=0 salah (√3 bukan bulat). **Slide errors:** slide 5 says ∃ means "paling sedikit satu (atau lebih, asal tidak semua)" — "asal tidak semua" is wrong, ∃ stays true when every x satisfies it; slide 4 writes "x ∈ p(x)" where it means p(x).
+
+**Pertemuan 6 (received 2026-10-06) — inferensi, RPS topic 5:** argumen = premis + konklusi; kebenaran (isi) vs validitas (struktur) — "planet dari keju" valid tapi tidak sehat, Salatiga/Jawa Tengah = affirming the consequent (tidak valid). Six rules, each with its "(premis ∧ …) → konklusi adalah tautologi" form: modus ponens, modus tollens, silogisme hipotesis, silogisme disjungtif, penambahan disjungsi, penyederhanaan konjungsi. Slide 6 uses a fire-alarm example (his field — false alarms make premise 1 untrue in practice). Bryan said he didn't follow this class; re-explained 6 Oct with the truth-table validity check and denying the antecedent (not in the slides).
+
+**Timeline (revised 2026-10-06):** pertemuan 6 had already been taught by 6 Oct, so the earlier guess (30 Sep = pertemuan 5) was one meeting off — likely P5 = 23 Sep, P6 = 30 Sep. Pertemuan N ≈ RPS topic N−1 still holds: **7 Okt ≈ pertemuan 7, fungsi Boole & gerbang logika** · then DNF/CNF · then TTS. Estimate, not an official schedule.
