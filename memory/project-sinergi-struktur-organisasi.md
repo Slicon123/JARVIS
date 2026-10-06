@@ -18,7 +18,8 @@ Admin & Finance, Pengawas Ahli K3 Listrik, Leader, then teams. It was first fill
   If you edit it, don't use Center Across Selection: Excel then stops drawing vertical borders inside the span.
 - He edits the file between sessions (e.g. typed "Maryono Susilo" himself). Read Input before writing, and fill only empty cells.
   Team Trafo's names came from his personnel list, which may shorten names. Reading the KTP photos was blocked as PII, so don't retry; ask him instead.
-- **Still open:** most member names are short (single word). Bryan will supply full names later, so ask whether they've arrived.
+- **Names:** on 2026-10-06 he supplied full names for the Leader and for FAS, Elektrikal (now 6) and Genset. Single names he gave himself
+  (Ikhsan, Kirsun) are final. UPS & Battery, Sipil and AC are still empty, and Team Trafo's names haven't been checked against KTP.
   The team tasks in Uraian Tugas were drafted from general practice (there's no TOR), so he should check them against the job's scope.
 
 Related: [[project-sinergi-proposal-teknis]] (BAB X Struktur Organisasi), [[project-fss-ats-documentation]]
