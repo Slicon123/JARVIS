@@ -55,7 +55,8 @@
     dots: '<circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>',
     sliders: '<path d="M21 4h-7"/><path d="M10 4H3"/><path d="M21 12h-9"/><path d="M8 12H3"/><path d="M21 20h-5"/><path d="M12 20H3"/><path d="M14 2v4"/><path d="M8 10v4"/><path d="M16 18v4"/>',
     gauge: '<path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/>',
-    info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>'
+    info: '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
+    wifioff: '<path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/>'
   };
   ICONS.home = ICONS.house;
   function icon(name, cls) { return '<svg class="ic ' + (cls || '') + '" viewBox="0 0 24 24" aria-hidden="true">' + (ICONS[name] || ICONS.dots) + '</svg>'; }
@@ -110,6 +111,8 @@
   var S = {
     status: 'loading', db: null, canWrite: true,
     meta: emptyMeta(), months: {}, gotMeta: false, gotMonths: false,
+    // live: both collections are server-fresh now; synced: they have been at least once this visit
+    live: false, synced: false, liveMeta: false, liveMonths: false, slow: false, noLink: false, netOff: navigator.onLine === false, cacheAt: null,
     txs: [], flows: [], bal: {}, txIndex: {},
     tab: LS.get('tab', 'home'), more: null, debtTab: 'lent',
     hide: LS.get('hide', false), lang: LS.get('lang', 'id') === 'en' ? 'en' : 'id', langSetAt: 0, theme: LS.get('theme', 'auto'),
@@ -170,15 +173,58 @@
     S.langSetAt = Date.now();
     S.animate = true;
     render();
-    if (S.db && S.status === 'ready') saveSettings({ lang: S.lang });
+    if (S.status === 'ready') saveSettings({ lang: S.lang });
   }
 
   // ================= db writes =================
-  var queues = {}, known = {};
-  function enqueue(path, fn) {
-    var p = (queues[path] || Promise.resolve()).catch(function () {}).then(fn);
-    queues[path] = p;
+  // Every write waits in an outbox kept in this browser until the db confirms it, so a change made
+  // while the signal is gone is sent once it's back instead of being lost. Pending writes to one doc
+  // merge into one op. Sending an op twice is harmless: every patch is keyed by id.
+  var known = {}, OB_KEY = 'dompet:outbox', CACHE_KEY = 'dompet:cache';
+  var raw = { meta: {}, months: {} }; // the db's docs as last seen, before pending writes
+  var obMem = {}, obLS = true, sending = {}, waits = {}, wn = 0, obDelay = 0, obTimer = null, obStuck = false, obBlocked = false;
+  function isObj(v) { return !!v && typeof v === 'object' && !Array.isArray(v); }
+  // same as the db's update(): nested objects merge, anything else replaces
+  function deepMerge(a, b) {
+    var r = {}, k;
+    for (k in a) r[k] = a[k];
+    for (k in b) r[k] = isObj(b[k]) && isObj(r[k]) ? deepMerge(r[k], b[k]) : b[k];
+    return r;
+  }
+  function applyOp(doc, op) { return op.k === 'del' ? undefined : op.k === 'set' || !doc ? op.d : deepMerge(doc, op.d); }
+  function combine(a, b) {
+    if (!a || b.k !== 'merge') return b;
+    return a.k === 'del' ? { k: 'set', d: b.d } : { k: a.k, d: deepMerge(a.d, b.d) };
+  }
+  function obRead() {
+    if (obLS) { try { var v = localStorage.getItem(OB_KEY); return v ? JSON.parse(v) : {}; } catch (e) { obLS = false; } }
+    return obMem;
+  }
+  function obWrite(o) {
+    obMem = o;
+    if (!obLS) return;
+    var s = JSON.stringify(o);
+    try { if (s === '{}') localStorage.removeItem(OB_KEY); else localStorage.setItem(OB_KEY, s); return; } catch (e) { /* full: the outbox matters more than the copy */ }
+    try { localStorage.removeItem(CACHE_KEY); localStorage.setItem(OB_KEY, s); } catch (e) { obLS = false; }
+  }
+  function obCount() {
+    var o = obRead(), n = 0;
+    for (var p in o) n += p.indexOf('months/') === 0 && o[p].k === 'merge' && isObj(o[p].d.tx) ? Object.keys(o[p].d.tx).length || 1 : 1;
+    return n;
+  }
+  function queueWrite(path, op) {
+    var o = obRead();
+    op = combine(o[path], op); op.r = C.uid();
+    o[path] = op; obWrite(o);
+    var n = ++wn;
+    var p = new Promise(function (res, rej) { (waits[path] = waits[path] || []).push({ n: n, res: res, rej: rej }); });
+    flush(); syncChanged();
     return p;
+  }
+  function settle(path, upTo, err) {
+    var keep = [];
+    (waits[path] || []).forEach(function (w) { if (w.n > upTo) keep.push(w); else if (err) w.rej(err); else w.res(); });
+    if (keep.length) waits[path] = keep; else delete waits[path];
   }
   function retry(fn) {
     return fn().catch(function (e) {
@@ -186,36 +232,128 @@
       throw e;
     });
   }
-  function mergeDoc(path, patch) {
-    return enqueue(path, function () {
-      var ref = S.db.doc(path);
-      var viaGet = function () {
-        return retry(function () { return ref.get(); }).then(function (snap) {
-          return retry(function () { return snap.exists ? ref.update(patch) : ref.set(patch); });
-        }).then(function () { known[path] = true; });
-      };
-      if (!known[path]) return viaGet();
-      return retry(function () { return ref.update(patch); }).catch(function (e) {
-        if (e && e.code === 'invalid_argument') return viaGet();
-        throw e;
-      });
+  function writeOp(path, op) {
+    var ref = S.db.doc(path);
+    if (op.k === 'del') return retry(function () { return ref.delete(); }).then(function () { delete known[path]; });
+    if (op.k === 'set') return retry(function () { return ref.set(op.d); }).then(function () { known[path] = true; });
+    var viaGet = function () {
+      return retry(function () { return ref.get(); }).then(function (snap) {
+        return retry(function () { return snap.exists ? ref.update(op.d) : ref.set(op.d); });
+      }).then(function () { known[path] = true; });
+    };
+    if (!known[path]) return viaGet();
+    return retry(function () { return ref.update(op.d); }).catch(function (e) {
+      if (e && e.code === 'invalid_argument') return viaGet();
+      throw e;
     });
   }
-  function setDoc(path, data) { return enqueue(path, function () { return retry(function () { return S.db.doc(path).set(data); }).then(function () { known[path] = true; }); }); }
-  function delDoc(path) { return enqueue(path, function () { return retry(function () { return S.db.doc(path).delete(); }).then(function () { delete known[path]; }); }); }
+  // sends wait until the db has answered once this visit, so `known` reflects real docs
+  // and a pending merge never replaces a doc this browser hasn't seen
+  function flush() {
+    if (!S.db || !S.synced || obBlocked) return;
+    var o = obRead();
+    Object.keys(o).forEach(function (p) { if (!sending[p]) sendOne(p, o[p]); });
+  }
+  function sendLater() {
+    if (obTimer) return;
+    obDelay = Math.min(30000, obDelay ? obDelay * 2 : 2000);
+    obTimer = setTimeout(function () { obTimer = null; flush(); }, obDelay);
+  }
+  function dropSent(path, op) {
+    var o = obRead();
+    if (o[path] && o[path].r === op.r) { delete o[path]; obWrite(o); }
+    return o;
+  }
+  function sendOne(path, op) {
+    var me = {}, upTo = wn;
+    sending[path] = me;
+    // a send that hangs on a bad line is retried; its late answer is ignored
+    var timer = setTimeout(function () { if (sending[path] === me) { delete sending[path]; obStuck = true; sendLater(); syncChanged(); } }, 30000);
+    function mine() { clearTimeout(timer); if (sending[path] !== me) return false; delete sending[path]; return true; }
+    writeOp(path, op).then(function () {
+      if (!mine()) return;
+      var i = path.indexOf('/'), col = raw[path.slice(0, i)], id = path.slice(i + 1);
+      if (col) { var v = applyOp(col[id], op); if (v === undefined) delete col[id]; else col[id] = v; }
+      var o = dropSent(path, op);
+      settle(path, upTo, null);
+      obDelay = 0;
+      saveCacheSoon();
+      if (o[path]) sendOne(path, o[path]);
+      else if (obStuck && !Object.keys(o).length) { obStuck = false; toast(L('Semua perubahan sudah terkirim.', 'All changes sent.'), null, 'ok'); }
+      syncChanged();
+    }, function (e) {
+      if (!mine()) return;
+      var code = e && e.code;
+      if (code === 'invalid_argument' || code === 'quota_exceeded' || code === 'transform_error') {
+        // can never succeed: drop it so it can't hold up the rest, and show the db's data again
+        var o = dropSent(path, op);
+        settle(path, upTo, e);
+        if (!Object.keys(o).length) obStuck = false;
+        rebuild(); render();
+        if (o[path]) sendOne(path, o[path]);
+      } else if (code === 'revoked' || code === 'not_granted' || code === 'capability_disabled' || code === 'capability_removed') {
+        // kept for the next visit
+        if (!obBlocked) toast(L('Akses ke data terputus. Tutup lalu buka lagi halaman ini.', 'Lost access to your data. Close this page and open it again.'), null, 'error');
+        obBlocked = true; obStuck = true; S.live = false; syncChanged();
+      } else { obStuck = true; sendLater(); syncChanged(); }
+    });
+  }
+  function mergeDoc(path, patch) { return queueWrite(path, { k: 'merge', d: patch }); }
+  function setDoc(path, data) { return queueWrite(path, { k: 'set', d: data }); }
+  function delDoc(path) { return queueWrite(path, { k: 'del' }); }
+
+  // ================= local copy =================
+  // The db's docs as last seen, so the page opens at once on a slow line. Pending writes are not
+  // in it; they are laid over it from the outbox.
+  var cacheTimer = null;
+  function saveCacheSoon() { if (!cacheTimer) cacheTimer = setTimeout(saveCacheNow, 1000); }
+  function saveCacheNow() {
+    clearTimeout(cacheTimer); cacheTimer = null;
+    if (!S.synced) return;
+    var at = S.live && !S.netOff ? Date.now() : S.cacheAt || Date.now();
+    try { localStorage.setItem(CACHE_KEY, JSON.stringify({ v: 1, at: at, meta: raw.meta, months: raw.months })); S.cacheAt = at; }
+    catch (e) { try { localStorage.removeItem(CACHE_KEY); } catch (e2) { /* storage blocked */ } }
+  }
+  function loadCache() {
+    var c = null;
+    try { c = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null'); } catch (e) { c = null; }
+    if (!c || c.v !== 1 || !isObj(c.meta) || !isObj(c.months)) return false;
+    raw.meta = c.meta; raw.months = c.months; S.cacheAt = c.at || null;
+    return true;
+  }
+  function overlay(col, docs) {
+    var o = obRead(), out = {}, id;
+    for (id in docs) out[id] = docs[id];
+    Object.keys(o).forEach(function (p) {
+      var i = p.indexOf('/');
+      if (p.slice(0, i) !== col) return;
+      id = p.slice(i + 1);
+      var v = applyOp(out[id], o[p]);
+      if (v === undefined) delete out[id]; else out[id] = v;
+    });
+    return out;
+  }
+  function docsToMeta(docs) {
+    var m = emptyMeta();
+    for (var id in docs) {
+      var v = docs[id] || {};
+      if (id === 'settings') m.settings = v;
+      else if (m[id] !== undefined) m[id] = v.list || {};
+    }
+    return m;
+  }
+  function rebuild() {
+    S.meta = docsToMeta(overlay('meta', raw.meta));
+    S.months = overlay('months', raw.months);
+    derive();
+  }
 
   function writeFailed(e) {
     var code = e && e.code;
     var msg = code === 'quota_exceeded' ? L('Penyimpanan penuh. Download backup dulu, lalu bilang ke JARVIS.', 'Storage is full. Download a backup first, then tell JARVIS.')
       : (code === 'revoked' || code === 'not_granted' || code === 'capability_disabled' || code === 'capability_removed') ? L('Akses ke data terputus. Tutup lalu buka lagi halaman ini.', 'Lost access to your data. Close this page and open it again.')
-      : L('Gagal menyimpan. Cek internet kamu, lalu coba lagi.', 'Couldn’t save. Check your internet, then try again.');
+      : L('Perubahan ini gagal disimpan. Bilang ke JARVIS ya.', 'This change couldn’t be saved. Tell JARVIS.');
     toast(msg, null, 'error');
-  }
-  function refetchMonth(ym) {
-    S.db.doc('months/' + ym).get().then(function (s) {
-      if (s.exists) S.months[ym] = s.data(); else delete S.months[ym];
-      derive(); render();
-    }).catch(function () {});
   }
   var sizeWarned = {};
   function checkSize(ym) {
@@ -233,14 +371,14 @@
     var ym = C.ymOf(tx.date);
     putTxLocal(id, ym, tx); derive(); render();
     var patch = { tx: {} }; patch.tx[id] = tx;
-    return mergeDoc('months/' + ym, patch).then(function () { checkSize(ym); }).catch(function (e) { writeFailed(e); refetchMonth(ym); });
+    return mergeDoc('months/' + ym, patch).then(function () { checkSize(ym); }).catch(writeFailed);
   }
   function patchTx(id, ym, p) {
     var cur = S.months[ym] && S.months[ym].tx && S.months[ym].tx[id];
     if (cur) { var n = {}; for (var k in cur) n[k] = cur[k]; for (var q in p) n[q] = p[q]; putTxLocal(id, ym, n); }
     derive(); render();
     var patch = { tx: {} }; patch.tx[id] = p;
-    return mergeDoc('months/' + ym, patch).catch(function (e) { writeFailed(e); refetchMonth(ym); });
+    return mergeDoc('months/' + ym, patch).catch(writeFailed);
   }
   function saveMeta(doc, key, val, replace) {
     var cur = S.meta[doc][key], next;
@@ -260,44 +398,61 @@
 
   // ================= boot =================
   function init() {
+    // open from the local copy at once; the db's answer replaces it when it comes
+    if (loadCache()) { rebuild(); savedLang(); S.status = 'ready'; }
+    obStuck = obCount() > 0; // left from an earlier visit
     render();
+    setTimeout(function () {
+      S.slow = true;
+      if (S.status === 'loading') { S.status = 'slow'; render(); } else syncChanged();
+    }, 15000);
+    window.addEventListener('online', function () { S.netOff = false; obDelay = 0; flush(); syncChanged(); });
+    window.addEventListener('offline', function () { S.netOff = true; syncChanged(); });
+    document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'hidden') saveCacheNow(); else flush(); });
+    window.addEventListener('pagehide', saveCacheNow);
     var use = window.claude && window.claude.use ? window.claude.use.bind(window.claude) : null;
-    if (!use) { S.status = 'nodb'; render(); return; }
+    if (!use) { noLink(); return; }
     use('db').then(function (db) {
-      if (!db) { S.status = 'nodb'; render(); return; }
+      if (!db) { noLink(); return; }
       S.db = db;
-      setTimeout(function () { if (S.status === 'loading') { S.status = 'slow'; render(); } }, 15000);
       use('user').then(function (u) {
         if (u && u.can) return u.can('data.write').then(function (c) { if (c === false) { S.canWrite = false; render(); } });
       }).catch(function () {});
       db.collection('meta').onSnapshot(function (snap) {
-        var m = emptyMeta();
-        snap.docs.forEach(function (d) {
-          if (!d.exists) return;
-          known['meta/' + d.id] = true;
-          var v = d.data() || {};
-          if (d.id === 'settings') m.settings = v;
-          else if (m[d.id] !== undefined) m[d.id] = v.list || {};
-        });
-        S.meta = m; S.gotMeta = true;
-        // language follows the saved choice, so phone and laptop agree
-        var dl = m.settings.lang;
-        if ((dl === 'en' || dl === 'id') && dl !== S.lang && Date.now() - S.langSetAt > 5000) { S.lang = dl; C.setLang(dl); LS.set('lang', dl); }
-        onData();
+        var r = {};
+        snap.docs.forEach(function (d) { if (!d.exists) return; known['meta/' + d.id] = true; r[d.id] = d.data() || {}; });
+        raw.meta = r; S.gotMeta = true; S.liveMeta = fresh(snap); onData();
       }, dbErr);
       db.collection('months').limit(1000).onSnapshot(function (snap) {
-        var ms = {};
-        snap.docs.forEach(function (d) { if (!d.exists) return; known['months/' + d.id] = true; ms[d.id] = d.data() || {}; });
-        S.months = ms; S.gotMonths = true; onData();
+        var r = {};
+        snap.docs.forEach(function (d) { if (!d.exists) return; known['months/' + d.id] = true; r[d.id] = d.data() || {}; });
+        raw.months = r; S.gotMonths = true; S.liveMonths = fresh(snap); onData();
       }, dbErr);
-    }).catch(function () { S.status = 'nodb'; render(); });
+    }).catch(noLink);
+  }
+  function fresh(snap) { return !(snap.metadata && snap.metadata.fromCache); }
+  // language follows the saved choice, so phone and laptop agree
+  function savedLang() {
+    var dl = S.meta.settings.lang;
+    if ((dl === 'en' || dl === 'id') && dl !== S.lang && Date.now() - S.langSetAt > 5000) { S.lang = dl; C.setLang(dl); LS.set('lang', dl); }
   }
   function onData() {
-    if (S.gotMeta && S.gotMonths && S.status !== 'ready') { S.status = 'ready'; S.animate = true; }
-    derive(); render();
+    S.live = S.liveMeta && S.liveMonths && !obBlocked;
+    if (S.gotMeta && S.gotMonths) {
+      if (S.status !== 'ready') { S.status = 'ready'; S.animate = true; }
+      if (S.live) { S.synced = true; S.noLink = false; saveCacheSoon(); }
+    }
+    rebuild(); savedLang(); render();
+    flush();
+  }
+  function noLink() {
+    S.noLink = true;
+    if (S.status !== 'ready') S.status = 'nodb';
+    render();
   }
   function dbErr(e) {
-    if (!(S.gotMeta && S.gotMonths)) S.status = 'nodb';
+    S.live = S.liveMeta = S.liveMonths = false; S.noLink = true;
+    if (S.status !== 'ready') S.status = 'nodb';
     toast(e && e.code === 'revoked' ? L('Akses ke data terputus. Tutup lalu buka lagi halaman ini.', 'Lost access to your data. Close this page and open it again.') : L('Koneksi ke data terputus. Tutup lalu buka lagi halaman ini.', 'Lost the connection to your data. Close this page and open it again.'), null, 'error');
     render();
   }
@@ -336,7 +491,7 @@
     view.className = (S.tab === 'home' ? 'wide' : '') + (entering && !reduceMotion ? ' enter' : '') + (S.fx ? ' fx-' + S.fx : '');
     S.fx = null;
     lastTab = S.tab + '/' + S.more;
-    view.innerHTML = html;
+    view.innerHTML = syncHtml() + html;
     kept.forEach(function (k) { var el = document.getElementById(k[0]); if (el) el[k[1]] = k[2]; });
     if (fk) {
       var el = view.querySelector(fk);
@@ -388,6 +543,29 @@
     else if (S.status === 'slow') body = '<div class="card empty"><h3>' + L('Datanya belum kebuka', 'Your data hasn’t loaded yet') + '</h3><p class="ink2">' + L('Biasanya karena internet lambat. Cek koneksi kamu, lalu muat ulang.', 'Usually a slow connection. Check your internet, then reload.') + '</p><div><button class="btn sm" data-act="reload">' + L('Muat ulang', 'Reload') + '</button></div></div>';
     else body = '<div class="card empty"><h3>' + L('Data belum bisa dibuka', 'Can’t open your data') + '</h3><p class="ink2">' + L('Buka halaman ini dari link claude.ai-nya, dan pastikan kamu sudah login di browser ini. Kalau masih gagal, tutup lalu buka lagi.', 'Open this page from its claude.ai link and make sure you’re signed in on this browser. If it still fails, close it and open it again.') + '</p><div><button class="btn sm" data-act="reload">' + L('Muat ulang', 'Reload') + '</button></div></div>';
     return (title ? pageHead(title) : '') + body;
+  }
+  // a small pill on every tab while the page shows its local copy or has changes waiting to go out
+  function whenLabel(ts) {
+    var d = new Date(ts), k = C.dateKey(d), hm = (d.getHours() < 10 ? '0' : '') + d.getHours() + (S.lang === 'en' ? ':' : '.') + (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+    if (k === today()) return L('jam ', 'at ') + hm;
+    if (k === C.addDays(today(), -1)) return L('kemarin ', 'yesterday ') + hm;
+    return C.dayLabel(k) + ' ' + hm;
+  }
+  function syncHtml() {
+    if (S.status !== 'ready') return '';
+    var off = !S.live || S.netOff, n = obCount(), showN = n > 0 && (off || obStuck);
+    if (!off && !showN) return '';
+    var trying = off && !S.netOff && !S.slow && !S.noLink && !obBlocked, bits = [];
+    if (off) bits.push(trying ? L('Menyambung…', 'Connecting…') : L('Belum tersambung', 'Not connected'));
+    if (!S.live && S.cacheAt) bits.push(L('data terakhir ', 'last updated ') + whenLabel(S.cacheAt));
+    if (showN) bits.push(L(n + ' perubahan belum terkirim', n + (n === 1 ? ' change' : ' changes') + ' not sent yet'));
+    return '<p class="sync">' + (trying || !off ? '<span class="spin" aria-hidden="true"></span>' : icon('wifioff', 'sm')) +
+      '<span>' + bits.join(' · ') + (showN ? '<small>' + L('Tersimpan di sini dulu, terkirim sendiri begitu ada sinyal.', 'Kept here for now and sent by itself once you’re back online.') + '</small>' : '') + '</span></p>';
+  }
+  function syncChanged() {
+    var h = syncHtml(), el = view.firstElementChild;
+    if (el && el.classList.contains('sync')) { if (!h) el.remove(); else el.outerHTML = h; }
+    else if (h) view.insertAdjacentHTML('afterbegin', h);
   }
   function emptyCard(title, text, action) {
     return '<div class="card empty"><h3>' + esc(title) + '</h3>' + (text ? '<p class="ink2">' + text + '</p>' : '') + (action ? '<div>' + action + '</div>' : '') + '</div>';
@@ -1789,7 +1967,10 @@
     'export-xlsx': function (el) { doExport(el); },
     'restore-pick': function () { document.getElementById('restore-file').click(); },
     'restore-cancel': function () { S.restore = null; render(); },
-    'restore-confirm': function () { doRestore(); }
+    'restore-confirm': function () {
+      if (!S.live || S.netOff) { toast(L('Pulihkan data butuh internet. Coba lagi begitu tersambung.', 'Restoring needs a connection. Try again once you’re online.'), null, 'error'); return; }
+      doRestore();
+    }
   };
   var CHANGES = {
     lang: function (el) { setLang(el.value); },
