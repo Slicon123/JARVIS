@@ -28,7 +28,7 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 
 **Chapter 2** — never uploaded; content unknown. Don't guess what it covered.
 
-**Chapter 3 — Hardware, delivered 24 September 2026** (deck "3.Hardware.pptx", course code DB 101). Topics:
+**Chapter 3 — Hardware, delivered 24 September 2026** (deck "3.Hardware.pptx", course code DB 101; the kept copy is the 24 Sep re-save, which drops "dan display" on slide 23 and "mahasiswa" on slide 26). Topics:
 - Sistem komputer = hardware + software + brainware; four device groups: input, process, output, storage.
 - *Input* — keyboard (Serial, PS/2, Wireless, USB; QWERTY), pointing devices (mouse, touch screen, light pen, stylus, graphic tablet, joystick), scanner (flatbed vs handheld, compared to a photocopier).
 - *Process* — processor/CPU (speed in GHz; parts ALU, Control Unit, Memory Unit); motherboard (processor socket, memory slot, PCI slot, chipset, BIOS, I/O and power connectors).
@@ -38,6 +38,6 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 - Slide 13 swaps two terms: it says seek time finds the sector and latency finds the track. Standard definition is the reverse — seek time moves the head to the right track, rotational latency waits for the sector to spin under it. Flagged to Bryan 24 September 2026.
 - In-class questions: why QWERTY? which connector is SATA vs ATA? Group activity: choose input/process/output hardware for a startup doing content design, customer-data processing, online meetings, and document printing, with the business reason.
 
-**How to apply:** When Bryan asks about PTI, assume this baseline and answer in Bahasa Indonesia unless he switches. As of 29 September 2026 every PTI tugas is done: Chapter 1 tugas, Tugas Pertama, and the Chapter 3 class activity (answer in `kuliah/pengantar-teknologi-informasi/`, submitted). Bryan said he may upload Chapter 2 later — until then, still don't guess its content.
+**How to apply:** When Bryan asks about PTI, assume this baseline and answer in Bahasa Indonesia unless he switches. As of 29 September 2026 every PTI tugas is done: Chapter 1 tugas, Tugas Pertama, and the Chapter 3 class activity (submitted, group with Zaky Firman Maulana; final file `Tugas Bab 3 (Hardware).docx`). Files are in `C:\Bryan De Great\Kuliah\Semester 1\Pengantar Teknologi Informasi\` — `Materi\` (Chapter 1 pdf/pptx, Chapter 3 pptx) and `Tugas\` (older drafts in `Tugas\_Arsip\`). Bryan said he may upload Chapter 2 later — until then, still don't guess its content.
 
 Related: [[project-uksw-digital-business]], [[feedback-remind-materials-after-class]]

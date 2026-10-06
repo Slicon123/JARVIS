@@ -39,7 +39,7 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 - **Contoh pembuktian ekivalen langkah-demi-langkah** ada di slide: p→q ≡ ~p∨q (setara kondisional-disjungsi); dan ~(p→q) ≡ p∧~q (via ubah ke ~p∨q → De Morgan → negasi ganda).
 - **Aplikasi:** pencarian Boolean (Google search operators AND/OR/NOT/tanda kutip) dicontohkan lewat kasus UMKM/studi kasus/media sosial — memetakan kebutuhan pencarian jadi proposisi p,q,r,s lalu ekspresi (p∧q∧r)∧~s.
 - Dosen: Johannes R. Siahainenia, johannes.siahainenia@uksw.edu.
-- Tugas 2 (materi pertemuan 3–4) dikerjakan di `kuliah/matematika-logika/tugas-2-*.md`.
+- Tugas 2 (materi pertemuan 3–4) dikerjakan di `tugas-2-*.md`. Since 6 Oct 2026 the tugas files (soal PDFs + jawaban/salin-hvs .md) are in `C:\Bryan De Great\Kuliah\Semester 1\Matematika Logika\Tugas\`, and the Pertemuan_*.pdf slides are in `...\Materi\`.
 
 **Status tugas (dikonfirmasi Bryan 29 September 2026):** Tugas 1 (pertemuan 2) dan Tugas 2 (pertemuan 3–4) sudah dikumpulkan, disalin tangan di HVS. Tanya kalau ada tugas baru.
 

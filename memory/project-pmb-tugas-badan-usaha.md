@@ -6,11 +6,11 @@ metadata:
 ---
 
 Bryan kirim handout Pengantar Manajemen dan Bisnis pada 25 September 2026
-(PDF-nya di `Downloads/Materi Badan Usaha Indonesia.pdf`): *Analisis Komprehensif
+(PDF-nya di `C:\Bryan De Great\Kuliah\Semester 1\Pengantar Manajemen dan Bisnis\Materi\`): *Analisis Komprehensif
 Bentuk-Bentuk Badan Usaha di Indonesia: Kerangka Teoretis Ismail Solihin dan Relevansinya
 bagi Transformasi Bisnis Digital*. Dosen: di handout "Dr. Nobita Triwijayanti, M.Pd.",
 di KST "NOBITA TRI WIJAYANTI" — sampul memakai **Dr. Nobita Tri Wijayanti, M.Pd.**
-Beda dari tugas mengajar badan usaha (presentasi kelompok, sudah tampil per 29 Sep 2026; bahannya di `kuliah/badan-usaha/`) — ini tugas tertulis.
+Beda dari tugas mengajar badan usaha (presentasi kelompok, sudah tampil per 29 Sep 2026; bahannya di `...\Pengantar Manajemen dan Bisnis\Tugas\Presentasi Badan Usaha\`) — ini tugas tertulis.
 
 **Tugas di handout:** 1 skenario utang Rp2 M (Perorangan/CV/PT); 2 simulasi PT Perorangan
 bisnis digital UMK (nama, domisili, KBLI 5 angka, draf Pernyataan Pendirian, alur AHU →
@@ -27,16 +27,18 @@ catatan kaki** soal kesalahan handout. Isi utama: T2 "PT Studio Gim Merbabu" KBL
 T4 "Koperasi Jasa Roda Bersama"/RodaKita untuk ojol.
 
 **Aturan unggah flearn (assignment ini): maksimal 2 file, masing-masing ≤ 32 MB.**
-**Final (29 Sep 2026)** di `C:\Bryan De Great\Tugas Kuliah\Pengantar Manajemen dan Bisnis\`:
+**Final (29 Sep 2026)** di `C:\Bryan De Great\Kuliah\Semester 1\Pengantar Manajemen dan Bisnis\Tugas\Tugas 2-4 Badan Usaha\Final\`
+(dipindah 6 Okt 2026 dari `Tugas Kuliah\`):
 yang diunggah `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).pdf` + `Tugas 3 (Presentasi Investor).pptx`
 (Bryan pilih: Word jadi PDF supaya tampilan terkunci, PPT tetap .pptx demi catatan pembicara).
 PDF diekspor Word dari `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).docx`, yang tetap disimpan di
 sebelahnya (T2+T3+T4 digabung lewat Word InsertFile, section break per tugas, nomor halaman
 mulai 1 lagi di tiap tugas, 30 halaman). Tiga .docx terpisah disimpan di subfolder
 `File terpisah (tidak diunggah)`. Author diisi nama Bryan, jejak PptxGenJS dihapus. Kalau
-satu tugas direvisi, gabungannya harus dibuat ulang. Salinan kerja (isi sama) di
-`kuliah/pmb-tugas-badan-usaha/` (humanized/ + PPT), folder itu **di-.gitignore** karena memuat
-NIM dan tanggal lahirnya. Versi non-humanized di folder utama sudah usang, jangan dipakai.
+satu tugas direvisi, gabungannya harus dibuat ulang. Salinan kerja lama (humanized, isinya
+sama persis dengan Final) dibuang 6 Okt 2026. Draf non-humanized sudah usang dan ada di
+`Tugas 2-4 Badan Usaha\_Arsip\`, jangan dipakai. File memuat NIM dan tanggal lahirnya, jadi
+jangan pernah taruh di repo JARVIS.
 Revisi 29 Sep: pajak T2 ikut PP 20/2026; urutan AHU dibetulkan (diagram digambar ulang,
 huruf 9 pt seperti tabel); tahap T3 bernomor 1–9 di Word dan PPT; agio dikapitalisasi
 seluruhnya Rp24 M → modal disetor Rp27 M (Rp25 M tunai); Solihin (2014) dikutip di T2/T3.
@@ -78,8 +80,9 @@ halaman kosong; paragraf itu harus dihapus setiap kali gabungan dibuat ulang.
   *Internet Policy Review* 15(1), doi 10.14763/2026.1.2063 = peluncuran Mei 2021, lalu krisis
   dan bertahan dari order paratransit MTA. Halaman drivers.coop tidak memuat fakta ini.
 
-**How to apply:** Kalau Bryan minta revisi lagi, edit salinan kerja lalu salin ulang ke
-folder final dengan nama yang sama; jangan bikin ulang dari nol dan jangan tambah catatan
-kaki. Tugas 1 dan kit Tugas 5 tetap di folder kerja sebagai cadangan.
+**How to apply:** Kalau Bryan minta revisi lagi, edit file di `Final\File terpisah (tidak
+diunggah)\` (salin dulu sebagai cadangan), lalu buat ulang gabungan + PDF-nya; jangan bikin
+ulang dari nol dan jangan tambah catatan kaki. Tugas 1 dan kit Tugas 5 ada di `_Arsip\`
+sebagai cadangan.
 
 Related: [[project-uksw-digital-business]], [[feedback-self-correct-and-verify]], [[feedback-pptx-edit-checklist]]

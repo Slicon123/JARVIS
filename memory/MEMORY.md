@@ -1,11 +1,11 @@
-- [IN PROGRESS: kuliah cleanup](project-folder-rename-kuliah-cleanup.md) — rename to C:\Bryan De Great fixed up 6 Oct 2026; next: the agreed kuliah file plan and his decisions
+- [Folder cleanup — next](project-folder-cleanup-next.md) — kuliah done 6 Oct 2026; non-kuliah files and a GP-100 registry fix still open, only when he asks
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
 - [JARVIS persona](feedback-jarvis-persona.md) — be JARVIS, informal and friend-like; call him Bryan; config lives outside this repo
 - [Sinergi Struktur Organisasi](project-sinergi-struktur-organisasi.md) — reusable Excel org chart (Input-driven), now in Laporan Sinergi\Template Pekerjaan; full names pending
 - [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
 - [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
-- [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule and ongoing university-life help
+- [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule, university-life help; all coursework files in C:\Bryan De Great\Kuliah
 - [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first
 - [Electronics course](project-electronics-course.md) — first-principles electronics in Bahasa Indonesia, currently on ground symbols
 - [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
@@ -19,8 +19,8 @@
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted; slides through pertemuan 6 (kuantor, inferensi), with known slide errors
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered, all tugas so far done; chapter 2 not uploaded yet
-- [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT) dari Tugas Kuliah\Pengantar Manajemen dan Bisnis; tunggu nilai dosen
-- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah bagian 2.1 in kuliah/pak-makalah/, unfinished as of 29 Sep 2026
+- [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
+- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah bagian 2.1 in Kuliah\Semester 1\Pendidikan Agama Kristen\Makalah, unfinished as of 29 Sep 2026
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
 - [ATS/fire simulator idea](project-ats-fire-simulator-idea.md) — proposed browser project to close his ATS/FSS technical gap; remind 2026-09-05

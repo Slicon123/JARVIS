@@ -11,7 +11,8 @@ dicatat — jangan mengarang.
 
 **Tugas yang diketahui:** makalah (tampaknya kelompok) — Bryan kebagian bagian
 **2.1 Pemahaman Agama Kristen: dasar iman, Allah Tritunggal, Alkitab, Yesus Kristus**.
-Draf 26 September 2026 di `kuliah/pak-makalah/` (.md + .docx, 4 paragraf + daftar pustaka:
+Draf 26 September 2026 di `C:\Bryan De Great\Kuliah\Semester 1\Pendidikan Agama Kristen\Makalah\`
+(`2.1-pemahaman-agama-kristen` .md + .docx, 4 paragraf + daftar pustaka:
 Pandey 2020, Ndoen 2023, Kiamani dkk. 2024, Alkitab TB). Paragraf terakhirnya menjembatani
 ke "konsep keselamatan" di bagian berikutnya. **Status 29 September 2026: belum selesai**;
 deadline dan format makalah belum diketahui — tanyakan ke Bryan.
@@ -20,6 +21,7 @@ deadline dan format makalah belum diketahui — tanyakan ke Bryan.
 mencegah PAK dianggap "tidak ada tugas".
 
 **How to apply:** Kalau Bryan menyinggung PAK, lanjutkan dari draf di folder itu, tanya
-deadline dan bagian mana yang belum. Folder `kuliah/pak-makalah/` belum di-commit.
+deadline dan bagian mana yang belum. File kelompok (`MAKALAH PAK kl.2` .docx + .pdf, 26 Sep)
+ada di folder yang sama.
 
 Related: [[project-uksw-digital-business]]

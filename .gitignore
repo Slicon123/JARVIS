@@ -7,8 +7,8 @@ memory/project-sinergi-proposal-teknis.md
 # They are not ours, are overwritten on every sync, and must not go public.
 claude-config/skills/synced/
 
-# PMB coursework: contains Bryan's NIM and date of birth. Local only.
-kuliah/pmb-tugas-badan-usaha/
+# Coursework lives in C:\Bryan De Great\Kuliah, outside this public repo (NIM, birth date).
+kuliah/
 
 # Installed dev tools for apps/*; reinstall with npm install.
 node_modules/
