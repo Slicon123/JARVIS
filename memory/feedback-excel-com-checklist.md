@@ -21,6 +21,7 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    - Center Across Selection hides vertical borders inside its span, even when the span's cells are empty. This was found late and forced a column redesign.
 5. When generating formulas, wrap every comparison in parentheses: `2*(X=0)`, never `2*X=0`.
 6. PDFs exported from a hidden Excel instance come out Letter even when the sheet is A4. Check `paperSize` in the saved XML instead of chasing the PDF size.
+   Each `ExportAsFixedFormat` also pops Excel's visible "Publishing" progress window on his screen, even when Excel is hidden. He asked what it was on 2026-10-06. Tell him before the render step starts.
 7. Verify on every sheet, hidden and protected ones included, through `UsedRange.Value`. `SpecialCells` silently skips most cells there.
 8. His files change between turns. Work on a copy and assert that the cells you write are still empty.
    Before replacing his file, check it isn't open (`~$` lock) and that it's byte-identical to your backup. Then diff every sheet you didn't mean to touch.
