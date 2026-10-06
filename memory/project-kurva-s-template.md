@@ -24,7 +24,11 @@ For the weekly report, Grafik A1:O47 goes in via Copy as Picture. Use the Bitmap
 - Changing Bulan mulai doesn't move the holiday labels.
 - The status reads "Terlambat" mid-week in daily reports.
 
-**Open item:** the project file's bobot is PROVISIONAL. It was computed from the DURASI column (1 minggu = 7 hari). The RAB breakdown is grouped by equipment, not by timeline activity, so it couldn't be mapped. Bobot from the RAB or contract should replace it. That's the coworker's call.
+**Bobot:** the project file's bobot was computed from the DURASI column (1 minggu = 7 hari). The RAB breakdown is grouped by equipment, not by timeline activity, so it couldn't be mapped. On 2026-10-06 Bryan decided to keep the duration-based bobot for now. Revisit only if he or the coworker brings RAB or contract weights.
+
+The older `Kurva S - Timeline Biosolar & ACB (Dinamis).xlsx` was moved into the same `Laporan Sinergi\Kurva S\` folder.
+
+A WhatsApp guide for coworkers was written in chat on 2026-10-06. It explains the weekly fill, daily updates, the red-cell meaning and Copy as Picture (Bitmap).
 
 **Why:** these S-curves go to PLN Icon Plus in reports, so a wrong weighting basis goes out under Sinergi's name.
 
