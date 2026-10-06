@@ -16,7 +16,9 @@ Admin & Finance, Pengawas Ahli K3 Listrik, Leader, then teams. It was first fill
   **Struktur** redraws itself: 4 teams per row, up to 3 rows, each row centred,
   empty slots dropped, colour follows team number. The second row starts right under the tallest box in the first, and the print area follows the chart's height.
   **Uraian Tugas** has one task per row, and its headings pull from Input.
-- Struktur and Input are protected without a password. Hidden sheets Hitung and Mask drive the boxes and lines through conditional formatting.
+- Final audit before sending was done on 2026-10-06. At his choice, the editing notes (Input "Cara pakai", Uraian column F) and the empty
+  team boxes stay. Uraian Tugas has manual page breaks before Team Fire Alarm System and Team Trafo, so no section splits across pages.
+- Struktur and Input are protected without a password. Hitung and Mask are very hidden (not listed under Unhide). Hidden sheets Hitung and Mask drive the boxes and lines through conditional formatting.
   If you edit it, don't use Center Across Selection: Excel then stops drawing vertical borders inside the span.
 - He edits the file between sessions (e.g. typed "Maryono Susilo" himself). Read Input before writing, and fill only empty cells.
   Team Trafo's names came from his personnel list, which may shorten names. Reading the KTP photos was blocked as PII, so don't retry; ask him instead.
