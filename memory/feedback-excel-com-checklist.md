@@ -24,6 +24,8 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
 7. Verify on every sheet, hidden and protected ones included, through `UsedRange.Value`. `SpecialCells` silently skips most cells there.
 8. His files change between turns. Work on a copy and assert that the cells you write are still empty.
    Before replacing his file, check it isn't open (`~$` lock) and that it's byte-identical to your backup. Then diff every sheet you didn't mean to touch.
+9. When you raise a capacity, check every code range that assumed the old limit. Team colour codes 9–12 once collided with the PM and Leader fills.
+   A pixel diff of the current data against the old render proves the rework changed nothing he already had.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.

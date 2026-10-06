@@ -10,8 +10,10 @@ Built 2026-10-06: `C:\Bryan SMA X-XII\Laporan Sinergi\Struktur Organisasi Pekerj
 loose shapes and an Excel file of cell borders), and its role structure follows the Excel one: PM,
 Admin & Finance, Pengawas Ahli K3 Listrik, Leader, then teams. It was first filled for "Upgrade Kelistrikan Source A DC PLN Pusat".
 
-- **Input** is the only sheet he types in: up to 8 teams × 15 members (raised from 6 on 2026-10-06 for Team Trafo's 12),
-  2 names per core role. **Struktur** redraws itself: more than 4 teams splits into 2 rows (first 4 on top), each row centred,
+- **Input** is the only sheet he types in: up to 12 teams × 15 members (both raised on 2026-10-06: from 8 teams, and from 6 members
+  for Team Trafo's 12), with 2 names per core role. Core roles stay fixed at 4. He asked about a 5th, but it's not needed yet; when he
+  needs one, ask whether it's a side box like Admin/K3 or sits between PM and Leader.
+  **Struktur** redraws itself: 4 teams per row, up to 3 rows, each row centred,
   empty slots dropped, colour follows team number. The second row starts right under the tallest box in the first, and the print area follows the chart's height.
   **Uraian Tugas** has one task per row, and its headings pull from Input.
 - Struktur and Input are protected without a password. Hidden sheets Hitung and Mask drive the boxes and lines through conditional formatting.
