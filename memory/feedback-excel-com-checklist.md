@@ -22,6 +22,8 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
 5. When generating formulas, wrap every comparison in parentheses: `2*(X=0)`, never `2*X=0`.
 6. PDFs exported from a hidden Excel instance come out Letter even when the sheet is A4. Check `paperSize` in the saved XML instead of chasing the PDF size.
 7. Verify on every sheet, hidden and protected ones included, through `UsedRange.Value`. `SpecialCells` silently skips most cells there.
+8. His files change between turns. Work on a copy and assert that the cells you write are still empty.
+   Before replacing his file, check it isn't open (`~$` lock) and that it's byte-identical to your backup. Then diff every sheet you didn't mean to touch.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.
