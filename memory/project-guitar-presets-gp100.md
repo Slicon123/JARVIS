@@ -10,6 +10,13 @@ metadata:
 
 Bryan matches guitar tones from cover videos to build presets on a Valeton GP-100. Firmware V2.1, companion app V1.5.1.
 
+Files: presets (`.prst`) in `C:\Bryan De Great\Musik\Preset GP-100\`; current firmware, app setup
+and Valeton ASIO driver zips in `Musik\GP-100 Installer\`. The editor itself is installed at
+`C:\Bryan De Great\GP-100\` (shortcuts point there, don't move it). **Still open, needs admin:**
+registry `HKLM\...\Uninstall\GP-100` (UninstallString, UninstallDir, DisplayIcon) still points at the
+pre-rename `C:\Bryan SMA X-XII` path. It only matters if he uninstalls the editor from Settings. Fix from
+an admin PowerShell by replacing `SMA X-XII` with `De Great` in those three values.
+
 Open issue: unwanted fuzz/noise isolated to the AMP model "Power LD" (high-gain lead amp) — persists even with DST bypassed and gain/presence lowered.
 
 **Why:** Generic pedalboard advice doesn't map onto the GP-100's signal chain, so it wastes his time.

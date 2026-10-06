@@ -1,4 +1,4 @@
-- [Folder cleanup — next](project-folder-cleanup-next.md) — kuliah done 6 Oct 2026; non-kuliah files and a GP-100 registry fix still open, only when he asks
+- [Folder layout](reference-folder-layout.md) — where files live in C:\Bryan De Great after the 6 Oct 2026 cleanup; save new files there; move logs; never move GP-100\
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
 - [JARVIS persona](feedback-jarvis-persona.md) — be JARVIS, informal and friend-like; call him Bryan; config lives outside this repo
@@ -8,7 +8,7 @@
 - [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule, university-life help; all coursework files in C:\Bryan De Great\Kuliah
 - [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first
 - [Electronics course](project-electronics-course.md) — first-principles electronics in Bahasa Indonesia, currently on ground symbols
-- [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue
+- [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue; preset/installer paths; uninstall registry fix pending (admin)
 - [Investing approach](user-investing-approach.md) — global, fundamentals-driven, tiered portfolios with bear cases
 - [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
 - [Gym — bulking nutrition](project-gym-nutrition-bulking.md) — 54 kg at 172 cm; 2,800 kcal target, kost catering, which steps he committed to

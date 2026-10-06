@@ -26,7 +26,7 @@ For the weekly report, Grafik A1:O47 goes in via Copy as Picture. Use the Bitmap
 
 **Bobot:** the project file's bobot was computed from the DURASI column (1 minggu = 7 hari). The RAB breakdown is grouped by equipment, not by timeline activity, so it couldn't be mapped. On 2026-10-06 Bryan decided to keep the duration-based bobot for now. Revisit only if he or the coworker brings RAB or contract weights.
 
-The older `Kurva S - Timeline Biosolar & ACB (Dinamis).xlsx` was moved into the same `Laporan Sinergi\Kurva S\` folder.
+The older `Kurva S - Timeline Biosolar & ACB (Dinamis).xlsx` was moved into the same `Laporan Sinergi\Kurva S\` folder; earlier drafts of it are in `Kurva S\_Arsip\`. The source timeline and RAB breakdown sit in `Laporan Sinergi\Upgrade Source-A DC PLN Pusat\`, and the coworker's 2023 example (`Kurva S - Kubikal TM Data Center (2023).xlsx`) in `Laporan Sinergi\Contoh Laporan\`.
 
 A WhatsApp guide for coworkers was written in chat on 2026-10-06. It explains the weekly fill, daily updates, the red-cell meaning and Copy as Picture (Bitmap).
 

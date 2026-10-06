@@ -15,6 +15,9 @@ Bryan's recurring professional deliverables in fire suppression (FSS) and ATS pa
 - Excel commissioning checklists for ATS panels and NOVEC 1230 FSS systems — Indonesian dropdowns, multi-party signature blocks.
 - A job vacancy poster for PT. Sinergi Sarana Solusi (industrial/hazard-panel aesthetic).
 
+Files live in `C:\Bryan De Great\Laporan Sinergi\` ([[reference-folder-layout]]): flowcharts in `Flowchart\`
+(FSS flowchart images in `Flowchart\Gambar FSS\`), checklists in `Checklist & Testcomm\`, posters in `Lowongan Kerja\`.
+
 **Why:** These are client-facing documents for PLN/Icon Plus work, so they must hold up to professional and code review.
 
 **How to apply:** Write documents in Bahasa Indonesia. Use correct flowchart symbol semantics — terminators, decision diamonds, predefined process symbols, document shapes — not generic boxes. Verify NFPA clause references rather than recalling them ([[feedback-self-correct-and-verify]]).
