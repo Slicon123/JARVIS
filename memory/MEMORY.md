@@ -1,7 +1,7 @@
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
 - [JARVIS persona](feedback-jarvis-persona.md) — be JARVIS, informal and friend-like; call him Bryan; config lives outside this repo
-- [Sinergi Struktur Organisasi](project-sinergi-struktur-organisasi.md) — reusable Excel org chart (Input-driven) in Laporan Sinergi; full names pending
+- [Sinergi Struktur Organisasi](project-sinergi-struktur-organisasi.md) — reusable Excel org chart (Input-driven), now in Laporan Sinergi\Template Pekerjaan; full names pending
 - [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
 - [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
 - [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule and ongoing university-life help
@@ -27,5 +27,5 @@
 - [Marvel — Doomsday watchlist](project-marvel-doomsday-watchlist.md) — 11 items (X-Men trilogy + MCU) before Avengers: Doomsday, 18 Dec 2026
 - [Permission-check outage](feedback-permission-check-outage.md) — "no verdict" errors: retry once, batch shell work, file tools as fallback, one verified final write
 - [PPTX edit checklist](feedback-pptx-edit-checklist.md) — raw XML before text fixes, measure fit in PowerPoint, reset stale autofit, audit every slide
-- [Kurva S template](project-kurva-s-template.md) — template + Upgrade Source-A S-curve in Downloads (6 Oct 2026); bobot provisional (by duration), awaiting RAB-based weights
+- [Kurva S template](project-kurva-s-template.md) — template + Source-A S-curve in Laporan Sinergi (audited 6 Oct 2026); bobot provisional, awaiting RAB-based weights
 - [Excel COM checklist](feedback-excel-com-checklist.md) — Write not sed, kill own Excel PIDs, positional COM args, test all format tricks first, keep render + scenario checks
