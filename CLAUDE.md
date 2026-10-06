@@ -55,13 +55,13 @@ or git history already says.
 
 ### How the sync works
 
-`~/.claude/projects/C--Bryan-SMA-X-XII-JARVIS/memory` is a **directory junction** pointing
+`~/.claude/projects/c--Bryan-De-Great-JARVIS/memory` is a **directory junction** pointing
 at this repo's `memory/`, so Claude's ordinary memory reads and writes land straight in git.
 
 Verify it on this machine — this should print `Junction` and the repo path:
 
 ```powershell
-Get-Item "$env:USERPROFILE\.claude\projects\C--Bryan-SMA-X-XII-JARVIS\memory" | Select-Object LinkType, Target
+Get-Item "$env:USERPROFILE\.claude\projects\c--Bryan-De-Great-JARVIS\memory" | Select-Object LinkType, Target
 ```
 
 If it errors or reports a blank LinkType, the junction is gone: fall back to reading

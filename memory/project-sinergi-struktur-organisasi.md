@@ -5,7 +5,7 @@ metadata:
   type: project
 ---
 
-Built 2026-10-06: `C:\Bryan SMA X-XII\Laporan Sinergi\Template Pekerjaan\Struktur Organisasi Pekerjaan.xlsx`, a reusable template. At his choice, it was moved into the new Template Pekerjaan folder on 2026-10-06; it used to sit directly in Laporan Sinergi.
+Built 2026-10-06: `C:\Bryan De Great\Laporan Sinergi\Template Pekerjaan\Struktur Organisasi Pekerjaan.xlsx`, a reusable template. At his choice, it was moved into the new Template Pekerjaan folder on 2026-10-06; it used to sit directly in Laporan Sinergi.
 (Bryan chose reuse over one-project). It replaced two hand-drawn examples in his Downloads (a Word file of
 loose shapes and an Excel file of cell borders), and its role structure follows the Excel one: PM,
 Admin & Finance, Pengawas Ahli K3 Listrik, Leader, then teams. It was first filled for "Upgrade Kelistrikan Source A DC PLN Pusat".

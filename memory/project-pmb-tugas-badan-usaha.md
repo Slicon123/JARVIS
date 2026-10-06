@@ -27,7 +27,7 @@ catatan kaki** soal kesalahan handout. Isi utama: T2 "PT Studio Gim Merbabu" KBL
 T4 "Koperasi Jasa Roda Bersama"/RodaKita untuk ojol.
 
 **Aturan unggah flearn (assignment ini): maksimal 2 file, masing-masing ≤ 32 MB.**
-**Final (29 Sep 2026)** di `C:\Bryan SMA X-XII\Tugas Kuliah\Pengantar Manajemen dan Bisnis\`:
+**Final (29 Sep 2026)** di `C:\Bryan De Great\Tugas Kuliah\Pengantar Manajemen dan Bisnis\`:
 yang diunggah `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).pdf` + `Tugas 3 (Presentasi Investor).pptx`
 (Bryan pilih: Word jadi PDF supaya tampilan terkunci, PPT tetap .pptx demi catatan pembicara).
 PDF diekspor Word dari `Tugas 2, 3, dan 4 (Bentuk Badan Usaha).docx`, yang tetap disimpan di

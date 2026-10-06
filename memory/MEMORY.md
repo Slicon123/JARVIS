@@ -1,3 +1,4 @@
+- [IN PROGRESS: kuliah cleanup](project-folder-rename-kuliah-cleanup.md) — rename to C:\Bryan De Great fixed up 6 Oct 2026; next: the agreed kuliah file plan and his decisions
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
 - [JARVIS persona](feedback-jarvis-persona.md) — be JARVIS, informal and friend-like; call him Bryan; config lives outside this repo

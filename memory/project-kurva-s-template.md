@@ -7,8 +7,8 @@ metadata:
 
 On 2026-10-06 a coworker at PT. Sinergi asked for a better way to make the kurva S that goes into weekly and daily reports. They had been making it in Excel. Two files were built, simulated, audited, and moved at Bryan's choice:
 
-- `C:\Bryan SMA X-XII\Laporan Sinergi\Template Pekerjaan\Template Kurva S.xlsx`, a template with example rows.
-- `C:\Bryan SMA X-XII\Laporan Sinergi\Kurva S\Kurva S - Upgrade Kelistrikan Source-A DC PLN Pusat.xlsx`, filled from the file "Timeline Upgrade kelistrikan source-A DC PLN Pusat R".
+- `C:\Bryan De Great\Laporan Sinergi\Template Pekerjaan\Template Kurva S.xlsx`, a template with example rows.
+- `C:\Bryan De Great\Laporan Sinergi\Kurva S\Kurva S - Upgrade Kelistrikan Source-A DC PLN Pusat.xlsx`, filled from the file "Timeline Upgrade kelistrikan source-A DC PLN Pusat R".
 
 Both have three sheets: Data Proyek, Kurva S and Grafik. They use 4 weeks per month (same as their timelines), skip holiday weeks, and take weekly realisasi as % of each item done that week.
 For the weekly report, Grafik A1:O47 goes in via Copy as Picture. Use the Bitmap format if the paste target isn't Office.

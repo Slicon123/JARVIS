@@ -9,9 +9,9 @@ Run a systems check and report back in your normal register. Focus area if given
 
 Check these, in parallel where possible:
 
-1. **Memory junction** — confirm `~/.claude/projects/C--Bryan-SMA-X-XII-JARVIS/memory` is
+1. **Memory junction** — confirm `~/.claude/projects/c--Bryan-De-Great-JARVIS/memory` is
    still a directory junction pointing at the repo's `memory/`:
-   `Get-Item "$env:USERPROFILE\.claude\projects\C--Bryan-SMA-X-XII-JARVIS\memory" | Select-Object LinkType, Target`
+   `Get-Item "$env:USERPROFILE\.claude\projects\c--Bryan-De-Great-JARVIS\memory" | Select-Object LinkType, Target`
    A blank LinkType or an error means the link is gone — say so loudly, it means new
    memories are landing outside git.
 

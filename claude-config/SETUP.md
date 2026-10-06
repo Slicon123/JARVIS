@@ -44,7 +44,7 @@ Then in `~/.claude/settings.json`:
 
 Use **forward slashes** in that path even on Windows, and keep the quotes — Claude Code runs
 status line commands through Git Bash when Git Bash is installed, which eats unquoted
-backslashes and splits on the spaces in `Bryan SMA X-XII`.
+backslashes and splits on the spaces in `Bryan De Great`.
 
 `outputStyle` is read once at session start, so it applies after `/clear` or a restart.
 A project-level `outputStyle` in any `.claude/settings.local.json` overrides this one.
@@ -69,8 +69,8 @@ Test any change the way Claude Code actually invokes it — piped into the real 
 string from **Git Bash**, not from the PowerShell tool:
 
 ```bash
-echo '{"model":{"display_name":"Opus 5"},"cwd":"c:/Bryan SMA X-XII/JARVIS","context_window":{"used_percentage":42}}' \
-  | powershell -NoProfile -ExecutionPolicy Bypass -File "c:/Bryan SMA X-XII/JARVIS/claude-config/statusline.ps1"
+echo '{"model":{"display_name":"Opus 5"},"cwd":"c:/Bryan De Great/JARVIS","context_window":{"used_percentage":42}}' \
+  | powershell -NoProfile -ExecutionPolicy Bypass -File "c:/Bryan De Great/JARVIS/claude-config/statusline.ps1"
 ```
 
 A non-zero exit or empty output means a blank status line, with no error shown in the UI.
