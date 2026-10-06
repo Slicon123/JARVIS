@@ -27,6 +27,15 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
 9. When you raise a capacity, check every code range that assumed the old limit. Team colour codes 9–12 once collided with the PM and Leader fills.
    A pixel diff of the current data against the old render proves the rework changed nothing he already had.
 
+10. Learned on the Kurva S build (2026-10-06):
+   - A cell written directly below an Excel table gets absorbed into it by auto-expand. Leave a spacer row. Don't toggle AutoCorrect, because that setting persists into his own Excel.
+   - pywin32 shifts Python datetimes by the timezone, so 1 Oct turned into 30 Sep. Write dates as serial numbers through `Value2`.
+   - In pywin32, call `GetCharacters(start, n)`, not `Characters(...)`.
+   - Setting `NumberFormat="@"` before writing a formula stores the formula as text.
+   - Chart title size: set it through `TextFrame2` after any `ChartArea.Font` change.
+   - Dynamic print area works. Create a static one, then set `Names("Print_Area").RefersTo` to an OFFSET formula. It survives a reopen. (`Names.Add` converts it to static.)
+   - A table with `ShowHeaders=False` frees its header row. On row insert, its calculated columns, validation and CF all extend.
+
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.
 

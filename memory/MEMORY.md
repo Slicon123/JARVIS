@@ -27,4 +27,5 @@
 - [Marvel — Doomsday watchlist](project-marvel-doomsday-watchlist.md) — 11 items (X-Men trilogy + MCU) before Avengers: Doomsday, 18 Dec 2026
 - [Permission-check outage](feedback-permission-check-outage.md) — "no verdict" errors: retry once, batch shell work, file tools as fallback, one verified final write
 - [PPTX edit checklist](feedback-pptx-edit-checklist.md) — raw XML before text fixes, measure fit in PowerPoint, reset stale autofit, audit every slide
+- [Kurva S template](project-kurva-s-template.md) — template + Upgrade Source-A S-curve in Downloads (6 Oct 2026); bobot provisional (by duration), awaiting RAB-based weights
 - [Excel COM checklist](feedback-excel-com-checklist.md) — Write not sed, kill own Excel PIDs, positional COM args, test all format tricks first, keep render + scenario checks
