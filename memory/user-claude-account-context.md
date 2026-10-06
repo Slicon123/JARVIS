@@ -18,6 +18,10 @@ He has a separate, banned Claude account he originally wanted to use, which he e
 - **Remote Control** sessions (green "Connected," laptop icon) mirror the actual session running on his laptop — full parity: same memory, same JARVIS output style, everything, because it *is* the laptop session viewed remotely.
 - **Cloud-hosted** sessions (cloud icon, spun up fresh via "New session") get a fresh container that clones the repo. **Memory works** — it reads `memory/*.md` directly (confirmed: correctly answered an electives question from `project-uksw-digital-business.md`). **The JARVIS output style does NOT carry over** — it's activated via `~/.claude/settings.json` on his physical machine, which a fresh cloud container never has, so those sessions talk as plain Claude, not JARVIS. Confirmed directly by Bryan asking a new cloud session "do you sound like JARVIS or plain claude" and it answered "Plain Claude."
 
+**Connection (6 October 2026):** the internet where he lives is often laggy and sometimes drops out completely
+(he has hit Chrome's offline dinosaur). Artifacts he uses on his phone should still open and record on a slow line;
+none of them can open with no internet at all, because claude.ai serves them. See [[reference-expense-tracker]].
+
 **How to apply:** Relevant when he talks about usage limits or continuity of work across accounts — anything worth keeping should live in files/memory, not only in chat history. Also relevant any time a feature might not render in his actual surface (VS Code panel).
 
 Related: [[user-bryan-profile]], [[feedback-self-correct-and-verify]]

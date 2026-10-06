@@ -27,4 +27,10 @@ It belongs to his current Claude account. Before he moves accounts ([[user-claud
 he should use Lainnya → Backup & pindah data → Download backup on the old account, then use
 Pulihkan dari file on a new copy of the app.
 
-Related: [[reference-catering-tracker]]
+Since 6 October 2026 the page keeps a local copy of the db and an outbox of unsent changes in the browser
+(`apps/dompet-bryan/README.md`, "Bad signal"). So a change he made with no signal can be on his phone and not
+in the db yet. If the db doesn't match what he says he recorded, ask whether the page shows "perubahan belum
+terkirim" before assuming a mistake. When Chrome shows the offline dinosaur, the page can't open at all, since it
+is served by claude.ai. For that case he was told to note it in Google Keep and enter it later.
+
+Related: [[reference-catering-tracker]], [[user-claude-account-context]]

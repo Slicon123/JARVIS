@@ -12,9 +12,9 @@
 - [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
 - [Gym — bulking nutrition](project-gym-nutrition-bulking.md) — 54 kg at 172 cm; 2,800 kcal target, kost catering, which steps he committed to
 - [Catering tracker](reference-catering-tracker.md) — Rp 450.000 = 48 menu, Minggu libur; claude.ai page counting menus per payment, data in its db
-- [Dompet Bryan](reference-expense-tracker.md) — his expense-tracker artifact: wallets, tx per month in its db; how to read spending
+- [Dompet Bryan](reference-expense-tracker.md) — his expense-tracker artifact: wallets, tx per month in its db; how to read spending; offline changes can wait on his phone
 - [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
-- [Claude account context](user-claude-account-context.md) — Pro plan; uses VS Code extension not terminal (no status line); phone can't run Claude Code
+- [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, materials stop at pertemuan 3–4
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered, all tugas so far done; chapter 2 not uploaded yet
