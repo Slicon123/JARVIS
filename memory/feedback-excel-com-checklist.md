@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: cc480763-2f42-499d-93ee-a9b2432ad25e
-  modified: 2026-10-07T07:52:24.948Z
+  modified: 2026-10-07T09:50:32.874Z
 ---
 
 Self-evaluation he asked for after the Struktur Organisasi build on 2026-10-06 ([[project-sinergi-struktur-organisasi]]).
@@ -47,6 +47,17 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    - A conditional format with border `LineStyle = xlNone` doesn't clear static borders; medium outlines stay. A thin white CF border does hide them. CF can't draw medium lines.
    - Rendering without a PDF works: `Range.CopyPicture(2, -4147)`, paste into a temporary chart, then `Chart.Export(png)`. No "Publishing" window pops up. Hide the chart's border line first.
    - Rockwell isn't in Windows Fonts on his laptop. It's an Office cloud font (`FontCache\4\CloudFonts`) and renders fine.
+
+12. Fills vs borders (2026-10-07). Bryan saw coloured cells covering their top border in Print Preview of the schedule
+   template. He had to point it out himself, and he wants it caught without being told next time.
+   - Small renders hide 1-px line problems. After any build or edit with coloured cells in a bordered grid, crop the
+     coloured area and inspect it at 4–6x.
+   - Check the path he looks through. `ExportAsFixedFormat` and printing to "Microsoft Print to PDF"
+     (`PrintOut(1, n, 1, False, "Microsoft Print to PDF", True, False, pdf)`) both drew the lines correctly. Normal view was
+     fine too. Only Print Preview at some zooms dropped thin lines under fills.
+   - The cell already had its own borders, so ownership wasn't the cause. The applied mitigation is a CF border rule on
+     non-empty coloured cells, leaving medium outline edges out. Whether it fixes Print Preview is still for him to confirm.
+   - Say plainly which views you verified. Don't claim Print Preview is fine from a PDF render.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.

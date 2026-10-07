@@ -21,6 +21,10 @@ Her week rule (chat, 7 Oct): always W1–W4; "kalau W4 tanggalnya ga penuh, disa
 
 Audited 2026-10-07: 0 errors in 1,407 formulas. Fixed kVA spelling in her genset names and labels (1000kVA / 1000 KVA -> 1000 kVA). Input now prints as one A4 landscape overview. Opens on Input C2.
 
+Print Preview showed fills covering top borders (2026-10-07). The print/PDF output was verified correct at 6x. Added 6 CF border rules on coloured week cells and legend swatches; cell contents are unchanged. Bryan still has to confirm Print Preview looks right.
+
+At Bryan's choice (2026-10-07), the Switchover count and the legend-label mismatches stay as they are for now. He is asking Mbak Didi about the week rule.
+
 Open points from her own data, unchanged: Switchover has FREQ 12 but only 5 marked (Cek says "Kurang 7"). Two legend labels contradict their items: "UPS Emerson…" is the EATON/HUAWEI/GTEC item, and "…Battery Gandul" is the DRC item.
 
 Not built: the Aktualisasi table (not in her example) and the project timeline type. `Template Kurva S` only draws bars once Bobot is filled.

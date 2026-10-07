@@ -62,6 +62,9 @@ Use the renders and the text the scan surfaced, and check:
 **By format**
 - Excel: 0 errors; helper sheets set to very hidden; print area, fit and paper (A4) right on every printed sheet; no stale
   data in hidden rows or columns. When changing anything, follow the memory file `feedback-excel-com-checklist`.
+  Coloured cells inside a bordered grid: contact sheets are too small to show a 1-px line. Render a crop of the
+  coloured area at 4–6x and check that every fill sits inside its lines, with the border above it still drawn.
+  Excel's Print Preview can swallow thin lines under fills even when the print is correct. Tell Bryan which one you checked.
 - Word: no tracked changes or comments left; table of contents updated if stale; headers and footers right.
 - PowerPoint: no speaker notes, hidden slides or comments unless they're meant to stay;
   no overflow. When editing, follow the memory file `feedback-pptx-edit-checklist`.
