@@ -29,5 +29,5 @@
 - [Permission-check outage](feedback-permission-check-outage.md) — "no verdict" errors: retry once, batch shell work, file tools as fallback, one verified final write
 - [PPTX edit checklist](feedback-pptx-edit-checklist.md) — raw XML before text fixes, measure fit in PowerPoint, reset stale autofit, audit every slide
 - [Kurva S template](project-kurva-s-template.md) — template + Source-A S-curve in Laporan Sinergi (audited 6 Oct 2026); duration-based bobot kept by his choice
-- [Schedule Pemeliharaan template](project-jadwal-pekerjaan-template.md) — Input->Schedule template in Template Pekerjaan, built 7 Oct 2026 from coworker's PM DC 2026-2027 file; week rule + Switchover/legend points to confirm
+- [Schedule Pemeliharaan](project-jadwal-pekerjaan-template.md) — Schedule Pemeliharaan.xlsx (renamed, not "Template") in Template Pekerjaan, built 7 Oct 2026 from coworker's PM DC 2026-2027 file; week rule + Switchover/legend points to confirm
 - [Excel COM checklist](feedback-excel-com-checklist.md) — Write not sed, kill own Excel PIDs, positional COM args, test all format tricks first, keep render + scenario checks
