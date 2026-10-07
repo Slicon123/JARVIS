@@ -19,6 +19,8 @@ anticipation/overlap/stagger helpers.
   American accent — timing only; the real take fixes it.
 - ffmpeg came from winget and sits on the user PATH; a VS Code session started before 7 Oct 2026 19:00 needs a restart to see it.
 
+- **First piece done 7 Oct 2026:** `Animasi\piecesug-hunt\` — 24s English F4 mission in crosshatch (Claude Code catches a literal bug in a jar). All review checks pass; he called the animatic "perfect for now". Weakest shot: #11 the chase. Feedback on the final pending.
+
 **Why:** he asked for an expert analysis plus the fixes, for experimenting.
 **How to apply:** when he asks for an animation, use the skill, ask the language if unclear, and say which checks are
 estimates (the Indonesian pace, the flash approximation).
