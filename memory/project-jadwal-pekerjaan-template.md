@@ -19,6 +19,8 @@ Built `C:\Bryan De Great\Laporan Sinergi\Template Pekerjaan\Template Schedule Pe
 
 Her week rule (chat, 7 Oct): always W1–W4; "kalau W4 tanggalnya ga penuh, disambung ke W1 bulan berikutnya". I implemented it as W1 = 1–7, W2 = 8–14, W3 = 15–21, W4 = 22–28, with days 29–31 counted in next month's W1. This is an interpretation, still to confirm with her. It only drives the date-label row and Cek tanggal.
 
+Audited 2026-10-07: 0 errors in 1,407 formulas. Fixed kVA spelling in her genset names and labels (1000kVA / 1000 KVA -> 1000 kVA). Input now prints as one A4 landscape overview. Opens on Input C2.
+
 Open points from her own data, unchanged: Switchover has FREQ 12 but only 5 marked (Cek says "Kurang 7"). Two legend labels contradict their items: "UPS Emerson…" is the EATON/HUAWEI/GTEC item, and "…Battery Gandul" is the DRC item.
 
 Not built: the Aktualisasi table (not in her example) and the project timeline type. `Template Kurva S` only draws bars once Bobot is filled.
