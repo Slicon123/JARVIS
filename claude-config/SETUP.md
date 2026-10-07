@@ -8,6 +8,7 @@ the repo so they reach Bryan's other devices; `~/.claude/` itself is not version
 | `output-styles/JARVIS.md` | **The persona.** Appended to Claude's system prompt every request. Delete it and Claude reverts to its default voice. |
 | `commands/*.md` | `/diagnostics`, `/protocol`, `/briefing`. Manual-invoke only, so they cost no context until typed. |
 | `skills/*/SKILL.md` | Model-invoked skills. Only the name and description sit in context; the body loads when the skill fires. `chords/` prints guitar chord sheets in the terminal; `humanizer/` rewrites AI-sounding text (English and Indonesian, pasted or in a Word file; its `scripts/docx_humanize.py` needs `pip install python-docx`), adapted from MIT-licensed blader/humanizer; `skill-audit/` trims a skill or command to what its job needs, starting from the numbers its `scripts/measure.py` prints (stdlib only); `ui-ux/` holds research-backed UI/UX rules for landing pages, apps and forms, with every rule's source in `SOURCES.md`; `file-audit/` checks an Excel, Word, PowerPoint or PDF file before Bryan sends it, then fixes it on a copy and swaps it in safely. Its `scripts/audit.py` (scan, diff, install) needs Office on Windows plus `pip install pywin32 pymupdf pillow`. |
+| `mods/link/` | `/link [kata kunci]` prints the claude.ai artifact links recorded in [memory/](../memory/) (a URL with its name quoted after it on the same line). The mod answers by itself, so it costs no model turn. It finds `memory/` three folders above its own, so it works wherever the repo is cloned. Test with `claude plugin test claude-config/mods/link`. |
 | `statusline.ps1` | The terminal HUD. Never enters the model's context. |
 
 On this machine `~/.claude/output-styles`, `~/.claude/commands` and `~/.claude/skills` are
@@ -38,9 +39,17 @@ Then in `~/.claude/settings.json`:
   "statusLine": {
     "type": "command",
     "command": "powershell -NoProfile -ExecutionPolicy Bypass -File \"<repo-path>/claude-config/statusline.ps1\""
+  },
+  "env": {
+    "CLAUDE_CODE_PLUGIN_DIRS": "<repo-path>/claude-config/mods/link"
   }
 }
 ```
+
+`CLAUDE_CODE_PLUGIN_DIRS` loads each mod folder it names (join several with `;` on Windows,
+`:` elsewhere). It is read when a session starts, so a new mod needs a new session. To try a
+mod headless from Git Bash, set `MSYS_NO_PATHCONV=1` first: otherwise Git Bash rewrites
+`claude -p "/link"` into `C:/Program Files/Git/link` and the prompt goes to the model instead.
 
 Use **forward slashes** in that path even on Windows, and keep the quotes — Claude Code runs
 status line commands through Git Bash when Git Bash is installed, which eats unquoted

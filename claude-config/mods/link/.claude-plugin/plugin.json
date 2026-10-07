@@ -1,0 +1,5 @@
+{
+  "name": "link",
+  "version": "0.1.0",
+  "description": "/link prints the claude.ai artifact links recorded in JARVIS memory, no model turn needed"
+}
