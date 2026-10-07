@@ -96,6 +96,29 @@ const today = C.todayKey();
   // categories now ordered by use: makan first
   click($('.fab')); assert.strictEqual($('#sheet [data-cats="out"] input').value, 'makan', 'most used category first'); click($('[data-act="sheet-close"]'));
 
+  // 4b. a missing category is made inside the sheet, keeping the amount typed so far
+  const catsNamed = n => Object.keys(store['meta/categories'].list).filter(k => store['meta/categories'].list[k].name === n);
+  const enter = el => el.dispatchEvent(new w.KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
+  click($('.fab')); kp('15000');
+  click($('#sheet [data-cats="out"] [data-act="cq-open"]'));
+  assert.ok(!$('#cq').hidden && d.activeElement === $('#cq-name'), 'name box opens focused');
+  click($('[data-act="cq-save"]')); assert.ok($('#cq-name-err').classList.contains('on'), 'empty name refused');
+  type($('#cq-name'), 'Laundry'); enter($('#cq-name')); await tick(60);
+  assert.ok($('#sheet').hasAttribute('open'), 'Enter adds the category, not the transaction');
+  const lid = catsNamed('Laundry')[0];
+  assert.ok(lid && store['meta/categories'].list[lid].type === 'out', 'category stored as an expense');
+  assert.ok($('#sheet input[name="category"][value="' + lid + '"]').checked && $('#cq').hidden && !$('#cq-done').textContent.includes('undefined'), 'new chip picked, box closed');
+  assert.strictEqual($('#t-amt').textContent, '15.000', 'amount kept');
+  click($('#sheet [data-cats="out"] [data-act="cq-open"]')); type($('#cq-name'), '  laundry '); click($('[data-act="cq-save"]')); await tick(60);
+  assert.strictEqual(catsNamed('Laundry').length, 1, 'same name reuses the category');
+  submit($('#sheet form')); await tick(60);
+  assert.ok(txList().some(t => t.amount === 15000 && t.category === lid), 'transaction uses the new category');
+  // typed but not added: Save adds it
+  click($('.fab')); kp('8000'); click($('#sheet [data-cats="out"] [data-act="cq-open"]')); type($('#cq-name'), 'Fotokopi');
+  submit($('#sheet form')); await tick(60);
+  const fid = catsNamed('Fotokopi')[0];
+  assert.ok(fid && txList().some(t => t.amount === 8000 && t.category === fid), 'pending name saved with the transaction');
+
   // 5. an expense from 3 days ago -> gap reminder appears; turn it off
   click($('.fab')); kp('5000'); $('#sheet input[name="category"][value="transport"]').checked = true;
   $('#t-date').value = C.addDays(today, -3); submit($('#sheet form')); await tick(60);

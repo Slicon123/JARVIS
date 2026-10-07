@@ -1313,6 +1313,66 @@
   function catChip(c, sel) {
     return '<label class="chip"><input type="radio" name="category" value="' + esc(c.id) + '"' + (sel === c.id ? ' checked' : '') + '><span><span class="cdot" style="--c:' + cvar(c.color) + '">' + icon(c.icon, 'sm') + '</span>' + esc(catName(c.id, c)) + CK + '</span></label>';
   }
+  // A category picker ends with "+ Kategori baru", which adds one by name inside the same sheet:
+  // only one sheet opens at a time, so leaving for the category sheet would lose the amount typed so far.
+  function catChips(type, list, sel, show, labelId) {
+    return '<div class="chips" role="radiogroup" aria-labelledby="' + labelId + '" data-cats="' + type + '"' + (show ? '' : ' hidden') + '>' + list.map(function (c) { return catChip(c, sel); }).join('') +
+      '<button type="button" class="chip-add" data-act="cq-open">' + icon('plus', 'sm') + L('Kategori baru', 'New category') + '</button></div>';
+  }
+  function catQuickHtml() {
+    return '<div class="cq" id="cq" hidden><div class="row"><input class="input grow" id="cq-name" maxlength="30" autocomplete="off" aria-label="' + L('Nama kategori baru', 'New category name') + '" placeholder="' + L('Nama kategori, misal: Laundry', 'Category name, e.g. Laundry') + '">' +
+      '<button type="button" class="btn sm" data-act="cq-save">' + L('Tambah', 'Add') + '</button>' +
+      '<button type="button" class="icon-btn" data-act="cq-close" aria-label="' + L('Batal bikin kategori', 'Cancel new category') + '">' + icon('x', 'sm') + '</button></div>' + errEl('cq-name') + '</div>' +
+      '<p class="hint" id="cq-done" role="status"></p>';
+  }
+  function cqOpen(form) {
+    form.querySelector('#cq').hidden = false;
+    form.querySelector('#cq-done').textContent = '';
+    form.querySelectorAll('.chip-add').forEach(function (b) { b.hidden = true; });
+    form.querySelector('#cq-name').focus();
+  }
+  function cqClose(form) {
+    var inp = form.querySelector('#cq-name');
+    inp.value = '';
+    setErr(form, 'cq-name', '');
+    form.querySelector('#cq').hidden = true;
+    form.querySelectorAll('.chip-add').forEach(function (b) { b.hidden = false; });
+  }
+  // makes the category (or reuses one with the same name) and picks it; returns its id
+  function cqSave(form) {
+    var inp = form.querySelector('#cq-name'), group = form.querySelector('[data-cats]:not([hidden])');
+    if (!inp || !group) return null;
+    var type = group.dataset.cats, name = inp.value.trim().replace(/\s+/g, ' ');
+    setErr(form, 'cq-name', '');
+    if (!name) { setErr(form, 'cq-name', L('Tulis nama kategorinya dulu.', 'Type the category name first.')); inp.focus(); return null; }
+    var same = catsList(type, true).filter(function (c) { return catName(c.id, c).toLowerCase() === name.toLowerCase(); })[0];
+    var id, msg;
+    if (same) {
+      id = same.id;
+      if (same.archived) { saveMeta('categories', id, { archived: false }); msg = L('Kategori ' + catName(id, same) + ' diaktifkan lagi dari arsip.', 'Category ' + catName(id, same) + ' restored from the archive.'); }
+      else msg = L('Kategori ' + catName(id, same) + ' sudah ada, jadi itu yang dipilih.', 'Category ' + catName(id, same) + ' already exists, so it’s picked.');
+    } else {
+      id = 'c' + C.uid();
+      saveMeta('categories', id, { name: name, type: type, icon: 'tag', color: (catsList(type, true).length % 8) + 1, order: Date.now(), archived: false }, true);
+      msg = L('Kategori ' + name + ' dibuat. Ikon dan warnanya bisa diganti di Lainnya → Kategori.', 'Category ' + name + ' created. Change its icon and colour in More → Categories.');
+    }
+    var pickEl = function () { return [].filter.call(group.querySelectorAll('input[name="category"]'), function (i) { return i.value === id; })[0]; };
+    if (!pickEl()) group.querySelector('.chip-add').insertAdjacentHTML('beforebegin', catChip(catsList(type).filter(function (c) { return c.id === id; })[0], id));
+    var chip = pickEl();
+    chip.checked = true;
+    setErr(form, 't-cat', ''); setErr(form, 'r-cat', '');
+    cqClose(form);
+    form.querySelector('#cq-done').textContent = msg;
+    // after a tap, just let the phone keyboard go; a focus ring on the chip would look like an error
+    if (lastInput === 'key') chip.focus();
+    else if (document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
+    return id;
+  }
+  // a name typed but not yet added counts when the whole form is saved
+  function cqPending(form) {
+    var q = form.querySelector('#cq');
+    if (q && !q.hidden && form.querySelector('#cq-name').value.trim()) cqSave(form);
+  }
   function moneyField(id, name, label, val, hint, big, extra) {
     return '<div class="field"><label for="' + id + '">' + label + '</label><div class="money' + (big ? ' big' : '') + '"><span>Rp</span><input id="' + id + '" name="' + name + '" class="amt" inputmode="numeric" autocomplete="off" placeholder="0" value="' + (val ? C.num(val) : '') + '"' + (extra || '') + '></div>' +
       (hint ? '<p class="hint">' + hint + '</p>' : '') + errEl(id) + '</div>';
@@ -1363,9 +1423,8 @@
       '<button type="button" class="icon-btn amt-clear" data-act="kp-clear" aria-label="' + L('Hapus jumlah', 'Clear amount') + '" hidden>' + icon('x', 'sm') + '</button></div>' +
       errEl('t-amount') + '</div>' +
       '<div class="field" id="f-cat"' + (type === 'transfer' || locked ? ' hidden' : '') + '><span class="lbl" id="t-cat-l">' + L('Kategori', 'Category') + '</span>' +
-      '<div class="chips" role="radiogroup" aria-labelledby="t-cat-l" data-cats="out"' + (type === 'out' ? '' : ' hidden') + '>' + catsOut.map(function (c) { return catChip(c, base.category); }).join('') + '</div>' +
-      '<div class="chips" role="radiogroup" aria-labelledby="t-cat-l" data-cats="in"' + (type === 'in' ? '' : ' hidden') + '>' + catsIn.map(function (c) { return catChip(c, base.category); }).join('') + '</div>' +
-      (catsOut.length + catsIn.length ? '' : '<p class="hint">' + L('Belum ada kategori. Tambahkan di Lainnya → Kategori.', 'No categories yet. Add some in More → Categories.') + '</p>') + errEl('t-cat') + '</div>' +
+      catChips('out', catsOut, base.category, type === 'out', 't-cat-l') + catChips('in', catsIn, base.category, type === 'in', 't-cat-l') +
+      catQuickHtml() + errEl('t-cat') + '</div>' +
       '<div class="field"><span class="lbl" id="t-wallet-l">' + (type === 'in' ? L('Ke wallet', 'To wallet') : L('Dari wallet', 'From wallet')) + '</span><div class="chips" role="radiogroup" aria-labelledby="t-wallet-l">' + wsAll.map(function (w) { return walletChip('wallet', w, wSel); }).join('') + '</div>' + errEl('t-wallet') + '</div>' +
       '<div class="field" id="f-to"' + (type === 'transfer' ? '' : ' hidden') + '><span class="lbl" id="t-to-l">' + L('Ke wallet', 'To wallet') + '</span><div class="chips" role="radiogroup" aria-labelledby="t-to-l">' + wsAll.map(function (w) { return walletChip('toWallet', w, base.toWallet || ''); }).join('') + '</div>' + errEl('t-to') + '</div>' +
       '<div id="f-fee"' + (type === 'transfer' ? '' : ' hidden') + '>' + moneyField('t-fee', 'fee', L('Biaya admin', 'Admin fee') + ' <span class="muted">' + L('(kalau ada)', '(if any)') + '</span>', base.fee, L('Dicatat sebagai pengeluaran "Biaya Admin".', 'Recorded as an "Admin Fees" expense.')) + '</div>' +
@@ -1423,6 +1482,12 @@
   sheet.addEventListener('focusout', function () {
     setTimeout(function () { if (!isTextField(document.activeElement)) sheet.classList.remove('kp-off'); }, 0);
   });
+  // Enter in the new-category box adds the category instead of saving the whole form; Escape closes only that box
+  sheet.addEventListener('keydown', function (e) {
+    if (e.target.id !== 'cq-name') return;
+    if (e.key === 'Enter') { e.preventDefault(); cqSave(e.target.form); }
+    else if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); var f = e.target.form; cqClose(f); f.querySelector('[data-cats]:not([hidden]) .chip-add').focus(); }
+  });
   // laptop: digits and + - * / work straight from the keyboard
   document.addEventListener('keydown', function (e) {
     if (!sheet.open || !ctx || ctx.expr == null) return;
@@ -1447,6 +1512,7 @@
     var category = type === 'transfer' || c.locked ? null : (catEl ? catEl.value : '');
     var date = form.elements.date.value;
     var fee = type === 'transfer' ? C.parseAmount(form.elements.fee.value) : 0;
+    if (type !== 'transfer' && !c.locked) { cqPending(form); catEl = form.querySelector('[data-cats="' + type + '"] input:checked'); category = catEl ? catEl.value : ''; }
     clearErrs(form);
     var bad = false;
     if (isNaN(amount)) { setErr(form, 't-amount', L('Hitungannya gak valid, misalnya ada bagi nol.', 'That sum doesn’t work, for example a division by zero.')); bad = true; }
@@ -1592,8 +1658,8 @@
       moneyField('r-amount', 'amount', L('Jumlah tiap kali bayar', 'Amount each time'), r && r.amount) +
       '<div class="field"><span class="lbl" id="r-wallet-l">Wallet</span><div class="chips" role="radiogroup" aria-labelledby="r-wallet-l">' + walletsList(true).filter(function (w) { return !w.archived || (r && w.id === r.wallet); }).map(function (w) { return walletChip('wallet', w, wSel); }).join('') + '</div>' + errEl('r-wallet') + '</div>' +
       '<div class="field"><span class="lbl" id="r-cat-l">' + L('Kategori', 'Category') + '</span>' +
-      '<div class="chips" role="radiogroup" aria-labelledby="r-cat-l" data-cats="out"' + (type === 'out' ? '' : ' hidden') + '>' + catsList('out').map(function (c) { return catChip(c, r && r.category); }).join('') + '</div>' +
-      '<div class="chips" role="radiogroup" aria-labelledby="r-cat-l" data-cats="in"' + (type === 'in' ? '' : ' hidden') + '>' + catsList('in').map(function (c) { return catChip(c, r && r.category); }).join('') + '</div>' + errEl('r-cat') + '</div>' +
+      catChips('out', catsList('out'), r && r.category, type === 'out', 'r-cat-l') + catChips('in', catsList('in'), r && r.category, type === 'in', 'r-cat-l') +
+      catQuickHtml() + errEl('r-cat') + '</div>' +
       '<div class="field"><span class="lbl">' + L('Seberapa sering', 'How often') + '</span>' + segHtml('rfreq', [['monthly', L('Tiap bulan', 'Monthly')], ['days', L('Tiap beberapa hari', 'Every few days')]], freq, L('Seberapa sering', 'How often'), 'r-freq') + '</div>' +
       '<div class="field" id="r-monthly"' + (freq === 'monthly' ? '' : ' hidden') + '><span class="lbl">' + L('Tiap tanggal', 'Day of the month') + '</span>' + selectHtml('r-day', L('Tiap tanggal', 'Day of the month'), dayOpts, ' name="day" data-change="r-day"') + '<p class="hint" id="r-day-hint">' + recHint(day, r && r.freq !== 'days' ? r : null) + '</p></div>' +
       '<div id="r-days"' + (freq === 'days' ? '' : ' hidden') + ' class="stack">' +
@@ -1617,6 +1683,7 @@
     var note = form.elements.note.value.trim(), amount = C.parseAmount(form.elements.amount.value), wallet = radioVal(form, 'wallet');
     var catEl = form.querySelector('[data-cats="' + type + '"] input:checked'), day = +form.elements.day.value;
     var every = parseInt(form.elements.every.value, 10), next = form.elements.next.value;
+    cqPending(form); catEl = form.querySelector('[data-cats="' + type + '"] input:checked');
     clearErrs(form);
     var bad = false;
     if (!note) { setErr(form, 'r-note', L('Kasih nama, misalnya "Kost".', 'Give it a name, like "Rent".')); bad = true; }
@@ -1883,6 +1950,9 @@
     },
     'w-archive': function () { var id = ctx.id; closeSheet(); saveMeta('wallets', id, { archived: true }); toast(L('Wallet ' + wname(id) + ' diarsipkan.', 'Wallet ' + wname(id) + ' archived.'), { label: L('Batalkan', 'Undo'), fn: function () { saveMeta('wallets', id, { archived: false }); } }); },
     'cat-new': function (el) { openCat(null, el.dataset.v); },
+    'cq-open': function (el) { cqOpen(el.form); },
+    'cq-save': function (el) { cqSave(el.form); },
+    'cq-close': function (el) { cqClose(el.form); el.form.querySelector('[data-cats]:not([hidden]) .chip-add').focus(); },
     'cat-edit': function (el) { openCat(el.dataset.id); },
     'cat-unarchive': function (el) { saveMeta('categories', el.dataset.id, { archived: false }); toast(L('Kategori aktif lagi.', 'Category restored.'), null, 'ok'); },
     'c-archive': function () { var id = ctx.id; closeSheet(); saveMeta('categories', id, { archived: true }); toast(L('Kategori diarsipkan.', 'Category archived.'), { label: L('Batalkan', 'Undo'), fn: function () { saveMeta('categories', id, { archived: false }); } }); },
@@ -2059,7 +2129,7 @@
   view.addEventListener('focusin', function (e) { var l = e.target.closest('.lrow'); if (l) highlight(l.dataset.seg); });
 
   // ================= motion =================
-  var RIPPLE = '.btn, .qchip, .tx, .mrow, .wcard, .tab, .key, .icon-btn, .cal-d, .lrow, .tcol, .chip > span, .seg span, .colorpick span, .iconpick span';
+  var RIPPLE = '.btn, .chip-add, .qchip, .tx, .mrow, .wcard, .tab, .key, .icon-btn, .cal-d, .lrow, .tcol, .chip > span, .seg span, .colorpick span, .iconpick span';
   document.addEventListener('pointerdown', function (e) {
     if (reduceMotion || e.button > 0) return;
     var host = e.target.closest(RIPPLE);

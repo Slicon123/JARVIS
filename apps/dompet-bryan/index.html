@@ -176,6 +176,10 @@ p { margin: 0; }
 .chip input:checked + span .ck { display: inline; }
 .chip input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
 .chip .cdot { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: color-mix(in srgb, var(--c, var(--s0)) 22%, var(--card)); color: color-mix(in srgb, var(--c, var(--s0)) 60%, var(--ink)); }
+.chip-add { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px 0 12px; border-radius: 999px; background: transparent; border: 1.5px dashed var(--edge); color: var(--ink-2); font-weight: 600; font-size: 15px; }
+.chip-add:focus-visible { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+.cq { margin-top: 10px; }
+#cq-done:empty { display: none; }
 .chip input:checked + span .cdot { background: color-mix(in srgb, var(--c, var(--s0)) 40%, var(--btn)); color: var(--on-btn); }
 .swatch { width: 26px; height: 26px; border-radius: 50%; flex: none; }
 
