@@ -1,8 +1,11 @@
 ---
 name: feedback-excel-com-checklist
-description: Checklist for building or editing Bryan's Excel files through Excel COM on his laptop — setup facts, COM traps, what to test up front, which checks to keep
+description: "Checklist for building or editing Bryan's Excel files through Excel COM on his laptop — setup facts, COM traps, what to test up front, which checks to keep"
 metadata:
+  node_type: memory
   type: feedback
+  originSessionId: cc480763-2f42-499d-93ee-a9b2432ad25e
+  modified: 2026-10-07T07:52:24.948Z
 ---
 
 Self-evaluation he asked for after the Struktur Organisasi build on 2026-10-06 ([[project-sinergi-struktur-organisasi]]).
@@ -36,6 +39,14 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    - Chart title size: set it through `TextFrame2` after any `ChartArea.Font` change.
    - Dynamic print area works. Create a static one, then set `Names("Print_Area").RefersTo` to an OFFSET formula. It survives a reopen. (`Names.Add` converts it to static.)
    - A table with `ShowHeaders=False` frees its header row. On row insert, its calculated columns, validation and CF all extend.
+
+11. Learned on the Schedule Pemeliharaan build (2026-10-07):
+   - Setting `HorizontalAlignment` on a one-column range that crosses per-row merges (e.g. `J47:J54` over J:M merges) re-merges them all into one block. Format each row's merge area separately.
+   - Writing an array of formulas to such a column fills only the first row. Write each cell on its own.
+   - `ResetAllPageBreaks()` silently resets `PageSetup.Zoom` to 100. Call it before setting Zoom, and check `scale=` in the saved XML.
+   - A conditional format with border `LineStyle = xlNone` doesn't clear static borders; medium outlines stay. A thin white CF border does hide them. CF can't draw medium lines.
+   - Rendering without a PDF works: `Range.CopyPicture(2, -4147)`, paste into a temporary chart, then `Chart.Export(png)`. No "Publishing" window pops up. Hide the chart's border line first.
+   - Rockwell isn't in Windows Fonts on his laptop. It's an Office cloud font (`FontCache\4\CloudFonts`) and renders fine.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.
