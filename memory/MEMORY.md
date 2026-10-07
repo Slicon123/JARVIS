@@ -32,3 +32,4 @@
 - [Schedule Pemeliharaan](project-jadwal-pekerjaan-template.md) — Schedule Pemeliharaan.xlsx (renamed, not "Template") in Template Pekerjaan, built 7 Oct 2026 from coworker's PM DC 2026-2027 file; week rule + Switchover/legend points to confirm
 - [Animate skill](project-animate-skill.md) — motion graphics in code, installed 7 Oct 2026 as an experiment (not clipping); per-video en/id; Indonesian pace limit is an estimate; pieces in Animasi\
 - [Excel COM checklist](feedback-excel-com-checklist.md) — Write not sed, kill own Excel PIDs, positional COM args, test all format tricks first, keep render + scenario checks
+- [Practice tests mirror tugas](feedback-practice-tests-mirror-tugas.md) — latihan soal copy the dosen's tugas structure; only numbers/content change
