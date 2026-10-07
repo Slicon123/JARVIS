@@ -21,6 +21,7 @@ On 6 Oct 2026 everything in `C:\Bryan De Great` and `~/Downloads` was sorted at 
 - `Aplikasi\AutoClicker\`: portable AutoClicker he still uses, with its `ACLib\` settings folder.
 - `GP-100\` is the installed GP-100 editor app (Start Menu and Desktop shortcuts point at it). **Never move it.**
 - `Python\` is his practice scripts. `JARVIS\` is this repo.
+- `Animasi\` (created on first use): animation pieces from the animate skill, one `pieces\<name>\` each. See [[project-animate-skill]].
 
 Old→new paths are logged in `C:\Bryan De Great\_Catatan pindah non-kuliah 2026-10-06.csv` (and
 `Kuliah\_Catatan pindah 2026-10-06.csv` for coursework). Everything removed went to the Recycle Bin.
