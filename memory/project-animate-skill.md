@@ -19,6 +19,7 @@ anticipation/overlap/stagger helpers.
   American accent — timing only; the real take fixes it.
 - ffmpeg came from winget and sits on the user PATH; a VS Code session started before 7 Oct 2026 19:00 needs a restart to see it.
 - **First piece done 7 Oct 2026:** `Animasi\pieces\bug-hunt\` — 24s English F4 mission in crosshatch (Claude Code catches a literal bug in a jar). All review checks pass; he called the animatic "perfect for now". Weakest shot: #11 the chase. Feedback on the final pending.
+- **Remotion comparison, 7 Oct 2026:** the same Bug Hunt rebuilt in Remotion 4.0.534 (React/SVG, flat style, 30 fps) at `Animasiemotionug-hunt\` (`npm run studio` / `npm run render`); side-by-side at `Animasiemotion\compare-side-by-side.mp4`. Remotion rendered in 2.5 min vs ~4, half the file size, live studio preview; but no story/pacing/flash checks. His preference: pending.
 
 **Why:** he asked for an expert analysis plus the fixes, for experimenting.
 **How to apply:** when he asks for an animation, use the skill, ask the language if unclear, and say which checks are
