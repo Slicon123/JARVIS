@@ -29,6 +29,8 @@ At Bryan's choice (2026-10-07), the Switchover count and the legend-label mismat
 
 Open points from her own data, unchanged: Switchover has FREQ 12 but only 5 marked (Cek says "Kurang 7"). Two legend labels contradict their items: "UPS Emerson…" is the EATON/HUAWEI/GTEC item, and "…Battery Gandul" is the DRC item.
 
+Print test with all 15 slots filled (2026-10-08, on a copy, via PDF export, not Print Preview): still 2 pages, no vertical split, legend's 16 slots (15 + freeze) exactly full. But long names get clipped: item column fits ~50 characters, legend label ~40. No wrap/shrink on those cells. Fix not applied yet; Bryan to choose.
+
 Not built: the Aktualisasi table (not in her example) and the project timeline type. `Template Kurva S` only draws bars once Bobot is filled.
 
 **How to apply:** edit the template in Excel (COM), not by rebuilding. The build/verify scripts lived in a session scratchpad and are gone. See [[feedback-excel-com-checklist]].
