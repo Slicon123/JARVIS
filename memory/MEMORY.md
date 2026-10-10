@@ -37,3 +37,5 @@
 - [Approval material forms](project-approval-material-forms.md) — real task = 1:1 Excel replica of Genset.pdf page 1 (done 9 Oct 2026, in Laporan Sinergi\Approval Material); confirm format first next time
 - [Duplicate means exact copy](feedback-duplicate-means-exact-copy.md) — asked for a copy/duplicate → byte copy only; don't fill, restructure or add
 - [Ask before a better idea](feedback-ask-before-better-idea.md) — do what he asked; propose improvements as a question and wait for yes
+- [Genset IOM → Word (SSS)](project-iom-genset-sss.md) — 12-page DSE 7320/Perkins IOM rebuilt as editable Word with Perkins+SSS logos, in Laporan Sinergi\SOP (10 Oct 2026); slogan kept by his choice
+- [PDF → Word replica](feedback-pdf-to-word-replica.md) — rebuild from PDF coordinates; Word exact spacing = baseline at 0.8×L; section breaks not page breaks; verify ≤1 pt
