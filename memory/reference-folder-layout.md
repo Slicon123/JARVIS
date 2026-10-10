@@ -1,8 +1,11 @@
 ---
 name: reference-folder-layout
-description: Where Bryan's files live under C:\Bryan De Great after the 6 Oct 2026 cleanup — save new files into this layout, not Downloads or the root
+description: "Where Bryan's files live under C:\\Bryan De Great after the 6 Oct 2026 cleanup — save new files into this layout, not Downloads or the root"
 metadata:
+  node_type: memory
   type: reference
+  originSessionId: dc35df87-6961-43dd-85ae-aa182744a345
+  modified: 2026-10-09T08:39:47.822Z
 ---
 
 On 6 Oct 2026 everything in `C:\Bryan De Great` and `~/Downloads` was sorted at his request
@@ -12,7 +15,8 @@ On 6 Oct 2026 everything in `C:\Bryan De Great` and `~/Downloads` was sorted at 
 - `Laporan Sinergi\`: all PT. Sinergi work. Type folders (`Laporan Word\PM|CM`, `Laporan PDF`, SOP,
   EOP, MOP, Flowchart, Kurva S, Template Pekerjaan, Template Proposal Teknis), plus `Foto Laporan\<date>\`,
   `Checklist & Testcomm`, `Data Uji & Laporan Vendor`, `Cover (PPT)`, `KOM PM Kelistrikan DC PLN Pusat`,
-  `Upgrade Source-A DC PLN Pusat`, `Contoh Laporan` (examples from older projects) and `Lowongan Kerja`.
+  `Upgrade Source-A DC PLN Pusat`, `Contoh Laporan` (examples from older projects), `Lowongan Kerja`, and
+  `Approval Material` (Persetujuan Material forms, created 9 Oct 2026).
   Older versions go in an `_Arsip\` subfolder next to the current one.
 - `SMA\`: high-school files (Tugas Dokumen, Dokumen Ulangan, Kisi-Kisi SAS Ganjil 2023, Lain-lain).
 - `Musik\`: GP-100 presets and installers, backing tracks, Remaco (Sie Musik). See [[project-guitar-presets-gp100]].

@@ -34,3 +34,6 @@
 - [Excel COM checklist](feedback-excel-com-checklist.md) — Write not sed, kill own Excel PIDs, positional COM args, test all format tricks first, keep render + scenario checks
 - [Practice tests mirror tugas](feedback-practice-tests-mirror-tugas.md) — latihan soal copy the dosen's tugas structure; only numbers/content change
 - [Say time before long steps](feedback-say-time-before-long-steps.md) — warn how long renders/exports/checks take before starting; build before export
+- [Approval material forms](project-approval-material-forms.md) — real task = 1:1 Excel replica of Genset.pdf page 1 (done 9 Oct 2026, in Laporan Sinergi\Approval Material); confirm format first next time
+- [Duplicate means exact copy](feedback-duplicate-means-exact-copy.md) — asked for a copy/duplicate → byte copy only; don't fill, restructure or add
+- [Ask before a better idea](feedback-ask-before-better-idea.md) — do what he asked; propose improvements as a question and wait for yes

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: cc480763-2f42-499d-93ee-a9b2432ad25e
-  modified: 2026-10-07T09:50:32.874Z
+  modified: 2026-10-09T10:46:33.100Z
 ---
 
 Self-evaluation he asked for after the Struktur Organisasi build on 2026-10-06 ([[project-sinergi-struktur-organisasi]]).
@@ -58,6 +58,18 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    - The cell already had its own borders, so ownership wasn't the cause. The applied mitigation is a CF border rule on
      non-empty coloured cells, leaving medium outline edges out. Whether it fixes Print Preview is still for him to confirm.
    - Say plainly which views you verified. Don't claim Print Preview is fine from a PDF render.
+
+13. Replicating a scanned form 1:1 (2026-10-09, [[project-approval-material-forms]]):
+   - His laptop display gives Calibri 11 a max digit width of 11 px, so stored column widths snap to 1/11 char.
+     `ColumnWidth` excludes padding (~0.64 char); `Columns.Width` is proportional to the stored width.
+   - Printed column width ≈ stored width × 5.63 pt. Screen widths are about 2.5% narrower, so size columns for print.
+     Probe the Width/ColumnWidth ratio on a scratch sheet, set widths cumulatively, and trim narrow columns from one
+     measured test print.
+   - The hidden instance prints and exports A4 sheets onto Letter, scaled to about 0.92 and centred. Undo the scale
+     using the frame lines before overlaying on the scan. Don't change `MapPaperSize`, because it persists into his Excel.
+   - Columns wider than the printable width get pushed to page 2 without any warning. Check `VPageBreaks`.
+   - Place shapes at the same fraction of the column/row they sit in on paper; they print relative to their cells.
+   - A red/cyan overlay of the replica on the 300 dpi scan is the check that matters, plus every cell value read back.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.
