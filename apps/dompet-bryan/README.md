@@ -11,7 +11,7 @@ the artifact's database (see `memory/reference-expense-tracker.md`).
 | `index.html` | Page markup and all CSS (theme tokens, light and dark) |
 | `core.js` | Pure logic with no DOM or db: dates, rupiah, balances, reports, calculator |
 | `app.js` | UI, db reads and writes, Indonesian/English text via `L('id', 'en')` |
-| `test/` | `core.test.js` checks the logic; `e2e.test.js` drives the page in jsdom with a fake db; `offline.test.js` cuts that db's connection |
+| `test/` | `core.test.js` checks the logic; `e2e.test.js` drives the page in jsdom with a fake db; `offline.test.js` cuts that db's connection; `sheet.test.js` runs the sheet with Chrome's late close event |
 
 ## Bad signal
 

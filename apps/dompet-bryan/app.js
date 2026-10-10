@@ -1277,12 +1277,22 @@
     var af = sheet.querySelector('[data-autofocus]');
     if (af) af.focus(); else sheet.querySelector('.sheet-head .icon-btn').focus();
   }
-  function closeSheet() { if (sheet.open) sheet.close(); }
-  // keyboard users get focus back where they were; after a tap nothing stays focused (the + button kept a stuck look)
+  function closeSheet() {
+    if (!sheet.open) return;
+    sheet.close();
+    // close() hands focus back to the button that opened the sheet. After a tap, let go of it now: an Enter
+    // still on its way from the phone keyboard would press that button and open the sheet again.
+    if (lastInput !== 'key' && document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
+  }
+  // keyboard users get focus back where they were; after a tap nothing stays focused (the + button kept a stuck look).
+  // Enter or space while typing in a field is not keyboard navigation: the phone keyboard's Go key sends Enter.
   var lastInput = 'pointer';
   document.addEventListener('pointerdown', function () { lastInput = 'pointer'; }, true);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Tab' || e.key === 'Enter' || e.key === ' ' || e.key === 'Escape') lastInput = 'key'; }, true);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Tab' || e.key === 'Escape' || ((e.key === 'Enter' || e.key === ' ') && !isTextField(e.target))) lastInput = 'key'; }, true);
   sheet.addEventListener('close', function () {
+    // The close event arrives a frame after close(). If a new sheet opened in that gap, this event is not about it:
+    // emptying it left an invisible modal that blocked the whole page.
+    if (sheet.open) return;
     sheet.innerHTML = ''; ctx = null; sheet.className = 'sheet';
     if (opener && document.contains(opener) && lastInput === 'key') { try { opener.focus({ preventScroll: true }); } catch (e) { /* ignore */ } }
     else if (document.activeElement && document.activeElement !== document.body) { try { document.activeElement.blur(); } catch (e) { /* ignore */ } }
@@ -1477,10 +1487,11 @@
   function isTextField(t) {
     return !!t && ((t.tagName === 'INPUT' && ['radio', 'checkbox', 'button', 'submit'].indexOf(t.type) < 0) || t.tagName === 'TEXTAREA');
   }
-  // typing a note or a fee uses the phone keyboard, so the number pad steps aside
-  sheet.addEventListener('focusin', function (e) { sheet.classList.toggle('kp-off', isTextField(e.target)); });
+  // typing a note or a fee uses the phone keyboard, so the number pad steps aside; a date field opens a calendar instead
+  function usesKeyboard(t) { return isTextField(t) && t.type !== 'date'; }
+  sheet.addEventListener('focusin', function (e) { sheet.classList.toggle('kp-off', usesKeyboard(e.target)); });
   sheet.addEventListener('focusout', function () {
-    setTimeout(function () { if (!isTextField(document.activeElement)) sheet.classList.remove('kp-off'); }, 0);
+    setTimeout(function () { if (!usesKeyboard(document.activeElement)) sheet.classList.remove('kp-off'); }, 0);
   });
   // Enter in the new-category box adds the category instead of saving the whole form; Escape closes only that box
   sheet.addEventListener('keydown', function (e) {
