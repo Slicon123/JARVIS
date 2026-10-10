@@ -16,7 +16,7 @@
 - [Dompet Bryan](reference-expense-tracker.md) — his expense-tracker artifact: wallets, tx per month in its db; how to read spending; offline changes can wait on his phone
 - [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
 - [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
-- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted; slides through pertemuan 6 (kuantor, inferensi), with known slide errors; tes ~14 Okt, latihan soal half-done
+- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, Tugas 3 received; slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan soal complete
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered, all tugas so far done; chapter 2 not uploaded yet
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen

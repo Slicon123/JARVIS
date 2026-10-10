@@ -1,11 +1,11 @@
 ---
 name: project-matematika-logika-db103a
-description: "Syllabus essentials for Bryan's Matematika Logika (DB103A) class — topic order, grading weights, attendance rules, textbooks"
+description: "Bryan's Matematika Logika (DB103A) class — syllabus, grading, rules, slide contents through pertemuan 7, tugas status, upcoming tes"
 metadata: 
   node_type: memory
   type: project
   originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
-  modified: 2026-10-06T00:00:00.000Z
+  modified: 2026-10-10T05:23:18.718Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -49,6 +49,10 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 
 **Pertemuan 6 (received 2026-10-06) — inferensi, RPS topic 5:** argumen = premis + konklusi; kebenaran (isi) vs validitas (struktur) — "planet dari keju" valid tapi tidak sehat, Salatiga/Jawa Tengah = affirming the consequent (tidak valid). Six rules, each with its "(premis ∧ …) → konklusi adalah tautologi" form: modus ponens, modus tollens, silogisme hipotesis, silogisme disjungtif, penambahan disjungsi, penyederhanaan konjungsi. Slide 6 uses a fire-alarm example (his field — false alarms make premise 1 untrue in practice). Bryan said he didn't follow this class; re-explained 6 Oct with the truth-table validity check and denying the antecedent (not in the slides).
 
-**Timeline (revised 2026-10-06):** pertemuan 6 had already been taught by 6 Oct, so the earlier guess (30 Sep = pertemuan 5) was one meeting off — likely P5 = 23 Sep, P6 = 30 Sep. Pertemuan N ≈ RPS topic N−1 still holds: **7 Okt ≈ pertemuan 7, fungsi Boole & gerbang logika** · then DNF/CNF · then TTS. Estimate, not an official schedule.
+**Pertemuan 7 (7 Okt 2026, received 2026-10-10) — RPS topics 6 AND 7 in one meeting:** aljabar Boolean dua-nilai <B,+,·,',0,1>, prioritas ' → · → +; hukum (identitas, idempoten, komplemen, dominasi, penyerapan, komutatif, asosiatif, distributif, De Morgan, involusi) + prinsip dualitas; fungsi Boolean f: Bⁿ→B, literal, tabel kebenaran, f+g dan f·g; komplemen fungsi via De Morgan atau dualitas (dual lalu komplemenkan tiap literal); 7 gerbang (NOT, AND, OR, NAND, NOR, XOR, XNOR) with symbols; merancang rangkaian: kebutuhan → tabel → SOP → gerbang (promo-toko example D = xy + z); DNF/SOP vs CNF/POS, minterm mᵢ / maxterm Mᵢ = (mᵢ)', kanonik via melengkapi literal or aturan praktis (SOP = minterm baris f=1, POS = maxterm baris f=0); penyederhanaan secara aljabar; K-map only intro + 2/3-variable layout, no grouping rules yet (likely continues). Slide 26 circuit exercise unanswered (answer 0). Slide 12 writes (f+g)(x1+x2+...+xn) where it means (x1, x2, ..., xn).
 
-**Tes kelas minggu depan (Bryan bilang 7 Okt 2026; kemungkinan Rabu 14 Okt):** 8 nomor, tiap nomor maksimal bagian a–b: 1 himpunan · 2 matriks · 3 gerbang logika · 4 kuantor · 5 modus ponens/tollens · 6–8 aljabar Boolean. Latihan + kunci di `Kuliah\Semester 1\Matematika Logika\Latihan\latihan-tes-{soal,jawaban}.md`; nomor 3 dan 6–8 masih kosong sampai Bryan kirim materi gerbang logika & Boolean.
+**Tugas 3 (received 2026-10-10, `Tugas\Tugas 3 - Soal.pdf`, deadline unknown):** 1 kuantor ke bahasa sehari-hari (4 bagian) · 2 validitas 5 argumen flash sale (MP, MT, and fallacies) · 3 komplemen paling sederhana g=(x+y')z+x'y · 4 kanonik POS f=xy+x'z · 5 gambar sirkuit Y=ABC+A'C'+B'C. Not worked yet as of 10 Oct.
+
+**Timeline (revised 2026-10-10):** P5 ≈ 23 Sep, P6 ≈ 30 Sep, P7 = 7 Okt covered both remaining pre-TTS topics, so the "pertemuan N ≈ RPS N−1" rule no longer holds. Next: tes 14 Okt, K-map probably finished, then TTS. Estimate, not an official schedule.
+
+**Tes kelas (Bryan bilang 7 Okt 2026; kemungkinan Rabu 14 Okt):** 8 nomor, tiap nomor maksimal bagian a–b: 1 himpunan · 2 matriks · 3 gerbang logika · 4 kuantor · 5 modus ponens/tollens · 6–8 aljabar Boolean. Latihan + kunci di `Kuliah\Semester 1\Matematika Logika\Latihan\latihan-tes-{soal,jawaban}.md` — complete since 10 Oct (3 = draw circuit + output, 6 = komplemen, 7 = kanonik SOP/POS, 8 = penyederhanaan aljabar, modelled on Tugas 3 and P7 slides; all answers truth-table verified).
