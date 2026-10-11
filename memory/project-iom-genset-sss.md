@@ -1,8 +1,11 @@
 ---
 name: project-iom-genset-sss
-description: Genset IOM manual (DSE 7320, Perkins 4006, SP750P) rebuilt as an editable Word file with Sinergi branding on 10 Oct 2026; where it is and what Bryan decided
+description: "Genset IOM manual (DSE 7320, Perkins 4006, SP750P) rebuilt as an editable Word file with Sinergi branding on 10 Oct 2026; where it is and what Bryan decided"
 metadata:
+  node_type: memory
   type: project
+  originSessionId: 39390535-64e1-4eae-b16c-b8f7d688791d
+  modified: 2026-10-11T12:32:22.553Z
 ---
 
 On 10 Oct 2026 Bryan was asked at work to turn a 12-page genset IOM PDF ("Sistem Kerja dan Cara Pengoperasian
@@ -14,7 +17,8 @@ editable shapes, the troubleshooting pages are Word tables, and the DSE photo wi
 Bryan's choices: the previous company's slogan ("GENERATOR SET SPECIALIST / We Believe In Quality") stays on the
 cover. The p.3 *KETERANGAN legend was renumbered to match the photo (a stray "Ready." line had shifted items 4–9).
 About 24 obvious typos were fixed. The p.5 overlap "AUTO Pada.PKG" became "AUTO Pada PKG dan Genset.". Technical
-data was left untouched.
+data was left untouched. On 11 Oct 2026 his boss had the p.12 engine/generator spec box (Perkins 4006 + Stamford
+data) removed; the page keeps its "Data Engine & Generator" title and the oil/BBM and perawatan boxes. Don't restore it.
 
 Logos: PERKINS is Wikimedia Commons `Perkins-Logo.svg` (public domain). SSS is the 199×189 px logo from
 `Laporan PM Grounding Dan Penyalur Petir.docx`, upscaled and cleaned. That was the largest copy in his files.
