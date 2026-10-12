@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
-  modified: 2026-10-10T05:23:18.718Z
+  modified: 2026-10-12T17:28:30.273Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -56,3 +56,5 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 **Timeline (revised 2026-10-10):** P5 ≈ 23 Sep, P6 ≈ 30 Sep, P7 = 7 Okt covered both remaining pre-TTS topics, so the "pertemuan N ≈ RPS N−1" rule no longer holds. Next: tes 14 Okt, K-map probably finished, then TTS. Estimate, not an official schedule.
 
 **Tes kelas (Bryan bilang 7 Okt 2026; kemungkinan Rabu 14 Okt):** 8 nomor, tiap nomor maksimal bagian a–b: 1 himpunan · 2 matriks · 3 gerbang logika · 4 kuantor · 5 modus ponens/tollens · 6–8 aljabar Boolean. Latihan + kunci di `Kuliah\Semester 1\Matematika Logika\Latihan\latihan-tes-{soal,jawaban}.md` — complete since 10 Oct (3 = draw circuit + output, 6 = komplemen, 7 = kanonik SOP/POS, 8 = penyederhanaan aljabar, modelled on Tugas 3 and P7 slides; all answers truth-table verified).
+
+**Latihan 2 (13 Okt 2026, `Latihan\latihan-tes-2-{soal,jawaban}.md`):** Bryan added ekivalensi logis (ingkaran, konvers, kontraposisi of implikasi sentences, as in Tugas 2 no. 2) and asked for "versi rumit" of Tugas 1–3 only. Same order as latihan 1, except 8 = ekivalensi, replacing penyederhanaan aljabar (not in any tugas). Other numbers: 1 = Venn survey (tepat dua), 3 = two circuits (SOP + one with kurung), 5 = validity with negated atoms, 6 = two complements, 7 = y' + xz SOP/POS. The answer file has a source table showing which tugas each number comes from. All answers verified by script.
