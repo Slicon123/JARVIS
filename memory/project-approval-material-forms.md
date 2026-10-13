@@ -35,7 +35,12 @@ project name in 2 lines (the user picks the break), fields 2–7, and all 10 che
 case-sensitive, and the form applies UPPER). **Pengajuan Material** is the 9 Oct form with formulas. G16:K16 was merged
 to hold Gambar No. Text fields shrink-to-fit, and about 48 characters fit per line at full size. With the genset data
 it renders pixel-identical to the 9 Oct form. Both sheets are protected without a password. The signature labels
-(PLN 1–3, PLN ICON Plus, PT. Sinergi) stay fixed shapes. Making them inputs was offered and is pending his answer.
+(PLN 1–3, PLN ICON Plus, PT. Sinergi) stay fixed shapes.
+Signature image (same day, his choice "tempel sebagai gambar"): only the Diajukan Oleh (Sinergi) box. You paste a
+picture over the white window Input!C35. The form's linked picture "TTD Sinergi" (formula `=Input!$C$35`, same aspect)
+mirrors it inside the box. Input is protected with drawing objects left editable so pictures can be pasted. No
+cell border may touch C35's edges, because Excel draws the top/left ones into the linked picture. PLN/ICON+ boxes are
+left for wet signatures. Whether PLN accepts a scanned signature was flagged to him and isn't known.
 
 **Why:** the same project also covers UPS, so a UPS form in this format is a likely next request.
 

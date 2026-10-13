@@ -75,6 +75,9 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    validation, so test it with `Range.Validation.Value`. Writing "1." into a General cell stores the number 1,
    so set `@` on label cells first. `Range.CopyPicture` renders include shapes and the logo, so a pixel diff
    against the original form render works as a check.
+   - Linked picture without the clipboard: `AddPicture` a blank PNG, then set `DrawingObject.Formula = "=Sheet!$C$35"`.
+     It mirrors pasted pictures too. Top/left cell borders (including a neighbour's) leak into it; right/bottom ones don't.
+   - The render helper adds its chart on a temporary sheet, so protected sheets render without unprotecting.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.
