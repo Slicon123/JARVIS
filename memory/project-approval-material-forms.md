@@ -37,9 +37,11 @@ to hold Gambar No. Text fields shrink-to-fit, and about 48 characters fit per li
 it renders pixel-identical to the 9 Oct form. Both sheets are protected without a password. The signature labels
 (PLN 1–3, PLN ICON Plus, PT. Sinergi) stay fixed shapes.
 Signature images (same day, his choice "tempel sebagai gambar", then "6 tanda tangan, jangan cuma 1"): all 6 boxes
-(PLN 1–3, ICON 1–2, Sinergi). Pictures are pasted over white windows Input!C35, C37 … C45 (6 pt grey spacer rows
-between, in a grey block A34:D46). Linked pictures "TTD <key>" (`=Input!$C$<row>`, same aspect as the window) sit
-in each box. Numbered boxes get about 20 pt of margin each side to clear the "1."/"2.". Input is protected with drawing
+(PLN 1–3, ICON 1–2, Sinergi). On his request for "1 kertas HVS", the windows were laid out like the form in a
+grey block from row 34: Disetujui (PLN 1–3) in column B, Diketahui (ICON 1–2) in C, Diajukan (Sinergi) in D. Each
+window is a white merged range with a label above it. Rows are cut at every column's boundary, so each window keeps
+its box's aspect. Input now prints on 1 A4 portrait page at scale 60%, and the form is still 1 page. Linked pictures
+"TTD <key>" (`=Input!<window range>`, same aspect as the window) sit in each box. Numbered boxes get about 20 pt of margin each side to clear the "1."/"2.". Input is protected with drawing
 objects left editable so pictures can be pasted. No cell border may touch a window's edge, because Excel draws the
 top/left ones into the linked picture. An empty window leaves the box blank for a wet signature. Whether PLN accepts
 a scanned signature was flagged to him and isn't known.
