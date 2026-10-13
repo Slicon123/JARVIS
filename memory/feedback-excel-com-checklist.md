@@ -71,6 +71,11 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    - Place shapes at the same fraction of the column/row they sit in on paper; they print relative to their cells.
    - A red/cyan overlay of the replica on the 300 dpi scan is the check that matters, plus every cell value read back.
 
+14. Input templates (2026-10-13): list validation is case-sensitive ("x" fails against "X"). COM writes skip
+   validation, so test it with `Range.Validation.Value`. Writing "1." into a General cell stores the number 1,
+   so set `@` on label cells first. `Range.CopyPicture` renders include shapes and the logo, so a pixel diff
+   against the original form render works as a check.
+
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.
 

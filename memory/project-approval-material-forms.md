@@ -28,6 +28,15 @@ The FSS example and `Genset.pdf` were in Downloads on that date. Genset.pdf is a
 page 1 is the form, pages 2–31 brochures (genset APC880T, Cummins KTA38 engine, Stamford alternator, DSE
 controller, fuel-tank sketch), with conflicting alternator/controller models. No trafo or PDU in it.
 
+**Input version (13 Oct 2026):** a coworker wanted a fill-in template of this form ("sheet 1 input, sheet 2 hasil").
+Built `Laporan Sinergi\Template Pekerjaan\Pengajuan Persetujuan Material.xlsx` from the 9 Oct file (a byte-identical
+copy had turned up in Downloads). **Input** holds every variable field: No. surat, date as day + month dropdown + year,
+project name in 2 lines (the user picks the break), fields 2–7, and all 10 check boxes (X / - / empty; the list is
+case-sensitive, and the form applies UPPER). **Pengajuan Material** is the 9 Oct form with formulas. G16:K16 was merged
+to hold Gambar No. Text fields shrink-to-fit, and about 48 characters fit per line at full size. With the genset data
+it renders pixel-identical to the 9 Oct form. Both sheets are protected without a password. The signature labels
+(PLN 1–3, PLN ICON Plus, PT. Sinergi) stay fixed shapes. Making them inputs was offered and is pending his answer.
+
 **Why:** the same project also covers UPS, so a UPS form in this format is a likely next request.
 
 **How to apply:** if asked for another Persetujuan Material, first confirm which format is wanted (Sinergi page-1
