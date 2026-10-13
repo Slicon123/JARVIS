@@ -34,7 +34,8 @@ copy had turned up in Downloads). **Input** holds every variable field: No. sura
 project name in 2 lines (the user picks the break), fields 2–7, and all 10 check boxes (X / - / empty; the list is
 case-sensitive, and the form applies UPPER). **Pengajuan Material** is the 9 Oct form with formulas. G16:K16 was merged
 to hold Gambar No. Text fields shrink-to-fit, and about 48 characters fit per line at full size. With the genset data
-it renders pixel-identical to the 9 Oct form. Both sheets are protected without a password. The signature labels
+it rendered pixel-identical to the 9 Oct form. Then, at his request, the "PT. SINERGI SARANA SOLUSI" signature label
+went from bold (as in the scan) to regular like the other labels. That label is the only intended visual difference. Both sheets are protected without a password. The signature labels
 (PLN 1–3, PLN ICON Plus, PT. Sinergi) stay fixed shapes.
 Signature images (same day, his choice "tempel sebagai gambar", then "6 tanda tangan, jangan cuma 1"): all 6 boxes
 (PLN 1–3, ICON 1–2, Sinergi). On his request for "1 kertas HVS", the windows were laid out like the form in a
