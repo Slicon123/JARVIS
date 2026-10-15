@@ -21,7 +21,8 @@
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned)
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
-- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah bagian 2.1 in Kuliah\Semester 1\Pendidikan Agama Kristen\Makalah, unfinished as of 29 Sep 2026
+- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 unfinished (29 Sep); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, still in Downloads
+- [Local transcription](reference-local-transcription.md) — faster-whisper small + ffmpeg on his laptop; decode via ffmpeg to dodge the PyAV crash
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
 - [ATS/fire simulator idea](project-ats-fire-simulator-idea.md) — proposed browser project to close his ATS/FSS technical gap; remind 2026-09-05

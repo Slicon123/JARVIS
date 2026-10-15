@@ -1,8 +1,11 @@
 ---
 name: project-pendidikan-agama-kristen
-description: Pendidikan Agama Kristen (PAK) — no syllabus given, makalah bagian 2.1 still unfinished as of 29 Sep 2026
+description: "Pendidikan Agama Kristen (PAK) — no syllabus given, makalah bagian 2.1 still unfinished as of 29 Sep 2026"
 metadata:
+  node_type: memory
   type: project
+  originSessionId: bcf91eae-07d3-4e3b-a8b9-2b925c152c80
+  modified: 2026-10-15T15:29:58.079Z
 ---
 
 Pendidikan Agama Kristen, Jumat 13–15, UKSW Digital Business semester 1. **Dosen tidak
@@ -16,6 +19,15 @@ Draf 26 September 2026 di `C:\Bryan De Great\Kuliah\Semester 1\Pendidikan Agama 
 Pandey 2020, Ndoen 2023, Kiamani dkk. 2024, Alkitab TB). Paragraf terakhirnya menjembatani
 ke "konsep keselamatan" di bagian berikutnya. **Status 29 September 2026: belum selesai**;
 deadline dan format makalah belum diketahui — tanyakan ke Bryan.
+
+**Materi dosen yang sudah diterima (15 Oktober 2026):** dua PPT, masih di Downloads
+(belum dipindah ke folder Kuliah) — *Fundamentalisme, Liberalisme* (fundamentalisme Kristen,
+3 ciri James Barr, eksklusivisme → inklusivisme → inklusif-transformatif ala Indonesia; ditutup
+video refleksi 6,5 menit: monolog "agama warisan", cermin pecah Rumi, Pancasila bukan kitab suci)
+dan *Deradikalisasi agama* (dibuka rekaman orang memaksa suatu kegiatan "Tutup!"; radikalisasi/ekstremisme,
+segitiga kekerasan Galtung, 4 tahap radikalisasi model NYPD, faktor sosial-ekonomi/politik/
+pendidikan/media, data KontraS & peta toleransi BPS, 3 cara deradikalisasi). Dua-duanya sudah
+dijelaskan per slide ke Bryan.
 
 **Why:** Tanpa silabus, satu-satunya jejak kelas ini adalah file makalahnya; catatan ini
 mencegah PAK dianggap "tidak ada tugas".
