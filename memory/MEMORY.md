@@ -40,4 +40,4 @@
 - [Ask before a better idea](feedback-ask-before-better-idea.md) — do what he asked; propose improvements as a question and wait for yes
 - [Genset IOM → Word (SSS)](project-iom-genset-sss.md) — 12-page DSE 7320/Perkins IOM rebuilt as editable Word with Perkins+SSS logos, in Laporan Sinergi\SOP (10 Oct 2026); slogan kept by his choice
 - [PDF → Word replica](feedback-pdf-to-word-replica.md) — rebuild from PDF coordinates; Word exact spacing = baseline at 0.8×L; section breaks not page breaks; verify ≤1 pt
-- [Spanduk K3 Sinergi](project-spanduk-k3-sinergi.md) — 100×50 cm HATI-HATI banner (15 Oct 2026): only Peremajaan used, v2 blue title band +11%; SSS replaces worker icon; script in Spanduk\_Sumber
+- [Spanduk K3 Sinergi](project-spanduk-k3-sinergi.md) — 3 K3 banner designs (15 Oct 2026): HATI-HATI 400/100×80 with 4 logos, UTAMAKAN K3 200/100×80, TERTIB K3 400/250×80; logo sources; scripts in Spanduk\_Sumber
