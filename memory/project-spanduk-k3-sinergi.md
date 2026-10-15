@@ -21,8 +21,10 @@ Older versions are in `_Arsip\`. The build scripts are in `_Sumber\`.
 3. **ANDA MEMASUKI KAWASAN TERTIB K3**: 400×80 (print 1) and 250×80 (print 2). SSS logo top-left and K3 logo top-right,
    either side of a red title band. Below: five ISO 7010 mandatory signs (helm, masker, rompi, sarung tangan, sepatu
    safety, ordered head to toe) with "WAJIB MEMAKAI …" captions, a SAFETY FIRST diamond, and a green UTAMAKAN line.
-   v2 (same day): the team also wanted the other partner logos. PLN · PLN Icon Plus · TAB Solutions now sit in a centred
-   row at the bottom, in the same order as on HATI-HATI. SSS isn't repeated there because it is already top-left. v1 is in `_Arsip\`.
+   Later the same day the team also wanted the other partner logos, so they sit in a centred row at the bottom. SSS
+   isn't repeated there because it is already top-left. The team asked for two versions of that row, both delivered,
+   with the order in the file name: "Versi 1 - PLN, TAB, Icon Plus" and "Versi 2 - PLN, Icon Plus, TAB". The
+   version without partner logos is in `_Arsip\`.
 
 Each size gets one file. Copies of the same size print from the same file.
 
