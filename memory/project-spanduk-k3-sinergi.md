@@ -12,7 +12,7 @@ Older versions are in `_Arsip\`. The build scripts are in `_Sumber\`.
 1. **HATI-HATI**, job "Peremajaan Peningkatan Kapasitas Power Wing A DC PLN Kantor Pusat". 400×80 (print 1) and 100×80
    (print 2). Yellow with hazard stripes. Job title in white on a full-width SSS-blue band. K3 logo | HATI-HATI (red) |
    K3 logo, then SEDANG ADA PEKERJAAN / PROYEK and PT. SINERGI SARANA SOLUSI. A white strip carries the logos
-   PLN · SSS · TABS · PLN Icon Plus, in the coworker's order. At 400 cm the SEDANG ADA lines sit beside HATI-HATI.
+   PLN · PLN Icon Plus · TAB Solutions · SSS. The team set this order on 15 Oct 2026; the first order was PLN · SSS · TABS · Icon Plus. At 400 cm the SEDANG ADA lines sit beside HATI-HATI.
    History: v1 was 100×50 with black title text. In v2 the team asked for a bigger, stronger title, and Bryan picked the
    blue band. In v3 "Kap" became "Kapasitas", the four logos were added and the sizes changed. The unused "[EMERGENCY]
    Recovery Gangguan Link ICON+ GI Sunyaragi" title is archived.
@@ -21,8 +21,8 @@ Older versions are in `_Arsip\`. The build scripts are in `_Sumber\`.
 3. **ANDA MEMASUKI KAWASAN TERTIB K3**: 400×80 (print 1) and 250×80 (print 2). SSS logo top-left and K3 logo top-right,
    either side of a red title band. Below: five ISO 7010 mandatory signs (helm, masker, rompi, sarung tangan, sepatu
    safety, ordered head to toe) with "WAJIB MEMAKAI …" captions, a SAFETY FIRST diamond, and a green UTAMAKAN line.
-   v2 (same day): the team also wanted the other partner logos. PLN · TABS · PLN Icon Plus now sit in a centred
-   row at the bottom. SSS isn't repeated there because it is already top-left. v1 is in `_Arsip\`.
+   v2 (same day): the team also wanted the other partner logos. PLN · PLN Icon Plus · TAB Solutions now sit in a centred
+   row at the bottom, in the same order as on HATI-HATI. SSS isn't repeated there because it is already top-left. v1 is in `_Arsip\`.
 
 Each size gets one file. Copies of the same size print from the same file.
 
