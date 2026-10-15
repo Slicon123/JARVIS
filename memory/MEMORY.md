@@ -42,3 +42,4 @@
 - [Genset IOM → Word (SSS)](project-iom-genset-sss.md) — 12-page DSE 7320/Perkins IOM rebuilt as editable Word with Perkins+SSS logos, in Laporan Sinergi\SOP (10 Oct 2026); slogan kept by his choice
 - [PDF → Word replica](feedback-pdf-to-word-replica.md) — rebuild from PDF coordinates; Word exact spacing = baseline at 0.8×L; section breaks not page breaks; verify ≤1 pt
 - [Spanduk K3 Sinergi](project-spanduk-k3-sinergi.md) — 3 K3 banner designs (15 Oct 2026): HATI-HATI 400/100×80 with 4 logos, UTAMAKAN K3 200/100×80, TERTIB K3 400/250×80; logo sources; scripts in Spanduk\_Sumber
+- [Stiker helm Sinergi](project-stiker-helm-sinergi.md) — SINERGI 13,3×3 cm + logo K3 5×5 cm matched to helmet photos (15 Oct 2026); Source Han Sans Bold, navy #283A8A; sizes estimated
