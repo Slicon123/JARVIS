@@ -21,5 +21,7 @@ The SSS logo is a vector redraw of the IOM file's PNG (see [[project-iom-genset-
 
 **Why:** revisions or more banners with other job titles are likely.
 
-**How to apply:** for a new title, keep this layout and these sizes. The build script lived in a session
-scratchpad. If it's gone, rebuild from the description above. Related: [[reference-folder-layout]].
+**How to apply:** at his choice, the build script is saved in `Spanduk\_Sumber\` (`buat_spanduk.py` + `sss_logo.py`;
+needs pymupdf, Pillow, Chrome). For a new title, add it to the `SPANDUK` list and run `python buat_spanduk.py`. That
+rebuilds every listed banner and overwrites files with the same name. Pass a folder as an argument to test elsewhere first.
+Related: [[reference-folder-layout]].
