@@ -16,7 +16,7 @@ On 6 Oct 2026 everything in `C:\Bryan De Great` and `~/Downloads` was sorted at 
   EOP, MOP, Flowchart, Kurva S, Template Pekerjaan, Template Proposal Teknis), plus `Foto Laporan\<date>\`,
   `Checklist & Testcomm`, `Data Uji & Laporan Vendor`, `Cover (PPT)`, `KOM PM Kelistrikan DC PLN Pusat`,
   `Upgrade Source-A DC PLN Pusat`, `Contoh Laporan` (examples from older projects), `Lowongan Kerja`, and
-  `Approval Material` (Persetujuan Material forms, created 9 Oct 2026).
+  `Approval Material` (Persetujuan Material forms, created 9 Oct 2026), and `Spanduk` (site banners, created 15 Oct 2026).
   Older versions go in an `_Arsip\` subfolder next to the current one.
 - `SMA\`: high-school files (Tugas Dokumen, Dokumen Ulangan, Kisi-Kisi SAS Ganjil 2023, Lain-lain).
 - `Musik\`: GP-100 presets and installers, backing tracks, Remaco (Sie Musik). See [[project-guitar-presets-gp100]].

@@ -40,3 +40,4 @@
 - [Ask before a better idea](feedback-ask-before-better-idea.md) — do what he asked; propose improvements as a question and wait for yes
 - [Genset IOM → Word (SSS)](project-iom-genset-sss.md) — 12-page DSE 7320/Perkins IOM rebuilt as editable Word with Perkins+SSS logos, in Laporan Sinergi\SOP (10 Oct 2026); slogan kept by his choice
 - [PDF → Word replica](feedback-pdf-to-word-replica.md) — rebuild from PDF coordinates; Word exact spacing = baseline at 0.8×L; section breaks not page breaks; verify ≤1 pt
+- [Spanduk K3 Sinergi](project-spanduk-k3-sinergi.md) — 100×50 cm HATI-HATI banners (15 Oct 2026), 2 job titles, SSS replaces worker icon, files in Laporan Sinergi\Spanduk
