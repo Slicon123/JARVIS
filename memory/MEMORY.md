@@ -19,7 +19,7 @@
 - [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, Tugas 3 answered (not submitted); slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan 1 + 2 complete (2 adds ekivalensi)
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
-- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered, all tugas so far done; chapter 2 not uploaded yet
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned)
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
 - [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah bagian 2.1 in Kuliah\Semester 1\Pendidikan Agama Kristen\Makalah, unfinished as of 29 Sep 2026
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
