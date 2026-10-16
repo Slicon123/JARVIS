@@ -73,7 +73,10 @@ halaman kosong; paragraf itu harus dihapus setiap kali gabungan dibuat ulang.
 - Potongan ojol maks. 8% sejak 1 Juli 2026 (Perpres 27/2026, diumumkan 1 Mei 2026). Naskah
   resminya belum ada di JDIH per 21 Juni 2026. Judul yang dipakai mayoritas sumber, termasuk
   Kompas: "tentang **Perlindungan Pekerja Transportasi Online**". Satu artikel hukumonline
-  menulis "Perlindungan Pengemudi Transportasi Daring"; itu yang minoritas. Kolom
+  menulis "Perlindungan Pengemudi Transportasi Daring"; itu yang minoritas.
+  **Pembaruan 16 Okt 2026:** naskah Perpres resmi terbit Oktober 2026, dan InfoPublik serta Bisnis
+  menyebut judulnya "Pelindungan Ekosistem Transportasi Berbasis Platform Digital". T4 sudah
+  dikumpulkan dengan judul lama. Lihat [[project-pmb-problem-solving-mitra-ojol]]. Kolom
   Kompas.com (7 Juli 2026) berpendapat penghasilan bersih pengemudi tetap, yang untung
   konsumen. Jadi jangan klaim 8% menaikkan pendapatan pengemudi.
 - The Drivers Cooperative (NYC): Wikipedia = berdiri 2020, komisi 15%; Tortorici (2026),

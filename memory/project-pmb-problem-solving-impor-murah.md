@@ -23,6 +23,11 @@ margin 4-3-3-4, judul biru 1F3A5F. `_Sumber\` berisi `build.js` (docx-js), `word
 Permendag 19/2026. Kalau di-build ulang: Word SaveAs dulu, lalu ekspor PDF dari docx hasil Word itu.
 `ExportAsFixedFormat` butuh `IncludeDocProps=$true` (argumen posisi ke-9), kalau tidak, judul dan
 penulis di metadata PDF jadi kosong.
+Ada satu perbaikan yang tertunda: baris "Total biaya tunai" di tabel anggaran 4.5 tercetak
+tidak tebal karena bug di `rich()`. `_Sumber\build.js` sudah diperbaiki, tetapi file final belum
+dibuat ulang karena Bryan sedang membukanya di Word (16 Okt 2026). Buat ulang setelah file
+ditutup, atau Bryan menebalkan baris itu sendiri. Kasus 2 dari pertemuan yang sama ada di
+[[project-pmb-problem-solving-mitra-ojol]].
 Teksnya ditulis memakai aturan humanizer tetapi tidak lewat skill-nya. Versi yang dikumpulkan
 kemarin adalah versi humanized, jadi tawarkan langkah itu kalau Bryan mau.
 
