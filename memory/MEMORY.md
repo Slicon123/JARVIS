@@ -23,7 +23,7 @@
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
 - [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
 - [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm siap (16 Okt 2026), belum dikumpulkan; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
-- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 unfinished (29 Sep); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, still in Downloads
+- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 unfinished (29 Sep); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, filed in PAK\Materi
 - [Local transcription](reference-local-transcription.md) — faster-whisper small + ffmpeg on his laptop; decode via ffmpeg to dodge the PyAV crash
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there

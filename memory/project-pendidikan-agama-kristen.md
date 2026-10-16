@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: bcf91eae-07d3-4e3b-a8b9-2b925c152c80
-  modified: 2026-10-15T15:29:58.079Z
+  modified: 2026-10-16T05:30:45.291Z
 ---
 
 Pendidikan Agama Kristen, Jumat 13–15, UKSW Digital Business semester 1. **Dosen tidak
@@ -20,8 +20,9 @@ Pandey 2020, Ndoen 2023, Kiamani dkk. 2024, Alkitab TB). Paragraf terakhirnya me
 ke "konsep keselamatan" di bagian berikutnya. **Status 29 September 2026: belum selesai**;
 deadline dan format makalah belum diketahui — tanyakan ke Bryan.
 
-**Materi dosen yang sudah diterima (15 Oktober 2026):** dua PPT, masih di Downloads
-(belum dipindah ke folder Kuliah) — *Fundamentalisme, Liberalisme* (fundamentalisme Kristen,
+**Materi dosen yang sudah diterima (15 Oktober 2026):** dua PPT, dipindah 16 Oktober 2026 ke
+`Kuliah\Semester 1\Pendidikan Agama Kristen\Materi\` (nama file asli dosen, termasuk typo
+"Liberalismme") — *Fundamentalisme, Liberalisme* (fundamentalisme Kristen,
 3 ciri James Barr, eksklusivisme → inklusivisme → inklusif-transformatif ala Indonesia; ditutup
 video refleksi 6,5 menit: monolog "agama warisan", cermin pecah Rumi, Pancasila bukan kitab suci)
 dan *Deradikalisasi agama* (dibuka rekaman orang memaksa suatu kegiatan "Tutup!"; radikalisasi/ekstremisme,
