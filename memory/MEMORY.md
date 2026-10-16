@@ -1,4 +1,4 @@
-- [Folder layout](reference-folder-layout.md) — where files live in C:\Bryan De Great after the 6 Oct 2026 cleanup; save new files there; move logs; never move GP-100\
+﻿- [Folder layout](reference-folder-layout.md) — where files live in C:\Bryan De Great after the 6 Oct 2026 cleanup; save new files there; move logs; never move GP-100\
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
 - [JARVIS persona](feedback-jarvis-persona.md) — be JARVIS, informal and friend-like; call him Bryan; config lives outside this repo
@@ -19,7 +19,7 @@
 - [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, Tugas 3 answered (not submitted); slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan 1 + 2 complete (2 adds ekivalensi)
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
-- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; 15 Oct class was PPT practice only; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned)
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned); Word draft + Excel rev reviewed 16 Oct, final Excel due 17 Oct
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
 - [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
 - [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm siap (16 Okt 2026), belum dikumpulkan; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
