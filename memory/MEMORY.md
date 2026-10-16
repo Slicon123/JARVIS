@@ -19,8 +19,9 @@
 - [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, Tugas 3 answered (not submitted); slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan 1 + 2 complete (2 adds ekivalensi)
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
-- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned)
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; 15 Oct class was PPT practice only; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned)
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
+- [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
 - [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 unfinished (29 Sep); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, still in Downloads
 - [Local transcription](reference-local-transcription.md) — faster-whisper small + ffmpeg on his laptop; decode via ffmpeg to dodge the PyAV crash
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
