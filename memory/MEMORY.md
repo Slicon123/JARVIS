@@ -17,13 +17,13 @@
 - [Dompet Bryan](reference-expense-tracker.md) — his expense-tracker artifact: wallets, tx per month in its db; how to read spending; offline changes can wait on his phone
 - [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
 - [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
-- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–2 submitted, Tugas 3 answered (not submitted); slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan 1 + 2 complete (2 adds ekivalensi)
+- [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–3 submitted; slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan 1 + 2 complete (2 adds ekivalensi)
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
-- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned); Word draft + Excel rev reviewed 16 Oct, final Excel due 17 Oct
+- [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned); Word draft + Excel rev reviewed 16 Oct, final Excel late (not in by 18 Oct)
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
 - [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
 - [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm siap (16 Okt 2026), belum dikumpulkan; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
-- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 unfinished (29 Sep); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, filed in PAK\Materi
+- [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 done (18 Oct); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, filed in PAK\Materi
 - [Local transcription](reference-local-transcription.md) — faster-whisper small + ffmpeg on his laptop; decode via ffmpeg to dodge the PyAV crash
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there

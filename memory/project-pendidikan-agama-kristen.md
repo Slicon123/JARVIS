@@ -17,8 +17,8 @@ dicatat — jangan mengarang.
 Draf 26 September 2026 di `C:\Bryan De Great\Kuliah\Semester 1\Pendidikan Agama Kristen\Makalah\`
 (`2.1-pemahaman-agama-kristen` .md + .docx, 4 paragraf + daftar pustaka:
 Pandey 2020, Ndoen 2023, Kiamani dkk. 2024, Alkitab TB). Paragraf terakhirnya menjembatani
-ke "konsep keselamatan" di bagian berikutnya. **Status 29 September 2026: belum selesai**;
-deadline dan format makalah belum diketahui — tanyakan ke Bryan.
+ke "konsep keselamatan" di bagian berikutnya. **Status 18 Oktober 2026: selesai** (dikonfirmasi
+Bryan). Jangan tagih lagi.
 
 **Materi dosen yang sudah diterima (15 Oktober 2026):** dua PPT, dipindah 16 Oktober 2026 ke
 `Kuliah\Semester 1\Pendidikan Agama Kristen\Materi\` (nama file asli dosen, termasuk typo
