@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 4f7b5533-798d-468f-a416-7dfaa39962df
-  modified: 2026-10-19T12:48:28.695Z
+  modified: 2026-10-19T13:30:42.846Z
 ---
 
 On 19 Oct 2026 Bryan asked for a professional-drafter redo of a PLN panel, UPS & battery room layout (SSS had
@@ -19,8 +19,11 @@ Approved by Bryan: single-leaf 1000 fire door; existing racks and UPS may not mo
 update): existing UPS will be removed only after the new ones run, so new UPS 1A/2A (Vertiv HIPULSE U, drawn
 at 300 kVA-12P/400 kVA size 2280x855 from the manual in his Downloads) sit side by side at the bottom-left,
 not in the existing UPS area. New batteries = vendor open rack 1230x1000 (32x12V 200Ah), 5 per UPS, drawn as
-two 1230x5000 rows next to the existing racks (aisles 823) with floor BCB boxes 654x250. Still mine to
-confirm with him: the kVA rating, and 823 rack aisles being under NEC 900. Other earlier calls: BOQ's widened
+two 1230x5000 rows next to the existing racks (aisles 823) with floor BCB boxes 654x250; the user accepted
+the battery layout. Site info: existing racks 1B-2B are 1000 apart, so existing racks redrawn 1230 wide
+(outer edges kept). User asked for UPS/panel alternatives -> set is now 5 sheets: 01 existing, 02 bongkar,
+03-05 = Opsi A/B/C (OPTIONS dict in the script). "Disetujui" left blank on his request. Open: kVA rating,
+823 rack aisles under NEC 900. Other earlier calls: BOQ's widened
 right wall ignored; AC + APAR on demolished walls relocated; 1200 aisles where panels face each other.
 
 **Why:** existing equipment was measured from phone screenshots of Opsi 1/2 (+-35 mm) and new sizes are BOQ
