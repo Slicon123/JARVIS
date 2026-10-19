@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 4f7b5533-798d-468f-a416-7dfaa39962df
-  modified: 2026-10-19T13:30:42.846Z
+  modified: 2026-10-19T14:04:16.226Z
 ---
 
 On 19 Oct 2026 Bryan asked for a professional-drafter redo of a PLN panel, UPS & battery room layout (SSS had
@@ -23,7 +23,12 @@ two 1230x5000 rows next to the existing racks (aisles 823) with floor BCB boxes 
 the battery layout. Site info: existing racks 1B-2B are 1000 apart, so existing racks redrawn 1230 wide
 (outer edges kept). User asked for UPS/panel alternatives -> set is now 5 sheets: 01 existing, 02 bongkar,
 03-05 = Opsi A/B/C (OPTIONS dict in the script). "Disetujui" left blank on his request. Open: kVA rating,
-823 rack aisles under NEC 900. Other earlier calls: BOQ's widened
+823 rack aisles under NEC 900.
+Photo of existing rack 1B (19 Oct 2026), measured by counting 40 cm floor tiles (perspective-corrected,
++-5%): Panel DC/BCB 1B and 2B on steel stands ~1.8 m wide, ~0.55 m deep, ~1.6 m apart; rack 1B ~5.8 m long
+(7 bays ~0.8 m, batteries ~580 long, so a different model from the new 1230 open rack). The drawing's
+existing racks (from Opsi images) are therefore wrong, and the "1 m between racks" site info conflicts.
+Waiting on tape measurements before redrawing the east half; new rack 1A/2A positions may no longer fit. Other earlier calls: BOQ's widened
 right wall ignored; AC + APAR on demolished walls relocated; 1200 aisles where panels face each other.
 
 **Why:** existing equipment was measured from phone screenshots of Opsi 1/2 (+-35 mm) and new sizes are BOQ
