@@ -21,6 +21,13 @@ dan `lib_tail.js` lewat `python tools.py assemble content2.js build2.js`. Ada ju
 di Word, SaveAs gagal. Jangan pernah mematikan WINWORD milik Bryan; matikan hanya PID yang
 dimulai skrip.
 
+**Audit 19 Okt 2026 (kedua laporan, file-audit):** laporan impor murah lolos tanpa perubahan.
+Di laporan ini ada 3 perbaikan sitasi: "(ILO, 2026)" dan "(MOM, 2024)" diganti nama lengkap yang
+sama dengan daftar pustaka, dan entri ILO diberi tanggal (2026, 16 Juni). `content2.js` dan
+`build2.js` sudah disamakan. Sumber yang dicek ulang: artikel Kontan 8 Okt 2026 memang memuat
+SE BHR 2026, dan judul artikel ILO memang berakhir "in Türkiye". Daftar pustaka dikelompokkan
+per jenis seperti T2–T4, jadi dibiarkan.
+
 **Isi pokok:** hubungan mitra disebut "campuran": dari 7 aspek, 4 condong ke kendali platform.
 Prinsip yang diusulkan adalah "perlindungan sebanding kendali", dengan 4 garis batas etis.
 Kerangka ujinya 5 prinsip Fairwork. Skema "Jaring Pengaman Mitra" punya 5 lapisan: JKK+JKM
