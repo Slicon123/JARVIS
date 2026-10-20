@@ -24,15 +24,17 @@ Rev 1, 20 Oct 2026 (his boss's markup, relayed by Bryan):
 - New rack = 1000 wide x 5x1230 = 6150 long; 1A at x 6328, 2A at x 8337 (east face of the pillar), aisles 1009/665.
 - Old item B6 is a structural pillar 692x907 (lower box in the existing PDF); only the wall stub above it is demolished.
 - Existing FSS tube under the pillar stays; my old "APAR" is really a NEW FSS tube (drawn top-left of new room).
-- 4 new AC in the new room per option + a 2x2 back-to-back block (2 new facing W, 2 existing facing E). The block
-  could not go right beside the tube (racks fill that strip), so it sits west of the BCB 1A work area.
-  Assumed 2 existing AC on the old B7 wall (drawn on sheet 1); total new AC = 6 — both unconfirmed.
+- AC (Bryan confirmed 20 Oct: 4 new in total) = 2 on the new room's top wall + 2 in a 2x2 back-to-back block with
+  the 2 existing AC from the old B7 wall (new face W, existing face E). In Opsi A/B the block sits west of the
+  BCB 1A work area because the rack row fills the strip by the tube. Opsi C ("opsi 3" in their notes = my 3rd
+  option): new racks need not line up with the old ones, so rack 1A moved to the old corridor (x 4937, BCB at its
+  south end) and the block sits right under the FSS tube, 600 from rack 2A.
 - ICON asked for an empty legend/title block incl. PT name: frame + empty grid only, no logo, no names.
   The B/N wall tags on sheet 2 now have no key.
 
 **Why:** existing equipment was measured from phone screenshots (+-35 mm) and the brief comes as loose markup,
 so revisions keep coming.
 **How to apply:** edit the data block in build_layout.py and rerun rather than hand-editing the DXF. Open as of
-20 Oct 2026: their note "opsi 3 baterainya gak harus sejajar 4 dengan yang lama" (which option, what arrangement),
-AC count, LVMDP A/B sizes, vendor datasheets, PUIL/PLN clearances for the 665/1009 rack aisles.
+20 Oct 2026: whether they like the Opsi C rack 1A spot (177 from UPS 2A), 2 existing AC on B7 (assumed),
+LVMDP A/B sizes, vendor datasheets, PUIL/PLN clearances for the 665/1009 rack aisles.
 Client context: [[project-sinergi-proposal-teknis]].
