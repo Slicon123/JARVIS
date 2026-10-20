@@ -24,8 +24,8 @@ Rev 1, 20 Oct 2026 (his boss's markup, relayed by Bryan):
 - New rack = 1000 wide x 5x1230 = 6150 long; 1A at x 6328, 2A at x 8337 (east face of the pillar), aisles 1009/665.
 - Old item B6 is a structural pillar 692x907 (lower box in the existing PDF); only the wall stub above it is demolished.
 - Existing FSS tube under the pillar stays; my old "APAR" is really a NEW FSS tube (drawn top-left of new room).
-- AC (Bryan confirmed 20 Oct: 4 new in total) = 2 on the new room's top wall + 2 in a 2x2 back-to-back block with
-  the 2 existing AC from the old B7 wall (new face W, existing face E). In Opsi A/B the block sits west of the
+- AC: Bryan confirmed 20 Oct the TOTAL is 4 = one 2x2 back-to-back block (2 new facing W + the 2 existing AC
+  from the old B7 wall, moved, facing E). No other new AC (I first drew 2 more on the top wall - wrong). In Opsi A/B the block sits west of the
   BCB 1A work area because the rack row fills the strip by the tube. Opsi C ("opsi 3" in their notes = my 3rd
   option): new racks need not line up with the old ones -> rack 1A on the west wall (x 100-1100, BCB at its north
   end), panels/UPS shifted to x 1800+, AC block right under the FSS tube, 600 from rack 2A. Bryan wants every
