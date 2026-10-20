@@ -27,14 +27,16 @@ Rev 1, 20 Oct 2026 (his boss's markup, relayed by Bryan):
 - AC (Bryan confirmed 20 Oct: 4 new in total) = 2 on the new room's top wall + 2 in a 2x2 back-to-back block with
   the 2 existing AC from the old B7 wall (new face W, existing face E). In Opsi A/B the block sits west of the
   BCB 1A work area because the rack row fills the strip by the tube. Opsi C ("opsi 3" in their notes = my 3rd
-  option): new racks need not line up with the old ones, so rack 1A moved to the old corridor (x 4937, BCB at its
-  south end) and the block sits right under the FSS tube, 600 from rack 2A.
+  option): new racks need not line up with the old ones -> rack 1A on the west wall (x 100-1100, BCB at its north
+  end), panels/UPS shifted to x 1800+, AC block right under the FSS tube, 600 from rack 2A. Bryan wants every
+  work space reachable without squeezing: panel aisles need an entrance at both ends (NFPA 70 110.26(C)(2),
+  >= 610 each) - Opsi C now has 700 (west, rack aisle) + open east end; A/B already open at both ends.
 - ICON asked for an empty legend/title block incl. PT name: frame + empty grid only, no logo, no names.
   The B/N wall tags on sheet 2 now have no key.
 
 **Why:** existing equipment was measured from phone screenshots (+-35 mm) and the brief comes as loose markup,
 so revisions keep coming.
 **How to apply:** edit the data block in build_layout.py and rerun rather than hand-editing the DXF. Open as of
-20 Oct 2026: whether they like the Opsi C rack 1A spot (177 from UPS 2A), 2 existing AC on B7 (assumed),
+20 Oct 2026: their reaction to the reworked Opsi C, 2 existing AC on B7 (assumed),
 LVMDP A/B sizes, vendor datasheets, PUIL/PLN clearances for the 665/1009 rack aisles.
 Client context: [[project-sinergi-proposal-teknis]].
