@@ -27,8 +27,10 @@ Rev 1, 20 Oct 2026 (his boss's markup, relayed by Bryan):
 - AC (Bryan confirmed 20 Oct: 4 new in total) = 2 on the new room's top wall + 2 in a 2x2 back-to-back block with
   the 2 existing AC from the old B7 wall (new face W, existing face E). In Opsi A/B the block sits west of the
   BCB 1A work area because the rack row fills the strip by the tube. Opsi C ("opsi 3" in their notes = my 3rd
-  option): new racks need not line up with the old ones -> rack 1A on the west wall (x 100-1100, BCB at its north
-  end), panels/UPS shifted to x 1800+, AC block right under the FSS tube, 600 from rack 2A. Bryan wants every
+  option): new racks need not line up with the old ones -> rack 1A on the west side, 700 off the wall (boss: battery
+  must not hug the wall) with 700 aisles both sides, BCB at its north end; panels x 2400-6400, UPS row lower
+  (y 8900); AC block ~700 below the FSS tube so the new W-facing AC blow down the panel/UPS rear aisle, not at
+  a panel end; FSS panel moved to the top-left wall near the new FSS tube. Bryan wants every
   work space reachable without squeezing: panel aisles need an entrance at both ends (NFPA 70 110.26(C)(2),
   >= 610 each) - Opsi C now has 700 (west, rack aisle) + open east end; A/B already open at both ends.
 - ICON asked for an empty legend/title block incl. PT name: frame + empty grid only, no logo, no names.
