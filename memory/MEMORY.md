@@ -45,4 +45,4 @@
 - [PDF → Word replica](feedback-pdf-to-word-replica.md) — rebuild from PDF coordinates; Word exact spacing = baseline at 0.8×L; section breaks not page breaks; verify ≤1 pt
 - [Spanduk K3 Sinergi](project-spanduk-k3-sinergi.md) — 3 K3 banner designs (15 Oct 2026): HATI-HATI 400/100×80 with 4 logos, UTAMAKAN K3 200/100×80, TERTIB K3 400/250×80; logo sources; scripts in Spanduk\_Sumber
 - [Stiker helm Sinergi](project-stiker-helm-sinergi.md) — SINERGI 13,3×3 cm + logo K3 5×5 cm matched to helmet photos (15 Oct 2026); Source Han Sans Bold, navy #283A8A; sizes estimated
-- [Layout ruang UPS PLN](project-layout-ruang-ups-pln.md) — 5-sheet A3 DXF+PDF by script; rev 1 (20 Oct 2026): racks 1000x6150, pillar+FSS tube kept, 4 new AC, empty title block; Opsi C rack 1A split out
+- [Layout ruang UPS PLN](project-layout-ruang-ups-pln.md) — client chose the hired drafter's Opsi-1 (20 Oct 2026); my script set kept for reference only
