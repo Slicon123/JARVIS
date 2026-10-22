@@ -17,8 +17,12 @@ build it; Bryan builds it by hand from a guide. Built 22 Oct 2026:
   `Gambar\` (header-beranda, header-halaman, logo, favicon), `Kode Embed\` 1–4 (salam with typing effect,
   kuis, rak musik linking to Spotify search, Ungaran climb animation), `_sumber\` (gen-gambar.html,
   render.py, harness.html = exact-size iframe like Google Sites, build-panduan.py rebuilds the guide).
-- Site plan: "Jejak Bryan", 5 pages (Beranda, Kuliah & Kerja, Hobi, Petualangan, Buku Tamu), forest
+- Site plan: "Jejak Bryan", 5 pages (Beranda, Study & Work, Hobbies, Adventure, Guestbook), forest
   #24493F + gold. He asked for "elegan dan adventures", Indonesian, map = UKSW only.
+- Page titles and section headings are English, his choice on 22 Oct: About Me, College, First-Semester
+  Courses, My Campus in Salatiga, Work, Guitar, Swimming, Music, Climbing Mount Ungaran; embed headings too
+  (How Well Do You Know Bryan?, Bryan's Record Shelf, Mount Ungaran). Body text, the header tagline and the
+  Beranda menu name stay Indonesian.
 - The section texts are his own (pasted 22 Oct). Claude's drafts (captions, banner, footer, guestbook
   intro) are marked in the guide for him to rewrite, since the PTI dosen bans AI ([[project-pengantar-teknologi-informasi]]).
 
@@ -27,7 +31,8 @@ confirming (it appears in his Musik text, Kode 2 soal 5, Kode 3). His Kuliah tex
 collapsible lists 5. Only the guitar photo has been supplied so far.
 
 **How to apply:** if he wants an embed changed, edit `Kode Embed\*.html`, re-check it with render.py through
-harness.html at laptop and phone widths, rerun build-panduan.py, and republish the artifact (by URL from a
+harness.html at laptop and phone widths (prefix `RM=1` to capture the Ungaran embed in its finished state;
+headless Chrome freezes the animation at the start), rerun build-panduan.py, and republish the artifact (by URL from a
 new session). Render through harness.html, not the page directly: render.py widens the window, so a
 direct render shows the wrong layout.
 
