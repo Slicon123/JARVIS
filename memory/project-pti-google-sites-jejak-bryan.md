@@ -48,8 +48,8 @@ is his own, and he swapped the work group photo.
 
 Second live check 22 Oct: site is public at https://sites.google.com/view/bryanstrail (opens without login);
 new compact embed code is live and correct on phones; button fixed to College & Work. Third check same day: Home greeting
-embed shrunk to 1154x419 (phone 352x128, compact mode reads fine). Site judged ready to submit. Not yet submitted to the Google Form as of this check.
-
+embed shrunk to 1154x419 (phone 352x128, compact mode reads fine). Site judged ready to submit.
+**Submitted** via the class Google Form on 22 Oct 2026 (link /view/bryanstrail); waiting for the grade. 
 Open as of 22 Oct: "The Bakuucakar" (a favourite artist) wasn't found online, so the spelling needs
 confirming (it appears in his Musik text and Kode 2, the record shelf). His Kuliah text lists 4 courses while the
 collapsible lists 5. Only the guitar photo has been supplied so far.
