@@ -31,6 +31,11 @@ build it; Bryan builds it by hand from a guide. Built 22 Oct 2026:
 - The section texts are his own (pasted 22 Oct). Claude's drafts (captions, banner, footer, guestbook
   intro) are marked in the guide for him to rewrite, since the PTI dosen bans AI ([[project-pengantar-teknologi-informasi]]).
 
+Carousel photos (22 Oct, at his request): `Gambar\Carousel Beranda` (UKSW building, his guitar photo,
+a pool, Ungaran from Salatiga) and `Gambar\Carousel Adventure` (Ungaran cliff, summit, Rawa Pening), all
+place photos from Wikimedia Commons / id.wikipedia under CC BY-SA or CC0; captions carry the credit and
+`Gambar\Kredit foto.txt` has the links. Internet photos are of places only, never presented as him.
+
 Open as of 22 Oct: "The Bakuucakar" (a favourite artist) wasn't found online, so the spelling needs
 confirming (it appears in his Musik text and Kode 2, the record shelf). His Kuliah text lists 4 courses while the
 collapsible lists 5. Only the guitar photo has been supplied so far.
