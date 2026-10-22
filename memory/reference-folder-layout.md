@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: dc35df87-6961-43dd-85ae-aa182744a345
-  modified: 2026-10-09T08:39:47.822Z
+  modified: 2026-10-22T14:37:42.435Z
 ---
 
 On 6 Oct 2026 everything in `C:\Bryan De Great` and `~/Downloads` was sorted at his request
@@ -26,6 +26,7 @@ On 6 Oct 2026 everything in `C:\Bryan De Great` and `~/Downloads` was sorted at 
 - `GP-100\` is the installed GP-100 editor app (Start Menu and Desktop shortcuts point at it). **Never move it.**
 - `Python\` is his practice scripts. `JARVIS\` is this repo.
 - `Animasi\` (created on first use): animation pieces from the animate skill, one `pieces\<name>\` each. See [[project-animate-skill]].
+- `Denah 3D\` (created 22 Oct 2026): 3D house-plan models, one subfolder per house (source HTML + the client's PDF). See [[project-denah-3d-rumah]].
 
 Old→new paths are logged in `C:\Bryan De Great\_Catatan pindah non-kuliah 2026-10-06.csv` (and
 `Kuliah\_Catatan pindah 2026-10-06.csv` for coursework). Everything removed went to the Recycle Bin.
