@@ -36,6 +36,10 @@ a pool, Ungaran from Salatiga) and `Gambar\Carousel Adventure` (Ungaran cliff, s
 place photos from Wikimedia Commons / id.wikipedia under CC BY-SA or CC0; captions carry the credit and
 `Gambar\Kredit foto.txt` has the links. Internet photos are of places only, never presented as him.
 
+Google Sites disables every link in both edit mode and Preview ("Clicking links is not available in preview
+mode", seen 22 Oct); table-of-contents and other links only work on the published site. His menu said
+"Collage & Work" on 22 Oct; flagged as a typo for College.
+
 Open as of 22 Oct: "The Bakuucakar" (a favourite artist) wasn't found online, so the spelling needs
 confirming (it appears in his Musik text and Kode 2, the record shelf). His Kuliah text lists 4 courses while the
 collapsible lists 5. Only the guitar photo has been supplied so far.
