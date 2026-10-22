@@ -16,7 +16,7 @@ build it; Bryan builds it by hand from a guide. Built 22 Oct 2026:
 - Folder `Kuliah\Semester 1\Pengantar Teknologi Informasi\Tugas\Google Sites - Jejak Bryan\`:
   `Gambar\` (header-beranda, header-halaman, logo, favicon), `Kode Embed\` 1–3 (salam with typing effect,
   rak musik linking to Spotify search, Ungaran climb animation; the quiz he dropped on 22 Oct is in
-  `Kode Embed\_Arsip-kuis.html`, and the announcement banner now points to the Adventure animation), `_sumber\` (gen-gambar.html,
+  `Kode Embed\_Arsip\2-kuis.html`, and the announcement banner now points to the Adventure animation), `_sumber\` (gen-gambar.html,
   render.py, harness.html = exact-size iframe like Google Sites, build-panduan.py rebuilds the guide).
 - Site name: Bryan renamed it **Bryan's Trail** on 22 Oct (web address `bryans-trail`); the folder keeps the
   old name. Greeting embed: he cut the summary paragraph (too long, summarised the site) and found
