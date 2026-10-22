@@ -1,6 +1,6 @@
 ---
 name: project-pti-google-sites-jejak-bryan
-description: "PTI tugas: Google Sites website about Bryan's life (\"Jejak Bryan\"), due 29 Oct 2026 via Google Form link; guide artifact, embeds and images built 22 Oct 2026"
+description: "PTI tugas: Google Sites website about Bryan's life (\"Bryan's Trail\", first named Jejak Bryan), due 29 Oct 2026 via Google Form link; guide artifact, embeds and images built 22 Oct 2026"
 metadata:
   type: project
 ---
@@ -12,12 +12,15 @@ carousel, map) scores 60; extra features score above standard. Bryan says there 
 
 Google Sites has no API for current Sites (the old Sites API only covers classic Sites), so Claude can't
 build it; Bryan builds it by hand from a guide. Built 22 Oct 2026:
-- Guide artifact: https://claude.ai/artifact/8asHM31JttpixfpcRHC4mF (local copy `Panduan Jejak Bryan.html`).
+- Guide artifact: https://claude.ai/artifact/8asHM31JttpixfpcRHC4mF (local copy `Panduan Bryan's Trail.html`).
 - Folder `Kuliah\Semester 1\Pengantar Teknologi Informasi\Tugas\Google Sites - Jejak Bryan\`:
   `Gambar\` (header-beranda, header-halaman, logo, favicon), `Kode Embed\` 1–4 (salam with typing effect,
   kuis, rak musik linking to Spotify search, Ungaran climb animation), `_sumber\` (gen-gambar.html,
   render.py, harness.html = exact-size iframe like Google Sites, build-panduan.py rebuilds the guide).
-- Site plan: "Jejak Bryan", 4 pages (Beranda, Study & Work, Hobbies, Adventure); he dropped the planned
+- Site name: Bryan renamed it **Bryan's Trail** on 22 Oct (web address `bryans-trail`); the folder keeps the
+  old name. Greeting embed: he cut the summary paragraph (too long, summarised the site) and found
+  "penyusun dokumen teknis" too formal; it now types "anak dokumentasi proyek kelistrikan".
+- Site plan: 4 pages (Beranda, Study & Work, Hobbies, Adventure); he dropped the planned
   Guestbook page (Google Form) on 22 Oct, so the Instagram link moved to Beranda. Forest
   #24493F + gold. He asked for "elegan dan adventures", Indonesian, map = UKSW only.
 - Page titles and section headings are English, his choice on 22 Oct: About Me, College, First-Semester
