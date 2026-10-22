@@ -40,6 +40,12 @@ Google Sites disables every link in both edit mode and Preview ("Clicking links 
 mode", seen 22 Oct); table-of-contents and other links only work on the published site. His menu said
 "Collage & Work" on 22 Oct; flagged as a typo for College.
 
+Live check of sites.google.com/view/bryanstrail on 22 Oct: on phones Google Sites keeps each embed's
+laptop aspect ratio, so heights shrink (1154x532 became 352x162) and the record shelf and Ungaran scene were
+cut off. All three embeds now switch to a compact layout via max-height media queries; test any new embed
+at its real phone height, not a fixed one. He confirmed the hiker carousel photo is him, the UKSW gate photo
+is his own, and he swapped the work group photo.
+
 Open as of 22 Oct: "The Bakuucakar" (a favourite artist) wasn't found online, so the spelling needs
 confirming (it appears in his Musik text and Kode 2, the record shelf). His Kuliah text lists 4 courses while the
 collapsible lists 5. Only the guitar photo has been supplied so far.
