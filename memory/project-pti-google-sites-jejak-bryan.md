@@ -17,7 +17,8 @@ build it; Bryan builds it by hand from a guide. Built 22 Oct 2026:
   `Gambar\` (header-beranda, header-halaman, logo, favicon), `Kode Embed\` 1–4 (salam with typing effect,
   kuis, rak musik linking to Spotify search, Ungaran climb animation), `_sumber\` (gen-gambar.html,
   render.py, harness.html = exact-size iframe like Google Sites, build-panduan.py rebuilds the guide).
-- Site plan: "Jejak Bryan", 5 pages (Beranda, Study & Work, Hobbies, Adventure, Guestbook), forest
+- Site plan: "Jejak Bryan", 4 pages (Beranda, Study & Work, Hobbies, Adventure); he dropped the planned
+  Guestbook page (Google Form) on 22 Oct, so the Instagram link moved to Beranda. Forest
   #24493F + gold. He asked for "elegan dan adventures", Indonesian, map = UKSW only.
 - Page titles and section headings are English, his choice on 22 Oct: About Me, College, First-Semester
   Courses, My Campus in Salatiga, Work, Guitar, Swimming, Music, Climbing Mount Ungaran; embed headings too
