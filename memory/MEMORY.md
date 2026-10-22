@@ -20,7 +20,7 @@
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–3 submitted; slides through pertemuan 7 (Boolean, gerbang, SOP/POS); tes ~14 Okt, latihan 1 + 2 complete (2 adds ekivalensi)
 - [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned); Word draft + Excel rev reviewed 16 Oct, final Excel late (not in by 18 Oct)
-- [PTI Google Sites — Bryan's Trail](project-pti-google-sites-jejak-bryan.md) — website kehidupan (4 halaman), deadline 29 Okt 2026 (link via GForm); guide artifact + 4 embeds + images built 22 Okt; Bakuucakar spelling + photos pending
+- [PTI Google Sites — Bryan's Trail](project-pti-google-sites-jejak-bryan.md) — website kehidupan (4 halaman), deadline 29 Okt 2026 (link via GForm); guide artifact + 3 embeds + images built 22 Okt (guestbook + kuis dropped); Bakuucakar spelling + photos pending
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
 - [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
 - [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm siap (16 Okt 2026), belum dikumpulkan; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
