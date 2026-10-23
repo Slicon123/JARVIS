@@ -38,3 +38,8 @@ Solihin's exact definition of bisnis could not be found online: the "create valu
 transaksi" wording is Amirullah & Hardjanto (2005), and "kegiatan usaha individu yang
 terorganisasi..." is Hughes & Kapoor. So the essay paraphrases per the dosen's indicator, with
 no quote marks. Used Verhoef, Kannan & Inman (2015) for multichannel vs omnichannel, UU 27/2022 PDP.
+
+He tested the omnichannel answer on turnitindetector.ai (T-Checker): 46/50/4 human/mixed/AI before
+the humanize pass, 41/55/4 after. That led to the humanizer's detector mode (detector.md, 23 Oct
+2026); he declined storing a voice sample of his writing. A detector-mode version with four
+[TAMBAH: ...] spots for his own sentences was given the same day.
