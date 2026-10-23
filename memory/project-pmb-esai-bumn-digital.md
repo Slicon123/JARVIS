@@ -30,4 +30,11 @@ He then asked to humanize it; the humanized version dropped the Penutup paragrap
 Responsibility from Charity to Sustainability*, Salemba Empat (ISBN 9789790610385; some catalogs
 say 2011). Also Carroll 1991, Elkington 1997, Porter & Kramer 2006/2011, UU 40/2007 Pasal 74,
 UU 25/2007 Pasal 15, UU 17/2019 (business water use must not override the people's right to
-water). Written straight in humanized style. Expect more questions from this GForm.
+water). Written straight in humanized style; he still asked to humanize it. Expect more questions from this GForm.
+
+**Third question, same day:** "Nusantara Mart" retailer going omnichannel (Solihin's business
+definition, scope across operasional/pemasaran/keuangan/SDM, supply-chain risks, mitigation).
+Solihin's exact definition of bisnis could not be found online: the "create value ... melalui
+transaksi" wording is Amirullah & Hardjanto (2005), and "kegiatan usaha individu yang
+terorganisasi..." is Hughes & Kapoor. So the essay paraphrases per the dosen's indicator, with
+no quote marks. Used Verhoef, Kannan & Inman (2015) for multichannel vs omnichannel, UU 27/2022 PDP.
