@@ -22,10 +22,13 @@ detector result. Run the normal process in SKILL.md, then everything below on to
 
 ## What to do, strongest first
 
-1. **Details only the writer has.** The only lever a dosen notices as well. In each section,
-   find one spot where a concrete detail from Bryan would fit: a place he knows, a class
-   discussion, his work, a number he saw. Mark it in the text as `[TAMBAH: what to add, in
-   one line]` for him to fill. Never write the detail yourself.
+1. **Concrete public specifics.** Bryan does not want to add his own sentences (said 23 Oct
+   2026), so return text that needs no input from him. Where a paragraph runs on generalities,
+   add one specific that a reader can check: a named Indonesian company doing the thing
+   described, a regulation, a figure from a source you looked up this session. Verify each one
+   first. Never write a personal experience, opinion of his, or detail about his life; the
+   essay's existing "menurut saya" stance is enough. Offer `[TAMBAH: ...]` spots for his own
+   details only if he asks for them.
 2. **The exact word, not the default word.** For each sentence, ask whether the key word is
    the first one any writer would reach for. Where the subject has a precise term, or a less
    common baku word fits the register (*menggerus* for *mengurangi*, *menyedot* for *mengambil*),
@@ -43,7 +46,7 @@ detector result. Run the normal process in SKILL.md, then everything below on to
 
 - List the first words of every paragraph and list item: no two in a row alike.
 - Each paragraph has one short and one long sentence.
-- Every `[TAMBAH: ...]` is listed back to Bryan, with what to write there.
+- Every added specific is listed back to Bryan with its source.
 
 ## What to tell Bryan
 
