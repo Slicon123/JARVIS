@@ -22,7 +22,7 @@
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned); Excel rev 3 final, Word rev 3 reviewed 22 Oct (still needs embed, page breaks, Bab II 1 page)
 - [PTI Google Sites — Bryan's Trail](project-pti-google-sites-jejak-bryan.md) — website kehidupan (4 halaman), SUDAH dikumpulkan 22 Okt 2026, tunggu nilai; guide artifact + 3 embeds + images built 22 Okt (guestbook + kuis dropped); Bakuucakar spelling + photos pending
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
-- [PMB esai — BUMN digital](project-pmb-esai-bumn-digital.md) — GForm text answer 23 Okt 2026: BUMN katalis di infrastruktur, distorsi di layanan; KPBU, open access, UU 16/2025 BP BUMN
+- [PMB esai GForm — BUMN digital, CSR](project-pmb-esai-bumn-digital.md) — 23 Okt 2026 text answers: BUMN katalis di infrastruktur; CSR pusat data charity→sustainability (Solihin 2009); humanized style
 - [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
 - [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm siap (16 Okt 2026), belum dikumpulkan; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
 - [PMB tahapan usaha — nebeng](project-pmb-tahapan-usaha-nebeng.md) — slide 6 tahap 1–5 + kelemahan, app nebeng SeJalur (bis UKSW maintenance); Word 3 hlm + pustaka 20 Okt 2026, belum dikumpulkan

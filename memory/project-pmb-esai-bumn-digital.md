@@ -23,3 +23,11 @@ Badan Pengaturan BUMN; 1% Dwiwarna via BP BUMN, 99% seri B managed by Danantara.
 38/2015 (KPBU) still listed in force. Solihin (2014) *Pengantar Bisnis* is Erlangga (library
 catalogs, ISBN 978-602-298-285-2) — same entry as in [[project-pmb-tugas-badan-usaha]].
 The "perintis" aim is the UU's wording, not verified as Solihin's own text.
+He then asked to humanize it; the humanized version dropped the Penutup paragraph.
+
+**Second GForm question, same day:** CSR of a multinational cloud data center in a village
+(groundwater drawdown, local heat, sembako charity). Cited Solihin, I. (2009) *Corporate Social
+Responsibility from Charity to Sustainability*, Salemba Empat (ISBN 9789790610385; some catalogs
+say 2011). Also Carroll 1991, Elkington 1997, Porter & Kramer 2006/2011, UU 40/2007 Pasal 74,
+UU 25/2007 Pasal 15, UU 17/2019 (business water use must not override the people's right to
+water). Written straight in humanized style. Expect more questions from this GForm.
