@@ -41,7 +41,8 @@ Every board says the shirt is a base layer, and energized work still needs arc-r
 only for outdoor or near-vehicle sites. The wearpack question is answered by his own files. The Aug 2026 BA Rapat Penjelasan RKS (DC PLN Pusat) and the KOM deck
 require only "Seragam" and "Sepatu Safety" for the Engineer On Site; no wearpack is named. Sinergi's own SOP/MOP/EOP require
 "baju/pakaian tahan api" for trafo and kubikel PM, cubicle faults, and genset hot refueling. Whether the team owns FR clothing
-for those jobs is still open.
+for those jobs is still open. On 24 Oct 2026 Bryan deferred my offer of an FR-wearpack spec and design ("untuk sekarang
+kerjakan yg 3 opsi itu dulu saja"), so don't raise it again unless he does.
 
 **Why:** the team will pick a design and ask for revisions, and the konveksi will need vector files.
 
