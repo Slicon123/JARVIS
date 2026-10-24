@@ -28,6 +28,16 @@ because polyester melts, and plastic buttons and zips. OSHA 1910.269 bars polyes
 exposed to arcs or flame unless the fabric is treated. A plain cotton shirt is still not arc-rated PPE. Design 3 is only
 "hi-vis style" unless its fabric and tape are ISO 20471 certified.
 
+**Suitability check (24 Oct 2026).** Bryan asked whether the designs fit the actual work: DC electrical PM (UPS,
+battery, ATS-AMF LVMDP, ACB), FSS, distribution trafo/kubikel PM, gardu sites, and meetings at PLN/Icon Plus. My answer was
+"partly". None of them is arc-rated PPE, and none needs to be: it is the base layer under arc-rated clothing for energized
+work. But I had put meltable synthetics on them, contradicting the no-polyester advice: standard reflective tape (worst on
+design 1's forearms and design 3's 5 cm hoops), polyester mesh (designs 2 and 3), a nylon zip (design 2), and polyester
+embroidery thread and patches. I proposed an "aman listrik" revision of all three and am waiting for his yes: FR reflective
+tape or no tape, mesh replaced by covered cotton vents, button flaps instead of zips, cotton thread, and an ID-card loop for
+DC access. Ranking: design 1 fits best (indoor panel rooms and meetings), design 3 only for outdoor or near-vehicle sites, and
+design 2 needs the most changes. I found no official PLN rule on contractor wearpacks, so the team's K3 officer should confirm it.
+
 **Why:** the team will pick a design and ask for revisions, and the konveksi will need vector files.
 
 **How to apply:** run `python buat_seragam.py` in `Seragam\_Sumber\` to rebuild every file. It overwrites files with the same name, so move old ones to `_Arsip\` first, or pass a folder to test elsewhere. Colours, the
