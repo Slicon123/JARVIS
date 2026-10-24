@@ -28,15 +28,20 @@ because polyester melts, and plastic buttons and zips. OSHA 1910.269 bars polyes
 exposed to arcs or flame unless the fabric is treated. A plain cotton shirt is still not arc-rated PPE. Design 3 is only
 "hi-vis style" unless its fabric and tape are ISO 20471 certified.
 
-**Suitability check (24 Oct 2026).** Bryan asked whether the designs fit the actual work: DC electrical PM (UPS,
-battery, ATS-AMF LVMDP, ACB), FSS, distribution trafo/kubikel PM, gardu sites, and meetings at PLN/Icon Plus. My answer was
-"partly". None of them is arc-rated PPE, and none needs to be: it is the base layer under arc-rated clothing for energized
-work. But I had put meltable synthetics on them, contradicting the no-polyester advice: standard reflective tape (worst on
-design 1's forearms and design 3's 5 cm hoops), polyester mesh (designs 2 and 3), a nylon zip (design 2), and polyester
-embroidery thread and patches. I proposed an "aman listrik" revision of all three and am waiting for his yes: FR reflective
-tape or no tape, mesh replaced by covered cotton vents, button flaps instead of zips, cotton thread, and an ID-card loop for
-DC access. Ranking: design 1 fits best (indoor panel rooms and meetings), design 3 only for outdoor or near-vehicle sites, and
-design 2 needs the most changes. I found no official PLN rule on contractor wearpacks, so the team's K3 officer should confirm it.
+**Suitability check and revision (24 Oct 2026).** Bryan asked whether the designs fit the actual work: DC electrical PM
+(UPS, battery, ATS-AMF LVMDP, ACB), FSS, distribution trafo/kubikel PM, gardu sites, and meetings at PLN/Icon Plus. My
+answer was "partly". v1 had meltable synthetics that contradicted its own no-polyester advice: standard reflective tape,
+polyester mesh, a nylon zip, and polyester thread. With his yes, all three became "versi aman listrik":
+- FR reflective tape and piping, with plain cotton piping as the fallback for design 2.
+- Stitched eyelets instead of mesh, and a cape-back gap with no mesh.
+- Slanted welt pockets with hidden buttons instead of zips.
+- Cotton sewing and embroidery thread, cotton patches, and melamine buttons (the usual FR-shirt button).
+- A fabric ID-card loop on every design.
+
+Every board says the shirt is a base layer, and energized work still needs arc-rated clothing over it. v1 files are in
+`Seragam\_Arsip\` with the suffix "(v1 23 Okt)". Ranking: design 1 fits best (indoor panel rooms and meetings), design 3
+only for outdoor or near-vehicle sites. I found no official PLN rule on contractor wearpacks, so the team's K3 officer
+should confirm it.
 
 **Why:** the team will pick a design and ask for revisions, and the konveksi will need vector files.
 
