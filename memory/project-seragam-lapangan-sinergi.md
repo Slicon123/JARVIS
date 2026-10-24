@@ -18,9 +18,7 @@ The files are in `Laporan Sinergi\Seragam\`: one PDF (an overview page plus one 
 2. **Sport Raglan**: navy body, cobalt raglan sleeves with 3 mm reflective piping in the seams, stand collar, slanted plastic-zip chest pockets, underarm mesh, navy elbow patches.
 3. **Hi-Vis Tropis**: fluoro orange on top and navy below, 5 cm reflective hoops around the body and arms, and a cape-back vent. It is modelled on Australian two-tone cotton-drill hi-vis shirts.
 
-These are my choices, and the team may change them. The flag is on the wearer's right sleeve and K3 on the left. The worn
-shirt in his photo has the flag on the right, but the March 2025 CorelDRAW file has it on the left. The example name is
-"BRYAN". The website www.3s-tech.co.id is left off the back because it wasn't in the brief. The chest lockup is the icon plus
+Settled 24 Oct 2026 (Bryan left both to me): the flag is on the wearer's right sleeve, matching the shirt the team wears now, and K3 is on the left. The name sits on the right chest, the standard spot, with the placeholder "NAMA" (it was "BRYAN" in v1). The website www.3s-tech.co.id is left off the back because it wasn't in the brief. The chest lockup is the icon plus
 "PT. SINERGI / SARANA SOLUSI", 9.1 × 2.2 cm with 5.6 mm letters. The back has a logo of about 10 cm and a 28 cm name.
 
 Fabric advice is printed on every board: 100% cotton drill at about 160–200 g/m², no polyester blends for electrical work
@@ -40,8 +38,10 @@ polyester mesh, a nylon zip, and polyester thread. With his yes, all three becam
 
 Every board says the shirt is a base layer, and energized work still needs arc-rated clothing over it. v1 files are in
 `Seragam\_Arsip\` with the suffix "(v1 23 Okt)". Ranking: design 1 fits best (indoor panel rooms and meetings), design 3
-only for outdoor or near-vehicle sites. I found no official PLN rule on contractor wearpacks, so the team's K3 officer
-should confirm it.
+only for outdoor or near-vehicle sites. The wearpack question is answered by his own files. The Aug 2026 BA Rapat Penjelasan RKS (DC PLN Pusat) and the KOM deck
+require only "Seragam" and "Sepatu Safety" for the Engineer On Site; no wearpack is named. Sinergi's own SOP/MOP/EOP require
+"baju/pakaian tahan api" for trafo and kubikel PM, cubicle faults, and genset hot refueling. Whether the team owns FR clothing
+for those jobs is still open.
 
 **Why:** the team will pick a design and ask for revisions, and the konveksi will need vector files.
 
