@@ -5,6 +5,7 @@
 - [Sinergi Struktur Organisasi](project-sinergi-struktur-organisasi.md) — reusable Excel org chart (Input-driven), now in Laporan Sinergi\Template Pekerjaan; full names pending
 - [FSS/ATS documentation](project-fss-ats-documentation.md) — Indonesian flowcharts and commissioning checklists for PLN/Icon Plus work
 - [Sinergi Proposal Teknis](project-sinergi-proposal-teknis.md) — 11-chapter tender proposals for PT. Sinergi Sarana Solusi bidding to PLN Icon Plus
+- [KOM DC Gandul 2026–2027](project-kom-gandul-2026.md) — 26-slide KOM built 26 Oct 2026 from the Pusat "Lengkap" deck; schedule slides empty; 20–26 unchanged; open points
 - [Calendar connector time zone](reference-calendar-connector-timezone.md) — update_event defaults to UTC; always pass timeZone Asia/Jakarta and check +07:00
 - [UKSW Digital Business](project-uksw-digital-business.md) — semester 1 class schedule, university-life help; all coursework files in C:\Bryan De Great\Kuliah
 - [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first

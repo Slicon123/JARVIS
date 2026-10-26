@@ -1,0 +1,40 @@
+---
+name: project-kom-gandul-2026
+description: "KOM PM Kelistrikan DC Gandul & DRC Bandung 2026–2027 deck, built 26 Oct 2026 from the Pusat \"Lengkap\" KOM; schedule left empty; open points"
+metadata:
+  node_type: memory
+  type: project
+  originSessionId: 6823d0a2-0626-4809-aa2d-fbd103595717
+  modified: 2026-10-26T07:08:57.095Z
+---
+
+On 2026-10-26 Bryan asked for a new KOM deck for the PLN Icon Plus TOR "Pengadaan Jasa Pemeliharaan
+Kelistrikan Data Center" (DC Gandul + DRC Bandung, 2026–2027; the TOR PDF was in his Downloads). Built
+`Laporan Sinergi\KOM PM Kelistrikan DC Gandul\KOM PM Kelistrikan DC Gandul 2026-2027.pptx` (26 slides) from
+`KOM PM Kelistrikan DC PLN Pusat\KOM PM Kelistrikan DC PLN Pusat 2026-2027 Lengkap.pptx`. That Lengkap file
+(14 Oct 2026, 26 slides, no SLA or kualifikasi slides) is the Pusat deck that was actually used, newer than
+the 29-slide file named in [[project-sinergi-proposal-teknis]].
+
+His rules for this deck:
+- TOR sections that Lengkap left out stay out (SLA, sanksi, kualifikasi, BoQ, lokasi, jangka waktu, ToC, lampiran).
+- Schedule slides (16–19) kept with titles only, emptied until he has a schedule.
+- Slides 20–26 (work permit, WO, struktur organisasi, terima kasih) identical to Lengkap; only the footer changed.
+
+Choices I made, to explain if asked:
+- Name on cover, title and footer: "Pengadaan Jasa Pemeliharaan Kelistrikan Data Center Gandul dan DRC
+  Bandung". The TOR title itself names no site.
+- Ruang Lingkup follows the TOR's six BoQ jobs in TOR order on slides 5–12. Slide 13 covers Tahapan,
+  include material and Engineer On Site.
+- The SOP card says SOP, MOP & EOP + sharing session (TOR), followed by Lengkap's "sehingga…" clause.
+- Daftar Hadir EOS was removed from Tahap Administrasi.
+- Isi Minimal Laporan gained "Data tools" and "Dokumen SOP, MOP, dan EOP". Slide 15 was re-laid out to fit them.
+- TOR spellings fixed: handal→andal, mainhole→manhole, asbuilt→as-built, batere→battery, dumy→dummy.
+
+Open, not raised with the client yet:
+- Section numbers skip 03 (inherited from Lengkap).
+- The org chart still lists Team Fire Alarm System and Team AC, which are not in the Gandul scope.
+- The TOR's scope text and equipment list disagree on cubicle types and on the DRC genset and UPS ratings.
+  The deck follows the scope text.
+
+The build scripts lived in a session scratchpad and are gone. Edit the pptx at zip level, as with the Pusat
+deck ([[feedback-pptx-edit-checklist]]).
