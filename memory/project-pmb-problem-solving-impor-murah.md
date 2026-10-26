@@ -1,6 +1,6 @@
 ---
 name: project-pmb-problem-solving-impor-murah
-description: Tugas PMB individu "Dampak Impor Murah di TikTok Shop & Tokopedia terhadap UMKM Lokal" — laporan 17 hlm dibuat 16 Okt 2026, deadline ~22 Okt 2026; fakta Permendag 19/2026 dan KPPU yang sudah dicek
+description: Tugas PMB individu "Dampak Impor Murah di TikTok Shop & Tokopedia terhadap UMKM Lokal" — laporan 17 hlm dibuat 16 Okt 2026, sudah dikumpulkan (dikonfirmasi 26 Okt 2026); fakta Permendag 19/2026 dan KPPU yang sudah dicek
 metadata:
   type: project
 ---
@@ -15,7 +15,7 @@ jadi kira-kira 22 Okt 2026 dini hari. Cek waktu pastinya di flearn.
 **Format** sama dengan [[project-pmb-tugas-badan-usaha]]: maksimal 2 file, masing-masing ≤ 32 MB,
 Word diekspor ke PDF.
 
-**Status (16 Okt 2026):** laporan selesai, **belum dikumpulkan**. File ada di
+**Status:** laporan selesai 16 Okt 2026; **sudah dikumpulkan** (Bryan konfirmasi 26 Okt 2026), tunggu nilai. File ada di
 `C:\Bryan De Great\Kuliah\Semester 1\Pengantar Manajemen dan Bisnis\Tugas\Problem Solving Impor Murah\`:
 `Tugas Problem Solving (Impor Murah TikTok Shop-Tokopedia).docx` + `.pdf`. Isinya 17 halaman, dan
 halaman 12–13 (tabel indikator) dibuat lanskap. Formatnya meniru T2–T4: TNR 12, spasi 1,5,

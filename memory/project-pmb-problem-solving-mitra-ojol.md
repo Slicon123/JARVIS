@@ -1,6 +1,6 @@
 ---
 name: project-pmb-problem-solving-mitra-ojol
-description: Tugas PMB problem solving kasus 2 "Kesejahteraan & Jaminan Sosial Mitra Ojol dan Kurir" — laporan 18 hlm dibuat 16 Okt 2026, belum dikumpulkan; fakta Perpres 27/2026 (terbit Okt 2026), BHR, PP 50/2025, ILO C193, angka GoTo 2025
+description: Tugas PMB problem solving kasus 2 "Kesejahteraan & Jaminan Sosial Mitra Ojol dan Kurir" — laporan 18 hlm dibuat 16 Okt 2026, sudah dikumpulkan (dikonfirmasi 26 Okt 2026); fakta Perpres 27/2026 (terbit Okt 2026), BHR, PP 50/2025, ILO C193, angka GoTo 2025
 metadata:
   type: project
 ---
@@ -12,7 +12,7 @@ merusak profitabilitas, (3) strategi komunikasi krisis menghadapi tuntutan asosi
 Formatnya diasumsikan sama dengan kasus 1, yaitu individu. Belum jelas apakah kasus 1 dan 2
 dikumpulkan di satu assignment flearn (maksimal 2 file) atau terpisah. Tanyakan ke Bryan.
 
-**Status (16 Okt 2026):** selesai, **belum dikumpulkan**. File ada di
+**Status:** selesai 16 Okt 2026; **sudah dikumpulkan** (Bryan konfirmasi 26 Okt 2026), tunggu nilai. File ada di
 `C:\Bryan De Great\Kuliah\Semester 1\Pengantar Manajemen dan Bisnis\Tugas\Problem Solving Mitra Ojol\`:
 `Tugas Problem Solving (Jaminan Sosial Mitra Ojol dan Kurir).docx` + `.pdf`, 18 halaman, format
 sama dengan kasus 1. `_Sumber\` berisi `build2.js`, yang dirakit dari `lib_head.js`, `content2.js`,

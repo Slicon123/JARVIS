@@ -24,9 +24,9 @@
 - [PTI Google Sites — Bryan's Trail](project-pti-google-sites-jejak-bryan.md) — website kehidupan (4 halaman), SUDAH dikumpulkan 22 Okt 2026, tunggu nilai; guide artifact + 3 embeds + images built 22 Okt (guestbook + kuis dropped); Bakuucakar spelling + photos pending
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen
 - [PMB esai GForm — BUMN digital, CSR](project-pmb-esai-bumn-digital.md) — 23 Okt 2026 text answers: BUMN katalis di infrastruktur; CSR pusat data charity→sustainability (Solihin 2009); humanized style
-- [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), belum dikumpulkan, deadline ~22 Okt; Permendag 19/2026 gantikan 31/2023
-- [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm siap (16 Okt 2026), belum dikumpulkan; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
-- [PMB tahapan usaha — nebeng](project-pmb-tahapan-usaha-nebeng.md) — slide 6 tahap 1–5 + kelemahan, app nebeng SeJalur (bis UKSW maintenance); Word 3 hlm + pustaka 20 Okt 2026, belum dikumpulkan
+- [PMB problem solving — impor murah](project-pmb-problem-solving-impor-murah.md) — individu, laporan 17 hlm siap (16 Okt 2026), sudah dikumpulkan (dikonfirmasi 26 Okt 2026), tunggu nilai; Permendag 19/2026 gantikan 31/2023
+- [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm (16 Okt 2026), sudah dikumpulkan (dikonfirmasi 26 Okt), tunggu nilai; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
+- [PMB tahapan usaha — nebeng](project-pmb-tahapan-usaha-nebeng.md) — slide 6 tahap 1–5 + kelemahan, app nebeng SeJalur (bis UKSW maintenance); Word 3 hlm + pustaka 20 Okt 2026, sudah dikumpulkan (dikonfirmasi 26 Okt), tunggu nilai
 - [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 done (18 Oct); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, filed in PAK\Materi
 - [Local transcription](reference-local-transcription.md) — faster-whisper small + ffmpeg on his laptop; decode via ffmpeg to dodge the PyAV crash
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials

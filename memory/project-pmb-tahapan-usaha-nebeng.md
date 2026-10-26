@@ -1,6 +1,6 @@
 ---
 name: project-pmb-tahapan-usaha-nebeng
-description: "Tugas PMB \"tahapan mengembangkan usaha\" (slide 6 materi Kewirausahaan) — ide aplikasi nebeng SeJalur untuk mahasiswa UKSW; Word 3 hlm + pustaka dibuat 20 Okt 2026, belum dikumpulkan"
+description: "Tugas PMB \"tahapan mengembangkan usaha\" (slide 6 materi Kewirausahaan) — ide aplikasi nebeng SeJalur untuk mahasiswa UKSW; Word 3 hlm + pustaka dibuat 20 Okt 2026, sudah dikumpulkan (dikonfirmasi 26 Okt 2026)"
 metadata:
   node_type: memory
   type: project
