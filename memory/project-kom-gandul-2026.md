@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6823d0a2-0626-4809-aa2d-fbd103595717
-  modified: 2026-10-26T07:15:05.670Z
+  modified: 2026-10-26T08:38:17.712Z
 ---
 
 On 2026-10-26 Bryan asked for a new KOM deck for the PLN Icon Plus TOR "Pengadaan Jasa Pemeliharaan
@@ -20,7 +20,10 @@ the 29-slide file named in [[project-sinergi-proposal-teknis]].
 His rules for this deck:
 - TOR sections that Lengkap left out stay out (SLA, sanksi, kualifikasi, BoQ, lokasi, jangka waktu, ToC, lampiran).
 - Schedule slides (16–19) kept with titles only, emptied until he has a schedule.
-- Slides 20–26 (work permit, WO, struktur organisasi, terima kasih) identical to Lengkap; only the footer changed.
+- Slides 20–24 and 26 (work permit, WO, terima kasih) identical to Lengkap; only the footer changed.
+- Slide 25 (struktur organisasi) was rebuilt on 26 Oct 2026 from `Struktur project SINERGI.xlsx`, which is now in
+  the same folder. Changes: new leader, and 4 engineer teams (UPS & Battery as vendor teams Schneider/Huawei/Eaton,
+  Trafo & Kubikal, Elektrikal, Genset). Team Fire Alarm System and Team AC are gone. The deck's teal style is kept.
 
 Choices I made, to explain if asked:
 - Name on cover, title and footer: "Pengadaan Jasa Pemeliharaan Kelistrikan Data Center Gandul dan DRC
@@ -34,7 +37,6 @@ Choices I made, to explain if asked:
 
 Open, not raised with the client yet:
 - Section numbers skip 03 (inherited from Lengkap).
-- The org chart still lists Team Fire Alarm System and Team AC, which are not in the Gandul scope.
 - The TOR's scope text and equipment list disagree on cubicle types and on the DRC genset and UPS ratings.
   The deck follows the scope text.
 
