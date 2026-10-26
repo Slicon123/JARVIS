@@ -1,6 +1,6 @@
 ---
 name: project-kaos-kantor-sinergi
-description: "Three short-sleeve office t-shirt designs for Sinergi (26 Oct 2026, asked by mbak Didi): Polo Navy Klasik, Polo Kombinasi, Kaos Oblong Casual; choices I made, files, build script; waiting for the team to pick"
+description: "Three short-sleeve office t-shirt designs for Sinergi (26 Oct 2026, asked by mbak Didi): Polo Navy Klasik, Polo Kombinasi, Kaos Oblong Casual; team chose design 2 Polo Kombinasi; choices I made, files, build script"
 metadata:
   type: project
 ---
@@ -20,9 +20,11 @@ No employee name, no K3 logo (office, not field). The chest lockup is the same 9
 lacoste cotton pique ± 200–230 g/m² (or CVC ± 60/40 as the cheaper option); combed 24s/30s for the tee. Every board says
 office only: fabrics with polyester can melt, so site/panel work still uses the field shirt.
 
-**Why:** the team will pick one and ask for changes.
+**Chosen (Bryan, 26 Oct 2026): design 2, Polo Kombinasi.** The next step is a production file for the konveksi; not started yet.
+
+**Why:** revisions to design 2 and a konveksi file are likely next.
 
 **How to apply:** `python buat_kaos.py` in `Kaos Kantor\_Sumber\` rebuilds everything and overwrites same-named files,
 so move old ones to `_Arsip\` first, or pass a folder to test elsewhere. Colours, tipping, marker positions and texts are
 constants/`DESIGNS` in the script; it reuses the field-shirt page layout and `sss_logo.py`. Needs Pillow and Chrome.
-If they want all three as polos, swap design 3. Related: [[reference-folder-layout]].
+Related: [[reference-folder-layout]].
