@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6823d0a2-0626-4809-aa2d-fbd103595717
-  modified: 2026-10-26T08:38:17.712Z
+  modified: 2026-10-26T13:13:56.871Z
 ---
 
 On 2026-10-26 Bryan asked for a new KOM deck for the PLN Icon Plus TOR "Pengadaan Jasa Pemeliharaan
@@ -40,5 +40,7 @@ Open, not raised with the client yet:
 - The TOR's scope text and equipment list disagree on cubicle types and on the DRC genset and UPS ratings.
   The deck follows the scope text.
 
-The build scripts lived in a session scratchpad and are gone. Edit the pptx at zip level, as with the Pusat
-deck ([[feedback-pptx-edit-checklist]]).
+On 26 Oct 2026 the build became the `kom` skill (`claude-config/skills/kom`, at Bryan's request). The deck's
+spec is `KOM PM Kelistrikan DC Gandul\_Sumber\kom-spec.json`: rebuilding from it reproduces the delivered
+deck, and it is the starting point for the next KOM. To change this deck, edit the spec and rebuild, then
+swap the result in with file-audit's `install`.
