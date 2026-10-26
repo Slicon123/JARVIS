@@ -5,10 +5,10 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc480763-2f42-499d-93ee-a9b2432ad25e
-  modified: 2026-10-07T07:52:13.750Z
+  modified: 2026-10-26T07:15:04.655Z
 ---
 
-On 2026-10-07 a coworker at PT. Sinergi asked for "jadwal pekerjaan" without manual cell colouring, like [[project-kurva-s-template]] and [[project-sinergi-struktur-organisasi]]. She meant the **maintenance schedule** and gave `~/Downloads/schedule PM Kelistrikan DC 2026-2027.xlsx` as the model. That original was left in Downloads.
+On 2026-10-07 a coworker at PT. Sinergi asked for "jadwal pekerjaan" without manual cell colouring, like [[project-kurva-s-template]] and [[project-sinergi-struktur-organisasi]]. She meant the **maintenance schedule** and gave `~/Downloads/schedule PM Kelistrikan DC 2026-2027.xlsx` as the model. That original is the PLN Icon Plus Gandul + DRC Bandung 2026–2027 schedule; on 26 Oct 2026 it moved from Downloads to `Laporan Sinergi\KOM PM Kelistrikan DC Gandul\` ([[project-kom-gandul-2026]]).
 
 Built `C:\Bryan De Great\Laporan Sinergi\Template Pekerjaan\Schedule Pemeliharaan.xlsx`, filled with her example data:
 - **Input** (protected, no password): title, start month (month dropdown C3:D3 + year E3), group name, then up to 15 items. Each row has Unit, Sat, FREQ/THN, Warna (left empty = automatic, one distinct colour per row; 1–20 to override), an optional legend label, and 48 week cells where you type x. There's also a Masa Freeze row, a Kunjungan count (consecutive weeks = 1 visit), a per-row Cek, a Status line and a "Cek tanggal" helper (day C6 + month dropdown D6:E6 + year F6, result G6). The month list is in hidden BJ1:BJ12.

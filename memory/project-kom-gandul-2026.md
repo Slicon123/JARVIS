@@ -5,12 +5,14 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6823d0a2-0626-4809-aa2d-fbd103595717
-  modified: 2026-10-26T07:08:57.095Z
+  modified: 2026-10-26T07:15:05.670Z
 ---
 
 On 2026-10-26 Bryan asked for a new KOM deck for the PLN Icon Plus TOR "Pengadaan Jasa Pemeliharaan
-Kelistrikan Data Center" (DC Gandul + DRC Bandung, 2026–2027; the TOR PDF was in his Downloads). Built
-`Laporan Sinergi\KOM PM Kelistrikan DC Gandul\KOM PM Kelistrikan DC Gandul 2026-2027.pptx` (26 slides) from
+Kelistrikan Data Center" (DC Gandul + DRC Bandung, 2026–2027). Built
+`Laporan Sinergi\KOM PM Kelistrikan DC Gandul\KOM PM Kelistrikan DC Gandul 2026-2027.pptx` (26 slides). The same
+folder holds the TOR PDF and the coworker's `schedule PM Kelistrikan DC 2026-2027.xlsx`, which is the Gandul + Bandung
+schedule; both were moved there from Downloads on 26 Oct 2026. The deck was built from
 `KOM PM Kelistrikan DC PLN Pusat\KOM PM Kelistrikan DC PLN Pusat 2026-2027 Lengkap.pptx`. That Lengkap file
 (14 Oct 2026, 26 slides, no SLA or kualifikasi slides) is the Pusat deck that was actually used, newer than
 the 29-slide file named in [[project-sinergi-proposal-teknis]].
