@@ -1,6 +1,6 @@
 ---
 name: project-kaos-kantor-sinergi
-description: "Three short-sleeve office t-shirt designs for Sinergi (26 Oct 2026, asked by mbak Didi): Polo Navy Klasik, Polo Kombinasi, Kaos Oblong Casual; team chose design 2 Polo Kombinasi; choices I made, files, build script"
+description: "Three short-sleeve office t-shirt designs for Sinergi (26 Oct 2026, asked by mbak Didi): Polo Navy Klasik, Polo Kombinasi, Kaos Oblong Casual; team chose design 2 Polo Kombinasi, revisi 1 = no flag + website on the back; choices I made, files, build script"
 metadata:
   type: project
 ---
@@ -8,7 +8,7 @@ metadata:
 On 26 Oct 2026 mbak Didi (Sinergi) asked Bryan for SSS "kaos" for office work, 3 options. This is separate from the
 long-sleeve field shirts in [[project-seragam-lapangan-sinergi]].
 
-Files are in `Laporan Sinergi\Seragam\Kaos Kantor\`: one PDF (overview + one board per design) and four JPGs for WhatsApp.
+The 3 options were sent as one PDF + four JPGs; they are now in `Laporan Sinergi\Seragam\Kaos Kantor\_Arsip\` with the suffix "(3 opsi 26 Okt)".
 1. **Polo Navy Klasik**: navy pique polo, white + cobalt tipping on collar and rib cuffs, 3 navy buttons, side vents,
    back 1,5 cm longer, small white SSS icon (4 cm) under the back collar.
 2. **Polo Kombinasi**: white body, navy shoulder yoke front and back with cobalt piping, navy collar/placket/cuffs, white
@@ -20,11 +20,17 @@ No employee name, no K3 logo (office, not field). The chest lockup is the same 9
 lacoste cotton pique ± 200–230 g/m² (or CVC ± 60/40 as the cheaper option); combed 24s/30s for the tee. Every board says
 office only: fabrics with polyester can melt, so site/panel work still uses the field shirt.
 
-**Chosen (Bryan, 26 Oct 2026): design 2, Polo Kombinasi.** The next step is a production file for the konveksi; not started yet.
+**Chosen (26 Oct 2026): design 2, Polo Kombinasi, in white** (mbak Didi wanted white, so the abu-muda idea is dead).
+Revisi 1, same day, mbak Didi's request: the right-sleeve flag removed, and the back-yoke text "PT. SINERGI SARANA SOLUSI"
+replaced by the website `www.3s-tech.co.id`, lowercase, white embroidery, 16 cm wide, letters ± 1,2 cm. That width is my choice: it
+keeps the visual weight of the old 20 cm caps. Current file: `Kaos Kantor\Kaos Kantor SSS - Polo Kombinasi.pdf` + `.jpg`, one board
+titled "Desain terpilih" with the revision noted in the subtitle. The next step is a konveksi file with the text converted to curves.
+I offered it but it hasn't been started.
 
 **Why:** revisions to design 2 and a konveksi file are likely next.
 
-**How to apply:** `python buat_kaos.py` in `Kaos Kantor\_Sumber\` rebuilds everything and overwrites same-named files,
+**How to apply:** `python buat_kaos.py` in `Kaos Kantor\_Sumber\` rebuilds the chosen-design board; add `--3opsi` for the
+3-option set, where design 2 already shows revisi 1. Both overwrite same-named files,
 so move old ones to `_Arsip\` first, or pass a folder to test elsewhere. Colours, tipping, marker positions and texts are
 constants/`DESIGNS` in the script; it reuses the field-shirt page layout and `sss_logo.py`. Needs Pillow and Chrome.
 Related: [[reference-folder-layout]].
