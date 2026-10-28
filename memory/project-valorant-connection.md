@@ -16,6 +16,11 @@ AWS Singapore (TCP connect to dynamodb.ap-southeast-1:443) median 24 ms, max 74,
 - Ping tools: `ec2.ap-southeast-1.amazonaws.com` does not answer ICMP. Time TCP connects to
   `dynamodb.ap-southeast-1.amazonaws.com:443` instead, and use a time-based loop.
 
+**Heat, 28 Oct 2026:** laptop is a Lenovo ThinkPad (model 20R6), i5-10310U, integrated graphics only. He worried about
+overheating with Valorant + Discord. Windows logged no thermal events in 60 days; one Kernel-Power 41 unexpected
+shutdown on 18 Oct 2026 21:24, cause unknown. He has done: FPS cap, hard flat surface, charger in, apps closed, vents
+cleaned. No cooling pad. Temps never measured (needs admin or HWiNFO); target: CPU max under 90 °C in a match.
+
 **History, before the cable** (laptop Intel AX201 "Wi-Fi 2", where the router's home-5G is weak, 29–53%):
 - Phone hotspot relay (Redmi Note 10S → home-5G) failed in three tests on 28 Oct: 68–78% loss, internet in bursts of a
   few seconds then 30 s–3 min dead. Screen-on did not help. Cause sits in the phone (one radio, MIUI). Abandoned.
