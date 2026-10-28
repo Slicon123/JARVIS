@@ -16,8 +16,9 @@ AWS Singapore (TCP connect to dynamodb.ap-southeast-1:443) median 24 ms, max 74,
   router port. Harmless while his internet tops out around 73 Mbps; fix it only if the plan goes above 100 Mbps.
 - Still true on the cable: a full-speed download fills the internet line itself (Singapore median 141 ms during a 73 Mbps
   download on the 2.4 box). No downloads/updates/sync on any device in the house while he plays.
-- 29 Oct 2026: that "adapter" is really a USB-C hub (Genesys GL3510 hub + RTL8153 + HDMI). Bryan asked what LAN adapter to
-  buy; whose the hub is wasn't said. The L13 Yoga Gen 1 also has Lenovo's Ethernet extension connector wired to a built-in
+- 29 Oct 2026: that "adapter" is really a USB-C hub (Genesys GL3510 hub + RTL8153 + HDMI). It's his brother's (borrowed); the
+  brother warns it gets hot with long use. Checked 29 Oct ~00:45: no LAN drops since first plug-in 28 Oct 20:57 (only
+  the 23:29–23:53 idle sleep), 0 receive errors over 1.7 GB. Bryan asked what LAN adapter to buy for himself. The L13 Yoga Gen 1 also has Lenovo's Ethernet extension connector wired to a built-in
   Intel I219-LM (gigabit), used via the ThinkPad Ethernet Extension Adapter Gen 2 (4X90Q84427, ~Rp 570k original on
   Tokopedia). Both USB-A ports hold his external keyboard and mouse, and one USB-C holds the
   charger, so the pick became TP-Link UE300C (USB-C, ~Rp 164–272k, official store on Tokopedia) over the USB-A UE300; MeTiko 5in1 hub (Rp 38.2k) is
