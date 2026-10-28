@@ -2,7 +2,10 @@
 name: project-valorant-connection
 description: Valorant lag/disconnects on his laptop — solved 28 Oct 2026 with a LAN cable (USB adapter); earlier Wi-Fi/hotspot test results kept for reference
 metadata:
+  node_type: memory
   type: project
+  originSessionId: b2533ab9-1009-4373-94dd-03ca9c7ad880
+  modified: 2026-10-28T14:45:43.477Z
 ---
 
 **Solved 28 Oct 2026 (evening): Bryan plugged in a LAN cable.** The laptop now plays on **Ethernet 3**, a Realtek USB
@@ -20,6 +23,12 @@ AWS Singapore (TCP connect to dynamodb.ap-southeast-1:443) median 24 ms, max 74,
 overheating with Valorant + Discord. Windows logged no thermal events in 60 days; one Kernel-Power 41 unexpected
 shutdown on 18 Oct 2026 21:24, cause unknown. He has done: FPS cap, hard flat surface, charger in, apps closed, vents
 cleaned. No cooling pad. Temps never measured (needs admin or HWiNFO); target: CPU max under 90 °C in a match.
+
+**Low FPS, 28 Oct 2026 (checked mid-match):** CPU ran at only 50–69% of its 1.7 GHz base (~0.9–1.2 GHz) on AC,
+because the Windows power slider overlay was **Better Battery** (961cc777…) on both AC and DC. Not heat: ACPI zone 61 °C,
+passive limit 100%. Other drags: Discord (most CPU time of any process), FxSound (pushes audiodg CPU), Rainmeter, Chrome
+open; Intel UHD driver 30.0.101.1692 from Apr 2022. RAM is fine (2×8 GB dual channel, 2667). Valorant at 1600×900 fullscreen.
+Told him: slider to Best performance first, then close the extras, then update the driver.
 
 **History, before the cable** (laptop Intel AX201 "Wi-Fi 2", where the router's home-5G is weak, 29–53%):
 - Phone hotspot relay (Redmi Note 10S → home-5G) failed in three tests on 28 Oct: 68–78% loss, internet in bursts of a
