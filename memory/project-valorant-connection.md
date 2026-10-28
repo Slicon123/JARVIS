@@ -12,7 +12,8 @@ randomly shows "No internet" on the hotspot, or drops off it. Direct BedJam34 5G
 
 The router also broadcasts **BedJam34** (2.4 GHz, ch 1, same box) plus a second BedJam34 on ch 10 (another device).
 
-**Test 28 Oct 2026** (phone near the laptop, where 5G is weak):
+**Test 28 Oct 2026** (phone near the laptop, where 5G is weak; **he moved the phone mid-test without
+knowing a test was running, so this result is unreliable. Re-test with the phone held still**):
 - Direct BedJam34 5G, 30 pings: 0% loss, Google median 26 ms, max 61 ms.
 - Phone hotspot (5 GHz ch 161, 99% signal): the link to the laptop never dropped, but internet ran in
   bursts: ~5 s working, then 30–50 s dead, repeating about once a minute. Even the phone itself (gateway)
