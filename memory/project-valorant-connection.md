@@ -16,6 +16,11 @@ AWS Singapore (TCP connect to dynamodb.ap-southeast-1:443) median 24 ms, max 74,
   router port. Harmless while his internet tops out around 73 Mbps; fix it only if the plan goes above 100 Mbps.
 - Still true on the cable: a full-speed download fills the internet line itself (Singapore median 141 ms during a 73 Mbps
   download on the 2.4 box). No downloads/updates/sync on any device in the house while he plays.
+- 29 Oct 2026: that "adapter" is really a USB-C hub (Genesys GL3510 hub + RTL8153 + HDMI). Bryan asked what LAN adapter to
+  buy; whose the hub is wasn't said. The L13 Yoga Gen 1 also has Lenovo's Ethernet extension connector wired to a built-in
+  Intel I219-LM (gigabit), used via the ThinkPad Ethernet Extension Adapter Gen 2 (4X90Q84427, ~Rp 570k original on
+  Tokopedia). Advised: TP-Link UE300 (USB-A, RTL8153, ~Rp 155–190k) as best value; MeTiko 5in1 hub (Rp 38.2k) is
+  100 Mbps LAN only, fine for Valorant, but its HDMI duplicates the laptop's own.
 - Ping tools: `ec2.ap-southeast-1.amazonaws.com` does not answer ICMP. Time TCP connects to
   `dynamodb.ap-southeast-1.amazonaws.com:443` instead, and use a time-based loop.
 
