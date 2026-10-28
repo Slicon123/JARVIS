@@ -19,7 +19,8 @@ AWS Singapore (TCP connect to dynamodb.ap-southeast-1:443) median 24 ms, max 74,
 - 29 Oct 2026: that "adapter" is really a USB-C hub (Genesys GL3510 hub + RTL8153 + HDMI). Bryan asked what LAN adapter to
   buy; whose the hub is wasn't said. The L13 Yoga Gen 1 also has Lenovo's Ethernet extension connector wired to a built-in
   Intel I219-LM (gigabit), used via the ThinkPad Ethernet Extension Adapter Gen 2 (4X90Q84427, ~Rp 570k original on
-  Tokopedia). Advised: TP-Link UE300 (USB-A, RTL8153, ~Rp 155–190k) as best value; MeTiko 5in1 hub (Rp 38.2k) is
+  Tokopedia). Both USB-A ports hold his external keyboard and mouse, and one USB-C holds the
+  charger, so the pick became TP-Link UE300C (USB-C, ~Rp 164–272k, official store on Tokopedia) over the USB-A UE300; MeTiko 5in1 hub (Rp 38.2k) is
   100 Mbps LAN only; its Shopee reviews (read 29 Oct) show dead-on-arrival units, one dead in 2 days, a refused
   return, and one gamer reporting the plug works loose and disconnects mid-game, so advised against it.
   He believes his cable is what limits the link to 100 Mbps.
