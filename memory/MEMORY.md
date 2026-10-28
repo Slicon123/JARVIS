@@ -54,3 +54,4 @@
 - [Layout ruang UPS PLN](project-layout-ruang-ups-pln.md) — client chose the hired drafter's Opsi-1 (20 Oct 2026); my script set kept for reference only
 - [Denah 3D rumah](project-denah-3d-rumah.md) — 22 Oct 2026 Three.js artifact from a client's 2-floor PDF; sizes from PDF vectors; heights/roof/finishes are my assumptions, unconfirmed
 - [Headless WebGL screenshots](reference-headless-webgl-screenshots.md) — Chrome + SwiftShader command; separate profiles; phone check needs a 390 px iframe
+- [Valorant connection](project-valorant-connection.md) — laptop → Redmi Note 10S hotspot → BedJam34 5G; 28 Oct test: hotspot dies ~once a minute (phone radio hopping); fixes pending
