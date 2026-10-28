@@ -41,6 +41,14 @@ UAC: MIMO Power Save Mode → No SMPS (was Auto SMPS), Packet Coalescing → Dis
 Not done yet, and he has to approve it first: `netsh wlan set autoconfig enabled=no` during matches, which stops
 background scans but also stops auto-reconnect. Then a 60-minute ping log started while he plays on direct 5G.
 
+**Direct 5G test without playing, 28 Oct 2026 ~18:00** (laptop signal 29–53%, internet ~22 Mbps):
+- Idle: AWS Singapore (stand-in for Valorant SG) median 30 ms, but 5 of 160 samples >100 ms (max 737);
+  3–5% of pings lost, one every 20–30 s, including 1.3% lost to the router itself. Cause: the weak Wi-Fi link.
+- During a full-speed download on the laptop: Singapore median 88 ms, 44% of samples >100 ms, max 693; 13% lost
+  even to the router. So the weak link chokes under load: anything downloading on the laptop = high ping.
+- Conclusion given: the "random high ping" comes from weak signal plus load. Fix = better signal (move laptop/router,
+  LAN cable, repeater), and stop downloads/updates/sync while playing. Not measured: load from other people in the house.
+
 **Fixes suggested, not yet confirmed:** on the phone, forget BedJam34 (2.4 GHz) so it can't hop; turn off
 MIUI's automatic network switching; battery saver off and the phone charging while he plays; keep the phone
 where 5G is strong; USB tethering (with a long cable) instead of the hotspot. The real fix is a LAN cable.
