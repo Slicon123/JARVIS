@@ -21,6 +21,13 @@ knowing a test was running, so this result is unreliable. Re-test with the phone
   hopping between BedJam34 and BedJam34 5G. The hotspot has to follow whichever channel the phone uses.
 - Windows log that day: two "disconnected by the driver" drops from the phone (13:55, 14:43).
 
+**Re-test 28 Oct 2026, phone held still in a good spot:** same pattern, about 68% loss: 2–8 s up, then
+30–70 s down, over 3 min. Bryan then spotted it himself: **the drops happen when the phone's screen turns off**
+(MIUI putting Wi-Fi/hotspot to sleep). That is the leading cause. Untested fix: phone on the charger plus
+Developer options → "Stay awake" so the screen never sleeps while he plays.
+Careful: the test moves the laptop onto the hotspot, so a dead hotspot also cuts off Claude's own session.
+On 28 Oct the switch back failed and he got ECONNREFUSED. Make the switch back retry.
+
 **Fixes suggested, not yet confirmed:** on the phone, forget BedJam34 (2.4 GHz) so it can't hop; turn off
 MIUI's automatic network switching; battery saver off and the phone charging while he plays; keep the phone
 where 5G is strong; USB tethering (with a long cable) instead of the hotspot. The real fix is a LAN cable.
