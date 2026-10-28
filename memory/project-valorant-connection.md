@@ -35,6 +35,12 @@ Next options offered: tune the laptop for direct 5G (no roaming, no auto-hop to 
 saving off) and log ping during a real match; USB tethering; LAN cable.
 Note: dead pings make the test run long (3 timeouts per sample), so the "3 min" test took 7. Use a time-based loop.
 
+**Laptop Wi-Fi state, 28 Oct 2026** (Intel AX201, "Wi-Fi 2"). Already set before this session: Roaming Aggressiveness
+Lowest, Prefer 5 GHz band, profiles BedJam34 and Redmi Note 10S on "connect manually". Set this session through
+UAC: MIMO Power Save Mode → No SMPS (was Auto SMPS), Packet Coalescing → Disabled (was Enabled).
+Not done yet, and he has to approve it first: `netsh wlan set autoconfig enabled=no` during matches, which stops
+background scans but also stops auto-reconnect. Then a 60-minute ping log started while he plays on direct 5G.
+
 **Fixes suggested, not yet confirmed:** on the phone, forget BedJam34 (2.4 GHz) so it can't hop; turn off
 MIUI's automatic network switching; battery saver off and the phone charging while he plays; keep the phone
 where 5G is strong; USB tethering (with a long cable) instead of the hotspot. The real fix is a LAN cable.
