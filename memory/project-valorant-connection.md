@@ -28,6 +28,13 @@ Developer options → "Stay awake" so the screen never sleeps while he plays.
 Careful: the test moves the laptop onto the hotspot, so a dead hotspot also cuts off Claude's own session.
 On 28 Oct the switch back failed and he got ECONNREFUSED. Make the switch back retry.
 
+**Third test 28 Oct 2026, screen kept on** (Sleep set to 10 min, since MIUI has no "Never"; Stay awake not found in
+Developer options): **still 78% loss**, with dead spells of up to 3 min. So the screen turning off is ruled out.
+The hotspot relay fails at the phone whatever we do. Direct BedJam34 5G was clean in all three 30-second baselines (0% loss, ~25 ms).
+Next options offered: tune the laptop for direct 5G (no roaming, no auto-hop to BedJam34 2.4, Wi-Fi power
+saving off) and log ping during a real match; USB tethering; LAN cable.
+Note: dead pings make the test run long (3 timeouts per sample), so the "3 min" test took 7. Use a time-based loop.
+
 **Fixes suggested, not yet confirmed:** on the phone, forget BedJam34 (2.4 GHz) so it can't hop; turn off
 MIUI's automatic network switching; battery saver off and the phone charging while he plays; keep the phone
 where 5G is strong; USB tethering (with a long cable) instead of the hotspot. The real fix is a LAN cable.
