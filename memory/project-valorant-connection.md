@@ -59,6 +59,9 @@ background scans but also stops auto-reconnect. Then a 60-minute ping log starte
   Valorant itself uses well under 1 Mbps. Suggested making home-2.4 the auto network and 5G manual, and asked
   whether the 2.4 box near his room has LAN ports (a short cable to it would be the real fix).
 
+**Switched 28 Oct 2026 ~18:25:** laptop now on home-2.4 (auto, top priority, metered); home-5G set to manual (still metered).
+It joined the close 2.4 box at 85%, ch 10. The neighbouring channels are crowded in the evening. If spikes return during matches, compare again.
+
 **Fixes suggested, not yet confirmed:** on the phone, forget home-2.4 (2.4 GHz) so it can't hop; turn off
 MIUI's automatic network switching; battery saver off and the phone charging while he plays; keep the phone
 where 5G is strong; USB tethering (with a long cable) instead of the hotspot. The real fix is a LAN cable.
