@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-01T03:25:07.094Z
+  modified: 2026-11-01T03:50:01.692Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -49,6 +49,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Re-check 25 October 2026:** no newer files exist (Downloads, Kuliah, Desktop, Documents); no PPT anywhere. A Word render confirmed every open item above: 9 pages, Bab II on pages 4–7 (table split 4–5 because cells use 1.5 spacing, chart alone on 6, analysis on 7), page 9 blank (25 empty Enters plus an empty Heading 2), 21 empty Enters under the TOC, Bab I only 44 words. Newly flagged: Bab I typos and garbled phrasing ("PT maju jaya", lowercase sentence starts, "perfoma", "dibidang", "melalui data aset" though the data is income and costs); Rekomendasi is missing "turun" after "menyebabkan laba bersih"; it calls November's revenue drop "drastis" though it is only −6.9%; Kesimpulan lacks a final full stop; Bab II has "diatas" and "rata rata". Class letter (A/B/C) and group number are unknown; they set the file names and which Form link to use.
 
 **Excel re-check 1 November 2026:** new file `DB101A_Tugas Kelompok 9_<NIM ketua>.xlsx` in Downloads, so the group is class A, kelompok 9. Formulas, chart and Rp/% formats are correct, and the status colours now use conditional formatting on G6:G17. Only cleanup left: 3 of its 5 rules are leftovers that can never match, because their text includes pasted quote marks from the advice message (e.g. `"evaluasi" merah, "cukup" kuning`). Advised deleting them.
+
+**Word re-check 1 November 2026 (`Downloads\pppp.docx`):** now 6 pages; Bab II table and chart fit page 4, analysis on page 5; table and chart are embedded with figures matching the Excel; cover has names and group; header and footer work. Still open: BAB/title headings are still two Heading 1 lines in all three chapters, 20 empty Enters instead of a page break under the TOC, Bab I typos and garbled sentences, Bab III's "PT maju jaya" and the Februari/Oktober tie. The embedded copies predate the latest Excel ("Rata Rata" label, manual colours), so re-embed is optional.
 
 **Google Sites tugas (given 22 October 2026, due 29 October 2026):** see [[project-pti-google-sites-jejak-bryan]].
 
