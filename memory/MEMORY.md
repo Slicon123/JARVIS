@@ -38,7 +38,7 @@
 - [PPTX edit checklist](feedback-pptx-edit-checklist.md) — raw XML before text fixes, measure fit in PowerPoint, reset stale autofit, audit every slide
 - [Kurva S template](project-kurva-s-template.md) — template + Source-A S-curve in Laporan Sinergi (audited 6 Oct 2026); duration-based bobot kept by his choice
 - [Schedule Pemeliharaan](project-jadwal-pekerjaan-template.md) — Schedule Pemeliharaan.xlsx (renamed, not "Template") in Template Pekerjaan, built 7 Oct 2026 from coworker's PM DC 2026-2027 file; week rule + Switchover/legend points to confirm
-- [Konten edukasi sekitar](project-konten-edukasi-sekitar.md) — account @rupanya.sih modelled on kitabedah.idn; `sekitar` skill built 1 Nov 2026, not pushed at his request; remind the small habits every new video; narrator and sign-off pending
+- [Konten edukasi sekitar](project-konten-edukasi-sekitar.md) — account @rupanya.sih modelled on kitabedah.idn; `sekitar` + idea-research `riset-sekitar` (keranjang kuning) skills built 1 Nov 2026, not pushed at his request; remind the small habits every new video; narrator and sign-off pending
 - [Animate skill](project-animate-skill.md) — motion graphics in code, installed 7 Oct 2026 as an experiment (not clipping); per-video en/id; Indonesian pace limit is an estimate; pieces in Animasi\
 - [Excel COM checklist](feedback-excel-com-checklist.md) — Write not sed, kill own Excel PIDs, positional COM args, test all format tricks first, keep render + scenario checks
 - [Practice tests mirror tugas](feedback-practice-tests-mirror-tugas.md) — latihan soal copy the dosen's tugas structure; only numbers/content change
