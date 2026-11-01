@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T16:18:36.414Z
+  modified: 2026-11-01T16:28:48.902Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -21,7 +21,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   colour `#E8502A`; the skill must not use their brand or "kita bedah".
 - **Voice:** Gemini **Sadaltager**, his pick. From 1 Nov 2026 he said to always use Gemini: pass `--engine gemini` explicitly and never fall back to edge-tts, even for drafts; if Gemini fails, stop and tell him. `GEMINI_API_KEY` is set in the Windows user environment and works
   (tested 1 Nov 2026); `tools/voice.py` reads it from there, so no VS Code restart is needed.
-- **Every film must say "Rupanya gini." (his rule, 1 Nov 2026):** at the end of the hook, starting by second 8, no effect on top of it. He found it missing from keran: the old `out/keran/` files really lack it (the skill's example did too, now fixed), and `keran-polished_v2` had it under a whoosh. `voice.py` now refuses a script without it, and `check.py` fails a film where the recogniser can't hear it.
+- **Every film must say "Rupanya gini." (his rule, 1 Nov 2026):** at the end of the hook, starting by second 8, no effect on top of it. He found it missing from keran: the old `out/keran/` files really lack it (the skill's example did too, now fixed), and `keran-polished_v2` had it under a whoosh. `voice.py` now refuses a script without it, and `check.py` fails a film where the recogniser can't hear it. **Also his standing rule, same day (segitiga-ban):** the line stands alone with a pause so viewers register the account's name; in the skill as its own line with `"hold": 1.0`. The lengths are my estimate, not yet heard by him.
 - **Keran remade 1 Nov 2026 at his request:** `out/keran-polished/keran-polished_v3.mp4` (slug `keran-polished`) is the version to upload, not `_v2` or the older `out/keran/` files; he has not yet reported listening to it, and nothing is uploaded.
 - **Laron film built 1 Nov 2026:** `out/laron/laron.mp4`, 69.3 s, all checks pass, upload text in `out/laron/upload.md`; he asked to skip the look check-in and clip for this film (not a standing rule). He reports uploading it to YouTube, Instagram and TikTok on 1 Nov 2026, without the header fix below. From 8 Nov 2026, ask him for its 7-day views and record them in `src/pieces/laron/LOG.md`.
 - **Keran scheduled 1 Nov 2026 (his report):** TikTok and YouTube are scheduled. Instagram wouldn't let him schedule, so it sits as a draft and he uploads it manually on 2 Nov 2026. Which file he scheduled (`_v3` or older) is unconfirmed. Ask on 2 Nov whether the Instagram upload went out.
