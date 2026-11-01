@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: deb3bab6-d52e-483f-85a1-ac04679b615d
-  modified: 2026-09-01T10:41:57.058Z
+  modified: 2026-11-01T08:25:30.192Z
 ---
 
 Three standing instructions from Bryan on how to answer:
@@ -23,6 +23,10 @@ Three standing instructions from Bryan on how to answer:
    the gap back to him. Confirmed on the Maliq & D'Essentials chord request: he said "add
    the lyrics too, remember that" after I'd stopped at the WebFetch refusal instead of
    trying curl.
+5. When reviewing a report, matching its figures to the source is not enough: test whether
+   each claim follows from the data, including what the draft chooses to highlight. On the
+   PTI report (1 Nov 2026) I confirmed the numbers and even wrote a replacement sentence, yet
+   Bryan was the one who saw November had the smallest revenue drop of the year.
 
 **Why:** His work is technical and standards-bound (NFPA codes, panel specs, firmware versions) where a confidently wrong number causes real problems, and he's paying per usage on a Pro plan.
 
