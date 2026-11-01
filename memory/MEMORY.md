@@ -28,6 +28,7 @@
 - [PMB problem solving — mitra ojol](project-pmb-problem-solving-mitra-ojol.md) — kasus 2, laporan 18 hlm (16 Okt 2026), sudah dikumpulkan (dikonfirmasi 26 Okt), tunggu nilai; Perpres 27/2026 resmi terbit Okt 2026, status tetap mitra
 - [PMB tahapan usaha — nebeng](project-pmb-tahapan-usaha-nebeng.md) — slide 6 tahap 1–5 + kelemahan, app nebeng SeJalur (bis UKSW maintenance); Word 3 hlm + pustaka 20 Okt 2026, sudah dikumpulkan (dikonfirmasi 26 Okt), tunggu nilai
 - [Pendidikan Agama Kristen](project-pendidikan-agama-kristen.md) — no syllabus; makalah 2.1 done (18 Oct); slides Fundamentalisme–Liberalisme + Deradikalisasi explained 15 Oct, filed in PAK\Materi
+- [Video error 0xc00d36b4](reference-windows-video-error-fxsound.md) — "Can't play" on his laptop came from FxSound as default output, not the file; change Windows output first
 - [Local transcription](reference-local-transcription.md) — faster-whisper small + ffmpeg on his laptop; decode via ffmpeg to dodge the PyAV crash
 - [Remind materials after class](feedback-remind-materials-after-class.md) — at session start, if a class just ended, ask for its materials
 - [Post-graduation career target](project-post-graduation-career-target.md) — researched target: BD/Bid Manager in electrical & fire safety systems, plus steps to get there
