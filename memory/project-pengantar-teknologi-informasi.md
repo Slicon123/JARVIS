@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-10-16T16:03:28.536Z
+  modified: 2026-11-01T03:25:07.094Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -47,6 +47,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Review status, 22 October 2026 (files in Downloads):** Excel `Laporan_Keuangan_2025 (3).xlsx` is effectively final: every formula bug from 15–16 Oct is fixed (MAX range now C6:C17, IF uses `>=` exactly like the dosen's sample formula). Only cosmetic leftovers: `=SUM(C6-D6)` wrappers, "Rata Rata", status colours are manual fills. (The chart title is fine, "Grafik Laba Bersih 2025 / PT Maju Jaya"; the 22 Oct note calling it just "Grafik" was wrong.) Word `LAPORAN KEUANGAN PT MAJU JAYA 2025 3.docx` (by groupmate Nora Zahra; a "2" version of 20 Oct sat in between). Fixed since 16 Oct: TOC no longer lists "DAFTAR ISI" and its page numbers match, Sofyan quote removed, portrait/landscape/portrait done with real section breaks, Bab III rewritten. Still open, sent as advice: table is a plain Word table and chart a picture (advised Embed over Link, because a link breaks once the file is zipped and opened elsewhere); blank Enters instead of page breaks, so page 9 is blank ("page break" is a graded item); Bab II spans 4 landscape pages (4–7) instead of 1; Bab I is one 5-line paragraph instead of a page; BAB I/PENDAHULUAN are two Heading 1 lines (advised Shift+Enter, tested: TOC then shows one line); Bab III still says Februari alone had the top laba (it ties Oktober at Rp950 jt); the recommendations push promotion, but the weak months are cost-driven (beban 89–98% of pendapatan in Mar/Apr/Jun/Sep; in Nov pendapatan fell only 7% while beban rose Rp300 jt); the 22 Oct Bab III wording jumped register, flagged as an AI-detection risk; the cover has no group names. PPT not seen yet.
 
 **Re-check 25 October 2026:** no newer files exist (Downloads, Kuliah, Desktop, Documents); no PPT anywhere. A Word render confirmed every open item above: 9 pages, Bab II on pages 4–7 (table split 4–5 because cells use 1.5 spacing, chart alone on 6, analysis on 7), page 9 blank (25 empty Enters plus an empty Heading 2), 21 empty Enters under the TOC, Bab I only 44 words. Newly flagged: Bab I typos and garbled phrasing ("PT maju jaya", lowercase sentence starts, "perfoma", "dibidang", "melalui data aset" though the data is income and costs); Rekomendasi is missing "turun" after "menyebabkan laba bersih"; it calls November's revenue drop "drastis" though it is only −6.9%; Kesimpulan lacks a final full stop; Bab II has "diatas" and "rata rata". Class letter (A/B/C) and group number are unknown; they set the file names and which Form link to use.
+
+**Excel re-check 1 November 2026:** new file `DB101A_Tugas Kelompok 9_<NIM ketua>.xlsx` in Downloads, so the group is class A, kelompok 9. Formulas, chart and Rp/% formats are correct, and the status colours now use conditional formatting on G6:G17. Only cleanup left: 3 of its 5 rules are leftovers that can never match, because their text includes pasted quote marks from the advice message (e.g. `"evaluasi" merah, "cukup" kuning`). Advised deleting them.
 
 **Google Sites tugas (given 22 October 2026, due 29 October 2026):** see [[project-pti-google-sites-jejak-bryan]].
 
