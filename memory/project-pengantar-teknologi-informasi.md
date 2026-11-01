@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-01T04:02:22.490Z
+  modified: 2026-11-01T07:31:25.554Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -51,6 +51,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Excel re-check 1 November 2026:** new file `DB101A_Tugas Kelompok 9_<NIM ketua>.xlsx` in Downloads, so the group is class A, kelompok 9. Formulas, chart and Rp/% formats are correct, and the status colours now use conditional formatting on G6:G17. Only cleanup left: 3 of its 5 rules are leftovers that can never match, because their text includes pasted quote marks from the advice message (e.g. `"evaluasi" merah, "cukup" kuning`). Advised deleting them.
 
 **Word re-check 1 November 2026 (`Downloads\pppp.docx`):** now 6 pages; Bab II table and chart fit page 4, analysis on page 5; table and chart are embedded with figures matching the Excel; cover has names and group; header and footer work. Still open: BAB/title headings are still two Heading 1 lines in all three chapters, 20 empty Enters instead of a page break under the TOC, Bab I typos and garbled sentences, Bab III's "PT maju jaya" and the Februari/Oktober tie. The embedded copies predate the latest Excel ("Rata Rata" label, manual colours), so re-embed is optional.
+
+**Word + PPT check 1 November 2026 (Downloads, `DB101A_Tugas kelompok 9_842026024.docx` and `PPT 1.pptx`, deck by Jolin; advice only):** Word: 6 pages, BAB headings fixed (single line), margins/TNR OK, embedded table and chart match the Excel. Open: 19 empty Enters instead of a page break under the TOC, Bab I typos and the garbled "dari penjualan Laporan keuangan. Memberikan...", Bab III "PT maju jaya" and Februari/Oktober tie, table object only 287×126 pt. Word PDF export hangs under COM on this file, so its pages were not checked visually. PPT: 5 slides in the right order, Morph transitions, SmartArt on slide 5, figures match. Open: no object animations (brief asks for them), chart is an SVG picture rather than linked/imported, Slide 2 run-on sentence and no visi/misi, slide 4 shows only pendapatan with no label (best/worst kinerja by laba is Feb+Okt / Mar; by margin Okt / Apr), slide 5 Februari tie, "setabil", November "turun drastis" (only −6,9%; laba fell because beban rose Rp300 jt), recommendations weak and not about next year, slide 4 stock photo. PPT file still needs renaming.
 
 **TTS files moved 1 November 2026** to `Tugas\TTS & TAS\` (brief there, older Excel/Word versions in `_Arsip\`). The newest Excel (`DB101A_...xlsx`) and `pppp.docx` stayed in Downloads because they were open; move them once closed.
 
