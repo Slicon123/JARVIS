@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T06:53:16.162Z
+  modified: 2026-11-01T06:56:31.670Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -27,7 +27,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   to the platforms and change; recheck before advising.
 - **Skills stay local for now:** on 1 Nov 2026 he said not to push `sekitar` to GitHub. Don't commit `claude-config/skills/sekitar/`
   or `claude-config/skills/riset-sekitar/` until he asks.
-- **Keranjang kuning planned for some videos (1 Nov 2026).** `riset-sekitar` skill built that day, also local-only, for ideas: at least 3 without a product + at least 3 with. His choices: categories listrik & elektronik, rumah & dapur, motor & kendaraan (no health/beauty); free web data plus his screenshots; video shows advantages only, weaknesses reported to him; ideas logged in `Animasi\sekitar\ide\log.md`.
+- **Keranjang kuning paused; 5 uploads a day is his target (1 Nov 2026).** He said affiliate ideas aren't usable yet, so `riset-sekitar` gives at least 10 no-product ideas a run until he turns it back on, each as a standalone block he pastes into a new chat to start `sekitar`. I objected once to the 5/day pace (fact-checking load, YouTube's mass-production rule); he owns the call. Skill built that day, also local-only. His choices when affiliate returns: categories listrik & elektronik, rumah & dapur, motor & kendaraan (no health/beauty); free web data plus his screenshots; video shows advantages only, weaknesses reported to him; ideas logged in `Animasi\sekitar\ide\log.md`.
 - **TikTok @rupanya.sih exists and is switched to TikTok Shop for Creator (his report, 1 Nov 2026; profile confirmed public).** His app on 1 Nov 2026: 0 followers, "Hidden showcase" until 600 followers + a post in the past 28 days + Community Guidelines OK. Bio set; display name and profile picture still empty. Affiliate Center on 1 Nov 2026: Lv. 0, health "Healthy", new-creator steps 1 of 3, and "Confirm your age within 30 days" still open (so roughly by 1 Dec 2026); payout setup not confirmed. Nothing posted yet.
 - **Other accounts (his report, 1 Nov 2026):** Instagram `rupanya.sih`, YouTube `@rupanya_sih` (`rupanya.sih` was refused there). Public name is `Rupanya Sih` everywhere, not his real name.
 - **He wants the small habits repeated at every new video** (play outside VS Code, leave the laptop alone during the
