@@ -1,11 +1,11 @@
 ---
 name: project-konten-edukasi-sekitar
-description: "Bryan's planned education account about everyday things, modelled on TikTok kitabedah.idn; the sekitar skill built 1 Nov 2026, voice key and account name pending"
+description: "Bryan's education account @rupanya.sih about everyday things, modelled on TikTok kitabedah.idn; sekitar and riset-sekitar skills built 1 Nov 2026; TikTok account created, first video not posted, no written vision/mission yet"
 metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T06:32:37.339Z
+  modified: 2026-11-01T06:35:40.508Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
