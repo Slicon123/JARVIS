@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T16:55:12.607Z
+  modified: 2026-11-01T17:14:56.636Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -26,6 +26,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
 - **Laron film built 1 Nov 2026:** `out/laron/laron.mp4`, 69.3 s, all checks pass, upload text in `out/laron/upload.md`; he asked to skip the look check-in and clip for this film (not a standing rule). He reports uploading it to YouTube, Instagram and TikTok on 1 Nov 2026, without the header fix below. From 8 Nov 2026, ask him for its 7-day views and record them in `src/pieces/laron/LOG.md`.
 - **Keran scheduled 1 Nov 2026 (his report):** TikTok and YouTube are scheduled. Instagram wouldn't let him schedule, so it sits as a draft and he uploads it manually on 2 Nov 2026. Which file he scheduled (`_v3` or older) is unconfirmed. Ask on 2 Nov whether the Instagram upload went out.
 - **Minyak-terbakar film built 1 Nov 2026:** `out/minyak-terbakar/minyak-terbakar_v3.mp4` is the version to upload (no camera blur; opening pour with a tablespoon at his request, because the script says one tablespoon), not `_v2` or the unsuffixed file. 64.6 s, all checks pass, upload text in `out/minyak-terbakar/upload.md`. The dipper stays in the "jangan pernah disiram air" shot. He has not yet reported listening to it. **Update 1 Nov 2026 (his report, "video wajan api", taken to be this film):** the Instagram copy is saved as a draft and he uploads it manually on 2 Nov 2026; other platforms not mentioned. Ask on 2 Nov whether it went out.
+- **Segitiga-ban film built 2 Nov 2026:** `out/segitiga-ban/segitiga-ban_v2.mp4` is the version to upload, not the unsuffixed file or the `banding_*`/`jeda_baru` test clips. 68.6 s, all checks pass, upload text in `out/segitiga-ban/upload.md`. He has not yet reported listening to the full film. Next free slot by the slot rule: 13.00 on 2 Nov 2026, if nothing else was scheduled meanwhile. Not yet scheduled.
 - **TikTok softness: higher bitrate didn't help (tested 1 Nov 2026):** the upload looked soft on his phone in TikTok, while YouTube 1080p and Instagram's public 720p copy stayed close to the 1.84 Mbps file. A re-upload at 11.06 Mbps (`out/laron/laron_12mbps.mp4`) measured about the same on his phone: KRAUK edge sharpness 1191 before, 1286 after, against 5140 for the file scaled to the same size. So crf 18 stays the default. One film, one phone, and whether Data Saver was off is unconfirmed; TikTok's own processing vs what his phone receives is not separated yet.
 - **Header moved down 64 px in the kit (1 Nov 2026, his yes):** the kicker hit TikTok's LIVE icon and the logo sat tight under search in a preview. On the re-upload both are clear in the profile-opened view; the For You view is unconfirmed.
 - **ElevenLabs dropped (his call, 1 Nov 2026); Sadaltager stays.** Reasons on record: free accounts get 402 on Voice Library voices over the API, so Indonesian voices need a paid plan, and 5 films a day at one take is about 138,000 credits a month, above the Creator plan's 121,000. `voice.py --engine elevenlabs` still works; `ELEVENLABS_API_KEY` remains in his Windows environment until he removes it.
