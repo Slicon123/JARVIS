@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-01T03:50:01.692Z
+  modified: 2026-11-01T04:02:22.490Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -51,6 +51,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Excel re-check 1 November 2026:** new file `DB101A_Tugas Kelompok 9_<NIM ketua>.xlsx` in Downloads, so the group is class A, kelompok 9. Formulas, chart and Rp/% formats are correct, and the status colours now use conditional formatting on G6:G17. Only cleanup left: 3 of its 5 rules are leftovers that can never match, because their text includes pasted quote marks from the advice message (e.g. `"evaluasi" merah, "cukup" kuning`). Advised deleting them.
 
 **Word re-check 1 November 2026 (`Downloads\pppp.docx`):** now 6 pages; Bab II table and chart fit page 4, analysis on page 5; table and chart are embedded with figures matching the Excel; cover has names and group; header and footer work. Still open: BAB/title headings are still two Heading 1 lines in all three chapters, 20 empty Enters instead of a page break under the TOC, Bab I typos and garbled sentences, Bab III's "PT maju jaya" and the Februari/Oktober tie. The embedded copies predate the latest Excel ("Rata Rata" label, manual colours), so re-embed is optional.
+
+**TTS files moved 1 November 2026** to `Tugas\TTS & TAS\` (brief there, older Excel/Word versions in `_Arsip\`). The newest Excel (`DB101A_...xlsx`) and `pppp.docx` stayed in Downloads because they were open; move them once closed.
 
 **Google Sites tugas (given 22 October 2026, due 29 October 2026):** see [[project-pti-google-sites-jejak-bryan]].
 
