@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T04:33:59.325Z
+  modified: 2026-11-01T05:30:53.750Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -17,9 +17,14 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   models, a Poly Haven HDRI, Inter + JetBrains Mono. Bryan's guess of Remotion is unconfirmed; never state it as fact.
 - **Their paid guide is Rp200rb** (kitabedah.id/panduan, 10-part class). Their terms say class videos can't be
   recorded or downloaded, so even free Bagian 0 (7:29) was left out of the analysis; Bryan can watch it on the page.
-- **Open:** account name and sign-off (the skill must not use their brand or "kita bedah"); `GEMINI_API_KEY`
-  from aistudio.google.com, because the Gemini voice path in `tools/voice.py` is untested without it. The test piece
-  `keran` uses the unofficial edge-tts draft voice and shouldn't be published monetised.
+- **Account: @rupanya.sih** (decided 1 Nov 2026; he creates it himself). Sign-off line and brand colour still open;
+  the skill must not use their brand or "kita bedah".
+- **Voice:** his `GEMINI_API_KEY` is set in the Windows user environment and works (tested 1 Nov 2026); `tools/voice.py`
+  reads it from there, so no VS Code restart is needed. Narrator not chosen yet; Charon is the default.
+- **Skill stays local for now:** on 1 Nov 2026 he said not to push it to GitHub. Don't commit `claude-config/skills/sekitar/`
+  until he asks.
+- **He wants the small habits repeated at every new video** (play outside VS Code, leave the laptop alone during the
+  render, internet for research and voice, no edge-tts on monetised uploads). The list is in the skill.
 - **No MCP needed:** the hosted Remotion MCP was shut down 26 Oct 2026, replaced by the official Agent Skills,
   installed in the project only, so 12 extra skills don't load in every session or land in the public repo.
 
