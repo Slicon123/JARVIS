@@ -1,6 +1,6 @@
 ---
 name: project-konten-edukasi-sekitar
-description: "Bryan's education account @rupanya.sih about everyday things, modelled on TikTok kitabedah.idn; sekitar and riset-sekitar skills built 1 Nov 2026; TikTok account created, first video not posted, no written vision/mission yet"
+description: "Bryan's education account @rupanya.gini about everyday things, modelled on TikTok kitabedah.idn; sekitar and riset-sekitar skills built 1 Nov 2026; TikTok account created, first video not posted, no written vision/mission yet"
 metadata:
   node_type: memory
   type: project
@@ -17,7 +17,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   models, a Poly Haven HDRI, Inter + JetBrains Mono. Bryan's guess of Remotion is unconfirmed; never state it as fact.
 - **Their paid guide is Rp200rb** (kitabedah.id/panduan, 10-part class). Their terms say class videos can't be
   recorded or downloaded, so even free Bagian 0 (7:29) was left out of the analysis; Bryan can watch it on the page.
-- **Account: @rupanya.sih** (decided 1 Nov 2026; he creates it himself). Sign-off line **"Rupanya gini."** Profile
+- **Account: @rupanya.gini** (first @rupanya.sih; renamed 1 Nov 2026 so the name matches the sign-off, before any post). Sign-off line **"Rupanya gini."** Profile
   colour `#E8502A`; the skill must not use their brand or "kita bedah".
 - **Voice:** Gemini **Sadaltager**, his pick. `GEMINI_API_KEY` is set in the Windows user environment and works
   (tested 1 Nov 2026); `tools/voice.py` reads it from there, so no VS Code restart is needed.
@@ -29,8 +29,8 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
 - **Skills stay local for now:** on 1 Nov 2026 he said not to push `sekitar` to GitHub. Don't commit `claude-config/skills/sekitar/`
   or `claude-config/skills/riset-sekitar/` until he asks.
 - **Keranjang kuning paused; 5 uploads a day is his target (1 Nov 2026).** He said affiliate ideas aren't usable yet, so `riset-sekitar` keeps at least 10 unused no-product ideas ready until he turns it back on, each as a standalone block he pastes into a new chat to start `sekitar`. He expects to make only some of them (about 3 of 10) and worried about usage, so it counts unused blocks in `Animasi\sekitar\ide\saran-*.md` first and researches only the shortfall. I objected once to the 5/day pace (fact-checking load, YouTube's mass-production rule); he owns the call. Skill built that day, also local-only. His choices when affiliate returns: categories listrik & elektronik, rumah & dapur, motor & kendaraan (no health/beauty); free web data plus his screenshots; video shows advantages only, weaknesses reported to him; ideas logged in `Animasi\sekitar\ide\log.md`.
-- **TikTok @rupanya.sih exists and is switched to TikTok Shop for Creator (his report, 1 Nov 2026; profile confirmed public).** His app on 1 Nov 2026: 0 followers, "Hidden showcase" until 600 followers + a post in the past 28 days + Community Guidelines OK. Bio set; display name and profile picture still empty. Affiliate Center on 1 Nov 2026: Lv. 0, health "Healthy", new-creator steps 1 of 3, and "Confirm your age within 30 days" still open (so roughly by 1 Dec 2026); payout setup not confirmed. Nothing posted yet.
-- **Other accounts (his report, 1 Nov 2026):** Instagram `rupanya.sih`, YouTube `@rupanya_sih` (`rupanya.sih` was refused there). Public name is `Rupanya Sih` everywhere, not his real name.
+- **TikTok @rupanya.gini exists and is switched to TikTok Shop for Creator (his report, 1 Nov 2026; profile confirmed public).** His app on 1 Nov 2026: 0 followers, "Hidden showcase" until 600 followers + a post in the past 28 days + Community Guidelines OK. Bio set; display name and profile picture still empty. Affiliate Center on 1 Nov 2026: Lv. 0, health "Healthy", new-creator steps 1 of 3, and "Confirm your age within 30 days" still open (so roughly by 1 Dec 2026); payout setup not confirmed. Nothing posted yet.
+- **Other accounts (his report, 1 Nov 2026):** Instagram `rupanya.gini`, YouTube `@rupanya_gini`. TikTok's display name is still `Rupanya Sih` because TikTok limits name changes; change it to `Rupanya Gini` when allowed. It is not his real name.
 - **Logo: "r." (design 1 Titik, his pick 1 Nov 2026).** He rejected the tap design because the logo must fit every topic, not one. Profile picture is `Animasi\sekitar\brand\Foto profil rupanya.sih.png`, not yet uploaded as far as he has said. The soft watermark is built into the `sekitar` kit, so new films get it; the existing keran video doesn't have it, and its position under the app icons is untested until the first upload. I read his "diblur" as soft (42% opacity, 1.4 px blur); he didn't correct it. YouTube banner built the same day, `brand\Banner YouTube rupanya.sih.png`: one line runs from a dotless "?" through everyday things to the logo's dot after "rupanya gini"; not yet uploaded as far as he has said. The other five candidates remain in `brand\` and `brand\Ronde 2\`. The reference's logo is an isometric cube cut open with a yellow inside, so avoid cubes, cutaway marks and yellow as his brand.
 - **He wants the small habits repeated at every new video** (play outside VS Code, leave the laptop alone during the
   render, internet for research and voice, no edge-tts on monetised uploads). The list is in the skill.
