@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T07:25:22.262Z
+  modified: 2026-11-01T09:10:06.380Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -21,6 +21,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   colour `#E8502A`; the skill must not use their brand or "kita bedah".
 - **Voice:** Gemini **Sadaltager**, his pick. `GEMINI_API_KEY` is set in the Windows user environment and works
   (tested 1 Nov 2026); `tools/voice.py` reads it from there, so no VS Code restart is needed.
+- **ElevenLabs under test against Sadaltager (his idea, 1 Nov 2026), no decision yet.** `ELEVENLABS_API_KEY` is in the Windows user environment on a free account, limited to Text to Speech + Voices read, 5,000 credits. Free accounts get 402 on Voice Library voices over the API, so Indonesian voices there are blocked; only American/British built-ins work. Samples and script for the comparison are in `Animasi\sekitar\out\keran-perbandingan\`; the test piece is `src/pieces/keran-eleven/`, and the keran film is untouched.
 - **Monetisation researched 1 Nov 2026:** TikTok Creator Rewards appears not open in Indonesia (not read on TikTok's own
   page, which wouldn't load; confirm in TikTok Studio). YouTube YPP lists Indonesia: Shopping at 500 subs + 3M Shorts views/90 days,
   ads at 1,000 + 10M, rising to 20M for applicants from 1 Feb 2027. Start with Shopee/TikTok Shop affiliate. Rule details belong
