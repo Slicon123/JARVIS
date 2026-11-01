@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T12:14:31.110Z
+  modified: 2026-11-01T12:23:37.791Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -23,8 +23,8 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   (tested 1 Nov 2026); `tools/voice.py` reads it from there, so no VS Code restart is needed.
 - **Keran remade 1 Nov 2026 at his request:** `out/keran-polished/keran-polished_v2.mp4` (slug `keran-polished`) is the version to upload, not the older `out/keran/` files; all checks pass; he has not yet reported listening to it, and nothing is uploaded.
 - **Laron film built 1 Nov 2026:** `out/laron/laron.mp4`, 69.3 s, all checks pass, upload text in `out/laron/upload.md`; he asked to skip the look check-in and clip for this film (not a standing rule). He reports uploading it to YouTube, Instagram and TikTok on 1 Nov 2026, without the header fix below. From 8 Nov 2026, ask him for its 7-day views and record them in `src/pieces/laron/LOG.md`.
-- **TikTok softness trial, open (1 Nov 2026):** the first upload looked soft on his phone in TikTok, while YouTube 1080p and Instagram's public 720p copy stayed close to the file at 1.84 Mbps. At his yes I rendered `out/laron/laron_12mbps.mp4` (11.06 Mbps video, 98.6 MB, config `remotion.12mbps.config.ts`) for a TikTok re-upload with "Allow high-quality uploads" on. Make 12 Mbps the default only if that upload looks sharper; he hasn't reported it yet.
-- **Header moved down 64 px in the kit (1 Nov 2026, his yes):** the kicker hit TikTok's LIVE icon and the logo sat tight under search in a preview. Not yet confirmed on an upload.
+- **TikTok softness: higher bitrate didn't help (tested 1 Nov 2026):** the upload looked soft on his phone in TikTok, while YouTube 1080p and Instagram's public 720p copy stayed close to the 1.84 Mbps file. A re-upload at 11.06 Mbps (`out/laron/laron_12mbps.mp4`) measured about the same on his phone: KRAUK edge sharpness 1191 before, 1286 after, against 5140 for the file scaled to the same size. So crf 18 stays the default. One film, one phone, and whether Data Saver was off is unconfirmed; TikTok's own processing vs what his phone receives is not separated yet.
+- **Header moved down 64 px in the kit (1 Nov 2026, his yes):** the kicker hit TikTok's LIVE icon and the logo sat tight under search in a preview. On the re-upload both are clear in the profile-opened view; the For You view is unconfirmed.
 - **ElevenLabs dropped (his call, 1 Nov 2026); Sadaltager stays.** Reasons on record: free accounts get 402 on Voice Library voices over the API, so Indonesian voices need a paid plan, and 5 films a day at one take is about 138,000 credits a month, above the Creator plan's 121,000. `voice.py --engine elevenlabs` still works; `ELEVENLABS_API_KEY` remains in his Windows environment until he removes it.
 - **Monetisation researched 1 Nov 2026:** TikTok Creator Rewards appears not open in Indonesia (not read on TikTok's own
   page, which wouldn't load; confirm in TikTok Studio). YouTube YPP lists Indonesia: Shopping at 500 subs + 3M Shorts views/90 days,
