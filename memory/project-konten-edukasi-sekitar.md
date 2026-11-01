@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T06:51:36.566Z
+  modified: 2026-11-01T06:53:16.162Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -29,7 +29,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   or `claude-config/skills/riset-sekitar/` until he asks.
 - **Keranjang kuning planned for some videos (1 Nov 2026).** `riset-sekitar` skill built that day, also local-only, for ideas: at least 3 without a product + at least 3 with. His choices: categories listrik & elektronik, rumah & dapur, motor & kendaraan (no health/beauty); free web data plus his screenshots; video shows advantages only, weaknesses reported to him; ideas logged in `Animasi\sekitar\ide\log.md`.
 - **TikTok @rupanya.sih exists and is switched to TikTok Shop for Creator (his report, 1 Nov 2026; profile confirmed public).** His app on 1 Nov 2026: 0 followers, "Hidden showcase" until 600 followers + a post in the past 28 days + Community Guidelines OK. Bio set; display name and profile picture still empty. Affiliate Center on 1 Nov 2026: Lv. 0, health "Healthy", new-creator steps 1 of 3, and "Confirm your age within 30 days" still open (so roughly by 1 Dec 2026); payout setup not confirmed. Nothing posted yet.
-- **Other accounts (1 Nov 2026):** Instagram display name is `Rupanya Sih`, not his real name (his report); its username is unconfirmed. YouTube `rupanya.sih` was refused; I suggested `rupanya_sih`, and which handle he got is unconfirmed. Keep the public name `Rupanya Sih` everywhere.
+- **Other accounts (his report, 1 Nov 2026):** Instagram `rupanya.sih`, YouTube `@rupanya_sih` (`rupanya.sih` was refused there). Public name is `Rupanya Sih` everywhere, not his real name.
 - **He wants the small habits repeated at every new video** (play outside VS Code, leave the laptop alone during the
   render, internet for research and voice, no edge-tts on monetised uploads). The list is in the skill.
 - **No MCP needed:** the hosted Remotion MCP was shut down 26 Oct 2026, replaced by the official Agent Skills,
