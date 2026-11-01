@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: b1bd199b-65f7-40c2-abb6-2f2967ca87e4
-  modified: 2026-11-01T09:13:35.702Z
+  modified: 2026-11-01T10:58:30.210Z
 ---
 
 On 1 Nov 2026 Bryan planned a social account teaching what happens in everyday surroundings, with TikTok
@@ -19,7 +19,7 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
   recorded or downloaded, so even free Bagian 0 (7:29) was left out of the analysis; Bryan can watch it on the page.
 - **Account: @rupanya.gini** (first @rupanya.sih; renamed 1 Nov 2026 so the name matches the sign-off, before any post). Sign-off line **"Rupanya gini."** Profile
   colour `#E8502A`; the skill must not use their brand or "kita bedah".
-- **Voice:** Gemini **Sadaltager**, his pick. `GEMINI_API_KEY` is set in the Windows user environment and works
+- **Voice:** Gemini **Sadaltager**, his pick. From 1 Nov 2026 he said to always use Gemini: pass `--engine gemini` explicitly and never fall back to edge-tts, even for drafts; if Gemini fails, stop and tell him. `GEMINI_API_KEY` is set in the Windows user environment and works
   (tested 1 Nov 2026); `tools/voice.py` reads it from there, so no VS Code restart is needed.
 - **Keran remade 1 Nov 2026 at his request:** `out/keran-polished/keran-polished_v2.mp4` (slug `keran-polished`) is the version to upload, not the older `out/keran/` files; all checks pass; he has not yet reported listening to it, and nothing is uploaded.
 - **ElevenLabs dropped (his call, 1 Nov 2026); Sadaltager stays.** Reasons on record: free accounts get 402 on Voice Library voices over the API, so Indonesian voices need a paid plan, and 5 films a day at one take is about 138,000 credits a month, above the Creator plan's 121,000. `voice.py --engine elevenlabs` still works; `ELEVENLABS_API_KEY` remains in his Windows environment until he removes it.
