@@ -58,3 +58,4 @@
 - [Denah 3D rumah](project-denah-3d-rumah.md) — 22 Oct 2026 Three.js artifact from a client's 2-floor PDF; sizes from PDF vectors; heights/roof/finishes are my assumptions, unconfirmed
 - [Headless WebGL screenshots](reference-headless-webgl-screenshots.md) — Chrome + SwiftShader command; separate profiles; phone check needs a 390 px iframe
 - [Valorant connection](project-valorant-connection.md) — solved 28 Oct 2026 with a LAN cable (USB adapter, 24 ms Singapore, 0% loss); links at 100 Mbps; downloads still spike ping
+- [Sekitar daily rhythm](project-sekitar-daily-rhythm.md) — 5 films/day around Gemini's 10 requests per quota day (reset 15.00 WIB): scripts before 15.00, one voice batch, publish next day
