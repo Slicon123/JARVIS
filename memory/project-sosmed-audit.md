@@ -10,7 +10,9 @@ On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He re
 **His rules, 2 Nov 2026:**
 - Only @rupanya.gini. His personal accounts are out of scope: don't open, search or mention them.
 - After the stats, always give the best plan for what's next.
-- Screenshots take him too long. Read Studio pages through Claude in Chrome (he types `@browser` in VS Code; the extension's icon was in his toolbar). Read-only, reading pace, stop at any captcha or login. That path hasn't been run yet: the first run used his screenshots.
+- Screenshots take him too long. Read Studio pages through Claude in Chrome (he types `@browser` in VS Code; the extension's icon was in his toolbar). Read-only, reading pace, stop at any captcha or login. The first run used his screenshots. First Chrome run, Instagram only, 2 Nov 2026 16.10 WIB: it works, but IG's web insights have no watch time or skip rate (app only), `get_page_text` returns nothing there, and screenshots time out right after a scroll, so read numbers with `find` and retry the zoom on its own.
+
+**IG at 16.10 WIB, 2 Nov 2026:** each reel gets about 1,400 to 1,600 views in its first 3 hours, then stops (keran +3 in 3 hours). 2 follows from 6,048 views (0.33 per 1,000). Segitiga ban was fastest (1,606 in 3 h) and most saved (5).
 
 **First run, 2 Nov 2026, about 12.55 WIB:** about 9,300 views on 3 films in under 18 hours: Instagram 4,414 (99%+ non-followers), YouTube about 3,850, TikTok 1,080. YouTube average watched 19 to 21 s. At most 5 followers in total.
 
