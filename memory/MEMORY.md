@@ -1,3 +1,4 @@
+- [Sosmed audit](project-sosmed-audit.md) — skill + local reports in Konten\Sosmed Audit (built 2 Nov 2026); TikTok 0/7/1,073 views to check; screenshots pending; rerun 8, 9, 15 Nov
 - [Folder layout](reference-folder-layout.md) — where files live in C:\Bryan De Great after the 6 Oct 2026 cleanup; save new files there; move logs; never move GP-100\
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
