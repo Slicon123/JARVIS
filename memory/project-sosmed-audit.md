@@ -1,16 +1,22 @@
 ---
 name: project-sosmed-audit
-description: sosmed-audit skill built 2 Nov 2026; first report found TikTok views of 0, 7 and 1,073 and few follows; screenshots still needed; handles and reports stay local in Konten\Sosmed Audit
+description: sosmed-audit skill for @rupanya.gini only, built 2 Nov 2026; reads Studio via Claude in Chrome instead of screenshots; ends in a 7-day plan; first plan and open TikTok fault inside
 metadata:
   type: project
 ---
 
-On 2 Nov 2026 Bryan asked for a deep dive on each of his social accounts, turned into a report. He stopped an artifact mid-way and asked for a skill instead, so `claude-config/skills/sosmed-audit/` holds it and reports are local files. Not committed; he hasn't asked to push it.
+On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He refused an artifact and asked for a skill: `claude-config/skills/sosmed-audit/`, reports as local files in `C:\Bryan De Great\Konten\Sosmed Audit\`. Not committed; he hasn't asked to push it.
 
-- **Local only:** `C:\Bryan De Great\Konten\Sosmed Audit\` holds `akun.json` (handles, including his personal accounts), `snapshot\` and `Laporan\`. Keep his personal handles out of this public repo.
-- **First run, 12.41 WIB on 2 Nov 2026:** YouTube 3,231 views on 3 films with 2 subscribers. TikTok 1 follower, videos at 0, 1,073 and 7 views. Instagram 139 likes, 2 followers. Keran and minyak-terbakar were live on Instagram, so the 2 Nov upload question in [[project-konten-edukasi-sekitar]] is answered for those two.
-- **Open, asked of him in the report:** whether the 0-view TikTok is live, whether a duplicate Laron exists, analytics screenshots per film, any other accounts, what his personal Instagram is for, and whether films should ask people to follow.
-- **Limit:** TikTok showed a captcha and hides captions from logged-out visitors, so its videos aren't matched to films yet. The skill doesn't work around blocks or ask for logins.
+**His rules, 2 Nov 2026:**
+- Only @rupanya.gini. His personal accounts are out of scope: don't open, search or mention them.
+- After the stats, always give the best plan for what's next.
+- Screenshots take him too long. Read Studio pages through Claude in Chrome (he types `@browser` in VS Code; the extension's icon was in his toolbar). Read-only, reading pace, stop at any captcha or login. That path hasn't been run yet: the first run used his screenshots.
 
-**Why:** content income is his longer-term goal, and public numbers alone can't show retention, which decides how far a Short travels.
-**How to apply:** rerun on 8, 9 and 15 Nov 2026 (first 7-day numbers, then the end of the 2-week trial). Treat anything under 7 days and 10 films as a hint.
+**First run, 2 Nov 2026, about 12.55 WIB:** about 9,300 views on 3 films in under 18 hours: Instagram 4,414 (99%+ non-followers), YouTube about 3,850, TikTok 1,080. YouTube average watched 19 to 21 s. At most 5 followers in total.
+
+**Open:**
+- TikTok Minyak terbakar at 0 views after almost 3 hours, against 1,460 on Instagram, so it isn't the film. He was asked to check for a notice and compare with Segitiga ban tonight. Don't delete or re-upload until known.
+- He was asked yes or no on: next 5 films at 45 to 55 s, a follow line in caption and first comment, and motor and fuel topics next. Nothing changed in `sekitar` or `jadwal.md` until he says yes. Decide tests on 9 Nov.
+
+**Why:** content income is his longer-term goal, and only Studio numbers show why films stall.
+**How to apply:** rerun on 8, 9 and 15 Nov 2026 (first 7-day numbers, then the end of the trial in [[project-konten-edukasi-sekitar]]). Treat anything under 7 days or 10 films as a hint.
