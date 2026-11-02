@@ -17,8 +17,8 @@ the artifact's database (see `memory/reference-expense-tracker.md`).
 
 The page keeps two things in the browser's `localStorage`:
 
-- `dompet:cache` holds the db's docs as last seen, so the page opens at once on a slow line. A pill at the top
-  says when that copy is from.
+- `dompet:cache` holds the db's docs as last seen, so the page opens at once on a slow line. A pill floating above
+  the tab bar says when that copy is from; it takes no room, so the page doesn't jump when it goes.
 - `dompet:outbox` holds every write until the db confirms it. A write that fails for lack of signal stays there
   and is sent again later, including on the next visit. Writes are only sent after the db has answered once in
   that visit. A write the db refuses for good (storage full, doc too large) is dropped and shown as an error.

@@ -347,7 +347,9 @@ td.n, th.n { text-align: right; }
 .banner { display: flex; gap: 12px; align-items: flex-start; background: var(--card); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 14px 16px; }
 .banner .ic { margin-top: 2px; color: var(--accent); }
 .banner .acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-.sync { align-self: center; display: flex; gap: 8px; align-items: flex-start; max-width: 100%; background: var(--card); box-shadow: var(--shadow); border-radius: var(--r-md); padding: 8px 14px; font-size: 14px; font-weight: 600; color: var(--ink-2); }
+/* floats above the tab bar, clear of +, so the page never jumps when it comes or goes; taps go through it */
+.sync { position: fixed; z-index: 50; left: 16px; right: 16px; bottom: calc(var(--tabbar) + 34px + env(safe-area-inset-bottom, 0px)); margin: 0 auto; width: fit-content; max-width: 520px; pointer-events: none; display: flex; gap: 8px; align-items: flex-start; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: var(--r-md); padding: 8px 14px; font-size: 14px; font-weight: 600; color: var(--ink-2); }
+body:has(#toast .toast-in) .sync { visibility: hidden; }
 .sync > span:last-child { min-width: 0; }
 .sync .ic { color: var(--warn); margin-top: 1px; }
 .sync .spin { width: 16px; height: 16px; border-width: 2px; flex: none; margin-top: 2px; }
