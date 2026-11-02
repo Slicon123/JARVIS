@@ -1268,7 +1268,7 @@
   var sheet = document.getElementById('sheet');
   var ctx = null, opener = null;
   function openSheet(title, body, foot, c, submit, cls) {
-    if (!sheet.open) opener = document.activeElement;
+    if (!sheet.open) { opener = document.activeElement; flipAt = performance.now(); flipOpen = true; }
     ctx = c || {};
     sheet.className = 'sheet' + (cls ? ' ' + cls : '');
     sheet.innerHTML = '<form data-submit="' + submit + '" novalidate><div class="grab" aria-hidden="true"></div><div class="sheet-head"><h2 id="sheet-title">' + esc(title) + '</h2>' +
@@ -1280,6 +1280,7 @@
   function closeSheet() {
     if (!sheet.open) return;
     sheet.close();
+    flipAt = performance.now(); flipOpen = false;
     // close() hands focus back to the button that opened the sheet. After a tap, let go of it now: an Enter
     // still on its way from the phone keyboard would press that button and open the sheet again.
     if (lastInput !== 'key' && document.activeElement && document.activeElement !== document.body) document.activeElement.blur();
@@ -1300,6 +1301,15 @@
     if (fab) fab.classList.remove('spin', 'rippling');
   });
   sheet.addEventListener('click', function (e) { if (e.target === sheet) closeSheet(); });
+  // A double tap on + lands its second tap on the sheet's Save button, which sits right above it, and a double
+  // tap on Save lands on + once the sheet is gone. A tap that soon after the sheet opens or closes was aimed at
+  // what was there before, so it is dropped.
+  var flipAt = -1e9, flipOpen = false;
+  document.addEventListener('click', function (e) {
+    if (!e.isTrusted || performance.now() - flipAt > 300) return;
+    var t = e.target, ghost = flipOpen ? !!(t.closest && t.closest('#sheet [type=submit]')) : !sheet.contains(t);
+    if (ghost) { e.preventDefault(); e.stopImmediatePropagation(); }
+  }, true);
 
   function setErr(scope, key, msg) {
     var e = scope.querySelector('#' + key + '-err');
@@ -1838,8 +1848,9 @@
     var inner = box.firstChild;
     toastHold = false;
     if (action) document.getElementById('toast-act').onclick = function () { hideToast(); action.fn(); };
-    inner.addEventListener('mouseenter', function () { toastHold = true; });
-    inner.addEventListener('mouseleave', function () { toastHold = false; arm(); });
+    // only a mouse resting on it keeps it up: a tap sends hover too, and never the leave that would let it go
+    inner.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') toastHold = true; });
+    inner.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { toastHold = false; arm(); } });
     inner.addEventListener('focusin', function () { toastHold = true; });
     inner.addEventListener('focusout', function () { toastHold = false; arm(); });
     function arm() { clearTimeout(toastTimer); toastTimer = setTimeout(function () { if (!toastHold) hideToast(); }, action ? 7000 : 4200); }
@@ -2106,6 +2117,54 @@
     var fn = ACTS[el.dataset.act];
     if (fn) fn(el, e);
   });
+  // A tap while another finger touches the screen (the thumb holding the phone, the palm, two thumbs on the
+  // number pad) gets no click from the browser, only pointerdown and pointerup. Such a tap is pressed here.
+  var touches = {}, rescues = [];
+  function tapTarget(t) { return t && t.closest ? t.closest('button, a[href], label, input, select, textarea, [data-act]') : null; }
+  function sameControl(a, b) {
+    return a.tagName === b.tagName && a.textContent === b.textContent && ['data-act', 'data-v', 'data-id', 'id'].every(function (k) { return a.getAttribute(k) === b.getAttribute(k); });
+  }
+  function press(el) {
+    if (el.matches('input:not([type=radio]):not([type=checkbox]), textarea, select')) {
+      el.focus();
+      if ((el.type === 'date' || el.tagName === 'SELECT') && el.showPicker) { try { el.showPicker(); } catch (e) { /* needs a fresh tap */ } }
+      return;
+    }
+    el.click();
+  }
+  document.addEventListener('pointerdown', function (e) {
+    if (e.pointerType !== 'touch') return;
+    var others = Object.keys(touches).length > 0;
+    for (var id in touches) touches[id].multi = true;
+    touches[e.pointerId] = { x: e.clientX, y: e.clientY, t: e.timeStamp, multi: others, el: tapTarget(e.target) };
+  }, true);
+  document.addEventListener('pointercancel', function (e) { delete touches[e.pointerId]; }, true);
+  document.addEventListener('pointerup', function (e) {
+    var p = touches[e.pointerId];
+    delete touches[e.pointerId];
+    // a finger that slid or stayed down is a scroll or a rest, not a tap
+    if (!p || !p.multi || !p.el || Math.abs(e.clientX - p.x) > 12 || Math.abs(e.clientY - p.y) > 12 || e.timeStamp - p.t > 700) return;
+    if (tapTarget(document.elementFromPoint(e.clientX, e.clientY)) !== p.el) return;
+    var r = { el: p.el, pressed: false, native: false }, x = e.clientX, y = e.clientY;
+    rescues.push(r);
+    setTimeout(function () {
+      if (r.native) return;
+      // two fingers lifting together: the first press may have redrawn the page, so find the same button again
+      var el = r.el;
+      if (!el.isConnected) { var now = tapTarget(document.elementFromPoint(x, y)); el = now && sameControl(now, r.el) ? now : null; }
+      if (!el) return;
+      // flagged after, so the click a label passes on to its radio isn't taken for the browser's own
+      r.el = el; press(el); r.pressed = true;
+    }, 80);
+    setTimeout(function () { rescues.splice(rescues.indexOf(r), 1); }, 600);
+  }, true);
+  // if the browser's own click comes after all: before the rescue it cancels it, after it is dropped
+  document.addEventListener('click', function (e) {
+    if (!e.isTrusted) return;
+    var r = rescues.filter(function (x) { return x.el.contains(e.target); })[0];
+    if (!r) return;
+    if (r.pressed) { e.preventDefault(); e.stopImmediatePropagation(); } else r.native = true;
+  }, true);
   document.addEventListener('change', function (e) {
     var el = e.target;
     if (el.dataset && el.dataset.change && CHANGES[el.dataset.change]) CHANGES[el.dataset.change](el, e);

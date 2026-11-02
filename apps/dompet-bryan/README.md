@@ -11,7 +11,7 @@ the artifact's database (see `memory/reference-expense-tracker.md`).
 | `index.html` | Page markup and all CSS (theme tokens, light and dark) |
 | `core.js` | Pure logic with no DOM or db: dates, rupiah, balances, reports, calculator |
 | `app.js` | UI, db reads and writes, Indonesian/English text via `L('id', 'en')` |
-| `test/` | `core.test.js` checks the logic; `e2e.test.js` drives the page in jsdom with a fake db; `offline.test.js` cuts that db's connection; `sheet.test.js` runs the sheet with Chrome's late close event |
+| `test/` | `core.test.js` checks the logic; `e2e.test.js` drives the page in jsdom with a fake db; `offline.test.js` cuts that db's connection; `sheet.test.js` runs the sheet with Chrome's late close event; `touch.test.mjs` taps real headless Chrome with fingers (`npm run test:touch`, needs Chrome installed) |
 
 ## Bad signal
 
@@ -27,7 +27,8 @@ Because of the outbox, a change Bryan made with no signal can be on his phone an
 
 ## Change it
 
-1. Edit the files here, then run `npm install` once and `npm test`.
+1. Edit the files here, then run `npm install` once and `npm test`. After a change to taps, the sheet or the
+   toast, also run `npm run test:touch`: jsdom has no touch or hit-testing, so those bugs only show in Chrome.
 2. Publish with the Artifact tool. Pass `url` set to the link above, `file_path` set to `index.html`,
    and `files` set to `{"core.js": …, "app.js": …}`. Without `url`, the publish creates a new artifact,
    and the new one has an empty database.

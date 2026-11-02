@@ -240,6 +240,8 @@ dialog.sheet::backdrop { background: var(--scrim); }
 .toast-in p { flex: 1; font-size: 15px; font-weight: 600; }
 .toast-in button { background: transparent; color: var(--on-btn); border: 1.5px solid currentColor; border-radius: 999px; min-height: 44px; padding: 0 16px; font-weight: 800; }
 @keyframes toast-in { from { transform: translateY(10px); opacity: 0; } to { transform: none; opacity: 1; } }
+/* on a touch screen only the toast's button takes taps: a thumb aiming at the row under it gets the row */
+@media (hover: none) { .toast-in { pointer-events: none; } .toast-in button { pointer-events: auto; } }
 
 /* ---------- calendar ---------- */
 .monthnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
@@ -394,7 +396,8 @@ td.n, th.n { text-align: right; }
 .amt-big output.zero { color: var(--muted); }
 .amt-clear { position: absolute; right: 0; bottom: 8px; }
 .field.bad .amt-view { border-bottom-color: var(--out); }
-.keypad { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+/* the pad never scrolls or zooms: without this a second thumb landing reads as a pinch and both taps are cancelled */
+.keypad { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; touch-action: none; }
 .key { min-height: 46px; border: 0; border-radius: 14px; background: var(--card-2); color: var(--ink); font-size: 21px; font-weight: 700; display: grid; place-items: center; font-variant-numeric: tabular-nums; transition: transform .1s ease-out, background-color .15s; }
 .key:active { transform: scale(.94); }
 .key.op { color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--card-2)); }
