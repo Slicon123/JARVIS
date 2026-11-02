@@ -19,7 +19,7 @@ On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He re
 
 **His answers, 2 Nov 2026:**
 - Shorter films (45 to 55 s): no. Don't raise it again without new evidence.
-- Follow line in caption and first comment: yes, now in `sekitar` and enforced by `upload_check.py`, for the next 5 films starting with bau-elpiji and hujan-pertama. Ask him on 9 Nov whether it stays; if not, remove the rule and the check.
+- Follow line in caption and first comment: yes, now in `sekitar` and enforced by `upload_check.py`, for the next 5 films starting with bau-elpiji and hujan-pertama. As of 2 Nov 2026 he had never posted a first comment on any film (his report), so the trial so far covers the caption only; I gave him comment text for all 6. Ask him on 9 Nov whether it stays; if not, remove the rule and the check.
 - Motor and fuel topics next: he didn't answer it directly, so `jadwal.md` is unchanged.
 
 **Why:** content income is his longer-term goal, and only Studio numbers show why films stall.
