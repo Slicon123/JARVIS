@@ -15,8 +15,12 @@ On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He re
 **First run, 2 Nov 2026, about 12.55 WIB:** about 9,300 views on 3 films in under 18 hours: Instagram 4,414 (99%+ non-followers), YouTube about 3,850, TikTok 1,080. YouTube average watched 19 to 21 s. At most 5 followers in total.
 
 **Open:**
-- TikTok Minyak terbakar at 0 views after almost 3 hours, against 1,460 on Instagram, so it isn't the film. He was asked to check for a notice and compare with Segitiga ban tonight. Don't delete or re-upload until known.
-- He was asked yes or no on: next 5 films at 45 to 55 s, a follow line in caption and first comment, and motor and fuel topics next. Nothing changed in `sekitar` or `jadwal.md` until he says yes. Decide tests on 9 Nov.
+- TikTok Minyak terbakar at 0 views after almost 3 hours, against 1,460 on Instagram, so it isn't the film. He found no notice in his notifications (2 Nov 2026). Compare with Segitiga ban tonight. Don't delete or re-upload until known.
+
+**His answers, 2 Nov 2026:**
+- Shorter films (45 to 55 s): no. Don't raise it again without new evidence.
+- Follow line in caption and first comment: yes, now in `sekitar` and enforced by `upload_check.py`, for the next 5 films starting with bau-elpiji and hujan-pertama. Ask him on 9 Nov whether it stays; if not, remove the rule and the check.
+- Motor and fuel topics next: he didn't answer it directly, so `jadwal.md` is unchanged.
 
 **Why:** content income is his longer-term goal, and only Studio numbers show why films stall.
 **How to apply:** rerun on 8, 9 and 15 Nov 2026 (first 7-day numbers, then the end of the trial in [[project-konten-edukasi-sekitar]]). Treat anything under 7 days or 10 films as a hint.
