@@ -5,12 +5,28 @@ metadata:
   node_type: memory
   type: project
   originSessionId: bcf91eae-07d3-4e3b-a8b9-2b925c152c80
-  modified: 2026-10-16T05:30:45.291Z
+  modified: 2026-11-03T04:59:18.571Z
 ---
 
-Pendidikan Agama Kristen, Jumat 13–15, UKSW Digital Business semester 1. **Dosen tidak
-membagikan silabus**, jadi tidak ada urutan topik, bobot nilai, atau aturan kelas yang bisa
-dicatat — jangan mengarang.
+Pendidikan Agama Kristen, Jumat 13–15, UKSW Digital Business semester 1. **Silabus ada**
+(ditemukan 3 Nov 2026): `C:\Users\p\Downloads\Silabus PA(K) 2026-2027.docx`, "Pendidikan
+Agamawi (Kristen)" MU 117. Catatan lama bahwa dosen tidak membagikan silabus itu salah.
+
+**Silabus, ringkas (16 pertemuan; tanggal tidak tertulis):** 1 perkenalan · 2 pemahaman dasar
+PA(K) · 3 fundamentalisme–liberalisme, inklusif-transformatif · 4 presentasi mahasiswa non-Kristen
+(keyakinan umum) · 5 Service Learning video kreatif · 6 TTS (materi 1–5) · 7 deradikalisasi ·
+8 Kel. 1 Agama & Kesehatan Mental (penanggap Kel. 3) · 9 Kel. 2 Hoax (penanggap Kel. 4) ·
+**10 Kel. 3 Agama & IPTEK (RI 4.0/Masyarakat 5.0), Bryan's Kel. 5 = PENANGGAP** · 11 Kel. 4 Anti
+korupsi (penanggap Kel. 1) · **12 Kel. 5 (Bryan) PRESENTASI Agama, Politik dan Kepemimpinan,
+penanggap Kel. 2**: konsep politik; titik temu/pisah agama & politik; politisasi agama; sikap
+agama terhadap politisasi agama; sumber Budiharjo hal. 5-25, Heywood 1-18, Notohamidjojo
+9-26 & 162-170, Kristiyanto *Sakramen Politik* 86-100 & 253-267 · 13 Service Learning 2
+(video usulan aksi konkret) · 14 Studium Generale (resume kreatif) · 15 kontribusi PA bagi
+bangsa · 16 TAS (materi 7–15).
+**Nilai:** tugas & SG 5%, kehadiran 25%, SL1 10%, SL2 10%, TTS 15%, presentasi kelompok 15%,
+TAS 20%. **Aturan:** absen >3x (termasuk sakit/izin) = E; telat >15 menit tidak dihitung hadir;
+tugas via email/Google Classroom; telat −5–10%; tanpa catatan kaki + daftar pustaka −10%;
+plagiat >15% −50–100%.
 
 **Tugas yang diketahui:** makalah (tampaknya kelompok) — Bryan kebagian bagian
 **2.1 Pemahaman Agama Kristen: dasar iman, Allah Tritunggal, Alkitab, Yesus Kristus**.
