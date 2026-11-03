@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-01T08:25:23.343Z
+  modified: 2026-11-03T13:10:45.077Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -55,6 +55,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Word + PPT check 1 November 2026 (Downloads, `DB101A_Tugas kelompok 9_842026024.docx` and `PPT 1.pptx`, deck by Jolin; advice only):** Word: 6 pages, BAB headings fixed (single line), margins/TNR OK, embedded table and chart match the Excel. Open: 19 empty Enters instead of a page break under the TOC, Bab I typos and the garbled "dari penjualan Laporan keuangan. Memberikan...", Bab III "PT maju jaya" and Februari/Oktober tie, table object only 287×126 pt. Word PDF export hangs under COM on this file, so its pages were not checked visually. PPT: 5 slides in the right order, Morph transitions, SmartArt on slide 5, figures match. Open: no object animations (brief asks for them), chart is an SVG picture rather than linked/imported, Slide 2 run-on sentence and no visi/misi, slide 4 shows only pendapatan with no label (best/worst kinerja by laba is Feb+Okt / Mar; by margin Okt / Apr), slide 5 Februari tie, "setabil", November "turun drastis" (only −6,9%; laba fell because beban rose Rp300 jt), recommendations weak and not about next year. PPT file still needs renaming.
 
 **Logic re-check 1 November 2026 (Bryan caught that November had the smallest revenue drop, −6.9%, yet was singled out):** other claims that the data doesn't support: Agustus laba drop omitted from Bab II; "penurunan Maret–April" though April rose Rp10 jt; Bab I "penjualan cukup pesat" has no data; conclusion ignores 8 of 12 months "sangat baik", total laba Rp6,89 M, margin 32,1%; (Rp6,89 M is the 12-month total; the 8 sangat-baik months sum to Rp6,45 M. The groupmate's Word wrote "total laba 8 bulan sangat baik 6,89 M", Bryan caught it 3 Nov 2026; keep the two figures clearly apart); slide 4 shows November as terendah under "Kinerja Bulanan" though its status is sangat baik. Mar/Apr/Jun/Sep are high in beban relative to pendapatan (89–98%), not in absolute beban.
+
+**Word re-check 3 November 2026 (`Downloads\DB101A_Tugas kelompok 9_842026024 3.docx`, Nora):** fixed: real page break under the TOC, Bab I rewritten (typos gone, visi/misi added), "PT Maju Jaya" capitalised, Februari+Oktober tie, Agustus and the Maret/April drop described correctly, Kesimpulan adds 8/12 sangat baik + 12-month laba Rp6,89 M + margin 32,1% (all verified against the embedded Excel), Rekomendasi now says beban drives the weak months, table object enlarged to 366×161 pt. Left, all small: "pengelola" → "pengelolaan", Bab II lowercase "laba" after a full stop and missing comma "Agustus, September", Kesimpulan "oktober" lowercase and "terlihat 8 dari 12" missing "dari", double space, Rekomendasi "turunya" ×2, "mengaruh" (→ berpengaruh), chatty "Jadi yang paling ... itu", "Sedangkan Oktober turun" without "dari September", mid-sentence "Perusahaan" capitalised 3×. Not rendered visually.
 
 **TTS files moved 1 November 2026** to `Tugas\TTS & TAS\` (brief there, older Excel/Word versions in `_Arsip\`). The newest Excel (`DB101A_...xlsx`) and `pppp.docx` stayed in Downloads because they were open; move them once closed.
 
