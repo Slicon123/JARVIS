@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-03T13:10:45.077Z
+  modified: 2026-11-03T14:02:55.381Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -57,6 +57,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Logic re-check 1 November 2026 (Bryan caught that November had the smallest revenue drop, −6.9%, yet was singled out):** other claims that the data doesn't support: Agustus laba drop omitted from Bab II; "penurunan Maret–April" though April rose Rp10 jt; Bab I "penjualan cukup pesat" has no data; conclusion ignores 8 of 12 months "sangat baik", total laba Rp6,89 M, margin 32,1%; (Rp6,89 M is the 12-month total; the 8 sangat-baik months sum to Rp6,45 M. The groupmate's Word wrote "total laba 8 bulan sangat baik 6,89 M", Bryan caught it 3 Nov 2026; keep the two figures clearly apart); slide 4 shows November as terendah under "Kinerja Bulanan" though its status is sangat baik. Mar/Apr/Jun/Sep are high in beban relative to pendapatan (89–98%), not in absolute beban.
 
 **Word re-check 3 November 2026 (`Downloads\DB101A_Tugas kelompok 9_842026024 3.docx`, Nora):** fixed: real page break under the TOC, Bab I rewritten (typos gone, visi/misi added), "PT Maju Jaya" capitalised, Februari+Oktober tie, Agustus and the Maret/April drop described correctly, Kesimpulan adds 8/12 sangat baik + 12-month laba Rp6,89 M + margin 32,1% (all verified against the embedded Excel), Rekomendasi now says beban drives the weak months, table object enlarged to 366×161 pt. Left, all small: "pengelola" → "pengelolaan", Bab II lowercase "laba" after a full stop and missing comma "Agustus, September", Kesimpulan "oktober" lowercase and "terlihat 8 dari 12" missing "dari", double space, Rekomendasi "turunya" ×2, "mengaruh" (→ berpengaruh), chatty "Jadi yang paling ... itu", "Sedangkan Oktober turun" without "dari September", mid-sentence "Perusahaan" capitalised 3×. Not rendered visually.
+
+**Final Word 3 November 2026, 20.52 (`Downloads\DB101A_Tugas kelompok 9_842026024 (1).docx`):** all 13 points sent via WhatsApp are fixed; layout unchanged (Bab III still page 6 at last save). Two Rekomendasi sentences (Oktober −Rp450 jt "dari September… (65,5%)" and "Jadi, yang paling berpengaruh terhadap laba…") are my wording verbatim from the first WA draft, before the AI-ban revision; flagged to Bryan as AI-written text under the dosen's rule, suggested Nora rephrase them herself.
 
 **TTS files moved 1 November 2026** to `Tugas\TTS & TAS\` (brief there, older Excel/Word versions in `_Arsip\`). The newest Excel (`DB101A_...xlsx`) and `pppp.docx` stayed in Downloads because they were open; move them once closed.
 
