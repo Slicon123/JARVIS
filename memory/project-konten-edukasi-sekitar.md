@@ -59,3 +59,4 @@ project at `C:\Bryan De Great\Animasi\sekitar\`. Reference numbers and what's pr
 **Why:** content income is his longer-term goal; see [[project-content-clipping-automation]]. Sits beside [[project-animate-skill]].
 **How to apply:** when he gives a content idea, use the skill: facts and script check-in first. Record real view
 counts per film before adding rules. Word timing relies on [[reference-local-transcription]]; warn before the render.
+- **First comments, 4 Nov 2026:** uang-kecuci and tutup-pulpen got their upload.md first comment on YouTube (watch pages U6-Qc0g3o9w and B0kY1q8U3R0), TikTok and Instagram. None pinned: YouTube needs his Studio verification, TikTok and Instagram web have no Pin (see [[reference-upload-route]]). Neither film has a Facebook Reel yet; truk-tangki still scheduled (TikTok 4 Nov 13.00), no comment until it is live.
