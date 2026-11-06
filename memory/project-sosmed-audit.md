@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 85c93808-aecd-4e02-8de3-a45c23105852
-  modified: 2026-11-06T18:30:52.030Z
+  modified: 2026-11-06T18:36:29.282Z
 ---
 
 On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He refused an artifact and asked for a skill: `claude-config/skills/sosmed-audit/`, reports as local files in `C:\Bryan De Great\Konten\Sosmed Audit\`. Not committed; he hasn't asked to push it.
@@ -32,6 +32,8 @@ On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He re
 **7 Nov 2026:** Bryan asked to add Facebook (the Rupanya Gini Page) to the skill. It is read in Meta Business Suite only, not in `akun.json`; the Business Suite insights row in SKILL.md is untested, so fix it on the first run. He also made a YouTube Data API key (project `rupanya-gini`, free, public data only). It is not wired in: the key was never shared with me, and no private analytics without OAuth. If used, keep it in a user environment variable, never in this public repo. I told him the browser route stays the main one.
 
 **7 Nov 2026, 01.23 to 02.10 WIB, test run of the skill (report `Laporan\2026-11-07.md`):** works end to end through `@browser`. About 415,000 views in 6 days on 26 films (YouTube about 230,000, Instagram about 128,000, TikTok about 57,000, Facebook 8,600 in 28 days). Followers: YouTube 356, Instagram 278, Facebook 130, TikTok 22 (was at most 5). Follows per 1,000 views: YouTube 1.5, Instagram 2.2 (two viral reels), TikTok 0.4. Breakouts don't carry across platforms: Truk tangki 52K on YouTube but 4.8K on IG; Jarum APAR 37K on IG but 6.8K on YouTube; Rantai 32K IG and 17K YouTube; Polisi tidur 44K YouTube. TikTok fault: lifted; only the 5 films posted 1 Nov to 2 Nov 19.00 are still at 3 to 10 views, everything since 3 Nov gets 600 to 4,400. Display name still "Rupanya Sih". Plan given: keep 5 a day, YouTube + IG first, TikTok post-only, pin first comments on the 4 breakout films, one follow-up-to-a-breakout test (decide 15 Nov). SKILL.md fixed: Studio opens on a personal channel, so go to the `@rupanya_gini` channel URL directly (never read the other); Facebook row tested (account level only); TikTok list is virtual, scroll in steps. Instagram insights pages not opened this run, so non-follower % is stale. Open: did first comments go out (unknown), 7 unanswered comments on the Facebook Page, follow line decision 9 Nov.
+
+**His answer, 7 Nov 2026:** he doesn't post a first comment on every film and doesn't want to. Don't push it as a routine or count it as a missed step; suggest it only on films already breaking out (optional). He also asked what "the follow line" meant: say it as "the 'Follow buat…' sentence at the end of the caption" in later reports.
 
 **Why:** content income is his longer-term goal, and only Studio numbers show why films stall.
 **How to apply:** rerun on 8, 9 and 15 Nov 2026 (first 7-day numbers, then the end of the trial in [[project-konten-edukasi-sekitar]]). Treat anything under 7 days or 10 films as a hint.
