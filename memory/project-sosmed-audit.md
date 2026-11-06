@@ -1,8 +1,11 @@
 ---
 name: project-sosmed-audit
-description: sosmed-audit skill for @rupanya.gini only, built 2 Nov 2026; reads Studio via Claude in Chrome instead of screenshots; ends in a 7-day plan; first plan and open TikTok fault inside
+description: "sosmed-audit skill for @rupanya.gini only, built 2 Nov 2026; reads Studio via Claude in Chrome instead of screenshots; ends in a 7-day plan; first plan and open TikTok fault inside"
 metadata:
+  node_type: memory
   type: project
+  originSessionId: 85c93808-aecd-4e02-8de3-a45c23105852
+  modified: 2026-11-06T18:18:51.011Z
 ---
 
 On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He refused an artifact and asked for a skill: `claude-config/skills/sosmed-audit/`, reports as local files in `C:\Bryan De Great\Konten\Sosmed Audit\`. Not committed; he hasn't asked to push it.
@@ -25,6 +28,8 @@ On 2 Nov 2026 Bryan asked for a deep dive on his social media as a report. He re
 - Shorter films (45 to 55 s): no. Don't raise it again without new evidence.
 - Follow line in caption and first comment: yes, now in `sekitar` and enforced by `upload_check.py`, for the next 5 films starting with bau-elpiji and hujan-pertama. As of 2 Nov 2026 he had never posted a first comment on any film (his report), so the trial so far covers the caption only; I gave him comment text for all 6. Ask him on 9 Nov whether it stays; if not, remove the rule and the check.
 - Motor and fuel topics next: he didn't answer it directly, so `jadwal.md` is unchanged.
+
+**7 Nov 2026:** Bryan asked to add Facebook (the Rupanya Gini Page) to the skill. It is read in Meta Business Suite only, not in `akun.json`; the Business Suite insights row in SKILL.md is untested, so fix it on the first run. He also made a YouTube Data API key (project `rupanya-gini`, free, public data only). It is not wired in: the key was never shared with me, and no private analytics without OAuth. If used, keep it in a user environment variable, never in this public repo. I told him the browser route stays the main one.
 
 **Why:** content income is his longer-term goal, and only Studio numbers show why films stall.
 **How to apply:** rerun on 8, 9 and 15 Nov 2026 (first 7-day numbers, then the end of the trial in [[project-konten-edukasi-sekitar]]). Treat anything under 7 days or 10 films as a hint.
