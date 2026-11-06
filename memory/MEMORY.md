@@ -1,4 +1,4 @@
-- [Sosmed audit](project-sosmed-audit.md) — @rupanya.gini only, never his personal accounts; reads Studio via `@browser`, no screenshots; ends in a plan; TikTok Minyak 0-view fault open; follow line yes (decide 9 Nov), shorter films no; rerun 8, 9, 15 Nov
+- [Sosmed audit](project-sosmed-audit.md) — @rupanya.gini only, never his personal accounts (YouTube Studio opens on a personal channel: use the direct channel URL); reads via `@browser`, no screenshots; ends in a plan; 7 Nov test run: ~415K views, ~790 followers, TikTok fault lifted; follow line yes (decide 9 Nov), shorter films no; rerun 9, 15 Nov
 - [Folder layout](reference-folder-layout.md) — where files live in C:\Bryan De Great after the 6 Oct 2026 cleanup; save new files there; move logs; never move GP-100\
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
