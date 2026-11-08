@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 80e54fc2-baae-473a-bee2-f5051b8966bf
-  modified: 2026-10-12T17:28:30.273Z
+  modified: 2026-11-08T06:28:50.482Z
 ---
 
 Matematika Logika (DB103A), 3 SKS, dosen Johannes Ronaldo Siahinenia — Rabu 09–12 at FTI424. Effectively a discrete-math course. Syllabus captured 2 September 2026 from lecture slides.
@@ -56,5 +56,9 @@ DB103 is a conceptual prerequisite for DB204 (Data Processing for Business) and 
 **Timeline (revised 2026-10-10):** P5 ≈ 23 Sep, P6 ≈ 30 Sep, P7 = 7 Okt covered both remaining pre-TTS topics, so the "pertemuan N ≈ RPS N−1" rule no longer holds. Next: tes 14 Okt, K-map probably finished, then TTS. Estimate, not an official schedule.
 
 **Tes kelas (Bryan bilang 7 Okt 2026; kemungkinan Rabu 14 Okt):** 8 nomor, tiap nomor maksimal bagian a–b: 1 himpunan · 2 matriks · 3 gerbang logika · 4 kuantor · 5 modus ponens/tollens · 6–8 aljabar Boolean. Latihan + kunci di `Kuliah\Semester 1\Matematika Logika\Latihan\latihan-tes-{soal,jawaban}.md` — complete since 10 Oct (3 = draw circuit + output, 6 = komplemen, 7 = kanonik SOP/POS, 8 = penyederhanaan aljabar, modelled on Tugas 3 and P7 slides; all answers truth-table verified).
+
+**Pertemuan 9–11 (received 2026-11-08, no P8 = TTS week):** P9 induksi — sederhana (basis p(1)), dirampatkan (basis n₀), kuat (prime factorisation, perangko 3 & 5 sen with three bases); 5-step frame pernyataan/basis/hipotesis/langkah/kesimpulan; examples Σi, Σ ganjil = n², Σ2ⁱ = 2ⁿ⁺¹−1, n³+2n kelipatan 3, referral 2ⁿ⁺¹−1. P10 fungsi rekursif — basis + rekurens menuju basis; top-down vs bottom-up (f(0)=3, f(n)=2f(n−1)+4 → 108); Fibonacci (2 basis), faktorial; rumus eksplisit 7·2ⁿ−4 proven by induction; saldo investasi, cicilan paylater, U(n)=(1−churn)U(n−1)+baru; three common mistakes. P11 kombinatorial — 3 questions (tahap? urutan? berulang?), kaidah +/×, inklusi-eksklusi, P(n,r), C(n,r), permutasi objek sama (MISSISSIPPI 34.650, SALATIGA 6.720), kombinasi berulang C(n+r−1,r), sampling; ends with a 5-question kuis (unanswered). Slides now in `Materi\`. RPS topics 9–10 done; next is teori graf.
+
+**Tugas 4 (received 2026-11-08, `Tugas\Tugas 4 - Soal.pdf`, deadline unknown, pensil 2B):** 1 induksi Σk(k+1) · 2 induksi 7ⁿ−1 kelipatan 6 · 3 f(0)=2, f(n)=3f(n−1)−1: a f(4)=122 top-down, b induksi (3ⁿ⁺¹+1)/2 · 4 churn app U(n)=0,9U(n−1)+2.000: 11.000/11.900/12.710/13.439, >13.000 at bulan ke-4 · 5 QRIS/COD: 95, 45, 25 · 6 boba: C(9,4)=126, C(6,4)=15. `tugas-4-{jawaban,salin-hvs}.md` written 8 Nov, all verified by script. Not yet submitted.
 
 **Latihan 2 (13 Okt 2026, `Latihan\latihan-tes-2-{soal,jawaban}.md`):** Bryan added ekivalensi logis (ingkaran, konvers, kontraposisi of implikasi sentences, as in Tugas 2 no. 2) and asked for "versi rumit" of Tugas 1–3 only. Same order as latihan 1, except 8 = ekivalensi, replacing penyederhanaan aljabar (not in any tugas). Other numbers: 1 = Venn survey (tepat dua), 3 = two circuits (SOP + one with kurung), 5 = validity with negated atoms, 6 = two complements, 7 = y' + xz SOP/POS. The answer file has a source table showing which tugas each number comes from. All answers verified by script.
