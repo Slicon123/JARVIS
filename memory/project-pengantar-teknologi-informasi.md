@@ -68,6 +68,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 
 **TAS presentation (11 November 2026):** Bryan presents all 5 slides alone, for kelompok 9. He got a slide-by-slide spoken outline with bridge sentences plus likely Q&A (Maret beban 97% of pendapatan, Oktober margin 65,5%, November margin 40,7%), and was told to use it as a frame in his own words because of the AI ban. Still open: he must check the IF thresholds in Excel column G himself.
 
+**Folder check 11 November 2026:** `Tugas\TTS & TAS\` is tidy: `Final\` holds exactly the 3 finals, the zip's CRCs match them byte for byte, all older versions sit in `_Arsip\` (the leftover `... 3.docx` from Downloads was moved there today). Form submission still not confirmed.
+
 **Google Sites tugas (given 22 October 2026, due 29 October 2026):** see [[project-pti-google-sites-jejak-bryan]].
 
 Related: [[project-uksw-digital-business]], [[feedback-remind-materials-after-class]]
