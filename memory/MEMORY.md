@@ -20,7 +20,7 @@
 - [Plain language](feedback-plain-language-explanations.md) — short sentences, no unexplained jargon; he won't ask what a term means
 - [Claude account context](user-claude-account-context.md) — Pro plan; VS Code extension not terminal (no status line); phone runs Claude Code too; home internet laggy, sometimes down
 - [Matematika Logika (DB103A)](project-matematika-logika-db103a.md) — RPS topic order, grading, rules; Tugas 1–3 submitted, Tugas 4 answered 8 Nov (not submitted); slides through pertemuan 11 (induksi, rekursi, kombinatorial); latihan 1 + 2 complete
-- [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far
+- [Bahasa Inggris (DB105C)](project-bahasa-inggris-db105c.md) — meeting topics, weights, flearn attendance; tests/quizzes run on flearn, all done so far; presentation brief + rubric saved 11 Nov (3–5 min, 5–7 slides, 3 points, QnA; topic not chosen, nothing built)
 - [Pengantar Teknologi Informasi](project-pengantar-teknologi-informasi.md) — PTI chapters 1 and 3 covered; chapter 2 not uploaded; group TTS/TAS (Excel+Word+PPT) due 12 Nov 2026, advice only (AI banned); kelompok 9 kelas A; Excel final; Word final 3 Nov; PPT final 3 Nov 23.07 (strip " (1)" from the name before zipping)
 - [PTI Google Sites — Bryan's Trail](project-pti-google-sites-jejak-bryan.md) — website kehidupan (4 halaman), SUDAH dikumpulkan 22 Okt 2026, tunggu nilai; guide artifact + 3 embeds + images built 22 Okt (guestbook + kuis dropped); Bakuucakar spelling + photos pending
 - [Tugas PMB — badan usaha](project-pmb-tugas-badan-usaha.md) — T2–T4 sudah dikumpulkan 29 Sep 2026 (1 PDF gabungan + 1 PPT), final di Kuliah\...\Tugas 2-4 Badan Usaha\Final; tunggu nilai dosen

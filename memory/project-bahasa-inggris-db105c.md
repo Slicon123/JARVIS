@@ -2,7 +2,10 @@
 name: project-bahasa-inggris-db105c
 description: "Syllabus essentials for Bryan's Bahasa Inggris (DB105C) class — meeting topics, assessment weights, attendance scoring, class rules"
 metadata:
+  node_type: memory
   type: project
+  originSessionId: 04b17273-7e3f-4beb-b407-73c0aae80a3a
+  modified: 2026-11-11T08:40:45.774Z
 ---
 
 Bahasa Inggris (DB105C), 2 SKS, dosen Brigitta Putri Atika Tyagita — Rabu 13–15 at FTI424. English for digital business: reading → grammar → professional speaking/presentation. Syllabus captured 2 September 2026 from the course PDF (DB105_20261.pdf).
@@ -16,6 +19,8 @@ Bahasa Inggris (DB105C), 2 SKS, dosen Brigitta Putri Atika Tyagita — Rabu 13�
 **Grade scale (different from other courses — has a CD, and C floors at 60):** A 80–100, AB 75–79.9, B 70–74.9, BC 65–69.9, C 60–64.9, CD 55–59.9, D 50–54.9, E 0–49.9.
 
 **Rules that bite:** attendance is self-taken on **flearn** per the siasat schedule and is weighted — Present 100%, Late 50%, Excused 25%, Absent 0%; late = 10+ minutes after start. **No make-up quiz** except with a doctor's certificate. Projects/assignments graded by rubric — ask for it before submitting. Keep all submission and assessment documentation, and calculate your own mark before disputing a grade.
+
+**Presentation project (meeting 15, 2 Des 2026) — brief and rubric received 11 Nov 2026.** Bryan only asked me to remember it; nothing built yet, so don't start a PPT until he asks. Suggested format: 3–5 min per student, 5–7 slides, structure = introduction + 3 main points + conclusion + QnA (max 3 questions), AVA = relevant images/charts/examples, clear English with transition expressions, delivery = eye contact, speak clearly, don't read the slides. Rubric (Presentation rubric.pdf), 7 criteria scored 0–4: Content (relevant info plus extra details from further research), Organization (logical, even unique sequence; speaker elaborates beyond the slides), AVA (attractive, legible, zero grammar/spelling errors, graphics on every slide for a 4), Knowledge (full knowledge + enthusiasm), Communication (clear language at an appropriate level ~90% of the time for a 4), Engagement (rare return to notes, questions encouraged). Topic = a DB topic/product (per meeting 15); his actual topic not yet chosen.
 
 **Why:** So questions about this class's schedule, weighting, or "what do I need on the TAS" can be answered without re-uploading slides.
 
