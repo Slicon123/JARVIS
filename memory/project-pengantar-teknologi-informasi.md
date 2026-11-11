@@ -70,6 +70,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 
 **Folder check 11 November 2026:** `Tugas\TTS & TAS\` is tidy: `Final\` holds exactly the 3 finals, the zip's CRCs match them byte for byte, all older versions sit in `_Arsip\` (the leftover `... 3.docx` from Downloads was moved there today). Form submission still not confirmed.
 
+**PPT slide 5 SmartArt fix, 11 November 2026, 16.33:** clicking slide 5 made PowerPoint re-lay out the SmartArt (vList2) from its data model, whose custScaleX values (41/56/47/53%) didn't match the stored drawing, so both columns shrank and Rekomendasi overflowed past the slide bottom. Thumbnails and a plain export looked fine; only the edit view and show after the relayout broke. Rule found: relaid-out width = frame width × scale², offset = custLinFactNeighborX × frame width × scale. Set the scales to 63982/74684/68869/72665 and the X offsets to -42387/-29597/33590/31673 in data1.xml, then saved through PowerPoint. Geometry now matches the original to 0.1 pt and holds after reopening twice; texts, animations and transitions are unchanged. New PPT in `Final\`, zip rebuilt (old PPT and zip kept in `_Arsip\`). Zip NOT submitted yet (deadline 12 Nov 23.59).
+
 **Google Sites tugas (given 22 October 2026, due 29 October 2026):** see [[project-pti-google-sites-jejak-bryan]].
 
 Related: [[project-uksw-digital-business]], [[feedback-remind-materials-after-class]]
