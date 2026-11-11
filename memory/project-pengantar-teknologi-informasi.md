@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-03T14:02:55.381Z
+  modified: 2026-11-11T08:59:27.969Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -65,6 +65,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **PPT final-ish 3 November 2026, 22.56 (`Downloads\DB101A_Tugas Kelompok 9_842026024.pptx`, renamed correctly):** all WA points done: visi/misi recopied from the final Word (identical), slide 5 typos fixed, promosi rekomendasi replaced by beban/patokan Feb+Okt/batas beban 2026 bullets, axis format "Rp"#,##0 with Linked to source off. Left: rekomendasi bullet 2 keeps my example clause verbatim ("terutama di bulan yang bebannya hampir sama dengan pendapatan…"), flagged as AI-text risk; "untuk di tahun 2026"; justified text leaves wide gaps on slide 5 (left-align advised); Morph off-slide leftovers not deleted (optional). Bryan chose to leave both the verbatim clause and the Morph leftovers as they are; only "untuk di" and left-align were sent. **Final PPT 3 Nov 23.07** (`Downloads\DB101A_Tugas Kelompok 9_842026024 (1).pptx`): both fixed, only slide 5 changed; PPT is done. The download added " (1)" to the name, so it must be renamed before zipping. Axis separators follow the viewer's Windows locale (my laptop is en-US, so commas show here), not a file error.
 
 **Submission package built 3 November 2026, 23.xx:** finals renamed to the brief's exact name and moved to `Tugas\TTS & TAS\Final\` (Excel 1 Nov 16.42, Word 3 Nov 20.52, PPT 3 Nov 23.07); zip `Tugas\TTS & TAS\DB101A_Tugas Kelompok 9_842026024.zip` holds those 3, sizes verified. Older Downloads versions went to `_Arsip\`, except `DB101A_Tugas kelompok 9_842026024 3.docx`, which was open in Word, so it is still in Downloads; archive it once closed. The Excel still has the 3 dead conditional-format rules (invisible, left alone). Not yet submitted via the Form as of this note. **Full rubric audit of the 3 finals, same night:** every brief requirement met (Excel formulas incl. INDEX/MATCH month for max/min, 0 errors; Word 2.54 cm / TNR 12 / 1.5, cover, auto TOC, 2 page breaks + 3 sections portrait-landscape-portrait, header PT MAJU JAYA, Page X|Y footer, embedded Excel; PPT 5 slides per brief, SmartArt, Fade transitions + animations, embedded chart). Optional advice only: Word p.4 table and chart small on the landscape page (lots of empty space); PPT slide 2 visi/misi 12 pt, SmartArt 14 pt (small for a projector); Excel opens scrolled to row 4 with B25 selected; Word Rekomendasi still ends with "meningkatkan promosi", PPT dropped it; slide 1 has no transition. Nothing was changed; if the group edits anything, rebuild the zip.
+
+**TAS presentation (11 November 2026):** Bryan presents all 5 slides alone, for kelompok 9. He got a slide-by-slide spoken outline with bridge sentences plus likely Q&A (Maret beban 97% of pendapatan, Oktober margin 65,5%, November margin 40,7%), and was told to use it as a frame in his own words because of the AI ban. Still open: he must check the IF thresholds in Excel column G himself.
 
 **Google Sites tugas (given 22 October 2026, due 29 October 2026):** see [[project-pti-google-sites-jejak-bryan]].
 
