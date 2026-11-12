@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc479f6a-a31d-4d36-8245-393c32bd5c9c
-  modified: 2026-11-11T14:02:23.166Z
+  modified: 2026-11-12T03:27:51.713Z
 ---
 
 Pengantar Teknologi Informasi (LAB), Kamis 09–12, UKSW Digital Business semester 1. Slides are bilingual (Indonesian with English gloss).
@@ -67,6 +67,8 @@ Plus **Tugas Pertama** (also done): watch *The Imitation Game* and write a kesim
 **Submission package built 3 November 2026, 23.xx:** finals renamed to the brief's exact name and moved to `Tugas\TTS & TAS\Final\` (Excel 1 Nov 16.42, Word 3 Nov 20.52, PPT 3 Nov 23.07); zip `Tugas\TTS & TAS\DB101A_Tugas Kelompok 9_842026024.zip` holds those 3, sizes verified. Older Downloads versions went to `_Arsip\`, except `DB101A_Tugas kelompok 9_842026024 3.docx`, which was open in Word, so it is still in Downloads; archive it once closed. The Excel still has the 3 dead conditional-format rules (invisible, left alone). Not yet submitted via the Form as of this note. **Full rubric audit of the 3 finals, same night:** every brief requirement met (Excel formulas incl. INDEX/MATCH month for max/min, 0 errors; Word 2.54 cm / TNR 12 / 1.5, cover, auto TOC, 2 page breaks + 3 sections portrait-landscape-portrait, header PT MAJU JAYA, Page X|Y footer, embedded Excel; PPT 5 slides per brief, SmartArt, Fade transitions + animations, embedded chart). Optional advice only: Word p.4 table and chart small on the landscape page (lots of empty space); PPT slide 2 visi/misi 12 pt, SmartArt 14 pt (small for a projector); Excel opens scrolled to row 4 with B25 selected; Word Rekomendasi still ends with "meningkatkan promosi", PPT dropped it; slide 1 has no transition. Nothing was changed; if the group edits anything, rebuild the zip.
 
 **TAS presentation (11 November 2026):** Bryan presents all 5 slides alone, for kelompok 9. He got a slide-by-slide spoken outline with bridge sentences plus likely Q&A (Maret beban 97% of pendapatan, Oktober margin 65,5%, November margin 40,7%), and was told to use it as a frame in his own words because of the AI ban. He then asked for a word-by-word script and got one, plus case-based Q&A (classmates ask through made-up cases). IF thresholds read from the final Excel: ≥15% sangat baik, ≥5% cukup, ≥0% evaluasi. Gap found the same day: a negative margin (loss) makes the IF return FALSE because there is no fallback branch. No month is negative in the data, so the submitted file is correct as it stands; it only matters if someone asks "what if it makes a loss".
+
+**TAS presentation done (Bryan, 12 November 2026).** The dosen asked other groups how the company earns revenue. Advice given: say it in his own words; model = jual unit (unit × harga) and/or sewa, but the Excel only holds a combined monthly Pendapatan, so reasons for revenue or beban swings are "kemungkinan", not proven. Margin 32,1% = total laba Rp6,89 M ÷ total pendapatan Rp21,45 M, a whole-year margin; the average of the 12 monthly margins is 32,7%, so never call 32,1% "rata-rata". Not checked: whether the slides/Word say "rata-rata margin".
 
 **Folder check 11 November 2026:** `Tugas\TTS & TAS\` is tidy: `Final\` holds exactly the 3 finals, the zip's CRCs match them byte for byte, all older versions sit in `_Arsip\` (the leftover `... 3.docx` from Downloads was moved there today). Form submission still not confirmed.
 
