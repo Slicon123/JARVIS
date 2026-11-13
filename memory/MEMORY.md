@@ -1,4 +1,5 @@
 - [Sosmed audit](project-sosmed-audit.md) — @rupanya.gini only, never his personal accounts (YouTube Studio opens on a personal channel: use the direct channel URL); reads via `@browser`, no screenshots; ends in a plan; 9 Nov run: Kesetrum film = 518K IG / 239K YT / 5K TikTok, followers 656 to 2,046; 5 follow-up ideas made; follow line decision open; shorter films no; rerun 15 Nov
+- [Facebook × Shopee affiliate](project-facebook-affiliate-shopee.md) — linked 13 Nov 2026; tag product only at Buat reel > Tambahkan produk; Facebook 1,36 jt tayangan/30 hari; 5-film test plan, product picks (Deli/Isku tespen), payment/tax info still empty
 - [Folder layout](reference-folder-layout.md) — where files live in C:\Bryan De Great after the 6 Oct 2026 cleanup; save new files there; move logs; never move GP-100\
 - [Bryan — profile](user-bryan-profile.md) — electrical/fire-safety documentation (not field, no design/finance background), UKSW Digital Business student
 - [Self-correct and verify](feedback-self-correct-and-verify.md) — keep questioning your own answers, look facts up, don't pad
