@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: bcf91eae-07d3-4e3b-a8b9-2b925c152c80
-  modified: 2026-11-03T04:59:18.571Z
+  modified: 2026-11-16T06:57:39.174Z
 ---
 
 Pendidikan Agama Kristen, Jumat 13–15, UKSW Digital Business semester 1. **Silabus ada**
@@ -23,6 +23,11 @@ agama terhadap politisasi agama; sumber Budiharjo hal. 5-25, Heywood 1-18, Notoh
 9-26 & 162-170, Kristiyanto *Sakramen Politik* 86-100 & 253-267 · 13 Service Learning 2
 (video usulan aksi konkret) · 14 Studium Generale (resume kreatif) · 15 kontribusi PA bagi
 bangsa · 16 TAS (materi 7–15).
+**Posisi jadwal (Bryan, 16 Nov 2026):** Jumat 13 Nov = presentasi Kel. 2 (pertemuan 9 menurut
+silabus). Jadi estimasi: **20 Nov = pertemuan 10, Kel. 3 presentasi, Bryan/Kel. 5 penanggap**;
+27 Nov = P11 (Kel. 4); **4 Des = P12, Kel. 5 presentasi**. Estimasi, geser kalau ada minggu libur.
+Status persiapan penanggap/presentasi Kel. 5 belum diketahui.
+
 **Nilai:** tugas & SG 5%, kehadiran 25%, SL1 10%, SL2 10%, TTS 15%, presentasi kelompok 15%,
 TAS 20%. **Aturan:** absen >3x (termasuk sakit/izin) = E; telat >15 menit tidak dihitung hadir;
 tugas via email/Google Classroom; telat −5–10%; tanpa catatan kaki + daftar pustaka −10%;
