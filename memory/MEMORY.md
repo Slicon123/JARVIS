@@ -13,6 +13,7 @@
 - [Content clipping automation](project-content-clipping-automation.md) — automated Shorts/TikTok clipping pipeline, Indonesian finance podcasts first
 - [Electronics course](project-electronics-course.md) — first-principles electronics in Bahasa Indonesia, currently on ground symbols
 - [Valeton GP-100 presets](project-guitar-presets-gp100.md) — tone matching with real block names; open Power LD noise issue; preset/installer paths; uninstall registry fix pending (admin)
+- [Freqtrade TurtleSwing bot](project-freqtrade-turtle-swing.md) — crypto swing bot in Trading\freqtrade (16 Nov 2026); only Gate.io reachable; backtest +179% vs hold +808–1306%, worst drop 15% vs ~77%; no look-ahead; dry-run not started
 - [Investing approach](user-investing-approach.md) — global, fundamentals-driven, tiered portfolios with bear cases
 - [Gym — hypertrophy](project-gym-hypertrophy.md) — 4-day upper/lower split around class times
 - [Gym — bulking nutrition](project-gym-nutrition-bulking.md) — 54 kg at 172 cm; 2,800 kcal target, kost catering, which steps he committed to
