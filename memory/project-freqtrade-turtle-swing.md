@@ -38,7 +38,9 @@ but cut the worst drop from ~77% to 15%. Rules were set before seeing data, not 
 were both below SMA200 (72,977 / 2,144), so expect no trades for a while. Telegram set up 16 Nov
 13:28: Telegram bot "Turtle Swing" → 1% robot, "Turtle Swing 2" → 2% robot, tokens in local
 `config-telegram-1pct.json` / `-2pct.json` (merged via a second `--config` in the bat), never in this
-public repo. One token per robot (they conflict if shared). "Chat not found" = he hadn't pressed
+public repo. Auto-start at Windows login: shortcut `Turtle Swing dry-run.lnk` in the user Startup
+folder → the bat, which skips launching if any freqtrade.exe is already running (delete the shortcut
+to undo). One token per robot (they conflict if shared). "Chat not found" = he hadn't pressed
 Start in the bot yet.
 
 **Why:** Bryan explicitly asked that results be real — the bot decides only from the rule card,
