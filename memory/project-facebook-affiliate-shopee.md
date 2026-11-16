@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 884a77b6-2c87-4e52-bca7-ef5cf07339e1
-  modified: 2026-11-13T17:17:52.299Z
+  modified: 2026-11-16T08:44:15.855Z
 ---
 
 **State on 13 Nov 2026**
@@ -22,8 +22,15 @@ metadata:
 - One film file for all platforms; only films whose topic has a natural product get a tag. Test about 5 films in 1–2 weeks, then read clicks and orders in the Shopee Affiliate dashboard at the 15 Nov audit or later. Don't shift the posting schedule for Facebook.
 - Product picks for Kesetrum, found 13 Nov: Deli Test Pen DL800X (Rp10.600, 10 rb+ sold, up to 8,5%), Isku Obeng Tespen Dual LED 70–250V (Rp21.400, 12,5%), Aneng B19 non-contact (Rp75.000). Skip 1000V gloves: they could read as "enough to rescue someone". Check the shop badge (Mall/Star) on the product page first. Commission per sale is only about Rp1–3 thousand.
 
+**NPWP (made 16 Nov 2026, for this affiliate income)**
+- Bryan had no NPWP; he registered through Coretax with "Aktivasi NIK" (NPWP = his 16-digit NIK) and it was issued the same day. Made specifically so Shopee can pay the commission; DJP lists a 16-digit NPWP as a payout requirement.
+- Data Ekonomi he entered: Pekerjaan Bebas, Metode Pencatatan, Tempat Kerja "Mandiri (Online)", penghasilan < Rp4,5 jt/bulan, omset Rp0–4,8 M. KLU intended 47909 (Jasa Intermediasi Perdagangan Eceran Lainnya) marked as kode utama; the table once showed 47901 (platform digital, wrong for an affiliate), so check it and fix via Coretax Perubahan Data if still 47901.
+- Coretax quirks found: the KLU list uses KBLI 2025 codes (old 47920 split into 47901/47909); the Kode filter in the picker does not work (scroll the sorted list instead); the saved row needs the "kode ekonomi utama" checkbox ticked.
+- OTP needs pulsa on the number (he had Rp200; DJP advises about Rp1.100).
+- Not yet known: whether he has set the Coretax password/passphrase (his Coretax email is not the Claude account's, so I could not check it). SPT Tahunan duty now exists; income is far below PTKP, deadline not checked.
+
 **Open**
-- Shopee dashboard shows a red banner: payment and tax info incomplete, so commission cannot be paid. Bryan fills this himself in Pengaturan Pembayaran.
+- Fill the NPWP in Shopee Pengaturan Pembayaran (Bryan does this himself); the red banner on the dashboard should clear once payment and tax info are complete. Commission cannot be paid before that.
 - No link has been created yet. Browser automation on shopee.co.id hit an anti-bot check once; Bryan cleared it himself and the dashboard then worked.
 
 **Why:** extra income on a platform that suddenly carries most of his views, without changing how films are made.
