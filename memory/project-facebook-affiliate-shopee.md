@@ -33,5 +33,7 @@ metadata:
 - **Submitted 16 Nov 2026, 20:38 WIB:** Bryan filled Shopee Pengaturan Pembayaran himself (Informasi Pembayaran + Info Pajak, with a bank-ownership proof; Shopee's template is page 1 of the BCA passbook, name and account number only). Both rows show "Informasi Berhasil Dimasukkan" under Pengaturan Catatan; "Catatan yang valid" is still empty, so Shopee's review is pending. Next: check that page for the status turning valid or rejected, and the red dashboard banner clearing. Commission cannot be paid before it is valid.
 - No link has been created yet. Browser automation on shopee.co.id hit an anti-bot check once; Bryan cleared it himself and the dashboard then worked.
 
+**riset-sekitar marks products (his yes, 16 Nov 2026):** every new idea block now carries a "Produk Facebook" section (cocok ya/tidak, 1–2 picks, what Bryan checks in Shopee Affiliate, the Facebook-only caption line and upload.md instructions); rules in the skill's `references/produk-facebook.md`. TikTok keranjang stays paused. Stock blocks from before 16 Nov have no product line. Skill change is local only, not committed.
+
 **Why:** extra income on a platform that suddenly carries most of his views, without changing how films are made.
 **How to apply:** when he makes the next film, ask whether it has a product that fits; put the tag in at Buat reel. Add these numbers to the sosmed-audit. See [[project-sosmed-audit]] and [[project-konten-edukasi-sekitar]].
