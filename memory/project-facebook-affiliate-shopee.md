@@ -30,7 +30,7 @@ metadata:
 - Not yet known: whether he has set the Coretax password/passphrase (his Coretax email is not the Claude account's, so I could not check it). SPT Tahunan duty now exists; income is far below PTKP, deadline not checked.
 
 **Open**
-- Fill the NPWP in Shopee Pengaturan Pembayaran (Bryan does this himself); the red banner on the dashboard should clear once payment and tax info are complete. Commission cannot be paid before that.
+- **Submitted 16 Nov 2026, 20:38 WIB:** Bryan filled Shopee Pengaturan Pembayaran himself (Informasi Pembayaran + Info Pajak, with a bank-ownership proof; Shopee's template is page 1 of the BCA passbook, name and account number only). Both rows show "Informasi Berhasil Dimasukkan" under Pengaturan Catatan; "Catatan yang valid" is still empty, so Shopee's review is pending. Next: check that page for the status turning valid or rejected, and the red dashboard banner clearing. Commission cannot be paid before it is valid.
 - No link has been created yet. Browser automation on shopee.co.id hit an anti-bot check once; Bryan cleared it himself and the dashboard then worked.
 
 **Why:** extra income on a platform that suddenly carries most of his views, without changing how films are made.
