@@ -35,9 +35,11 @@ but cut the worst drop from ~77% to 15%. Rules were set before seeing data, not 
 
 **Dry-run started 16 Nov 2026 13:12 WIB:** both bots (1% and 2%) via `Mulai dry-run.bat`, separate
 `user_data\dryrun_1pct.sqlite` / `dryrun_2pct.sqlite` and logs. On 15 Nov BTC (65,350) and ETH (1,835)
-were both below SMA200 (72,977 / 2,144), so expect no trades for a while. Telegram NOT set up: each
-bot needs its own BotFather token (one token can't serve two bots) plus his chat_id; keep tokens in
-local config only, never in this public repo.
+were both below SMA200 (72,977 / 2,144), so expect no trades for a while. Telegram set up 16 Nov
+13:28: Telegram bot "Turtle Swing" → 1% robot, "Turtle Swing 2" → 2% robot, tokens in local
+`config-telegram-1pct.json` / `-2pct.json` (merged via a second `--config` in the bat), never in this
+public repo. One token per robot (they conflict if shared). "Chat not found" = he hadn't pressed
+Start in the bot yet.
 
 **Why:** Bryan explicitly asked that results be real — the bot decides only from the rule card,
 never from knowing where the chart went. Always rerun `lookahead-analysis` after any strategy change
