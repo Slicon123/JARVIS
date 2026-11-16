@@ -24,6 +24,21 @@ BTC +808% (worst drop −76.6%), ETH +1306% (−79.3%). So the card lost badly t
 but cut the worst drop from ~77% to 15%. Rules were set before seeing data, not tuned.
 `lookahead-analysis`: no bias (20 signals); `recursive-analysis`: indicators stable.
 
+**Three options compared 16 Nov 2026** (also from the 8 Nov 2021 top, as a bear case):
+| | 2020→now | top 2021→now |
+|---|---|---|
+| Card 1% risk | +178.6%, worst drop 15.0% | +22.6%, 10.9% |
+| Card 2% risk (`TurtleSwing2pct`, same 50 trades, only size changes) | +478.7%, 19.7% | +47.0%, 19.5% |
+| Hold 50/50 lump | +1054.5%, 77.8% | −32.6%, 76.8% |
+| DCA monthly 50/50 (0.2% fee) | +104.0%, 75.8% | +16.2%, 54.0% |
+2% card was the best overall fit (only one that held up in both periods); lookahead clean too.
+
+**Dry-run started 16 Nov 2026 13:12 WIB:** both bots (1% and 2%) via `Mulai dry-run.bat`, separate
+`user_data\dryrun_1pct.sqlite` / `dryrun_2pct.sqlite` and logs. On 15 Nov BTC (65,350) and ETH (1,835)
+were both below SMA200 (72,977 / 2,144), so expect no trades for a while. Telegram NOT set up: each
+bot needs its own BotFather token (one token can't serve two bots) plus his chat_id; keep tokens in
+local config only, never in this public repo.
+
 **Why:** Bryan explicitly asked that results be real — the bot decides only from the rule card,
 never from knowing where the chart went. Always rerun `lookahead-analysis` after any strategy change
 and show him the table.
