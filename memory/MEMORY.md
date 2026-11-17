@@ -67,3 +67,4 @@
 - [Sekitar daily rhythm](project-sekitar-daily-rhythm.md) — 5 films/day around Gemini's 10 requests per quota day (reset 15.00 WIB): scripts before 15.00, one voice batch, publish next day
 - [sekitar-pipeline mod](project-sekitar-pipeline-mod.md) — Desktop panel: film stages + session state + Gemini quota (17 Nov 2026); installed locally from ~/.claude/local-mods (edit there + /reload-plugins); opens itself once per film chat; `pipeline_update` tool fed by sekitar/unggah-sekitar
 - [Openverse music test](project-openverse-music-test.md) — free music tool built 15 Nov 2026; Drakkar passed YouTube Initial check 15 Nov, recheck 16 Nov; check each track privately first, one film at a time, never a whole parallel batch
+- [Reminder: pendaftaran voice UKSW](reminder-pendaftaran-voice-uksw.md) — not a real task; mention it whenever he asks what tasks are left (18 Nov 2026)
