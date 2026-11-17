@@ -11,6 +11,7 @@ Built 17 Nov 2026 as Bryan's first try of Claude Code mods: a pane listing each 
 - Data: one file per film in `~/.claude/sekitar-pipeline/<slug>.json`, session→film links in `sessions/`. Files, not `$.store`, so 5 sessions never overwrite each other.
 - Fed by the tool `pipeline_update` (slug, stage ide/naskah/voice/render/upload/hapus, title, product). [[project-konten-edukasi-sekitar]]'s `sekitar` skill calls it at naskah/voice/render, `unggah-sekitar` at upload.
 - Installed 17 Nov 2026 at his yes; a fresh `claude -p` session listed the tool. A dev-mods mod alone loads only in the session that wrote it.
+- Panes belong to one chat, so the panel "vanished" when Bryan switched chats (17 Nov 2026). Since then each film chat opens it by itself, once: on a `/sekitar` or `/unggah-sekitar` prompt, on its first `pipeline_update`, or when a chat already tied to a film starts or reloads. Closing it keeps it closed in that chat; `/pipeline` reopens. 4 tests pass.
 - `Progress` is not in this build's element table (2.1.325) despite the docs; the Gemini bar is drawn with text.
 
 **Why:** he wanted to learn mods and see the 5-film pipeline at a glance.
