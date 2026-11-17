@@ -64,4 +64,5 @@
 - [Upload route](reference-upload-route.md) — history behind the `unggah-sekitar` skill (uploads via Chrome): chunk trick, right YouTube channel, IG scheduled via Meta Business Suite (logged in 3 Nov 2026), USB copy to his phone
 - [Auralys music app](reference-auralys-music-app.md) — rebranded Metrolist (YouTube Music client), no malware found 13 Nov 2026; use without login; Liked Music imported via Import CSV
 - [Sekitar daily rhythm](project-sekitar-daily-rhythm.md) — 5 films/day around Gemini's 10 requests per quota day (reset 15.00 WIB): scripts before 15.00, one voice batch, publish next day
+- [sekitar-pipeline mod](project-sekitar-pipeline-mod.md) — Desktop panel: film stages + session state + Gemini quota (17 Nov 2026); local dev-mods only, not installed for film sessions yet; `pipeline_update` tool fed by sekitar/unggah-sekitar
 - [Openverse music test](project-openverse-music-test.md) — free music tool built 15 Nov 2026; Drakkar passed YouTube Initial check 15 Nov, recheck 16 Nov; check each track privately first, one film at a time, never a whole parallel batch
