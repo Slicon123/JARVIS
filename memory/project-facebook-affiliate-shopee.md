@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 884a77b6-2c87-4e52-bca7-ef5cf07339e1
-  modified: 2026-11-16T08:44:15.855Z
+  modified: 2026-11-17T17:34:27.916Z
 ---
 
 **State on 13 Nov 2026**
@@ -31,6 +31,7 @@ metadata:
 
 **Open**
 - **Submitted 16 Nov 2026, 20:38 WIB:** Bryan filled Shopee Pengaturan Pembayaran himself (Informasi Pembayaran + Info Pajak, with a bank-ownership proof; Shopee's template is page 1 of the BCA passbook, name and account number only). Both rows show "Informasi Berhasil Dimasukkan" under Pengaturan Catatan; "Catatan yang valid" is still empty, so Shopee's review is pending. Next: check that page for the status turning valid or rejected, and the red dashboard banner clearing. Commission cannot be paid before it is valid.
+- **Rejected (email ~17 Nov 2026):** Shopee could not process the bank and tax info because the account-owner name and/or the tax name did not match. Bryan is resubmitting on 18 Nov 2026. Next: check which names differ (bank name vs NPWP/KTP name, usually a shortened or missing name) and that the new row turns valid.
 - First links made 17 Nov 2026 (Penawaran Produk > search > Buat Link, untagged `s.shopee.co.id` short links) for 3 product films: lampu-sensor-gerak, penyerap-lembap, tekanan-ban-dingin; listed in `Animasi\sekitar\ide\produk-2026-11-17.md`. Browser automation on shopee.co.id hit an anti-bot check once (13 Nov); Bryan cleared it himself and the dashboard then worked.
 
 **Facebook caption rule (Bryan, 18 Nov 2026):** the Facebook text of a product film never carries the words "(link afiliasi)" or another affiliate label: the keranjang line is followed by the link alone. Written into `sekitar` SKILL.md, riset-sekitar's block template and `references/produk-facebook.md` (local, not committed).
