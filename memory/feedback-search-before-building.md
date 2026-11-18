@@ -7,6 +7,11 @@ metadata:
 
 Before building any new skill, tool, script or small app from scratch, first search
 GitHub (and Hugging Face for models/agents) for something that already does most of it.
+Also search the Higgsfield skills catalog (https://higgsfield.ai/skills), added by Bryan
+on 18 Nov 2026. It matters most for image, video and visual tasks such as covers, product
+shots and sekitar visuals. Higgsfield runs on its own MCP server
+(mcp.higgsfield.ai) and on credits that cost money. Report what fits and what it would
+cost, and never connect it, log in or spend credits without his yes.
 Report what was found in one or two lines: name, link, licence, last update, how much of
 the job it covers. Then:
 

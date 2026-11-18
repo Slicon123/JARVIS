@@ -51,7 +51,7 @@
 - [Approval material forms](project-approval-material-forms.md) — 1:1 Excel replica of Genset.pdf page 1 (9 Oct 2026, Approval Material) + Input-driven version in Template Pekerjaan (13 Oct); confirm format first next time
 - [Duplicate means exact copy](feedback-duplicate-means-exact-copy.md) — asked for a copy/duplicate → byte copy only; don't fill, restructure or add
 - [Ask before a better idea](feedback-ask-before-better-idea.md) — do what he asked; propose improvements as a question and wait for yes
-- [Search before building](feedback-search-before-building.md) — new skill/tool/script: search GitHub/Hugging Face first, report, audit before installing, credit in SOURCES.md (18 Nov 2026)
+- [Search before building](feedback-search-before-building.md) — new skill/tool/script: search GitHub/Hugging Face + Higgsfield skills first, report, audit before installing, credit in SOURCES.md (18 Nov 2026)
 - [Genset IOM → Word (SSS)](project-iom-genset-sss.md) — 12-page DSE 7320/Perkins IOM rebuilt as editable Word with Perkins+SSS logos, in Laporan Sinergi\SOP (10 Oct 2026); slogan kept by his choice
 - [PDF → Word replica](feedback-pdf-to-word-replica.md) — rebuild from PDF coordinates; Word exact spacing = baseline at 0.8×L; section breaks not page breaks; verify ≤1 pt
 - [Spanduk K3 Sinergi](project-spanduk-k3-sinergi.md) — 3 K3 banner designs (15 Oct 2026): HATI-HATI 400/100×80 with 4 logos, UTAMAKAN K3 200/100×80, TERTIB K3 400/250×80; logo sources; scripts in Spanduk\_Sumber
