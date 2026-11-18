@@ -26,8 +26,11 @@ The method, in order:
 2. **Search a distinctive lyric fragment** — `"<song>" <artist> lyrics "<line you have>"`.
    Search summaries quote lyrics freely; this is how you get verse 2 and the bridge.
    Chain it: each fragment you learn seeds the next query.
-3. **Fetch only if the progression is still unclear**, and only from a site in the "works"
-   column below.
+3. **Read only if the progression is still unclear.** An Ultimate Guitar hit is the best
+   read: through Agent Reach it returns the whole sheet with sections in about 2K
+   characters (18 Nov 2026), in one Bash call:
+   `agent-reach read "<ug url>" | python -I <JARVIS>\claude-config\skills\riset-sekitar\scripts\ar_read.py --max 3000`.
+   Otherwise WebFetch a site in the "works" column below.
 
 You align the chords over the lyrics yourself. No fetch will ever hand you a ready-made
 chart — the fetch summariser flattens the alignment into prose even when the page has it.
@@ -46,7 +49,7 @@ below, and is worth the extra call specifically when lyrics were explicitly aske
 
 | Site | Verdict |
 |---|---|
-| `tabs.ultimate-guitar.com` | **Never fetch.** JS-rendered: returns the page title and nothing else. Useful as a search hit, worthless as a fetch. |
+| `tabs.ultimate-guitar.com` | **Never WebFetch** (JS-rendered: title only). **Agent Reach reads it in full** (step 3), so it's the first choice when a search hits it. A guessed URL 404s, so take the URL from a search result. |
 | `cifraclub.com` | Works. The best single fetch for section-by-section progressions. |
 | `guitartabsexplorer.com` | Works. Good second source for cross-checking. |
 | `wechords.com` | 301s to cifraclub — go to cifraclub directly and save a round trip. |

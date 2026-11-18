@@ -7,6 +7,9 @@ memory/project-sinergi-proposal-teknis.md
 # They are not ours, are overwritten on every sync, and must not go public.
 claude-config/skills/synced/
 
+# Agent Reach's own skill, written by `agent-reach setup` and refreshed by `agent-reach update`.
+claude-config/skills/agent-reach/
+
 # Coursework lives in C:\Bryan De Great\Kuliah, outside this public repo (NIM, birth date).
 kuliah/
 
