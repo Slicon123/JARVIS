@@ -106,9 +106,12 @@ p { margin: 0; }
 .hero-hello { font-size: 15px; font-weight: 600; }
 .hero-label { font-size: 15px; font-weight: 500; margin-top: 10px; }
 .hero-amount { font-size: clamp(32px, 9vw, 42px); font-weight: 800; letter-spacing: -.02em; line-height: 1.1; margin-top: 2px; word-break: break-word; }
-.hero-month { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; position: relative; z-index: 1; }
-.pill-glass { background: var(--glass); border-radius: 999px; padding: 8px 14px; font-size: 14px; font-weight: 600; display: inline-flex; gap: 6px; align-items: center; }
-.pill-glass b { font-weight: 800; }
+.hero-month { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 16px; position: relative; z-index: 1; background: var(--glass); border-radius: var(--r-md); }
+.hm-cell { display: flex; flex-direction: column; gap: 1px; padding: 9px 14px; min-width: 0; }
+.hm-cell + .hm-cell { border-left: 1px solid rgba(255, 255, 255, .18); }
+.hm-k { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 600; opacity: .9; }
+.hm-k .ic { width: 15px; height: 15px; }
+.hm-cell b { font-size: 16px; font-weight: 800; overflow-wrap: anywhere; }
 
 .quick { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding: 2px 16px 6px; }
 .quick::-webkit-scrollbar { display: none; }
@@ -116,16 +119,18 @@ p { margin: 0; }
 .qchip .dot { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--card-2); }
 
 /* ---------- wallet cards ---------- */
-.wallets { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; margin-inline: -16px; padding: 4px 16px 10px; scrollbar-width: none; }
-.wallets::-webkit-scrollbar { display: none; }
-.wcard { scroll-snap-align: start; flex: none; width: 176px; min-height: 116px; border-radius: var(--r-lg); border: 0; padding: 14px 16px; text-align: left; color: #FFFFFF; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; box-shadow: 0 8px 20px rgba(26, 25, 24, .16); }
+/* a 2-column grid at every width: a sideways carousel hid every wallet past the second */
+.wallets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.wcard { min-width: 0; min-height: 108px; border-radius: var(--r-lg); border: 0; padding: 14px 16px; text-align: left; color: #FFFFFF; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; box-shadow: 0 8px 20px rgba(26, 25, 24, .16); }
 .wcard::before { content: ""; position: absolute; inset: auto -40px -60px auto; width: 150px; height: 150px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0) 70%); }
 .wcard .wn { font-weight: 700; font-size: 16px; display: flex; gap: 8px; align-items: center; position: relative; min-width: 0; }
 .wcard .wn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.wcard .wb { font-weight: 800; font-size: 20px; position: relative; letter-spacing: -.01em; }
+.wcard .wb { font-weight: 800; font-size: clamp(16px, 4.8vw, 20px); position: relative; letter-spacing: -.01em; overflow-wrap: anywhere; }
 .wcard .wk { font-size: 13px; font-weight: 600; opacity: .92; position: relative; }
 .wcard.add { background: var(--card); color: var(--ink); border: 1.5px dashed var(--edge); box-shadow: none; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-weight: 700; }
 .wcard.add::before { display: none; }
+/* after an even number of wallets, Add wallet becomes a slim full-width row instead of a lone tile */
+.wcard.add:nth-child(odd) { grid-column: 1 / -1; min-height: 56px; flex-direction: row; gap: 8px; }
 .g-oranye { background: radial-gradient(90% 90% at 100% 0%, #E2602D 0%, rgba(226, 96, 45, 0) 60%), linear-gradient(150deg, #C8441B, #8F2B12); }
 .g-merah { background: radial-gradient(90% 90% at 100% 0%, #DA4B57 0%, rgba(218, 75, 87, 0) 60%), linear-gradient(150deg, #C8323F, #7E1626); }
 .g-biru { background: radial-gradient(90% 90% at 100% 0%, #4C86EE 0%, rgba(76, 134, 238, 0) 60%), linear-gradient(150deg, #2F67D8, #1A3A8C); }
@@ -216,6 +221,17 @@ dialog.sheet::backdrop { background: var(--scrim); }
 .sheet-head { display: flex; align-items: center; gap: 8px; padding: 12px 12px 8px 20px; border-bottom: 1px solid var(--line); }
 .sheet-head h2 { font-size: 19px; font-weight: 800; flex: 1; }
 .sheet-body { padding: 16px 20px 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 18px; overscroll-behavior: contain; }
+.sheet-body.more-below { -webkit-mask-image: linear-gradient(#000 calc(100% - 40px), transparent); mask-image: linear-gradient(#000 calc(100% - 40px), transparent); }
+.wallet-line { display: flex; align-items: center; gap: 8px; min-height: 44px; margin-top: -8px; padding: 0 2px; border: 0; background: none; color: var(--ink-2); font-size: 15px; font-weight: 600; text-align: left; }
+.wallet-line b { color: var(--ink); font-weight: 800; }
+.wallet-line .ic { color: var(--muted); }
+.wl-change { color: var(--accent); font-weight: 700; font-size: 14px; }
+.more-fields { border-radius: var(--r-md); background: var(--card-2); }
+.more-fields > summary { list-style: none; display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 14px; cursor: pointer; font-weight: 700; font-size: 15px; }
+.more-fields > summary::-webkit-details-marker { display: none; }
+.more-fields > summary > .ic:last-child { color: var(--muted); transition: transform .18s ease-out; }
+.more-fields[open] > summary > .ic:last-child { transform: rotate(180deg); }
+.more-fields > .stack { padding: 4px 14px 14px; gap: 16px; }
 .sheet-foot { padding: 12px 20px calc(14px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
 .sheet-foot .split { display: flex; justify-content: space-between; gap: 12px; }
 .grab { width: 40px; height: 4px; border-radius: 4px; background: var(--line); margin: 8px auto 0; }
@@ -258,6 +274,12 @@ dialog.sheet::backdrop { background: var(--scrim); }
 .cal-d[aria-pressed="true"] .cal-v { color: var(--on-btn); }
 .cal-d[disabled] { opacity: .45; cursor: default; }
 .cal-d.blank { background: transparent; }
+/* small phones: a cell is ~35px wide, so give "−900rb" the room instead of clipping it */
+@media (max-width: 380px) {
+  .cal { gap: 3px; }
+  .cal-d { padding-inline: 0; }
+  .cal-v { font-size: 10px; letter-spacing: -.02em; }
+}
 .filters { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 .filters .search { grid-column: 1 / -1; position: relative; }
 .filters .search .ic { position: absolute; left: 14px; top: 13px; color: var(--muted); }
@@ -312,12 +334,10 @@ dialog.sheet::backdrop { background: var(--scrim); }
 .tlabels span { flex: 1; min-width: 0; display: flex; justify-content: center; white-space: nowrap; font-size: 13px; color: var(--muted); font-weight: 600; }
 .tlabels span.on { color: var(--ink); font-weight: 800; }
 .tempty { position: absolute; inset: 0 0 24px; display: grid; place-items: center; text-align: center; font-size: 14px; color: var(--muted); font-weight: 600; padding: 0 12px; }
-/* two equal tiles, contents centred, so the legend looks the same in both languages */
-.cal-key { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding-top: 4px; }
-.ck-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; text-align: center; background: var(--card-2); border-radius: 14px; padding: 10px 8px; min-width: 0; }
-.ck-sample { font-size: 18px; font-weight: 800; line-height: 1.25; font-variant-numeric: tabular-nums; }
-.ck-label { font-size: 15px; font-weight: 600; color: var(--ink-2); }
-.ck-note { grid-column: 1 / -1; display: flex; align-items: center; justify-content: center; gap: 6px; text-align: center; font-size: 14px; color: var(--muted); }
+/* a quiet key under the grid: the samples sit inline at caption size so they never read as month totals */
+.cal-key { display: flex; flex-direction: column; gap: 6px; padding-top: 4px; }
+.ck-note { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 14px; text-align: center; font-size: 14px; color: var(--muted); }
+.ck-note b { font-weight: 800; font-variant-numeric: tabular-nums; }
 .ck-note .ic { color: var(--muted); }
 .tkey { display: flex; gap: 16px; font-size: 14px; font-weight: 600; color: var(--ink-2); flex-wrap: wrap; }
 .tkey i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
@@ -347,6 +367,9 @@ td.n, th.n { text-align: right; }
 .banner { display: flex; gap: 12px; align-items: flex-start; background: var(--card); border-radius: var(--r-lg); box-shadow: var(--shadow); padding: 14px 16px; }
 .banner .ic { margin-top: 2px; color: var(--accent); }
 .banner .acts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+/* the folded reminders: one quiet row, so Home leads with money rather than chores */
+.banner-more { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 48px; margin-top: -8px; padding: 0 16px; border: 0; border-radius: var(--r-md); background: var(--card-2); color: var(--ink-2); font-size: 15px; font-weight: 700; text-align: left; }
+.banner-more .ic { color: var(--muted); }
 /* floats above the tab bar, clear of +, so the page never jumps when it comes or goes; taps go through it */
 .sync { position: fixed; z-index: 50; left: 16px; right: 16px; bottom: calc(var(--tabbar) + 34px + env(safe-area-inset-bottom, 0px)); margin: 0 auto; width: fit-content; max-width: 520px; pointer-events: none; display: flex; gap: 8px; align-items: flex-start; background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow); border-radius: var(--r-md); padding: 8px 14px; font-size: 14px; font-weight: 600; color: var(--ink-2); }
 body:has(#toast .toast-in) .sync { visibility: hidden; }
@@ -382,10 +405,6 @@ body:has(#toast .toast-in) .sync { visibility: hidden; }
   .home-grid > .col:first-child { position: sticky; top: calc(12px + env(safe-area-inset-top, 0px)); }
   /* the column ends mid-screen, so rows that slide sideways on a phone would look cut off: wrap them */
   .home-grid .quick { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding: 0; }
-  .home-grid .wallets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow: visible; scroll-snap-type: none; margin-inline: 0; padding: 0; }
-  .home-grid .wcard { width: auto; }
-  /* after an even number of wallets, Add wallet becomes a slim full-width row instead of a lone tile */
-  .home-grid .wcard.add:nth-child(odd) { grid-column: 1 / -1; min-height: 56px; flex-direction: row; gap: 8px; }
 }
 @media (max-width: 879px) { .home-grid, .home-grid > .col { display: flex; flex-direction: column; gap: 18px; } }
 
@@ -415,7 +434,8 @@ dialog.sheet.kp-off .keypad { display: none; }
 
 /* ---------- banners, badges, favourites ---------- */
 .banner.warn .ic:first-child { color: var(--out); }
-.neg-badge { margin-left: auto; flex: none; display: inline-flex; align-items: center; gap: 3px; font-size: 12px; font-weight: 800; background: rgba(0, 0, 0, .28); padding: 2px 8px 2px 6px; border-radius: 999px; }
+/* icon only: on a half-width card the word pushed the wallet's own name out; the minus sign on the balance and the card's label say it */
+.neg-badge { margin-left: auto; flex: none; display: inline-grid; place-items: center; width: 24px; height: 24px; background: rgba(0, 0, 0, .28); border-radius: 999px; }
 .neg-badge .ic { width: 14px; height: 14px; }
 .small-link { font-size: 14px; margin: 6px 0 -8px; padding: 10px 0; min-height: 44px; display: inline-flex; align-items: center; }
 .qchip.fav { padding-right: 16px; }

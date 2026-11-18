@@ -49,6 +49,8 @@ const kp = s => { for (const ch of s) click($('[data-act="kp"][data-v="' + ch + 
 const tab = t => click($('.tab[data-v="' + t + '"]'));
 const more = v => click($('[data-act="more"][data-v="' + v + '"]'));
 const back = () => click($('[data-act="more-back"]'));
+// Home shows one reminder and folds the rest into "N pengingat lagi"; open them before looking for one
+const reminders = async () => { const m = $('[data-act="banners-more"]'); if (m) { click(m); await tick(); } };
 const txList = () => Object.values(store).filter((v, i) => Object.keys(store)[i].startsWith('months/')).flatMap(m => Object.values(m.tx));
 const today = C.todayKey();
 (async () => {
@@ -123,6 +125,8 @@ const today = C.todayKey();
   click($('.fab')); kp('5000'); $('#sheet input[name="category"][value="transport"]').checked = true;
   $('#t-date').value = C.addDays(today, -3); submit($('#sheet form')); await tick(60);
   if (!txList().some(t => t.date === C.addDays(today, -1))) {
+    assert.ok($$('#view .banner').length === 1 && $('[data-act="banners-more"]'), 'one reminder up front, the rest folded');
+    await reminders();
     assert.ok($('[data-act="gap-off"]'), 'gap reminder shown');
     click($('[data-act="gap-off"]')); await tick(60);
     assert.strictEqual(store['meta/settings'].gapReminder, false); assert.ok(!$('[data-act="gap-off"]'), 'gap reminder off');
@@ -130,6 +134,7 @@ const today = C.todayKey();
 
   // 6. overspend -> negative balance banner and badge
   click($('.fab')); kp('200000'); $('#sheet input[name="category"][value="transport"]').checked = true; submit($('#sheet form')); await tick(60);
+  assert.ok($('.banner.warn') === $('.banner'), 'negative balance is the first reminder');
   assert.ok($('[data-act="neg-in"]') && $('.neg-badge'), 'negative balance flagged');
   click($('[data-act="neg-in"]')); assert.ok($('#sheet').hasAttribute('open') && $('#sheet input[name="type"][value="in"]').checked, 'income sheet opens');
   kp('500000'); $('#sheet [data-cats="in"] input[value="saku"]').checked = true; submit($('#sheet form')); await tick(60);
@@ -152,7 +157,7 @@ const today = C.todayKey();
   $('#r-every').value = '28'; $('#r-next').value = today; submit($('#sheet form')); await tick(60);
   const rid = Object.keys(store['meta/recurring'].list)[0];
   assert.strictEqual(store['meta/recurring'].list[rid].freq, 'days');
-  tab('home'); await tick();
+  tab('home'); await tick(); await reminders();
   click($('[data-act="rec-do"][data-id="' + rid + '"]')); await tick(60);
   assert.strictEqual(store['meta/recurring'].list[rid].next, C.addDays(today, 28), 'next date moved by 28 days');
   const recTx = txList().find(t => t.recurring === rid); assert.ok(recTx);

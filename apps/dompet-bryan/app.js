@@ -63,6 +63,7 @@
   var CK = '<svg class="ic sm ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
   ICONS.chevd = '<path d="m6 9 6 6 6-6"/>';
   ICONS.chevu = '<path d="m18 15-6-6-6 6"/>';
+  ICONS.bell = '<path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>';
   ICONS.backspace = '<path d="M10 5a2 2 0 0 0-1.344.519l-6.328 5.74a1 1 0 0 0 0 1.481l6.328 5.741A2 2 0 0 0 10 19h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><path d="m12 9 6 6"/><path d="m18 9-6 6"/>';
 
   // ================= language =================
@@ -645,41 +646,51 @@
       '<div class="hero-top"><div class="grow"><p class="hero-hello">' + L('Halo, Bryan', 'Hi, Bryan') + '</p><p class="hero-label">' + L('Total saldo semua wallet', 'Total balance across wallets') + '</p></div>' +
       '<button class="icon-btn on-hero" data-act="hide" aria-pressed="' + S.hide + '" aria-label="' + (S.hide ? L('Tampilkan saldo', 'Show balance') : L('Sembunyikan saldo', 'Hide balance')) + '">' + icon(S.hide ? 'eyeoff' : 'eye') + '</button></div>' +
       '<p class="hero-amount' + (S.hide ? ' hidden-amt' : '') + '" id="hero-total" data-v="' + total + '">' + (S.hide ? money(total) : M(shownTotal)) + '</p>' +
-      '<div class="hero-month"><span class="pill-glass">' + C.monthLabel(ym) + '</span>' +
-      '<span class="pill-glass">' + icon('arrowup', 'sm') + L('Keluar', 'Out') + ' <b class="num">' + M(ms.out) + '</b></span>' +
-      '<span class="pill-glass">' + icon('arrowdown', 'sm') + L('Masuk', 'In') + ' <b class="num">' + M(ms.in) + '</b></span></div></section>';
+      // one glass strip for the month: two figures side by side instead of three wrapping pills
+      '<div class="hero-month" role="group" aria-label="' + C.monthLabel(ym) + '">' +
+      '<span class="hm-cell"><span class="hm-k">' + icon('arrowup', 'sm') + L('Keluar ', 'Out · ') + C.monthLabel(ym).slice(0, 3) + '</span><b class="num">' + M(ms.out) + '</b></span>' +
+      '<span class="hm-cell"><span class="hm-k">' + icon('arrowdown', 'sm') + L('Masuk ', 'In · ') + C.monthLabel(ym).slice(0, 3) + '</span><b class="num">' + M(ms.in) + '</b></span></div></section>';
 
     var quick = '<div class="quick" role="group" aria-label="' + L('Catat cepat', 'Quick add') + '">' +
       qchip('add', 'out', L('Pengeluaran', 'Expense'), 'arrowup', 2) + qchip('add', 'in', L('Pemasukan', 'Income'), 'arrowdown', 6) + qchip('add', 'transfer', 'Transfer', 'swap', 1) +
       qchip('more', 'debts', L('Utang-piutang', 'Debts'), 'users', 7) + qchip('more', 'goals', L('Target', 'Goals'), 'target', 3) + '</div>';
 
-    var banners = '';
-    if (!S.canWrite) banners += '<div class="banner">' + icon('info') + '<div class="grow"><p><b>' + L('Kamu cuma bisa melihat.', 'You can only view this.') + '</b></p><p class="small ink2">' + L('Akun ini gak punya izin untuk mencatat.', 'This account isn’t allowed to add records.') + '</p></div></div>';
+    // reminders, most urgent first; Home shows one and folds the rest into a single line
+    var bl = [];
+    function banner(pri, html) { bl.push({ p: pri, h: html }); }
+    if (!S.canWrite) banner(0, '<div class="banner">' + icon('info') + '<div class="grow"><p><b>' + L('Kamu cuma bisa melihat.', 'You can only view this.') + '</b></p><p class="small ink2">' + L('Akun ini gak punya izin untuk mencatat.', 'This account isn’t allowed to add records.') + '</p></div></div>');
     C.dueRecurring(S.meta.recurring, td).forEach(function (r) {
-      banners += '<div class="banner" role="group" aria-label="' + L('Transaksi rutin ', 'Recurring transaction ') + esc(r.note) + '">' + icon('repeat') + '<div class="grow"><p><b>' + esc(r.note || L('Transaksi rutin', 'Recurring transaction')) + '</b> · <span class="num">' + M(r.amount) + '</span></p>' +
+      banner(2, '<div class="banner" role="group" aria-label="' + L('Transaksi rutin ', 'Recurring transaction ') + esc(r.note) + '">' + icon('repeat') + '<div class="grow"><p><b>' + esc(r.note || L('Transaksi rutin', 'Recurring transaction')) + '</b> · <span class="num">' + M(r.amount) + '</span></p>' +
         '<p class="small ink2">' + L('Jatuh tempo ', 'Due ') + C.dayLabel(r.dueDate) + ' · ' + esc(wname(r.wallet)) + '</p>' +
-        '<div class="acts"><button class="btn sm" data-act="rec-do" data-id="' + esc(r.id) + '">' + icon('check', 'sm') + L('Catat', 'Record') + '</button><button class="btn sm soft" data-act="rec-skip" data-id="' + esc(r.id) + '">' + L('Lewati kali ini', 'Skip this time') + '</button></div></div></div>';
+        '<div class="acts"><button class="btn sm" data-act="rec-do" data-id="' + esc(r.id) + '">' + icon('check', 'sm') + L('Catat', 'Record') + '</button><button class="btn sm soft" data-act="rec-skip" data-id="' + esc(r.id) + '">' + L('Lewati kali ini', 'Skip this time') + '</button></div></div></div>');
     });
     // a wallet below zero usually means income that was never recorded
     ws.filter(function (w) { return (S.bal[w.id] || 0) < 0; }).forEach(function (w) {
-      banners += '<div class="banner warn" role="group" aria-label="' + L('Saldo minus', 'Negative balance') + '">' + icon('alert') + '<div class="grow"><p><b>' + L('Saldo ' + esc(w.name) + ' minus ', esc(w.name) + ' is below zero: ') + '<span class="num">' + M(S.bal[w.id]) + '</span></b></p>' +
+      banner(1, '<div class="banner warn" role="group" aria-label="' + L('Saldo minus', 'Negative balance') + '">' + icon('alert') + '<div class="grow"><p><b>' + L('Saldo ' + esc(w.name) + ' minus ', esc(w.name) + ' is below zero: ') + '<span class="num">' + M(S.bal[w.id]) + '</span></b></p>' +
         '<p class="small ink2">' + L('Biasanya ada pemasukan yang lupa dicatat.', 'Usually some income was never recorded.') + '</p>' +
-        '<div class="acts"><button class="btn sm" data-act="neg-in" data-id="' + esc(w.id) + '">' + icon('arrowdown', 'sm') + L('Catat pemasukan', 'Add income') + '</button><button class="btn sm soft" data-act="wallet-edit" data-id="' + esc(w.id) + '">' + L('Sesuaikan saldo', 'Fix the balance') + '</button></div></div></div>';
+        '<div class="acts"><button class="btn sm" data-act="neg-in" data-id="' + esc(w.id) + '">' + icon('arrowdown', 'sm') + L('Catat pemasukan', 'Add income') + '</button><button class="btn sm soft" data-act="wallet-edit" data-id="' + esc(w.id) + '">' + L('Sesuaikan saldo', 'Fix the balance') + '</button></div></div></div>');
     });
     // backup nudge: the data lives on one Claude account
     var lastBk = S.meta.settings.lastBackup;
     if ((!lastBk || C.daysBetween(lastBk, td) > 30) && LS.get('bkSnooze', '') < td) {
-      banners += '<div class="banner" role="group" aria-label="Backup">' + icon('download') + '<div class="grow"><p><b>' + (lastBk ? L('Sudah ' + C.daysBetween(lastBk, td) + ' hari belum backup.', 'No backup for ' + C.daysBetween(lastBk, td) + ' days.') : L('Kamu belum pernah backup.', 'You haven’t made a backup yet.')) + '</b></p>' +
+      banner(4, '<div class="banner" role="group" aria-label="Backup">' + icon('download') + '<div class="grow"><p><b>' + (lastBk ? L('Sudah ' + C.daysBetween(lastBk, td) + ' hari belum backup.', 'No backup for ' + C.daysBetween(lastBk, td) + ' days.') : L('Kamu belum pernah backup.', 'You haven’t made a backup yet.')) + '</b></p>' +
         '<p class="small ink2">' + L('Datamu nempel di akun Claude ini. File backup menjaganya kalau akunnya berubah.', 'Your data is tied to this Claude account. A backup file keeps it safe if the account changes.') + '</p>' +
-        '<div class="acts"><button class="btn sm" data-act="backup-json">' + icon('download', 'sm') + L('Backup sekarang', 'Back up now') + '</button><button class="btn sm soft" data-act="bk-later">' + L('Nanti', 'Later') + '</button></div></div></div>';
+        '<div class="acts"><button class="btn sm" data-act="backup-json">' + icon('download', 'sm') + L('Backup sekarang', 'Back up now') + '</button><button class="btn sm soft" data-act="bk-later">' + L('Nanti', 'Later') + '</button></div></div></div>');
     }
     var yd = C.addDays(td, -1);
     var hasY = S.txs.some(function (t) { return t.date === yd; });
     var recent = S.txs.some(function (t) { return t.date >= C.addDays(td, -8) && t.date < yd; });
     if (S.meta.settings.gapReminder !== false && !hasY && recent && LS.get('gapDismiss', '') !== yd) {
-      banners += '<div class="banner">' + icon('calendar') + '<div class="grow"><p><b>' + L('Kemarin belum ada catatan.', 'Nothing recorded yesterday.') + '</b></p><p class="small ink2">' + C.dayLong(yd) + L('. Kalau memang gak ada transaksi, tutup aja.', '. If there really was nothing, just close this.') + '</p>' +
+      banner(3, '<div class="banner">' + icon('calendar') + '<div class="grow"><p><b>' + L('Kemarin belum ada catatan.', 'Nothing recorded yesterday.') + '</b></p><p class="small ink2">' + C.dayLong(yd) + L('. Kalau memang gak ada transaksi, tutup aja.', '. If there really was nothing, just close this.') + '</p>' +
         '<div class="acts"><button class="btn sm" data-act="add" data-date="' + yd + '">' + L('Catat untuk kemarin', 'Add for yesterday') + '</button><button class="btn sm soft" data-act="gap-close" data-v="' + yd + '">' + L('Tutup', 'Close') + '</button></div>' +
-        '<button class="link small-link" data-act="gap-off">' + L('Jangan ingatkan lagi', 'Stop reminding me') + '</button></div></div>';
+        '<button class="link small-link" data-act="gap-off">' + L('Jangan ingatkan lagi', 'Stop reminding me') + '</button></div></div>');
+    }
+    bl.sort(function (a, b) { return a.p - b.p; });
+    var banners = bl.length ? bl[0].h : '';
+    if (bl.length > 1) {
+      banners += S.allBanners
+        ? bl.slice(1).map(function (b) { return b.h; }).join('')
+        : '<button class="banner-more" data-act="banners-more" aria-expanded="false">' + icon('bell', 'sm') + '<span class="grow">' + L((bl.length - 1) + ' pengingat lagi', (bl.length - 1) + (bl.length === 2 ? ' more reminder' : ' more reminders')) + '</span>' + icon('chevd', 'sm') + '</button>';
     }
 
     // things he records again and again: one tap saves them for today
@@ -694,8 +705,8 @@
     var cards = ws.map(function (w, i) {
       var b = S.bal[w.id] || 0;
       return '<button class="wcard g-' + esc(w.color || 'oranye') + '" style="--i:' + i + '" data-act="wallet-hist" data-id="' + esc(w.id) + '" aria-label="' + esc(w.name) + ', ' + L('saldo ', 'balance ') + (S.hide ? L('disembunyikan', 'hidden') : M(b)) + (b < 0 ? L(', minus', ', below zero') : '') + L('. Lihat riwayatnya.', '. See its history.') + '">' +
-        '<span class="wn">' + icon(kindIcon(w.kind), 'sm') + '<span>' + esc(w.name) + '</span>' + (b < 0 ? '<span class="neg-badge">' + icon('alert', 'sm') + L('Minus', 'Below 0') + '</span>' : '') + '</span>' +
-        '<span><span class="wk">' + kindLabel(w.kind) + '</span><br><span class="wb num' + (S.hide ? ' hidden-amt' : '') + '">' + money(b) + '</span></span></button>';
+        '<span class="wn">' + icon(kindIcon(w.kind), 'sm') + '<span>' + esc(w.name) + '</span>' + (b < 0 ? '<span class="neg-badge" title="' + L('Saldo minus', 'Below zero') + '">' + icon('alert', 'sm') + '</span>' : '') + '</span>' +
+        '<span>' + (w.name.trim().toLowerCase() !== kindLabel(w.kind).toLowerCase() ? '<span class="wk">' + kindLabel(w.kind) + '</span><br>' : '') + '<span class="wb num' + (S.hide ? ' hidden-amt' : '') + '">' + money(b) + '</span></span></button>';
     }).join('') + '<button class="wcard add" data-act="wallet-new">' + icon('plus') + '<span>' + L('Tambah wallet', 'Add wallet') + '</span></button>';
     var walletsSec = '<section class="section"><div class="section-head"><h2>Wallet</h2><button class="link" data-act="more" data-v="wallets">' + L('Kelola', 'Manage') + '</button></div><div class="wallets">' + cards + '</div></section>';
 
@@ -903,10 +914,9 @@
     }
     // legend: the same marks the cells use, each with its meaning beside it
     return '<div class="cal" role="group" aria-label="' + L('Kalender ', 'Calendar ') + C.monthLabel(ym) + '">' + cells + '</div>' +
+      // a quiet key, so the samples never read as real totals
       '<div class="cal-key">' +
-      '<div class="ck-tile"><span class="ck-sample out-t">−' + C.compact(45000) + '</span><span class="ck-label">' + L('Uang keluar', 'Money out') + '</span></div>' +
-      '<div class="ck-tile"><span class="ck-sample in-t">+' + C.compact(500000) + '</span><span class="ck-label">' + L('Uang masuk', 'Money in') + '</span></div>' +
-      '<p class="ck-note">' + L('rb = ribu, jt = juta', 'k = thousand, M = million') + '</p>' +
+      '<p class="ck-note"><span><b class="out-t">−' + C.compact(45000) + '</b> ' + L('keluar', 'out') + '</span><span><b class="in-t">+' + C.compact(500000) + '</b> ' + L('masuk', 'in') + '</span><span>' + L('rb = ribu, jt = juta', 'k = thousand, M = million') + '</span></p>' +
       '<p class="ck-note">' + icon('info', 'sm') + L('Tap tanggal untuk lihat rincian hari itu.', 'Tap a date to see that day’s details.') + '</p></div>';
   }
 
@@ -1274,9 +1284,23 @@
     sheet.innerHTML = '<form data-submit="' + submit + '" novalidate><div class="grab" aria-hidden="true"></div><div class="sheet-head"><h2 id="sheet-title">' + esc(title) + '</h2>' +
       '<button type="button" class="icon-btn" data-act="sheet-close" aria-label="' + L('Tutup', 'Close') + '">' + icon('x') + '</button></div><div class="sheet-body">' + body + '</div>' + (foot ? '<div class="sheet-foot">' + foot + '</div>' : '') + '</form>';
     if (!sheet.open) sheet.showModal();
+    sheetFade();
     var af = sheet.querySelector('[data-autofocus]');
     if (af) af.focus(); else sheet.querySelector('.sheet-head .icon-btn').focus();
   }
+  // the sheet body fades at the bottom while more of the form sits below, so it reads as scrollable
+  function sheetFade() {
+    var b = sheet.querySelector('.sheet-body');
+    if (b) b.classList.toggle('more-below', b.scrollHeight - b.scrollTop - b.clientHeight > 4);
+  }
+  sheet.addEventListener('scroll', sheetFade, true);
+  sheet.addEventListener('toggle', sheetFade, true);
+  sheet.addEventListener('click', function () { requestAnimationFrame(sheetFade); });
+  sheet.addEventListener('change', function (e) {
+    if (e.target.name === 'wallet' || e.target.name === 'type') updateWalletLine();
+    requestAnimationFrame(sheetFade);
+  });
+  window.addEventListener('resize', function () { if (sheet.open) sheetFade(); });
   function closeSheet() {
     if (!sheet.open) return;
     sheet.close();
@@ -1318,6 +1342,9 @@
     e.classList.toggle('on', !!msg);
     var f = e.closest('.field');
     if (f) f.classList.toggle('bad', !!msg);
+    // an error inside the folded "Date & note" row must not stay hidden
+    var d = msg && e.closest('details');
+    if (d) d.open = true;
   }
   function clearErrs(scope) { scope.querySelectorAll('.err.on').forEach(function (e) { e.classList.remove('on'); var f = e.closest('.field'); if (f) f.classList.remove('bad'); }); }
   function focusFirstErr(scope) {
@@ -1419,6 +1446,16 @@
     var use = C.categoryUsage(S.txs, today());
     return catsList(type).sort(function (a, b) { return (use[b.id] || 0) - (use[a.id] || 0) || byOrder(a, b); });
   }
+  // the closed "Date & note" row still says which day it will save to
+  function moreLabel(d) { return d === today() ? L('Hari ini', 'Today') : d === C.addDays(today(), -1) ? L('Kemarin', 'Yesterday') : C.dayLabel(d); }
+  function walletLineText(type, id) { return (type === 'in' ? L('Ke ', 'To ') : L('Dari ', 'From ')) + '<b>' + esc(id ? wname(id) : '—') + '</b>'; }
+  function updateWalletLine() {
+    var el = document.getElementById('t-wl'), f = sheet.querySelector('form');
+    if (!el || !f) return;
+    var t = f.querySelector('input[name=type]:checked'), w = f.querySelector('input[name=wallet]:checked');
+    el.innerHTML = walletLineText(t ? t.value : ctx && ctx.base && ctx.base.type, w ? w.value : '');
+  }
+  function setMoreLabel(d) { var v = document.getElementById('t-more-v'); if (v && /^\d{4}-\d{2}-\d{2}$/.test(d)) v.textContent = moreLabel(d); }
   function openTx(o) {
     o = o || {};
     if (S.status !== 'ready') { toast(L('Tunggu sebentar, data masih dimuat.', 'One moment, your data is still loading.')); return; }
@@ -1442,15 +1479,20 @@
       '<span class="amt-big"><span class="rp">Rp</span><output id="t-amt" aria-live="polite">0</output></span>' +
       '<button type="button" class="icon-btn amt-clear" data-act="kp-clear" aria-label="' + L('Hapus jumlah', 'Clear amount') + '" hidden>' + icon('x', 'sm') + '</button></div>' +
       errEl('t-amount') + '</div>' +
+      // the wallet field sits below the categories and often off-screen: this line keeps the chosen wallet in view
+      '<button type="button" class="wallet-line" data-act="t-wallet-jump">' + icon('wallet', 'sm') + '<span class="grow" id="t-wl">' + walletLineText(type, wSel) + '</span><span class="wl-change">' + L('ganti', 'change') + '</span></button>' +
       '<div class="field" id="f-cat"' + (type === 'transfer' || locked ? ' hidden' : '') + '><span class="lbl" id="t-cat-l">' + L('Kategori', 'Category') + '</span>' +
       catChips('out', catsOut, base.category, type === 'out', 't-cat-l') + catChips('in', catsIn, base.category, type === 'in', 't-cat-l') +
       catQuickHtml() + errEl('t-cat') + '</div>' +
       '<div class="field"><span class="lbl" id="t-wallet-l">' + (type === 'in' ? L('Ke wallet', 'To wallet') : L('Dari wallet', 'From wallet')) + '</span><div class="chips" role="radiogroup" aria-labelledby="t-wallet-l">' + wsAll.map(function (w) { return walletChip('wallet', w, wSel); }).join('') + '</div>' + errEl('t-wallet') + '</div>' +
       '<div class="field" id="f-to"' + (type === 'transfer' ? '' : ' hidden') + '><span class="lbl" id="t-to-l">' + L('Ke wallet', 'To wallet') + '</span><div class="chips" role="radiogroup" aria-labelledby="t-to-l">' + wsAll.map(function (w) { return walletChip('toWallet', w, base.toWallet || ''); }).join('') + '</div>' + errEl('t-to') + '</div>' +
       '<div id="f-fee"' + (type === 'transfer' ? '' : ' hidden') + '>' + moneyField('t-fee', 'fee', L('Biaya admin', 'Admin fee') + ' <span class="muted">' + L('(kalau ada)', '(if any)') + '</span>', base.fee, L('Dicatat sebagai pengeluaran "Biaya Admin".', 'Recorded as an "Admin Fees" expense.')) + '</div>' +
+      // date and note are rarely changed, so they wait behind one row; open when they already differ from the defaults
+      '<details class="more-fields" id="t-more"' + (ed || date !== today() || base.note ? ' open' : '') + '><summary>' + icon('calendar', 'sm') + '<span class="grow">' + L('Tanggal & catatan', 'Date & note') + '</span><span class="muted" id="t-more-v">' + moreLabel(date) + '</span>' + icon('chevd', 'sm') + '</summary><div class="stack">' +
       '<div class="field"><label for="t-date">' + L('Tanggal', 'Date') + '</label><div class="datechips"><button type="button" class="btn sm soft" data-act="t-date" data-v="' + today() + '">' + L('Hari ini', 'Today') + '</button><button type="button" class="btn sm soft" data-act="t-date" data-v="' + C.addDays(today(), -1) + '">' + L('Kemarin', 'Yesterday') + '</button>' +
       '<input type="date" id="t-date" name="date" class="input" max="' + today() + '" min="2000-01-01" value="' + date + '" data-input="t-date"></div><p class="hint" id="t-date-label">' + C.dayLong(date) + '</p>' + errEl('t-date') + '</div>' +
       '<div class="field"><label for="t-note">' + L('Keterangan', 'Note') + optional() + '</label><input id="t-note" name="note" class="input" maxlength="120" autocomplete="off" value="' + esc(base.note || '') + '" placeholder="' + L('Misal: nasi padang + es teh', 'For example: lunch with friends') + '"></div>' +
+      '</div></details>' +
       (ed ? '<div class="stack" style="border-top:1px solid var(--line);padding-top:16px;margin-top:6px"><button type="button" class="btn danger" data-act="tx-del">' + icon('x', 'sm') + L('Hapus transaksi ini', 'Delete this transaction') + '</button></div>' : '');
     var keypad = '<div class="keypad" role="group" aria-label="' + L('Papan angka', 'Number pad') + '">' + KEYS.map(function (k) {
       return '<button type="button" class="key' + (OPKEYS[k] ? ' op' : k === '⌫' ? ' del' : '') + '" data-act="kp" data-v="' + k + '" aria-label="' + keyLabel(k) + '">' + (k === '⌫' ? icon('backspace') : OPKEYS[k] ? '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true">' + OPKEYS[k] + '</svg>' : k) + '</button>';
@@ -1949,6 +1991,12 @@
     reload: function () { location.reload(); },
     hide: function () { S.hide = !S.hide; LS.set('hide', S.hide); S.fx = 'blur'; render(); },
     'gap-close': function (el) { LS.set('gapDismiss', el.dataset.v); render(); },
+    'banners-more': function () { S.allBanners = true; render(); },
+    't-wallet-jump': function () {
+      var l = document.getElementById('t-wallet-l'); if (!l) return;
+      var f = l.closest('.field'); f.scrollIntoView({ block: 'center', behavior: reduceMotion ? 'auto' : 'smooth' });
+      var c = f.querySelector('input:checked') || f.querySelector('input'); if (c) c.focus({ preventScroll: true });
+    },
     'wallet-hist': function (el) { S.hist.mode = 'all'; S.hist.wallet = el.dataset.id; S.hist.cat = ''; S.hist.q = ''; S.hist.day = null; goTab('hist'); },
     'wallet-new': function () { openWallet(null); },
     'wallet-edit': function (el) { openWallet(el.dataset.id); },
@@ -2003,7 +2051,7 @@
     'w-up': function (el) { moveWallet(el.dataset.id, -1); },
     'w-down': function (el) { moveWallet(el.dataset.id, 1); },
     'rep-bal': function (el) { S.rep.bsel = +el.dataset.v; render(); },
-    't-date': function (el) { var f = el.closest('form'); f.elements.date.value = el.dataset.v; document.getElementById('t-date-label').textContent = C.dayLong(el.dataset.v); },
+    't-date': function (el) { var f = el.closest('form'); f.elements.date.value = el.dataset.v; document.getElementById('t-date-label').textContent = C.dayLong(el.dataset.v); setMoreLabel(el.dataset.v); },
     'sheet-close': closeSheet,
     'rec-do': function (el) { doRecurring(el.dataset.id); },
     'rec-skip': function (el) {
@@ -2096,7 +2144,7 @@
   var histTimer = null;
   var INPUTS = {
     'h-q': function (el) { S.hist.q = el.value; clearTimeout(histTimer); histTimer = setTimeout(renderHistBody, 180); },
-    't-date': function (el) { var l = document.getElementById('t-date-label'); if (l && /^\d{4}-\d{2}-\d{2}$/.test(el.value)) l.textContent = C.dayLong(el.value); }
+    't-date': function (el) { var l = document.getElementById('t-date-label'); if (l && /^\d{4}-\d{2}-\d{2}$/.test(el.value)) l.textContent = C.dayLong(el.value); setMoreLabel(el.value); }
   };
   var SUBMITS = {
     tx: submitTx, wallet: submitWallet, cat: submitCat, rec: submitRec, goal: submitGoal, debt: submitDebt, none: function () {},
