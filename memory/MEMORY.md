@@ -73,3 +73,4 @@
 - [Openverse music test](project-openverse-music-test.md) — free music tool built 15 Nov 2026; Drakkar passed YouTube Initial check 15 Nov, recheck 16 Nov; check each track privately first, one film at a time, never a whole parallel batch
 - [Reminder: pendaftaran voice UKSW](reminder-pendaftaran-voice-uksw.md) — not a real task; mention it whenever he asks what tasks are left (18 Nov 2026)
 - [Agent Reach](reference-agent-reach.md) — CLI installed 18 Nov 2026 (audited); use it for Tokopedia + Ultimate Guitar via ar_read.py; WebSearch/WebFetch stay cheaper for normal search/pages; Chrome for login sites; yt-dlp already in Python
+- [Web work on Sonnet](feedback-web-work-cheaper-model.md) — search, page reads, Chrome, Agent Reach, Shopee links: subagent with model sonnet, never the main model (20 Nov 2026)
