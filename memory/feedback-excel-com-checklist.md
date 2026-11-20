@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: cc480763-2f42-499d-93ee-a9b2432ad25e
-  modified: 2026-10-09T10:46:33.100Z
+  modified: 2026-11-20T08:15:52.787Z
 ---
 
 Self-evaluation he asked for after the Struktur Organisasi build on 2026-10-06 ([[project-sinergi-struktur-organisasi]]).
@@ -78,6 +78,12 @@ pywin32 is installed (since 2026-10-06), and real Excel 16 is the build and veri
    - Linked picture without the clipboard: `AddPicture` a blank PNG, then set `DrawingObject.Formula = "=Sheet!$C$35"`.
      It mirrors pasted pictures too. Top/left cell borders (including a neighbour's) leak into it; right/bottom ones don't.
    - The render helper adds its chart on a temporary sheet, so protected sheets render without unprotecting.
+
+15. Dynamic merged headers (2026-11-20, [[project-jadwal-pekerjaan-template]]):
+   - Center Across Selection and text overflow stop at any formula cell, even one returning "". Merges can't move by formula.
+   - A linked picture driven by a name like `=CHOOSE(n, Sheet!r1, Sheet!r2, ...)` works. Excel rounds the picture to pixels, though, so keep borders out of it: make the source transparent (no fill, no borders) and draw the dividers with CF on the cells underneath.
+   - Shapes placed through COM on a sheet zoomed to 63% got wrong anchors and printed one row too high. Pin `xdr:from`/`xdr:to` to exact cells in the drawing XML. Excel keeps those anchors through a save.
+   - Run `python -I` only on untrusted files; it hides user-site PIL. Never name a script `inspect.py`, because it shadows the stdlib.
 
 **Keep, don't trim:** render the output after each build, test several input scenarios, and scan every sheet for formula errors.
 These checks caught the real bugs; the time to cut is the avoidable re-runs above, not these checks.

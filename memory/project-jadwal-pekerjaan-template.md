@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: cc480763-2f42-499d-93ee-a9b2432ad25e
-  modified: 2026-10-26T07:15:04.655Z
+  modified: 2026-11-20T08:15:52.686Z
 ---
 
 On 2026-10-07 a coworker at PT. Sinergi asked for "jadwal pekerjaan" without manual cell colouring, like [[project-kurva-s-template]] and [[project-sinergi-struktur-organisasi]]. She meant the **maintenance schedule** and gave `~/Downloads/schedule PM Kelistrikan DC 2026-2027.xlsx` as the model. That original is the PLN Icon Plus Gandul + DRC Bandung 2026–2027 schedule; on 26 Oct 2026 it moved from Downloads to `Laporan Sinergi\KOM PM Kelistrikan DC Gandul\` ([[project-kom-gandul-2026]]).
@@ -32,5 +32,7 @@ Open points from her own data, unchanged: Switchover has FREQ 12 but only 5 mark
 Print test with all 15 slots filled (2026-10-08, on a copy, via PDF export, not Print Preview): still 2 pages, no vertical split, legend's 16 slots (15 + freeze) exactly full. But long names get clipped: item column fits ~50 characters, legend label ~40. No wrap/shrink on those cells. Fix not applied yet; Bryan to choose.
 
 Not built: the Aktualisasi table (not in her example) and the project timeline type. `Template Kurva S` only draws bars once Bobot is filled.
+
+**Start week added 2026-11-20** (Mbak Didi's request: Gandul maintenance starts 16 Nov 2026 = W3, so Periode I must end in early Feb 2027). Input F3 is now a W1–W4 dropdown (blank = W1). Each period is 12 weeks counted from that week, and the 48 week columns stay positional. Names: `MingguMulai`, plus hidden `HdrInput`/`HdrP1..4`. W labels, date row, period titles ("November 2026 (W3) - Februari 2027 (W2)") and Cek tanggal (helpers BJ15:BJ17) all follow it. With W1 the output matches the old file. The month header is a linked picture of a veryHidden sheet "Bantu" that holds the 4 layouts. The pictures are transparent and carry only text. Month dividers come from CF on the cells underneath. Picture anchors were pinned in the drawing XML, because COM placement at Schedule zoom 63 drifted in print. Verified: Okt W1, Nov W3, Nov W4, Des W2; PDF export; 0 errors; a save round-trip keeps the anchors. Her own Gandul copy is not on Bryan's laptop. She re-enters her data in the new master, or sends her file to be converted.
 
 **How to apply:** edit the template in Excel (COM), not by rebuilding. The build/verify scripts lived in a session scratchpad and are gone. See [[feedback-excel-com-checklist]].
