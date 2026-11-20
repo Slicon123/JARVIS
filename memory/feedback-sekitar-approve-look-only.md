@@ -7,9 +7,10 @@ metadata:
 
 From 20 Nov 2026, the only approval a `sekitar` film waits for is the **look check-in**: the
 `every=3` board (stills every 3 seconds, plus the look sheet) shown before the render. The
-script no longer waits for a yes, even though the `sekitar` skill (step 3, rule 4) and every
-`riset-sekitar` block ("Setelah kusetujui…") still say so: write it, show it with its source
-table and hook check, then go straight on to voice and 3D. Set the log status to `dipilih` once
+script no longer waits for a yes: write it, show it with its source table and hook check, then
+go straight on to voice and 3D. The `sekitar` skill (rule 4, steps 2 and 4, pipeline line), the
+`riset-sekitar` block template and all saved `saran-*.md` blocks were updated to say this on
+20 Nov 2026. Set the log status to `dipilih` once
 the script is written, since that was the old approval point.
 
 Exception, same day: the three films lem-korea, jengkolan and logam-dingin were made with no
