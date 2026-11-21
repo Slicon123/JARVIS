@@ -11,4 +11,6 @@ Web work runs in a subagent with `model: "sonnet"` (Sonnet 5.5), never on the ma
 
 **How to apply:** Before the first web step in any skill (riset-sekitar, riset-produk, sekitar's link step, unggah-sekitar, sosmed-audit, deep research), spawn the subagent with `model: "sonnet"`. When starting a side session whose work is mostly web, pass a Sonnet `model` too. Group several lookups into one subagent so it doesn't start cold many times. A web-fetch agent type with no model setting counts as web work too, so give it `model: "sonnet"`.
 
+On 21 Nov 2026 he saw product lookups still running on Opus, because the skills said "open Chrome" directly and the skill text won over this memory. The rule is now written into riset-produk (step 0), sekitar (product photos + link) and riset-sekitar (top). Sonnet, not Haiku: Chrome navigation and Shopee's anti-bot pages need it.
+
 Related: [[reference-agent-reach]], [[feedback-make-affiliate-link]], [[project-konten-edukasi-sekitar]].
