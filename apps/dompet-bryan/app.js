@@ -120,7 +120,7 @@
     hist: { mode: 'month', ym: thisYM(), day: null, q: '', wallet: '', cat: '', limit: 150 },
     rep: { mode: 'month', ym: thisYM(), year: today().slice(0, 4), kind: 'out', wallet: '', tsel: null },
     restore: null, restoring: null,
-    animate: true, flashId: null, shownTotal: null, fx: null
+    animate: true, flashId: null, shownTotal: null
   };
   if (['home', 'hist', 'rep', 'more'].indexOf(S.tab) < 0) S.tab = 'home';
   C.setLang(S.lang);
@@ -156,6 +156,8 @@
   var M = money;
   function MS(n) { return S.hide ? (n < 0 ? '−' : n > 0 ? '+' : '') + 'Rp ••••' : C.rpSigned(n); }
   function MC(n) { return S.hide ? '••' : C.compact(n); }
+  // shown figures set "Rp" small and muted, like a printed receipt; textContent stays "Rp 12.000", so never use it in attributes
+  function RP(s) { return String(s).replace('Rp', '<span class="cur">Rp</span>'); }
   function eyeBtn(onHero) {
     return '<button class="icon-btn' + (onHero ? ' on-hero' : '') + '" data-act="hide" aria-pressed="' + S.hide + '" aria-label="' + (S.hide ? L('Tampilkan angka', 'Show amounts') : L('Sembunyikan angka', 'Hide amounts')) + '">' + icon(S.hide ? 'eyeoff' : 'eye') + '</button>';
   }
@@ -489,8 +491,7 @@
     else if (S.tab === 'rep') html = viewRep();
     else html = viewMore();
     var entering = lastTab !== S.tab + '/' + S.more || S.animate;
-    view.className = (S.tab === 'home' ? 'wide' : '') + (entering && !reduceMotion ? ' enter' : '') + (S.fx ? ' fx-' + S.fx : '');
-    S.fx = null;
+    view.className = (S.tab === 'home' ? 'wide' : '') + (entering && !reduceMotion ? ' enter' : '');
     lastTab = S.tab + '/' + S.more;
     view.innerHTML = syncHtml() + html;
     kept.forEach(function (k) { var el = document.getElementById(k[0]); if (el) el[k[1]] = k[2]; });
@@ -516,7 +517,7 @@
     var t0 = performance.now(), dur = 450;
     function step(t) {
       var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
-      el.textContent = C.rp(Math.round(from + (to - from) * e));
+      el.innerHTML = RP(C.rp(Math.round(from + (to - from) * e)));
       if (p < 1 && document.contains(el)) requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
@@ -605,7 +606,7 @@
       '<span class="tx-ic" style="--c:' + cvar(m.slot) + '">' + icon(m.ic) + '</span>' +
       '<span class="tx-main"><span class="tx-title">' + esc(m.title) + (m.tag ? '<span class="tag">' + m.tag + '</span>' : '') + '</span>' +
       (m.sub ? '<span class="tx-sub">' + esc(m.sub) + '</span>' : '') + '</span>' +
-      '<span class="tx-amt ' + m.cls + '">' + m.amt + (t.fee > 0 ? '<small>+ admin ' + M(t.fee) + '</small>' : '') + '</span></button>';
+      '<span class="tx-amt ' + m.cls + '">' + RP(m.amt) + (t.fee > 0 ? '<small>+ admin ' + M(t.fee) + '</small>' : '') + '</span></button>';
   }
   function dayTotals(list) {
     var out = 0, inn = 0;
@@ -633,7 +634,7 @@
   // ================= Beranda =================
   function viewHome() {
     if (S.status !== 'ready') {
-      return '<section class="hero"><p class="hero-hello">' + L('Halo, Bryan', 'Hi, Bryan') + '</p><p class="hero-label">' + L('Total saldo semua wallet', 'Total balance across wallets') + '</p><p class="hero-amount" aria-busy="true">Rp …</p></section>' + statusView();
+      return '<section class="hero"><p class="hero-hello">' + C.monthLabel(thisYM()) + '</p><p class="hero-label">' + L('Total saldo semua wallet', 'Total balance across wallets') + '</p><p class="hero-amount" aria-busy="true">' + RP('Rp …') + '</p></section>' + statusView();
     }
     var ws = walletsList();
     if (!ws.length) return onboarding();
@@ -643,13 +644,13 @@
     var shownTotal = S.shownTotal != null && !S.hide && !reduceMotion && S.shownTotal !== total ? S.shownTotal : total;
 
     var hero = '<section class="hero" aria-label="' + L('Ringkasan saldo', 'Balance summary') + '">' +
-      '<div class="hero-top"><div class="grow"><p class="hero-hello">' + L('Halo, Bryan', 'Hi, Bryan') + '</p><p class="hero-label">' + L('Total saldo semua wallet', 'Total balance across wallets') + '</p></div>' +
+      '<div class="hero-top"><div class="grow"><p class="hero-hello">' + C.monthLabel(ym) + '</p><p class="hero-label">' + L('Total saldo semua wallet', 'Total balance across wallets') + '</p></div>' +
       '<button class="icon-btn on-hero" data-act="hide" aria-pressed="' + S.hide + '" aria-label="' + (S.hide ? L('Tampilkan saldo', 'Show balance') : L('Sembunyikan saldo', 'Hide balance')) + '">' + icon(S.hide ? 'eyeoff' : 'eye') + '</button></div>' +
-      '<p class="hero-amount' + (S.hide ? ' hidden-amt' : '') + '" id="hero-total" data-v="' + total + '">' + (S.hide ? money(total) : M(shownTotal)) + '</p>' +
+      '<p class="hero-amount' + (S.hide ? ' hidden-amt' : '') + '" id="hero-total" data-v="' + total + '">' + RP(S.hide ? money(total) : M(shownTotal)) + '</p>' +
       // one glass strip for the month: two figures side by side instead of three wrapping pills
       '<div class="hero-month" role="group" aria-label="' + C.monthLabel(ym) + '">' +
-      '<span class="hm-cell"><span class="hm-k">' + icon('arrowup', 'sm') + L('Keluar ', 'Out · ') + C.monthLabel(ym).slice(0, 3) + '</span><b class="num">' + M(ms.out) + '</b></span>' +
-      '<span class="hm-cell"><span class="hm-k">' + icon('arrowdown', 'sm') + L('Masuk ', 'In · ') + C.monthLabel(ym).slice(0, 3) + '</span><b class="num">' + M(ms.in) + '</b></span></div></section>';
+      '<span class="hm-cell"><span class="hm-k">' + icon('arrowup', 'sm') + L('Keluar', 'Out') + '</span><b class="num">' + RP(M(ms.out)) + '</b></span>' +
+      '<span class="hm-cell"><span class="hm-k">' + icon('arrowdown', 'sm') + L('Masuk', 'In') + '</span><b class="num">' + RP(M(ms.in)) + '</b></span></div></section>';
 
     var quick = '<div class="quick" role="group" aria-label="' + L('Catat cepat', 'Quick add') + '">' +
       qchip('add', 'out', L('Pengeluaran', 'Expense'), 'arrowup', 2) + qchip('add', 'in', L('Pemasukan', 'Income'), 'arrowdown', 6) + qchip('add', 'transfer', 'Transfer', 'swap', 1) +
@@ -706,7 +707,7 @@
       var b = S.bal[w.id] || 0;
       return '<button class="wcard g-' + esc(w.color || 'oranye') + '" style="--i:' + i + '" data-act="wallet-hist" data-id="' + esc(w.id) + '" aria-label="' + esc(w.name) + ', ' + L('saldo ', 'balance ') + (S.hide ? L('disembunyikan', 'hidden') : M(b)) + (b < 0 ? L(', minus', ', below zero') : '') + L('. Lihat riwayatnya.', '. See its history.') + '">' +
         '<span class="wn">' + icon(kindIcon(w.kind), 'sm') + '<span>' + esc(w.name) + '</span>' + (b < 0 ? '<span class="neg-badge" title="' + L('Saldo minus', 'Below zero') + '">' + icon('alert', 'sm') + '</span>' : '') + '</span>' +
-        '<span>' + (w.name.trim().toLowerCase() !== kindLabel(w.kind).toLowerCase() ? '<span class="wk">' + kindLabel(w.kind) + '</span><br>' : '') + '<span class="wb num' + (S.hide ? ' hidden-amt' : '') + '">' + money(b) + '</span></span></button>';
+        '<span>' + (w.name.trim().toLowerCase() !== kindLabel(w.kind).toLowerCase() ? '<span class="wk">' + kindLabel(w.kind) + '</span><br>' : '') + '<span class="wb num' + (S.hide ? ' hidden-amt' : '') + (b < 0 && !S.hide ? ' out-t' : '') + '">' + RP(money(b)) + '</span></span></button>';
     }).join('') + '<button class="wcard add" data-act="wallet-new">' + icon('plus') + '<span>' + L('Tambah wallet', 'Add wallet') + '</span></button>';
     var walletsSec = '<section class="section"><div class="section-head"><h2>Wallet</h2><button class="link" data-act="more" data-v="wallets">' + L('Kelola', 'Manage') + '</button></div><div class="wallets">' + cards + '</div></section>';
 
@@ -740,7 +741,7 @@
   function favLabel(f) { return f.note || catName(f.category); }
   function qchip(act, v, label, ic, slot) {
     var attr = act === 'add' ? 'data-act="add" data-type="' + v + '"' : 'data-act="more" data-v="' + v + '"';
-    return '<button class="qchip" ' + attr + '><span class="dot" style="color:color-mix(in srgb, ' + cvar(slot) + ' 65%, var(--ink));background:color-mix(in srgb, ' + cvar(slot) + ' 16%, var(--card))">' + icon(ic, 'sm') + '</span>' + label + '</button>';
+    return '<button class="qchip" ' + attr + '><span class="dot">' + icon(ic, 'sm') + '</span>' + label + '</button>';
   }
   function budgetRows(ms) {
     var rows = [];
@@ -786,7 +787,7 @@
 
   // ---- onboarding (no wallets yet)
   function onboarding() {
-    return '<section class="hero"><p class="hero-hello">' + L('Halo, Bryan', 'Hi, Bryan') + '</p><h1 class="hero-amount" style="font-size:clamp(26px,7vw,34px);margin-top:8px">' + L('Selamat datang di Dompet Bryan', 'Welcome to Dompet Bryan') + '</h1>' +
+    return '<section class="hero"><p class="hero-hello">' + C.monthLabel(thisYM()) + '</p><h1 class="hero-amount" style="font-size:clamp(26px,7vw,34px);margin-top:8px">' + L('Selamat datang di Dompet Bryan', 'Welcome to Dompet Bryan') + '</h1>' +
       '<p class="hero-label">' + L('Langkah pertama: bikin wallet. Wallet itu tempat uangmu berada, misalnya uang tunai (Cash), rekening BCA, atau GoPay.', 'First step: make a wallet. A wallet is where your money sits, like cash, a BCA account or GoPay.') + '</p></section>' +
       langCard() +
       '<section class="card stack" aria-labelledby="ob-h"><h2 id="ob-h" style="font-size:19px">' + L('Bikin wallet pertama', 'Make your first wallet') + '</h2>' +
@@ -861,7 +862,7 @@
     var arch = L(' (arsip)', ' (archived)');
     var cats = function (type) { return catsList(type, true).map(function (c) { return opt(c.id, catName(c.id, c) + (c.archived ? arch : ''), h.cat); }).join(''); };
     return '<div class="filters"><div class="search"><label class="sr" for="h-q">' + L('Cari keterangan', 'Search notes') + '</label>' + icon('search') +
-      '<input id="h-q" class="input" type="search" placeholder="' + L('Cari keterangan…', 'Search notes…') + '" autocomplete="off" value="' + esc(h.q) + '" data-input="h-q"></div>' +
+      '<input id="h-q" class="input" type="search" placeholder="' + L('Cari keterangan', 'Search notes') + '" autocomplete="off" value="' + esc(h.q) + '" data-input="h-q"></div>' +
       selectHtml('h-wallet', L('Filter wallet', 'Filter by wallet'), opt('', L('Semua wallet', 'All wallets'), h.wallet) +
         walletsList(true).map(function (w) { return opt(w.id, w.name + (w.archived ? arch : ''), h.wallet); }).join(''), ' data-change="h-wallet"') +
       selectHtml('h-cat', L('Filter kategori', 'Filter by category'), opt('', L('Semua kategori', 'All categories'), h.cat) +
@@ -959,9 +960,9 @@
       }
     } else if (first) cmp = L('Sejak ', 'Since ') + C.dayLong(first) + '.';
     html += '<section class="card stack" aria-label="' + L('Ringkasan', 'Summary') + '"><div class="stat3">' +
-      '<div class="stat"><p class="k">' + icon('arrowup', 'sm') + L('Keluar', 'Out') + '</p><p class="v num out-t">' + M(sm.out) + '</p></div>' +
-      '<div class="stat"><p class="k">' + icon('arrowdown', 'sm') + L('Masuk', 'In') + '</p><p class="v num in-t">' + M(sm.in) + '</p></div>' +
-      '<div class="stat wide"><p class="k">' + L('Sisa (masuk − keluar)', 'Net (in − out)') + '</p><p class="v num">' + MS(sm.in - sm.out) + '</p></div></div>' +
+      '<div class="stat"><p class="k">' + icon('arrowup', 'sm') + L('Keluar', 'Out') + '</p><p class="v num out-t">' + RP(M(sm.out)) + '</p></div>' +
+      '<div class="stat"><p class="k">' + icon('arrowdown', 'sm') + L('Masuk', 'In') + '</p><p class="v num in-t">' + RP(M(sm.in)) + '</p></div>' +
+      '<div class="stat wide"><p class="k">' + L('Sisa (masuk − keluar)', 'Net (in − out)') + '</p><p class="v num">' + RP(MS(sm.in - sm.out)) + '</p></div></div>' +
       (cmp ? '<p class="ink2 small">' + cmp + '</p>' : '') + '</section>';
 
     var kind = r.kind, byCat = sm.byCat[kind], total = sm[kind];
@@ -1088,7 +1089,7 @@
     var legend = '<div class="legend">' + entries.map(function (e) {
       var inTop = slotOf[e[0]] != null, nm = catName(e[0]);
       return '<button class="lrow" data-act="rep-cat" data-v="' + esc(e[0]) + '" data-seg="' + esc(inTop ? e[0] : '_rest') + '" aria-label="' + esc(nm) + ', ' + M(e[1]) + ', ' + pctTxt(e[1], total) + L('. Lihat transaksinya.', '. See its transactions.') + '">' +
-        '<span class="sw" style="background:' + cvar(inTop ? slotOf[e[0]] : 0) + '"></span><span class="ln">' + esc(nm) + '</span><span class="lv">' + M(e[1]) + '</span>' +
+        '<span class="sw" style="background:' + cvar(inTop ? slotOf[e[0]] : 0) + '"></span><span class="ln">' + esc(nm) + '</span><span class="lv">' + RP(M(e[1])) + '</span>' +
         '<span class="lp"><span>' + pctTxt(e[1], total) + '</span><span>' + L('Lihat transaksi ›', 'See transactions ›') + '</span></span></button>';
     }).join('') + '</div>';
     return '<div class="donut-wrap">' + svg + legend + '</div>';
@@ -1986,10 +1987,10 @@
   function txFrom(el) { var ym = el.dataset.v, id = el.dataset.id; var t = S.months[ym] && S.months[ym].tx && S.months[ym].tx[id]; if (!t) return null; var o = { id: id, ym: ym }; for (var k in t) o[k] = t[k]; return o; }
   function goTab(t) { S.tab = t; S.more = t === 'more' ? S.more : null; S.animate = true; LS.set('tab', t); render(); window.scrollTo(0, 0); }
   var ACTS = {
-    tab: function (el) { var t = el.dataset.v; if (t === 'more' && S.tab === 'more') S.more = null; if (S.tab !== t) S.hist.limit = 150; goTab(t); popTab(t); },
-    add: function (el) { spinFab(); openTx({ type: el.dataset.type, date: el.dataset.date }); },
+    tab: function (el) { var t = el.dataset.v; if (t === 'more' && S.tab === 'more') S.more = null; if (S.tab !== t) S.hist.limit = 150; goTab(t); },
+    add: function (el) { openTx({ type: el.dataset.type, date: el.dataset.date }); },
     reload: function () { location.reload(); },
-    hide: function () { S.hide = !S.hide; LS.set('hide', S.hide); S.fx = 'blur'; render(); },
+    hide: function () { S.hide = !S.hide; LS.set('hide', S.hide); render(); },
     'gap-close': function (el) { LS.set('gapDismiss', el.dataset.v); render(); },
     'banners-more': function () { S.allBanners = true; render(); },
     't-wallet-jump': function () {
@@ -2245,36 +2246,6 @@
   view.addEventListener('mouseover', function (e) { var l = e.target.closest('.lrow'); if (l) highlight(l.dataset.seg); });
   view.addEventListener('mouseout', function (e) { var l = e.target.closest('.lrow'); if (l && !l.contains(e.relatedTarget)) highlight(null); });
   view.addEventListener('focusin', function (e) { var l = e.target.closest('.lrow'); if (l) highlight(l.dataset.seg); });
-
-  // ================= motion =================
-  var RIPPLE = '.btn, .chip-add, .qchip, .tx, .mrow, .wcard, .tab, .key, .icon-btn, .cal-d, .lrow, .tcol, .chip > span, .seg span, .colorpick span, .iconpick span';
-  document.addEventListener('pointerdown', function (e) {
-    if (reduceMotion || e.button > 0) return;
-    var host = e.target.closest(RIPPLE);
-    if (!host) { var lab = e.target.closest('.chip, .seg label, .colorpick label, .iconpick label'); host = lab && lab.querySelector('span'); }
-    if (!host || host.disabled) return;
-    var r = host.getBoundingClientRect(), size = Math.max(r.width, r.height) * 2.2;
-    var dot = document.createElement('span');
-    dot.className = 'ripple';
-    dot.style.width = dot.style.height = size + 'px';
-    dot.style.left = (e.clientX - r.left - size / 2) + 'px';
-    dot.style.top = (e.clientY - r.top - size / 2) + 'px';
-    host.classList.add('rippling');
-    host.appendChild(dot);
-    setTimeout(function () { dot.remove(); }, 480);
-  }, { passive: true });
-  function spinFab() {
-    if (reduceMotion) return;
-    var f = document.querySelector('.fab');
-    if (!f) return;
-    f.classList.remove('spin'); void f.offsetWidth; f.classList.add('spin');
-    setTimeout(function () { f.classList.remove('spin'); }, 500);
-  }
-  function popTab(t) {
-    if (reduceMotion) return;
-    var b = document.querySelector('.tab[data-v="' + t + '"]');
-    if (b) { b.classList.remove('pop'); void b.offsetWidth; b.classList.add('pop'); }
-  }
 
   init();
 })();
