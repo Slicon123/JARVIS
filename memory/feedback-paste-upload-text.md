@@ -9,4 +9,6 @@ When a sekitar film is finished, its chat's final message carries the full `out/
 
 **Why:** on 18 Nov 2026 four films (pemantik-kompor, timbangan-digital, pelangi, lampu-surya) ended with upload.md written but not shown; he had to ask, and said he should never need to remind again.
 
+**Format (22 Nov 2026):** paste it per platform, each under its own heading with its own copy block (YouTube title and description as two blocks), never the whole file inside one wrapping code block. On bau-durian he got one big raw block and read it as "not separated per platform". Same day he reconfirmed [[feedback-ig-fb-one-caption]]: no product = one Instagram & Facebook text; product = separate Facebook text with the Shopee link.
+
 **How to apply:** it is non-negotiable 7 and step 7 in the `sekitar` skill. When I run film chats from here, check each final report has the text; if not, tell that chat to paste it. Related: [[project-konten-edukasi-sekitar]], [[feedback-bryan-uploads-films]].
