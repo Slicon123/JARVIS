@@ -31,7 +31,9 @@ not required by the guide, but the outlet must have a digital side (GoFood/GrabF
 QRIS, POS/cashier app, WA orders). Outlet confirmed on GoFood + QRIS. Interview guide written
 23 Nov 2026 for Tema 2 Pemasaran Digital (my pick; Bryan hasn't objected): 15 short, plain
 questions grouped by POAC plus a short photo/screenshot list, in `TAS Mini Riset\Pedoman Wawancara.md`.
-He asked for questions that aren't complicated but still match the PDF.
+He asked for questions that aren't complicated but still match the PDF, and asked me to remember
+the whole plan (23 Nov 2026). Keep anything else I make for this task (template, checklist) just
+as plain. Next step: he interviews the owner, sends me the recording, I turn it into a transcript.
 Interview not done yet.
 
 **How to apply:** Bryan does the interview and writes the content himself. My part: interview
