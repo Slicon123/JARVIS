@@ -25,8 +25,10 @@ for writing the research content.**
 **Rubric:** format 15, latar belakang & teori 20, metode & validitas data 20, analisis & pembahasan
 30, orisinalitas & etika 15.
 
-**Status 23 Nov 2026:** read and analysed; object and theme not chosen yet; class letter for the
-file name not confirmed.
+**Status 23 Nov 2026:** read and analysed; class letter for the file name not confirmed.
+Bryan plans to interview the owner of a D'Kriuk franchise outlet (fried chicken). Social media is
+not required by the guide, but the outlet must have a digital side (GoFood/GrabFood/ShopeeFood,
+QRIS, POS/cashier app, WA orders). Theme not chosen yet; it depends on which digital tools the outlet uses.
 
 **How to apply:** Bryan does the interview and writes the content himself. My part: interview
 guide, observation sheet, Word template in the required format, verified references with DOI,
