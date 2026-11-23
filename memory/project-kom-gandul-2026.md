@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 6823d0a2-0626-4809-aa2d-fbd103595717
-  modified: 2026-10-26T13:20:12.460Z
+  modified: 2026-11-23T04:56:51.929Z
 ---
 
 On 2026-10-26 Bryan asked for a new KOM deck for the PLN Icon Plus TOR "Pengadaan Jasa Pemeliharaan
@@ -19,9 +19,15 @@ the 29-slide file named in [[project-sinergi-proposal-teknis]].
 
 His rules for this deck:
 - TOR sections that Lengkap left out stay out (SLA, sanksi, kualifikasi, BoQ, lokasi, jangka waktu, ToC, lampiran).
-- Schedule slides (16–19) kept with titles only, emptied until he has a schedule. As of 26 Oct 2026 he
-  hasn't received the schedule file yet. The `schedule PM Kelistrikan DC 2026-2027.xlsx` in the folder is
-  the coworker's 7 Oct example, not the final one, so don't fill the slides from it.
+- Schedule slides (16–19) were empty on 26 Oct 2026. **Filled 23 Nov 2026** from the final
+  `Schedule Pemeliharaan--Maintenance Listrik Gandul.pdf` (Mbak Didi's schedule, start 16 Nov 2026 = W3, 4 periods;
+  moved from Downloads into the KOM folder). The PDF has no xlsx behind it, so each period was cropped from it with a
+  script (table + legend stacked, since the source prints the legend only after II and IV) into
+  `_Sumber\schedule-img\periode1-4.png`; spec `schedule.images` points to them. Old deck backed up in the session
+  scratchpad (gone). Her legend still has a label that contradicts its row (black = "UPS Emerson dan Battery Gandul"
+  is the EATON/HUAWEI/GTEC row) and Switchover FREQ 12 has only 8 marks across the 4 periods; shown as she made
+  them, not raised with her or the client. The `schedule PM Kelistrikan DC 2026-2027.xlsx` in the
+  folder is the old 7 Oct example, ignore it.
 - Slides 20–24 and 26 (work permit, WO, terima kasih) identical to Lengkap; only the footer changed.
 - Slide 25 (struktur organisasi) was rebuilt on 26 Oct 2026 from `Struktur project SINERGI.xlsx`, which is now in
   the same folder. Changes: new leader, and 4 engineer teams (UPS & Battery as vendor teams Schneider/Huawei/Eaton,
