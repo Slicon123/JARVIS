@@ -28,7 +28,10 @@ for writing the research content.**
 **Status 23 Nov 2026:** read and analysed; class letter for the file name not confirmed.
 Bryan plans to interview the owner of a D'Kriuk franchise outlet (fried chicken). Social media is
 not required by the guide, but the outlet must have a digital side (GoFood/GrabFood/ShopeeFood,
-QRIS, POS/cashier app, WA orders). Theme not chosen yet; it depends on which digital tools the outlet uses.
+QRIS, POS/cashier app, WA orders). Outlet confirmed on GoFood + QRIS. Interview guide written
+23 Nov 2026 for Tema 2 Pemasaran Digital (my pick; Bryan hasn't objected), grouped by POAC with
+starred must-ask items and a GoFood observation checklist: `TAS Mini Riset\Pedoman Wawancara.md`.
+Interview not done yet.
 
 **How to apply:** Bryan does the interview and writes the content himself. My part: interview
 guide, observation sheet, Word template in the required format, verified references with DOI,
