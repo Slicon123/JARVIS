@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: bcf91eae-07d3-4e3b-a8b9-2b925c152c80
-  modified: 2026-11-26T05:33:22.776Z
+  modified: 2026-11-27T04:48:00.765Z
 ---
 
 Pendidikan Agama Kristen, Jumat 13–15, UKSW Digital Business semester 1. **Silabus ada**
@@ -27,6 +27,7 @@ bangsa · 16 TAS (materi 7–15).
 silabus). Jadi estimasi: **20 Nov = pertemuan 10, Kel. 3 presentasi, Bryan/Kel. 5 penanggap**;
 27 Nov = P11 (Kel. 4); **4 Des = P12, Kel. 5 presentasi**. Estimasi, geser kalau ada minggu libur.
 **Kel. 5, 26 Nov 2026:** makalah di Google Docs "MAKALAH AGAMA KEL 5" (Bab II 2.1 = pandangan Budiardjo [Marvel] dan Heywood [Bryan]; lain: Clarisa definisi, Kezia karakteristik politisasi, Ave Notohamidjojo, Vina Kristiyanto) + deck Canva (masih template Lorem ipsum, 11 slide). Bryan kebagian **pandangan Andrew Heywood** (*Politik*, Pustaka Pelajar, hal. 1-18); aku menulis teks Canva + makalah terpisah dari ingatan tentang bab 1 Heywood, belum bisa baca bukunya, Bryan harus cek ke halaman. Link Canva/Docs hanya dibaca, jangan diubah.
+**Cek naskah-heywood.md vs teks bab 1 (27 Nov 2026, dari upload SlideShare edisi ±2013, bukan edisi Indonesia):** definisi, konflik+kerja sama, kacamata 1 (urusan negara; keluarga/sekolah/bisnis = bukan politik) dan 4 (semua tingkat interaksi sosial) benar. Kacamata 2 punya DUA versi (Fig. 1.2): negara vs masyarakat sipil → kelompok = privat; politik vs personal (keluarga/rumah) → kelompok = publik; jadi "mendekati" di naskah masih bisa dibela. Kacamata 3: Crick bilang "within a given unit of rule", tidak jelas berlaku di luar negara. **"Saling melengkapi" TIDAK ada di Heywood**; ia bilang "essentially contested", "contrasting conceptions of the same concept". Naskah belum diubah, tunggu Bryan.
 
 **Nilai:** tugas & SG 5%, kehadiran 25%, SL1 10%, SL2 10%, TTS 15%, presentasi kelompok 15%,
 TAS 20%. **Aturan:** absen >3x (termasuk sakit/izin) = E; telat >15 menit tidak dihitung hadir;
