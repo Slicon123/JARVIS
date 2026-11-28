@@ -33,8 +33,10 @@ QRIS, POS/cashier app, WA orders). Outlet confirmed on GoFood + QRIS. Interview 
 questions grouped by POAC plus a short photo/screenshot list, in `TAS Mini Riset\Pedoman Wawancara.md`.
 He asked for questions that aren't complicated but still match the PDF, and asked me to remember
 the whole plan (23 Nov 2026). Keep anything else I make for this task (template, checklist) just
-as plain. Next step: he interviews the owner, sends me the recording, I turn it into a transcript.
-Interview not done yet.
+as plain. 28 Nov 2026: cut to 7 questions (~10–15 min) because he worried the seller would mind a
+long interview; price, QRIS sticker, ratings/reviews moved to his own observation, plus 2 optional
+backup questions. Don't grow it back. Next step: he interviews the owner (suggested by Wed 2 Dec),
+sends me the recording, I turn it into a transcript. Interview not done yet (28 Nov).
 
 **How to apply:** Bryan does the interview and writes the content himself. My part: interview
 guide, observation sheet, Word template in the required format, verified references with DOI,
